@@ -577,12 +577,12 @@
  {
   "id": "018C",
   "jp": "{col:01}{d:05|ファーラ}{spd:01}{f4}{f4:6E}{fa:81}\n私は、いつま{d:64|でも}\nネーラン兄さんの\n帰りをまってい{d:59|ます。}{wait}{d:76|この}国を出て西に行{d:7B|った}所に\n{d:1F|帝国}の人達が利用{d:7F|して}{d:56|いた}\n{col:01}{d:1A|遺跡}{col}が{d:61|ある}はず{d:5C|です}。{wait}{d:1A|遺跡}を使う{col:01}キーワード{col}は、\n{col:01}「{d:35|ライドロイド}{d:1F|帝国}」\nだ{d:7B|った}と思い{d:59|ます。}{end}",
-  "en": "{col:01}Fara{spd:01}{f4}{f4:6E}{fa:81}\nI will always be waiting for my brother\nNeiran to come home.{wait}West of this kingdom, there should be a\n{col:01}ruin{col} that the Empire's people were using.{wait}I believe the {col:01}password{col} to use the ruin was\n{col:01}\"Raidroid Empire\".{end}"
+  "en": "{col:01}Fara{spd:01}{f4}{f4:6E}{fa:81}\nI will always be waiting for my brother\nNeiran to come home.{wait}West of this kingdom, there should be a\n{col:01}ruin{col} that the Empire's people were using.{wait}I believe the {col:01}password{col} to use the ruin was\nthe name of the Empire: {col:01}\"Raidroid\".{end}"
  },
  {
   "id": "018D",
   "jp": "{col:01}{d:05|ファーラ}{f4}{f4:6E}{fa:81}\n{d:1A|遺跡}を使う{col:01}キーワード{col}は、\n{col:01}「{d:35|ライドロイド}{d:1F|帝国}」{col}{d:5C|です}。{wait}お気をつけて{d:79|・・・}{end}",
-  "en": "{col:01}Fara{f4}{f4:6E}{fa:81}\nThe {col:01}password{col} to use the ruin is {col:01}\"Raidroid\nEmpire\"{col}.{wait}Please be careful...{end}"
+  "en": "{col:01}Fara{f4}{f4:6E}{fa:81}\nThe {col:01}password{col} to use the ruin is {col:01}\"Raidroid\"{col}.{wait}Please be careful...{end}"
  },
  {
   "id": "018E",
@@ -597,7 +597,7 @@
  {
   "id": "0190",
   "jp": "{col:01}「{d:35|ライドロイド}{d:1F|帝国}」\n{col:01}パスワード{col}ヲ\nカクニンシマシタ。{end}",
-  "en": "{col:01}\"RAIDROID EMPIRE\" {col:01}PASSWORD{col}\nCONFIRMED.{end}"
+  "en": "{col:01}\"RAIDROID\" {col:01}PASSWORD{col}\nCONFIRMED.{end}"
  },
  {
   "id": "0191",

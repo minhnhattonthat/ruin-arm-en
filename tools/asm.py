@@ -14,7 +14,7 @@ GEN = ROOT / "build" / "vwf"
 # Every org in asm/vwf.asm below the expansion: CPU address -> the original bytes it replaces (checked before
 # patching, so another revision or a moved routine fails here, not in game). docs/re/vwf.md lists why each exists.
 HOOKS = {0x81E1CC: "aaadb10c", 0x81E227: "68a81869", 0x81E8B7: "ada50c29", 0x81E4B9: "69a100",
-         0x81E92E: "8ac9007f", 0x85EC2D: "8ac9007f"}
+         0x81E92E: "8ac9007f", 0x85EC2D: "8ac9007f", 0x8296F0: "a20000bf"}
 
 
 def off(a):

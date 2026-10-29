@@ -23,7 +23,7 @@ import fixed  # noqa: E402
 import font  # noqa: E402
 from bps import snes_checksum  # noqa: E402
 from en import Codec  # noqa: E402
-from pack import NEXT, off, unpack_all, write  # noqa: E402
+from pack import NEXT, off, pack, unpack_all  # noqa: E402
 from textdump import BLOCKS, ROM, Script  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,10 +34,45 @@ MSGTAB = 0xD28000           # 0x14 blocks x 256 ids x 3 bytes
 TEXT = 0xD2C000             # relocated messages from here to the end of the ROM, never across a bank
 SINGLE_FIELDS = {"name_hero", "name_sister", "name_party"}  # names are edited per letter in the name entry: one letter a code
 IDS = 0x1400
+PASSWORD = (0x011711, "RAIDROID")  # $829711: the 8 words the typed ruin password must match (asm/vwf.asm `password`)
+# Name-entry grids かな/漢1/漢2 -> ABC/abc/Sym (docs/re/text.md §Name entry): (row pointer table, original row count,
+# offsets of that count's immediate in both entry routines $85B1C8/$85BDA0, English rows of 5 + blank + 5 cells).
+# A kanji row starts with its reading and a blank (2 words, written blank); a kana row has its number drawn by code.
+GRIDS = [
+    (0x026410, 0x1B, (0x2B1D5, 0x2B22C, 0x2B231, 0x2B339, 0x2BDAF, 0x2BE07, 0x2BE0C, 0x2BE9B),
+     ["ABCDE FGHIJ", "KLMNO PQRST", "UVWXY Z.-'!", "01234 56789"], ""),
+    (0x026698, 0x27, (0x2B480, 0x2B4D7, 0x2B4DC, 0x2B5EA, 0x2BF0A, 0x2BF62, 0x2BF67, 0x2BFFC),
+     ["abcde fghij", "klmno pqrst", "uvwxy z.-'!", "01234 56789"], "  "),
+    (0x026ADC, 0x26, (0x2B63D, 0x2B694, 0x2B699, 0x2B7A7, 0x2C04F, 0x2C0A7, 0x2C0AC, 0x2C141),
+     ["01234 56789", ".,!?' -:;/&", "()[]* #+~=%"], "  "),
+]
+
+
+WRITES = []                 # "OFF ORIG NEW BY" lines of the last build() (romdiff.py --writes)
 
 
 def words_bytes(ws):
     return b"".join(w.to_bytes(2, "little") for w in ws)
+
+
+def put(rom, o, data, by, orig):
+    """The only way build() changes rom: logs the write against the clean original's bytes."""
+    WRITES.append(f"{o:X} {orig[o:o + len(data)].ljust(len(data), b'\xff').hex()} {data.hex()} {by}")
+    rom[o:o + len(data)] = data
+
+
+def log_diff(before, after, by, orig):
+    """Log each changed span of a step that writes on its own (asar, the checksum)."""
+    i, n = 0, len(after)
+    while i < n:
+        if before[i] == after[i]:
+            i += 1
+            continue
+        j = i
+        while j < n and before[j] != after[j]:
+            j += 1
+        WRITES.append(f"{i:X} {orig[i:j].ljust(j - i, b'\xff').hex()} {after[i:j].hex()} {by}")
+        i = j
 
 
 def msg_table(s):
@@ -50,7 +85,29 @@ def msg_table(s):
     return out
 
 
+def single(c):
+    """Grid/password cell: the English single for c ($0400 + ASCII), blank 0000 for a space."""
+    if c != " " and c not in font.SINGLES:
+        raise SystemExit(f"{c!r} has no English glyph")
+    return 0 if c == " " else 0x400 + ord(c)
+
+
+def name_entry(rom, orig):
+    s = Script(orig)
+    for tab, n, at, rows, lead in GRIDS:
+        for o in at:
+            if orig[o] != n or orig[o - 1] not in (0xA9, 0xC9, 0xE9):
+                raise SystemExit(f"grid {tab:06X}: no row count {n:#x} at {o:06X}")
+            put(rom, o, bytes([len(rows)]), f"grid_{tab:X}_rows", orig)
+        for k, row in enumerate(rows):
+            assert len(row) == 11 and row[5] == " ", row
+            put(rom, off(0x840000 | s.w(tab + 2 * k)), words_bytes(map(single, lead + row)), f"grid_{tab:X}_{k}", orig)
+    o, word = PASSWORD
+    put(rom, o, words_bytes(map(single, word)), "password", orig)
+
+
 def build(orig):
+    WRITES.clear()
     rom = bytearray(orig.ljust(SIZE, b"\xff"))
     s = Script(orig)
     blocks = unpack_all(orig)
@@ -62,7 +119,7 @@ def build(orig):
     for n, fs in flds.items():
         for f, e in zip(fs, fents[n]):
             if e["en"]:
-                fixed.put(rom, f, (codec.msg if n in SINGLE_FIELDS else codec.field)(e["en"]))
+                put(rom, f["off"], fixed.pad(f, (codec.msg if n in SINGLE_FIELDS else codec.field)(e["en"])), f["id"], orig)
     staff = next(b for b in blocks if b.name == "staff")
     size = staff.size()
     for i, e in enumerate(ents["staff"]):
@@ -70,8 +127,8 @@ def build(orig):
             staff.strings[i] = codec.field(e["en"]) + [e["hold"]]
     if staff.size() > size:  # shortcut: in place only; relocate the staff strings if English credits outgrow them
         raise SystemExit(f"staff: English needs {staff.size()} bytes, the block has {size}")
-    rom[off(staff.addr):off(staff.addr) + size] = b"\xff" * size
-    write(rom, staff)
+    put(rom, off(staff.addr), pack(staff).ljust(size, b"\xff"), "staff", orig)
+    name_entry(rom, orig)
 
     tab, cur, new = msg_table(s), TEXT, {}
     for b in blocks:
@@ -85,7 +142,7 @@ def build(orig):
                 cur = (cur & 0xFF0000) + 0x18000
             if cur >= 0x1000000:
                 raise SystemExit("relocated messages overflow the 4 MB ROM")
-            rom[off(cur):off(cur) + len(data)] = data
+            put(rom, off(cur), data, f"{b.name}:{i}", orig)
             new[b.addr, i] = cur
             cur += len(data)
     for blk in range(IDS >> 8):
@@ -95,12 +152,15 @@ def build(orig):
         for k, i in enumerate(b.slots):
             if i != NEXT and (p, i) in new:
                 tab[blk << 8 | k] = new[p, i]
-    rom[off(MSGTAB):off(MSGTAB) + 3 * IDS] = b"".join(a.to_bytes(3, "little") for a in tab)
+    put(rom, off(MSGTAB), b"".join(a.to_bytes(3, "little") for a in tab), "msgtab", orig)
 
     cells, widths = font.build(codec.pairs)
-    rom[off(FONT2):off(FONT2) + len(cells)] = cells
-    rom = asm.patch(bytes(rom), {"FONT2": FONT2, "MSGTAB": MSGTAB}, widths)
-    return snes_checksum(bytearray(rom))[0]
+    put(rom, off(FONT2), cells, "font2", orig)
+    patched = asm.patch(bytes(rom), {"FONT2": FONT2, "MSGTAB": MSGTAB}, widths)
+    log_diff(rom, patched, "asm", orig)
+    done = snes_checksum(bytearray(patched))[0]
+    log_diff(patched, done, "checksum", orig)
+    return done
 
 
 def slots(rom):
@@ -133,6 +193,7 @@ def main():
     a.out.parent.mkdir(exist_ok=True)
     a.out.write_bytes(rom)
     a.out.with_suffix(".slots.txt").write_text(slots(rom), encoding="utf-8")
+    a.out.with_suffix(".writes.txt").write_text("\n".join(WRITES) + "\n", encoding="utf-8")
     print(f"{a.out.resolve().relative_to(ROOT).as_posix()}: sha1 {hashlib.sha1(rom).hexdigest()}, {len(rom)} bytes")
 
 

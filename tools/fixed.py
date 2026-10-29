@@ -99,12 +99,12 @@ def words(s, f):
     return [s.w(f["off"] + 2 * k) for k in range(f["n"])]
 
 
-def put(rom, f, ws):
-    """Encoded words into field f of rom (bytearray), space-padded. Raises ValueError if they don't fit."""
+def pad(f, ws):
+    """Bytes of encoded words for field f, space-padded. Raises ValueError if they don't fit."""
     if any(w >= 0x8000 for w in ws) or len(ws) > f["n"]:
         raise ValueError(f"{f['id']}: {len(ws)} words (glyphs only), the field holds {f['n']}")
-    ws += [0] * (f["n"] - len(ws))
-    rom[f["off"]:f["off"] + 2 * f["n"]] = b"".join(w.to_bytes(2, "little") for w in ws)
+    ws = ws + [0] * (f["n"] - len(ws))
+    return b"".join(w.to_bytes(2, "little") for w in ws)
 
 
 def main():

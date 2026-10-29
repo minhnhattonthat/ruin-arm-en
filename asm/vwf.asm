@@ -46,6 +46,9 @@ org $81E92E                ; cell drawer: TXA / CMP #$7F00
 org $85EC2D                ; its copy (name entry)
 	jml font_b
 
+org $8296F0                ; ruin password: name-entry buffer $140C vs the 8 words at $829711 (build.py: "RAIDROID")
+	jml password
+
 ; ---------------------------------------------------------------- code
 org $D18000
 
@@ -356,6 +359,26 @@ open_cell:                     ; clear the cell at BASE, tilemap entries at MAP 
 	inc
 	sta $C886,x
 	rts
+
+password:                      ; the original compare, case-blind: a-z singles ($0461-$047A) count as A-Z. A/X 16-bit.
+	ldx #$0000
+-	lda $140C,x
+	cmp #$0461
+	bcc +
+	cmp #$047B
+	bcs +
+	sbc #$001F                 ; carry clear here: subtracts $20
++	cmp $829711,x
+	bne ++
+	inx
+	inx
+	cpx #$0010
+	bcc -
+	lda #$0018                 ; match
+	bra +
+++	lda #$0008
++	sta $1816
+	rtl
 
 WIDTHS:
 	incbin "../build/vwf/widths.bin"
