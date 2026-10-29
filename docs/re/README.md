@@ -12,4 +12,8 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| <text.md> | <encoding, control codes, pointer tables> | <verified / partly guessed> |
+| text.md | encoding (16-bit glyph words, `tbl/jp.tbl`), control words, message/dictionary pointers, text ranges, menu records, item names | encoding + pointers + ranges verified; some control-word meanings and menu-record extent guessed |
+| font.md | 16x16 1bpp font at `$9F8000`, cell layout, VWF notes | verified |
+| compression.md | LZSS `$80900E` (+ `tools/lz.py`), call sites, other loaders | LZ verified; other loaders open |
+| freespace.md | `$FF` runs, 4 MB expansion | candidates only |
+| graphics.md | graphics-text survey | reachable screens done; mid-game + static sweep open |
