@@ -1,0 +1,6 @@
+# Cold boot to the title screen and press Start (smoke route).
+600 -
+8 start
+300 -
+8 start
+600 -
