@@ -1,29 +1,150 @@
 # Glossary - Ruin Arm
 
 Binding for every translator and reviewer. Agents propose additions in reports; only the controller edits this file.
+`tools/batches.py check` enforces the tables: when a row's JP occurs in an entry (katakana terms as whole runs only),
+one of its EN forms (alternatives separated by ` / `, case-insensitive) must appear in the English; the Avoid column
+fails the check. Story context: `docs/synopsis.md`.
 
 ## Rulings (asked of the user once; options and reasons in docs/decisions.md)
-- Honorifics: kept, hyphenated (Johannes-san). Name order: Western (given name first).
-- Romanisation source: official English names where they exist, else an earlier fan patch, else Hepburn without macrons.
-- Credits: English.
-- Register / flavour: <set in phase 6>. Sound effects: <set in phase 6>.
-- Abbreviations: full names and terms everywhere, prefer engine changes over shortening; abbreviate only as a flagged last resort.
+- Honorifics: kept, hyphenated (Lucia-san). Name order: Western (given name first).
+- Romanisation source: official English names where they exist (only the title, RUIN ARM), else an earlier fan patch
+  (none found), else the intended Western name for katakana loanwords, else Hepburn without macrons (D12).
+- Credits: English, staff names in Western order (given name first).
+- Register / flavour: plain modern fantasy English, light on archaisms; each character's voice per
+  `docs/style-reference.md`. Sound effects and laughs: English equivalents ("Gwahahaha!", "Ohohoho!", "Hmph!").
+- Abbreviations: full names and terms everywhere, prefer engine changes over shortening; abbreviate only as a flagged
+  last resort.
 
 ## Style rules
 - Punctuation map: 「」 -> "...", 『』 -> '...', ・・・ -> ..., ！？ -> !?.
-- <voice notes per character, or point to docs/style-reference.md>
+- Voices: `docs/style-reference.md`.
+- お兄ちゃん (the sister to the hero) = "big brother" / "Brother"; 兄様 (Fara) = "Brother"; お父さん = "Dad" (children)
+  or "your father".
+- Bolboza's katakana lines (machine voice) are written in capitals: "EXTERMINATE HUMANITY."
 
 ## Characters
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| ボーガン | Bogan | | the hero's father, ex-captain of the Rondium Knights | Borgan, Vaughan |
+| ルシア | Lucia | 7 | small winged girl, party member (name_party_04) | Rucia |
+| ジーク | Zieg | 7 | `{name:02}` default; old inventor, secretly king of Kadam | Sieg, Zeke |
+| トーラン | Toran | 7 | `{name:03}` default; tiger-masked giant, elder prince of Medeom | |
+| ポセナ | Posena | 7 | `{name:04}` default; mermaid princess of Marsnal | |
+| ネイル | Neil | 7 | `{name:05}` default; Imperial commander, really prince Neiran | Nail |
+| ネーラン | Neiran | | Neil's real name | |
+| ザイン | Zain | | Imperial Guard General, founder of the Empire | Sein |
+| ボルボーザ | Bolboza | | humanoid machine, the emperor | Volvoza |
+| ゴルドー | Goldo | | Earth General | |
+| ディーネ | Deene | | Water General (from Undine) | Dine |
+| ヒュード | Hude | | Wind General | Hyude |
+| フリード | Freed | | Flame General | Fried |
+| ミリア | Milia | | Dark Princess Knight | Miria |
+| ラミアウォリアー | Lamia Warrior | | Deene's lieutenant | |
+| ファーラ | Fara | | princess of Medeom | |
+| サーラ | Saara | | queen of Marsnal, Posena's mother | Sarah |
+| サラ | Sara | | village girl, Roa's daughter | |
+| ロア | Roa | | Sara's mother | |
+| エイソッド | Aysod | | Lord Aysod, Resistance leader (ロバート・エイソッド = Robert Aysod) | |
+| レイナ | Reina | | Aysod's daughter | |
+| ガルザック | Garzack | | Rondium knight | |
+| シーザー | Caesar | | King Caesar of Rondium (シーザー王) | |
+| メファウス | Mephaus | | Rondium court magician | |
+| ギルム | Gilm | | Rondium blacksmith | |
+| ハヌトゥ | Hanutu | | Marsnal blacksmith | |
+| オギリン | Ogilin | | beastfolk fortune-teller | |
+| メイヤ | Meiya | | beastfolk girl (メイア at 0077 = same girl) | |
+| エディア | Edia | | Wyall girl | |
+| ロイ | Roy | | Edia's brother | |
+| ヴォルサムリー | Volsamry | | Duke of Stelm | |
+| マルガリータ | Margarita | | lady ruler of Tifnu | |
+| ラッシュ | Rush | | Rush Ironfang (ラッシュ・アイアンファング), adventurer | |
+| シンシア | Cynthia | | minor NPC | |
+| ばあや | Nanny | | Posena's old nanny | |
+
+Default names offered at the name entry (name_hero / name_sister, 7 letters max): hero フレイ Frey, カーマイン Carmine,
+リック Rick, シーネ Shine, グレコ Greco, セイ Sei, ルーク Luke, ジール Zeal, あきら Akira, ニール Neal, マイケル Michael,
+クライド Clyde, ヘンゼル Hansel, アーム Arm, シオン Sion, ファング Fang; sister フレイヤ Freya, リトル Little,
+レイチェル Rachel, ドロシー Dorothy, マリア Maria, エリカ Erika, レイア Leia, リンダ Linda, なぎさ Nagisa, イライザ Eliza,
+ジャネット Janet, ボニー Bonnie, グレーテル Gretel, ルイン Ruin, ティルファ Tilfa, ルナ Luna.
 
 ## Places
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| アーフ | Aaf | 16 | home village (アーフ村 = Aaf Village) | Arf |
+| ワイアル | Wyall | 16 | ワイアルの村 = Wyall Village | |
+| ラベンナ | Ravenna | 16 | village and ruins | |
+| マリア | Maria | 16 | マリアの村 = Maria Village (also a sister default name) | |
+| ワース | Worth | 16 | ワースの村 = Worth Village | |
+| ロンディウム | Rondium | 16 | Kingdom of Rondium | Londium |
+| ステルム | Stelm | 16 | Stelm Duchy; ステルムの町 = Stelm Town | |
+| フェフス | Fefus | 16 | フェフス城 = Fefus Castle | |
+| ゴッドホープ | Godhope | 16 | ゴッドホープ岬 = Cape Godhope | |
+| ヴェルダー | Velder | | ヴェルダーの大森林 = the Great Velder Forest | Welder |
+| ヴェルダの大森林 | Velder Forest | 16 | place.json form | |
+| 獣人村 | Beastfolk Village / Beast Village | 16 | place.json: Beast Village (16 max) | |
+| ルテア | Rutea | 16 | ルテア自治領 = Rutea Region; ルテア屋敷 = Rutea Mansion | Lutea |
+| ティフヌ | Tifnu | 16 | ティフヌ領 = Tifnu Region | |
+| メディオム | Medeom | 16 | Kingdom of Medeom | Mediom |
+| マースナル | Marsnal | 16 | merfolk Kingdom of Marsnal | |
+| サライ | Sarai | 16 | サライ城 = Sarai Castle | |
+| フーベル | Fubel | 16 | フーベルの大地 = the Land of Fubel (undersea) | |
+| ケムル海底基地 | Kemul Sea Base | 16 | place.json | |
+| 海底基地 | Undersea Base / Sea Base | 16 | the Empire's base in Fubel | |
+| カダム | Kadam | 16 | destroyed kingdom | |
+| アーノゥン | Arnoun | 16 | アーノゥン地方 = the Arnoun region | |
+| バルドア | Baldoa | 16 | バルドア城 = Baldoa Castle; 巨神城バルドア = Titan Castle Baldoa | |
+| トンネル洞窟 | Tunnel Cave | 16 | | |
+| 妖しい洞窟 | Eerie Cave | 16 | | |
+| キラキラ洞窟 | Glitter Cave | 16 | | |
+| 海辺の洞窟 | Seaside Cave | 16 | | |
+
+## Factions and titles
+| JP | EN | max | notes | Avoid |
+|---|---|---|---|---|
+| ライドロイド | Raidroid | | ライドロイド帝国 = the Raidroid Empire | Ridroid |
+| レジスタンス | Resistance | | also 反乱軍 = rebel army | |
+| カダムの雷 | Thunder of Kadam | | the Resistance's name | |
+| 帝国特殊部隊 | Imperial Special Forces | | | |
+| 四魔将 | Four Dark Generals | | 四天王 = Four Heavenly Kings (Goldo's boast, same group) | |
+| 魔将 | General | | 地/水/風/炎魔将 = Earth/Water/Wind/Flame General; alone = Dark General | |
+| 近衛魔将 | Imperial Guard General | | Zain | |
+| 闇姫騎士 | Dark Princess Knight | | read ダーク プリンセスナイト in-text | |
+| 騎士団 | Knights | | 騎士団長 = Captain of the Knights | |
 
 ## Items / skills / terms
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | ルインアーム | Ruin Arm | | official title logo | |
+| 聖剣 | holy sword | | 三聖剣 = the Three Holy Swords | |
+| 聖盾 | Holy Shield | | | |
+| 宝玉 | gem | | the four gems holding the machine's energy | |
+| 緑玉 | Emerald | | ダリアの緑玉 = Dahlia Emerald (item) | |
+| 黄玉 | Topaz | | モースの黄玉 = Mohs Topaz (item); トパーズ = Topaz | |
+| 青玉 | Sapphire | | ガルフの青玉 = Gulf Sapphire (item); サファイア = Sapphire | |
+| 紅玉 | Ruby | | ルルスの紅玉 = Lulus Ruby (item) | |
+| メビウスリング | Mobius Ring | 16 | | |
+| キズナの剣 | Bond Sword | 16 | the holy sword | |
+| コールマインド | Call Mind | 16 | memory potion | |
+| 謎の宝石 | Mystery Gem | 16 | | |
+| 命の花 | Flower of Life | 16 | | |
+| 帰心石 | Homing Stone | 16 | | |
+| ジャンプブーツ | Jump Boots | 16 | | |
+| ジークランチャー | Zieg Launcher | 16 | | |
+| ジークショット | Zieg Shot | | | |
+| ボーガンの手紙 | Bogan's Letter | 16 | | |
+| ムーブ | Move | 16 | teleport spell | |
+| キカイ | machine | | ancient tech; 人型キカイ = humanoid machine | |
+| 超文明 | super-civilization | | | |
+| サークル | circle | | ruin teleport pad | |
+| オペレーションルーム | control room | | | |
+| クリーチャー | creature | | monsters | |
+| 獣人 | beastfolk / Beast | | 獣人族 = beastfolk | |
+| 人魚 | merfolk / mermaid / merman | | 人魚族 = merfolk | |
+| 翼人 | winged | | 翼人族 = winged folk | |
+| 錬金術 | alchemy / alchemist | | 錬金術師 = Alchemist | |
+| 元素 | element | | 土/火/水/空気の元素 = Earth/Fire/Water/Air Element | |
+| インゴット | Ingot | | | |
+| 必殺技 | special | | 協力必殺技 = combo special | |
+| ゴールド | gold | | currency | |
 
 ## Decisions from earlier batches

@@ -39,7 +39,11 @@ A page holds 4 rows, the speaker row included. If your English for a page runs l
 Fixed fields (form = menu, item, place, name...): plain text, no codes. The limit is in letters: `16ch` = 8 cells of
 2 letters (spaces count); `name` fields are 7 letters max. Credits (`form=credit`): copy the `{pos:..}` codes; each
 run between codes holds 2 letters per Japanese glyph (the limit lists each run). Menu text sits in fixed layouts:
-use the limit as a hard cap and keep labels short but whole words (no abbreviations; report `LONG:` if impossible).
+use the limit as a hard cap and keep labels short but whole words. Most menu labels are 2 cells = 4 letters
+("Item", "Buy", "Sell", "Save"); when no whole word fits, write the best fit and report
+`LONG: id - full: <the label you want>` so the engine pass can widen it. Menus `84967B` and `8496A4` are command
+palettes: each 2 Japanese glyphs are one command, so write each command in exactly 4 characters (pad with spaces),
+same order, total exactly the limit. `〔ｾｰ〕` and similar bracketed runs are one glyph holding small katakana.
 
 ## Validate
 Run `python -X utf8 tools/batches.py check <batch>` from the repo root and fix every reported id until it prints OK.

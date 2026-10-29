@@ -30,6 +30,7 @@ TL = ROOT / "work" / "tl"
 TERMS = ROOT / "build"
 GLOSSARY = ROOT / "glossary.md"
 LINE, ROWS = 223, 4
+NAME = 7                    # a party record holds 7 name glyphs ($146A), whatever the default-name table's stride
 INSERT = {"name": 56, "item": 112, "item_v": 112, "num": 30}   # px reserved for what the game inserts
 ORDER = ["msg10", "msg11", "msg12", "msg13", "msg00", "msg01", "msg02", "staff", "name_party", "name_hero",
          "name_sister", "place", "item", "ingot", "equip", "element", "heat", "use", "act", "tactic", "pad", "status",
@@ -43,6 +44,7 @@ HONORIFIC = re.compile(r"(\{name[^{}]*\}|[ァ-ヴー]+)(さん|くん|君|ちゃ
 HONOR_EN = {"さん": "-san", "くん": "-kun", "君": "-kun", "ちゃん": "-chan", "様": "-sama", "さま": "-sama",
             "殿": "-dono"}
 KATA = "ァ-ヴー"
+COMMAND_CELLS = {"84967B", "8496A4"}   # two-glyph command cells picked by index (docs/re/text.md): 4 letters each
 
 
 # ---- the script
@@ -126,7 +128,9 @@ def headers(text):
     n = 0
     for part in PAGE.split(text):
         m = re.match(r"(?:\{(?!col)[^{}]*\})*\{col:01\}([^\n]*)\n", part)
-        if m and len(CODE.sub("", m.group(1))) <= 24:
+        row = CODE.sub("", m.group(1)) if m else ""
+        # not a coloured phrase ({col} ends one; a JP row longer than a name; quotes)
+        if m and len(row) <= (10 if JAPANESE.search(row) else 24) and "{col}" not in m.group(1) and "「" not in row:
             n += 1
     return n
 
@@ -180,9 +184,11 @@ def field_errors(name, e, en):
     if CODE.search(en) or "\n" in en:
         return ["fields take plain text, no codes or breaks"]
     if kind(name) == "name":
-        return [f"{len(en)} letters, max {e['max']}"] if len(en) > e["max"] else []
+        return [f"{len(en)} letters, max {NAME}"] if len(en) > NAME else []
     n = len(pieces(en))
     errs = [f"{n} cells, max {e['max']} (2 letters a cell)"] if n > e["max"] else []
+    if e["id"] in COMMAND_CELLS and len(en) != 2 * e["max"]:
+        errs.append(f"command palette: exactly {2 * e['max']} characters, each command 4 (space-padded)")
     return errs + [f"pair {p!r} is {adv(p)} px, a cell holds 16: shift a space" for p in pieces(en) if adv(p) > 16]
 
 
@@ -208,7 +214,7 @@ def term_in(term, text):
 def gloss_errors(jp, en, gl):
     errs, text = [], plain_jp(jp)
     for term, forms, avoid in gl:
-        if forms and term_in(term, text) and not any(f in en for f in forms):
+        if forms and term_in(term, text) and not any(f.lower() in en.lower() for f in forms):
             errs.append(f"glossary: {term} -> {' / '.join(forms)}")
         errs += [f"glossary: avoid {a!r} ({term})" for a in avoid if re.search(rf"\b{re.escape(a)}\b", en)]
     for jp_h, n in Counter(m.group(2) for m in HONORIFIC.finditer(text)).items():
@@ -261,7 +267,7 @@ def form_limit(name, e):
     if k == "staff":
         return "credit", ",".join(f"{2 * len(r)}ch" for r in staff_runs(e["jp"]) if r)
     if k == "name":
-        return "name", f"{e['max']}ch"
+        return "name", f"{NAME}ch"
     return name, f"{2 * e['max']}ch"
 
 
@@ -400,8 +406,10 @@ def selftest():
     assert msg_errors("{col:01}{name:01}\nあ{end}", "{col:01}{name:01} Oh.{end}")  # speaker row lost
     assert msg_errors("{d:79|・・・}{end}", "...{end}") == []
     assert term_in("ワース", "ワースの村") and not term_in("ミン", "タイミング")
-    assert field_errors("item", {"jp": "薬 草", "max": 8}, "Healing Herb") == []
-    assert field_errors("item", {"jp": "x", "max": 2}, "Herbs") != []
+    assert field_errors("item", {"id": "item_00", "jp": "薬 草", "max": 8}, "Healing Herb") == []
+    assert field_errors("item", {"id": "item_00", "jp": "x", "max": 2}, "Herbs") != []
+    assert field_errors("menu", {"id": "8496A4", "jp": "x", "max": 2}, "Save") == []
+    assert field_errors("menu", {"id": "8496A4", "jp": "x", "max": 2}, "Sav") != []
     print("selftest ok")
 
 
