@@ -3,30 +3,30 @@
   "id": "tactic_00",
   "max": 3,
   "jp": "しない",
-  "en": ""
+  "en": "None"
  },
  {
   "id": "tactic_01",
   "max": 3,
   "jp": "消極的",
-  "en": ""
+  "en": "Wary"
  },
  {
   "id": "tactic_02",
   "max": 3,
   "jp": "オート",
-  "en": ""
+  "en": "Auto"
  },
  {
   "id": "tactic_03",
   "max": 3,
   "jp": "積極的",
-  "en": ""
+  "en": "Active"
  },
  {
   "id": "tactic_04",
   "max": 3,
   "jp": "好戦的",
-  "en": ""
+  "en": "Fierce"
  }
 ]

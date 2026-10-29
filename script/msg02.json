@@ -7,46 +7,46 @@
  {
   "id": "0201",
   "jp": "プロダクション\nマネージャー{spd:01}\n\n間庭 英作{fe:11}プロデューサー{spd:01}\n\n東海林 隆\n{wait:10}宮河 恭夫\n{end:10}",
-  "en": ""
+  "en": "Production\nManager{spd:01}\n\nEisaku Maniwa{fe:11}Producers{spd:01}\n\nTakashi Shoji\n{wait:10}Yasuo Miyakawa\n{end:10}"
  },
  {
   "id": "0202",
   "jp": "ディレクター{spd:01}\n\n清水 泰臣{fe:11}アドバイザー{spd:01}\n\n大久保 悌伸\n{wait:10}鈴木 敏弘\n{end:10}",
-  "en": ""
+  "en": "Director{spd:01}\n\nYasuomi Shimizu{fe:11}Advisors{spd:01}\n\nYasunobu Okubo\n{wait:10}Toshihiro Suzuki\n{end:10}"
  },
  {
   "id": "0203",
   "jp": "声優{spd:01}\n\n阪口 大助\n{wait:10}山本 恵美子\n{wait:10}霞 三十朗\n{wait:10}渡部 直美\n{wait:10}陶山 章夫\n{wait:10}乃村 健次\n{end:10}",
-  "en": ""
+  "en": "Voice Cast{spd:01}\n\nDaisuke Sakaguchi\n{wait:10}Emiko Yamamoto\n{wait:10}Sanjuro Kasumi\n{wait:10}Naomi Watanabe\n{wait:10}Akio Suyama\n{wait:10}Kenji Nomura\n{end:10}"
  },
  {
   "id": "0204",
   "jp": "キャラクターデ{d:02|ザイン}{spd:01}\n\n山田 隆弥{fe:11}ストーリー原案{spd:01}\n\n勝又 淳{end:10}",
-  "en": ""
+  "en": "Character Design{spd:01}\n\nTakaya Yamada{fe:11}Original Story{spd:01}\n\nJun Katsumata{end:10}"
  },
  {
   "id": "0205",
   "jp": "スペシャル\nサンクス{spd:01}\n\n集英社\n月刊Vジャンプ\n{wait:10}鳥嶋 和彦\n{wait:10}高橋 俊昌\n{wait:10}図本 堅史\n{wait:10}集英社\n週刊少年ジャンプ\n{wait:10}堀江 信彦\n{wait:10}町田 宗治\n{wait:10}松本 常男\n{wait:10}赤松 直人\n{wait:10}原 ゆかり\n{wait:10}岩原 誠\n{end:10}",
-  "en": ""
+  "en": "Special Thanks{spd:01}\n\nShueisha Monthly V Jump\n{wait:10}Kazuhiko Torishima\n{wait:10}Toshimasa Takahashi\n{wait:10}Kenji Zumoto\n{wait:10}Shueisha\nWeekly Shonen Jump\n{wait:10}Nobuhiko Horie\n{wait:10}Soji Machida\n{wait:10}Tsuneo Matsumoto\n{wait:10}Naoto Akamatsu\n{wait:10}Yukari Hara\n{wait:10}Makoto Iwahara\n{end:10}"
  },
  {
   "id": "0206",
   "jp": "アシストワーク{spd:01}\n\n渡辺 浩孝{fe:11}ゲームデ{d:02|ザイン}{spd:01}\n\nりょうた様\n{wait:10}田 鞭々\n{wait:10}ひでちゃん\n{wait:10}けっさん\n{wait:10}STOMP\n{end:10}",
-  "en": ""
+  "en": "Assistance{spd:01}\n\nHirotaka Watanabe{fe:11}Game Design{spd:01}\n\nRyota-sama\n{wait:10}Benben Den\n{wait:10}Hide-chan\n{wait:10}Kessan\n{wait:10}STOMP\n{end:10}"
  },
  {
   "id": "0207",
   "jp": "プログラム{spd:01}\n\nハッピィはせい\n{wait:10}Q\n{wait:10}C\n{wait:10}S\n{wait:10}ゼン\n{wait:10} M\n{wait:10}まるこぱぱ\n{wait:10}RYU\n{fe:11}グラフィック\nデ{d:02|ザイン}{spd:01}\n\n黒田屋6作\n{wait:10}織田君\n{wait:10}たこちう？\n{wait:10}J DESIGNS\n{wait:10}ポチっと犬じろう\n{wait:10}ぬーぴー\n{wait:10}わや\n{end:10}",
-  "en": ""
+  "en": "Program{spd:01}\n\nHappy Hasei\n{wait:10}Q\n{wait:10}C\n{wait:10}S\n{wait:10}Zen\n{wait:10} M\n{wait:10}Maruko Papa\n{wait:10}RYU\n{fe:11}Graphic Design{spd:01}\n\nRokusaku Kurodaya\n{wait:10}Oda-kun\n{wait:10}Takochu?\n{wait:10}J DESIGNS\n{wait:10}Pochitto Inujiro\n{wait:10}Nupi\n{wait:10}Waya\n{end:10}"
  },
  {
   "id": "0208",
   "jp": "サウンド\nエンジニア{spd:01}\n\nSWITCH・E\n{wait:10}STUDIO M2\n{wait:10}ST・TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU\n{end:10}",
-  "en": ""
+  "en": "Sound Engineers{spd:01}\n\nSWITCH.E\n{wait:10}STUDIO M2\n{wait:10}ST.TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU\n{end:10}"
  },
  {
   "id": "0209",
   "jp": "スーパー\nバイザー\n\n岬 額々\n{wait:10}XANTHUS\n{wait:10}ADUSAY\n{wait:10}チーミン\n{end:10}",
-  "en": ""
+  "en": "Supervisors\n\nGakugaku Misaki\n{wait:10}XANTHUS\n{wait:10}ADUSAY\n{wait:10}Chimin\n{end:10}"
  }
 ]

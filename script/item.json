@@ -3,660 +3,660 @@
   "id": "item_00",
   "max": 8,
   "jp": "薬 草",
-  "en": ""
+  "en": "Medicinal Herb"
  },
  {
   "id": "item_01",
   "max": 8,
   "jp": "回復薬",
-  "en": ""
+  "en": "Healing Potion"
  },
  {
   "id": "item_02",
   "max": 8,
   "jp": "アンチポイズン",
-  "en": ""
+  "en": "Anti-Poison"
  },
  {
   "id": "item_03",
   "max": 8,
   "jp": "アンチスリープ",
-  "en": ""
+  "en": "Anti-Sleep"
  },
  {
   "id": "item_04",
   "max": 8,
   "jp": "アンチルナシー",
-  "en": ""
+  "en": "Anti-Lunacy"
  },
  {
   "id": "item_05",
   "max": 8,
   "jp": "アンチスロー",
-  "en": ""
+  "en": "Anti-Slow"
  },
  {
   "id": "item_06",
   "max": 8,
   "jp": "万能薬",
-  "en": ""
+  "en": "Panacea"
  },
  {
   "id": "item_07",
   "max": 8,
   "jp": "ケミカルX",
-  "en": ""
+  "en": "Chemical X"
  },
  {
   "id": "item_08",
   "max": 8,
   "jp": "謎の宝石",
-  "en": ""
+  "en": "Mystery Gem"
  },
  {
   "id": "item_09",
   "max": 8,
   "jp": "ダンジョンの鍵",
-  "en": ""
+  "en": "Dungeon Key"
  },
  {
   "id": "item_0A",
   "max": 8,
   "jp": "メビウスリング",
-  "en": ""
+  "en": "Mobius Ring"
  },
  {
   "id": "item_0B",
   "max": 8,
   "jp": "マーカー",
-  "en": ""
+  "en": "Marker"
  },
  {
   "id": "item_0C",
   "max": 8,
   "jp": "黄金の冠",
-  "en": ""
+  "en": "Golden Crown"
  },
  {
   "id": "item_0D",
   "max": 8,
   "jp": "妖しいめん",
-  "en": ""
+  "en": "Eerie Mask"
  },
  {
   "id": "item_0E",
   "max": 8,
   "jp": "バクダン",
-  "en": ""
+  "en": "Bomb"
  },
  {
   "id": "item_0F",
   "max": 8,
   "jp": "テレポーター",
-  "en": ""
+  "en": "Teleporter"
  },
  {
   "id": "item_10",
   "max": 8,
   "jp": "潜水着",
-  "en": ""
+  "en": "Diving Suit"
  },
  {
   "id": "item_11",
   "max": 8,
   "jp": "ジャンプブーツ",
-  "en": ""
+  "en": "Jump Boots"
  },
  {
   "id": "item_12",
   "max": 8,
   "jp": "ボーガンの手紙",
-  "en": ""
+  "en": "Bogan's Letter"
  },
  {
   "id": "item_13",
   "max": 8,
   "jp": "帰心石",
-  "en": ""
+  "en": "Homing Stone"
  },
  {
   "id": "item_14",
   "max": 8,
   "jp": "コールマインド",
-  "en": ""
+  "en": "Call Mind"
  },
  {
   "id": "item_15",
   "max": 8,
   "jp": "牢屋の鍵",
-  "en": ""
+  "en": "Prison Key"
  },
  {
   "id": "item_16",
   "max": 8,
   "jp": "ブレスリング",
-  "en": ""
+  "en": "Breath Ring"
  },
  {
   "id": "item_17",
   "max": 8,
   "jp": "ダリアの緑玉",
-  "en": ""
+  "en": "Dahlia Emerald"
  },
  {
   "id": "item_18",
   "max": 8,
   "jp": "モースの黄玉",
-  "en": ""
+  "en": "Mohs Topaz"
  },
  {
   "id": "item_19",
   "max": 8,
   "jp": "ガルフの青玉",
-  "en": ""
+  "en": "Gulf Sapphire"
  },
  {
   "id": "item_1A",
   "max": 8,
   "jp": "ルルスの紅玉",
-  "en": ""
+  "en": "Lulus Ruby"
  },
  {
   "id": "item_1B",
   "max": 8,
   "jp": "命の花",
-  "en": ""
+  "en": "Flower of Life"
  },
  {
   "id": "item_1C",
   "max": 8,
   "jp": "のろいのマント",
-  "en": ""
+  "en": "Cursed Mantle"
  },
  {
   "id": "item_1D",
   "max": 8,
   "jp": "タイタンの牙",
-  "en": ""
+  "en": "Titan's Fang"
  },
  {
   "id": "item_1E",
   "max": 8,
   "jp": "コールマインド",
-  "en": ""
+  "en": "Call Mind"
  },
  {
   "id": "item_1F",
   "max": 8,
   "jp": "ディアナの腕輪",
-  "en": ""
+  "en": "Diana's Bracelet"
  },
  {
   "id": "item_20",
   "max": 8,
   "jp": "ナイフ",
-  "en": ""
+  "en": "Knife"
  },
  {
   "id": "item_21",
   "max": 8,
   "jp": "ダーク",
-  "en": ""
+  "en": "Dirk"
  },
  {
   "id": "item_22",
   "max": 8,
   "jp": "タガー",
-  "en": ""
+  "en": "Dagger"
  },
  {
   "id": "item_23",
   "max": 8,
   "jp": "ショートソード",
-  "en": ""
+  "en": "Short Sword"
  },
  {
   "id": "item_24",
   "max": 8,
   "jp": "ブロードソード",
-  "en": ""
+  "en": "Broadsword"
  },
  {
   "id": "item_25",
   "max": 8,
   "jp": "フォールション",
-  "en": ""
+  "en": "Falchion"
  },
  {
   "id": "item_26",
   "max": 8,
   "jp": "ロングソード",
-  "en": ""
+  "en": "Long Sword"
  },
  {
   "id": "item_27",
   "max": 8,
   "jp": "睡魔の剣",
-  "en": ""
+  "en": "Slumber Sword"
  },
  {
   "id": "item_28",
   "max": 8,
   "jp": "幻惑の剣",
-  "en": ""
+  "en": "Illusion Sword"
  },
  {
   "id": "item_29",
   "max": 8,
   "jp": "炎の剣",
-  "en": ""
+  "en": "Flame Sword"
  },
  {
   "id": "item_2A",
   "max": 8,
   "jp": "吹雪の剣",
-  "en": ""
+  "en": "Blizzard Sword"
  },
  {
   "id": "item_2B",
   "max": 8,
   "jp": "雷鳴の剣",
-  "en": ""
+  "en": "Thunder Sword"
  },
  {
   "id": "item_2C",
   "max": 8,
   "jp": "村 正",
-  "en": ""
+  "en": "Muramasa"
  },
  {
   "id": "item_2D",
   "max": 8,
   "jp": "クリスタルソード",
-  "en": ""
+  "en": "Crystal Sword"
  },
  {
   "id": "item_2E",
   "max": 8,
   "jp": "キラキラソード",
-  "en": ""
+  "en": "Glitter Sword"
  },
  {
   "id": "item_2F",
   "max": 8,
   "jp": "クイックパーツ",
-  "en": ""
+  "en": "Quick Parts"
  },
  {
   "id": "item_30",
   "max": 8,
   "jp": "キズナの剣",
-  "en": ""
+  "en": "Bond Sword"
  },
  {
   "id": "item_31",
   "max": 8,
   "jp": "キズナの剣",
-  "en": ""
+  "en": "Bond Sword"
  },
  {
   "id": "item_32",
   "max": 8,
   "jp": "キズナの剣",
-  "en": ""
+  "en": "Bond Sword"
  },
  {
   "id": "item_33",
   "max": 8,
   "jp": "キズナの剣",
-  "en": ""
+  "en": "Bond Sword"
  },
  {
   "id": "item_34",
   "max": 8,
   "jp": "ミダスの短剣",
-  "en": ""
+  "en": "Midas Dagger"
  },
  {
   "id": "item_35",
   "max": 8,
   "jp": "ダリアの緑玉",
-  "en": ""
+  "en": "Dahlia Emerald"
  },
  {
   "id": "item_36",
   "max": 8,
   "jp": "モースの黄玉",
-  "en": ""
+  "en": "Mohs Topaz"
  },
  {
   "id": "item_37",
   "max": 8,
   "jp": "ガルフの青玉",
-  "en": ""
+  "en": "Gulf Sapphire"
  },
  {
   "id": "item_38",
   "max": 8,
   "jp": "ルルスの紅玉",
-  "en": ""
+  "en": "Lulus Ruby"
  },
  {
   "id": "item_40",
   "max": 8,
   "jp": "スモールソード",
-  "en": ""
+  "en": "Small Sword"
  },
  {
   "id": "item_41",
   "max": 8,
   "jp": "レイピア",
-  "en": ""
+  "en": "Rapier"
  },
  {
   "id": "item_42",
   "max": 8,
   "jp": "エペ",
-  "en": ""
+  "en": "Epee"
  },
  {
   "id": "item_43",
   "max": 8,
   "jp": "エストック",
-  "en": ""
+  "en": "Estoc"
  },
  {
   "id": "item_50",
   "max": 8,
   "jp": "クレイモア",
-  "en": ""
+  "en": "Claymore"
  },
  {
   "id": "item_51",
   "max": 8,
   "jp": "トゥハンドソード",
-  "en": ""
+  "en": "Two-Handed Sword"
  },
  {
   "id": "item_60",
   "max": 8,
   "jp": "アクス",
-  "en": ""
+  "en": "Axe"
  },
  {
   "id": "item_61",
   "max": 8,
   "jp": "バトルアクス",
-  "en": ""
+  "en": "Battle Axe"
  },
  {
   "id": "item_62",
   "max": 8,
   "jp": "ハルバート",
-  "en": ""
+  "en": "Halberd"
  },
  {
   "id": "item_63",
   "max": 8,
   "jp": "クレセントアクス",
-  "en": ""
+  "en": "Crescent Axe"
  },
  {
   "id": "item_70",
   "max": 8,
   "jp": "スピアー",
-  "en": ""
+  "en": "Spear"
  },
  {
   "id": "item_71",
   "max": 8,
   "jp": "パイク",
-  "en": ""
+  "en": "Pike"
  },
  {
   "id": "item_72",
   "max": 8,
   "jp": "ランス",
-  "en": ""
+  "en": "Lance"
  },
  {
   "id": "item_73",
   "max": 8,
   "jp": "トライデント",
-  "en": ""
+  "en": "Trident"
  },
  {
   "id": "item_80",
   "max": 8,
   "jp": "ショートボウ",
-  "en": ""
+  "en": "Short Bow"
  },
  {
   "id": "item_81",
   "max": 8,
   "jp": "ロングボウ",
-  "en": ""
+  "en": "Long Bow"
  },
  {
   "id": "item_82",
   "max": 8,
   "jp": "木の矢",
-  "en": ""
+  "en": "Wooden Arrow"
  },
  {
   "id": "item_83",
   "max": 8,
   "jp": "鉄の矢",
-  "en": ""
+  "en": "Iron Arrow"
  },
  {
   "id": "item_84",
   "max": 8,
   "jp": "黄金の矢",
-  "en": ""
+  "en": "Golden Arrow"
  },
  {
   "id": "item_85",
   "max": 8,
   "jp": "光の矢",
-  "en": ""
+  "en": "Light Arrow"
  },
  {
   "id": "item_86",
   "max": 8,
   "jp": "炎の矢",
-  "en": ""
+  "en": "Flame Arrow"
  },
  {
   "id": "item_87",
   "max": 8,
   "jp": "ジークランチャー",
-  "en": ""
+  "en": "Zieg Launcher"
  },
  {
   "id": "item_8E",
   "max": 8,
   "jp": "帰心石",
-  "en": ""
+  "en": "Homing Stone"
  },
  {
   "id": "item_90",
   "max": 8,
   "jp": "クロスボウ",
-  "en": ""
+  "en": "Crossbow"
  },
  {
   "id": "item_91",
   "max": 8,
   "jp": "クロスボウ",
-  "en": ""
+  "en": "Crossbow"
  },
  {
   "id": "item_92",
   "max": 8,
   "jp": "クロスボウ",
-  "en": ""
+  "en": "Crossbow"
  },
  {
   "id": "item_93",
   "max": 8,
   "jp": "クロスボウ",
-  "en": ""
+  "en": "Crossbow"
  },
  {
   "id": "item_94",
   "max": 8,
   "jp": "クロスボウ",
-  "en": ""
+  "en": "Crossbow"
  },
  {
   "id": "item_95",
   "max": 8,
   "jp": "クロスボウ",
-  "en": ""
+  "en": "Crossbow"
  },
  {
   "id": "item_A0",
   "max": 8,
   "jp": "スモールシールド",
-  "en": ""
+  "en": "Small Shield"
  },
  {
   "id": "item_A1",
   "max": 8,
   "jp": "ラージシールド",
-  "en": ""
+  "en": "Large Shield"
  },
  {
   "id": "item_A2",
   "max": 8,
   "jp": "白銀の盾",
-  "en": ""
+  "en": "Silver Shield"
  },
  {
   "id": "item_B0",
   "max": 8,
   "jp": "革の鞭",
-  "en": ""
+  "en": "Leather Whip"
  },
  {
   "id": "item_B1",
   "max": 8,
   "jp": "ガラスの鞭",
-  "en": ""
+  "en": "Glass Whip"
  },
  {
   "id": "item_B2",
   "max": 8,
   "jp": "フレイル",
-  "en": ""
+  "en": "Flail"
  },
  {
   "id": "item_C0",
   "max": 8,
   "jp": "普段着",
-  "en": ""
+  "en": "Plain Clothes"
  },
  {
   "id": "item_C1",
   "max": 8,
   "jp": "レザーメイル",
-  "en": ""
+  "en": "Leather Mail"
  },
  {
   "id": "item_C2",
   "max": 8,
   "jp": "リングメイル",
-  "en": ""
+  "en": "Ring Mail"
  },
  {
   "id": "item_C3",
   "max": 8,
   "jp": "チェインメイル",
-  "en": ""
+  "en": "Chain Mail"
  },
  {
   "id": "item_C4",
   "max": 8,
   "jp": "スケールメイル",
-  "en": ""
+  "en": "Scale Mail"
  },
  {
   "id": "item_C5",
   "max": 8,
   "jp": "プレートメイル",
-  "en": ""
+  "en": "Plate Mail"
  },
  {
   "id": "item_C6",
   "max": 8,
   "jp": "プレートアーマー",
-  "en": ""
+  "en": "Plate Armor"
  },
  {
   "id": "item_C7",
   "max": 8,
   "jp": "火神鎧ゼノン",
-  "en": ""
+  "en": "Zenon Fire Armor"
  },
  {
   "id": "item_D0",
   "max": 8,
   "jp": "ファイアー",
-  "en": ""
+  "en": "Fire"
  },
  {
   "id": "item_D1",
   "max": 8,
   "jp": "サンダー",
-  "en": ""
+  "en": "Thunder"
  },
  {
   "id": "item_D2",
   "max": 8,
   "jp": "フリーズ",
-  "en": ""
+  "en": "Freeze"
  },
  {
   "id": "item_D3",
   "max": 8,
   "jp": "ブラスト",
-  "en": ""
+  "en": "Blast"
  },
  {
   "id": "item_D4",
   "max": 8,
   "jp": "ドゥーム",
-  "en": ""
+  "en": "Doom"
  },
  {
   "id": "item_D5",
   "max": 8,
   "jp": "マインド",
-  "en": ""
+  "en": "Mind"
  },
  {
   "id": "item_D6",
   "max": 8,
   "jp": "スリープ",
-  "en": ""
+  "en": "Sleep"
  },
  {
   "id": "item_D7",
   "max": 8,
   "jp": "キュアー",
-  "en": ""
+  "en": "Cure"
  },
  {
   "id": "item_D8",
   "max": 8,
   "jp": "ヒール",
-  "en": ""
+  "en": "Heal"
  },
  {
   "id": "item_D9",
   "max": 8,
   "jp": "ムーブ",
-  "en": ""
+  "en": "Move"
  }
 ]

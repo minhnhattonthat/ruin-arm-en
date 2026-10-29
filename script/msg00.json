@@ -2,92 +2,92 @@
  {
   "id": "0000",
   "jp": "{d:79|・・・}{d:79|・・・}{end}",
-  "en": ""
+  "en": "......{end}"
  },
  {
   "id": "0001",
   "jp": "{d:76|この}前は、すまなか{d:7B|った}な。\n気がどうてん{d:7F|して}たんだ{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Sorry about the other day. I was all\nshaken up.{end}"
  },
  {
   "id": "0002",
   "jp": "お前達のせいで村は\n襲われたんだ！{end}",
-  "en": ""
+  "en": "The village got attacked because of you\ntwo!{end}"
  },
  {
   "id": "0003",
   "jp": "{d:0B|おまえ達}の家の方に\n黒い兵士達が、\nむかってい{d:7B|った}様だが\n{d:41|どうし}たん{d:65|だろう}？{wait}やっかいごとはごめんだぜ。{end}",
-  "en": ""
+  "en": "Looks like some black soldiers were heading\ntoward your house. What's going on?{wait}I don't want any trouble, I tell you.{end}"
  },
  {
   "id": "0004",
   "jp": "近頃、外の{d:84|クリーチャー}が\n増えてるみたいだ。{wait}{d:84|クリーチャー}は、少し前から\n{d:76|この}世界に出てきた\nきょうぼうな生物{d:50|なんだ}。{wait}まあ、{d:76|この}辺は騎士団が{d:4F|いる}\nから{d:40|だいじょうぶ}だけどね。{end}",
-  "en": ""
+  "en": "Seems there are more creatures out there\nthese days.{wait}Creatures are vicious beasts that started\nshowing up in this world a while back.{wait}Well, we've got the Knights around here, so\nwe're safe.{end}"
  },
  {
   "id": "0005",
   "jp": "村は、徐々に復興しつつ\nありますわ。{end}",
-  "en": ""
+  "en": "The village is slowly being rebuilt, you know.{end}"
  },
  {
   "id": "0006",
   "jp": "{col:01}{d:86|メイヤ}\n{d:88|こっち}{d:5C|です}！{end}",
-  "en": ""
+  "en": "{col:01}Meiya\nThis way!{end}"
  },
  {
   "id": "0007",
   "jp": "{d:0B|おまえ達}、いつも\n何だかぶっそうな\nけいこを{d:4D|している}けど\n大変{d:53|そうだ}ね。{wait}そんなものが\n必要なのかねぇ。{end}",
-  "en": ""
+  "en": "You two are always doing some kind of\ndangerous training. Looks like hard work.{wait}Do you really need that sort of thing, I\nwonder?{end}"
  },
  {
   "id": "0008",
   "jp": "{col:01}村長{spd:01}\n{d:7D|助け}{d:0C|てくれ}たのは\nありがたいが、{wait}{d:01|ボーガン}は{d:11|ワシ}らの平和を\nふみにじりお{d:7B|った}。{end}",
-  "en": ""
+  "en": "{col:01}Village Chief{spd:01}\nI'm grateful that you helped us, but{wait}Bogan trampled all over our peace.{end}"
  },
  {
   "id": "0009",
   "jp": "{col:01}{d:86|メイヤ}\nはやく、はやく{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}Meiya\nHurry, hurry!!{end}"
  },
  {
   "id": "000A",
   "jp": "{col:01}村長{spd:01}\n{d:01|ボーガン}に何か\nあ{d:7B|った}のかね{d:79|・・・}{wait}{d:0B|おまえ達}の家をさがしとる\n連中が、村をうろうろ\nしと{d:7B|った}よう{d:60|じゃ}が{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Village Chief{spd:01}\nHas something happened to Bogan...?{wait}Some folks were wandering around the\nvillage looking for your house...{end}"
  },
  {
   "id": "000B",
   "jp": "何だか嫌なくもゆきに\n{d:69|なって}きたわね。{end}",
-  "en": ""
+  "en": "Things are taking a nasty turn, aren't\nthey?{end}"
  },
  {
   "id": "000C",
   "jp": "{col:01}ロア{spd:01}\nがんばるんだ{d:6D|よ。}{wait}{d:64|でも}、危険な事は\nし{d:6C|ない}でおくれ。{end}",
-  "en": ""
+  "en": "{col:01}Roa{spd:01}\nDo your best.{wait}But don't go doing anything dangerous,\nnow.{end}"
  },
  {
   "id": "000D",
   "jp": "{col:01}ロア\n気を付けるんだ{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Roa\nTake care of yourselves.{end}"
  },
  {
   "id": "000E",
   "jp": "{col:01}サラ\nどうも{d:24|ありがとう}。{wait}助か{d:7B|った}わ\n{name}。{end}",
-  "en": ""
+  "en": "{col:01}Sara\nThank you so much.{wait}You saved me, {name}.{end}"
  },
  {
   "id": "000F",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:5F}{fa:81}\nあっ、開か{d:6C|ない}ね。{wait}鍵{d:64|でも}かかってるのかな？{end}",
-  "en": ""
+  "en": "{col:01}Lucia{f4}{f4:5F}{fa:81}\nOh, it won't open.{wait}Maybe it's locked?{end}"
  },
  {
   "id": "0010",
   "jp": "{col:01}サラ\n気を付けてね！{end}",
-  "en": ""
+  "en": "{col:01}Sara\nBe careful!{end}"
  },
  {
   "id": "0011",
   "jp": "{col:01}サラ\nがんばってね！\n{name}。{end}",
-  "en": ""
+  "en": "{col:01}Sara\nGood luck, {name}!{end}"
  },
  {
   "id": "0012",
@@ -96,946 +96,946 @@
    "0013"
   ],
   "jp": "{col:01}村長{spd:01}\nお前達も悲{d:71|しい}思いを{d:7F|して}\n{d:4E|いるの}は同じなのに{d:79|・・・}{wait}{d:11|ワシ}は、なんとおろかなの\n{d:60|じゃ}ろう。{end}",
-  "en": ""
+  "en": "{col:01}Village Chief{spd:01}\nYou're hurting just as much as we are...{wait}What a foolish old man I am.{end}"
  },
  {
   "id": "0014",
   "jp": "{col:01}村長{spd:01}\n君達にはもうしわけ{d:6C|ない}が\n{d:76|この}村から出て行って{wait}おくれ{d:79|・・・}{wait}もう{d:78|こんな}嫌な思いは\n誰にもさせたく{d:6C|ない}{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "{col:01}Village Chief{spd:01}\nI'm sorry to ask this of you, but I must\nask you to leave{wait}this village...{wait}I never want anyone to go through\nsomething this awful again.{end}"
  },
  {
   "id": "0015",
   "jp": "{col:01}村長{spd:01}\n強くてたよりになる\n{d:01|ボーガン}さんが、村に\nい{d:0C|てくれ}とるおかげで、{wait}{d:11|ワシ}らは安心しとる{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Village Chief{spd:01}\nWith someone as strong and dependable as\nBogan-san here in the village,{wait}we all feel safe.{end}"
  },
  {
   "id": "0016",
   "jp": "{col:01}ロア{spd:01}\n私達はいつ{d:64|でも}\nあんた達を信じてる{d:6D|よ。}{wait}今日はもうお休み{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Roa{spd:01}\nWe'll always believe in you two.{wait}Now get some rest for today...{end}"
  },
  {
   "id": "0017",
   "jp": "{col:01}ロア\nいつ{d:64|でも}たずねておいで。{end}",
-  "en": ""
+  "en": "{col:01}Roa\nCome visit anytime.{end}"
  },
  {
   "id": "0018",
   "jp": "{col:01}サラ\n何か悲{d:71|しい}事があ{d:7B|った}ら\nいつ{d:64|でも}会いに来てね。{end}",
-  "en": ""
+  "en": "{col:01}Sara\nIf anything sad ever happens, come see\nme anytime.{end}"
  },
  {
   "id": "0019",
   "jp": "{col:01}サラ\n無事に帰ってきてね{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Sara\nPlease come back safe...{end}"
  },
  {
   "id": "001A",
   "jp": "{col:01}サラ\n{name}{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Sara\n{name}...{end}"
  },
  {
   "id": "001B",
   "jp": "{col:01}サラ\nいつ{d:64|でも}遊びに来てね。{end}",
-  "en": ""
+  "en": "{col:01}Sara\nCome over and play anytime.{end}"
  },
  {
   "id": "001C",
   "jp": "{col:01}サラ\nあっ、\n{name}{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Sara\nOh, {name}...{end}"
  },
  {
   "id": "001D",
   "jp": "{col:01}サラ\n{name:01}{d:1B|！！}\nいらっしゃい。{end}",
-  "en": ""
+  "en": "{col:01}Sara\n{name:01}!! Welcome.{end}"
  },
  {
   "id": "001E",
   "jp": "{d:76|この}前はすまなか{d:7B|った}な。{end}",
-  "en": ""
+  "en": "Sorry about the other day.{end}"
  },
  {
   "id": "001F",
   "jp": "{d:79|・・・}{d:75|ここ}には、{d:0B|おまえ達}に\n売る物など一つも{d:6C|ない}。{end}",
-  "en": ""
+  "en": "...I've got nothing to sell to the likes of\nyou.{end}"
  },
  {
   "id": "0020",
   "jp": "いらっしゃい。\n何か{d:4F|いる}物{d:64|でも}{d:61|ある}かい？{end}",
-  "en": ""
+  "en": "Welcome. Need anything?{end}"
  },
  {
   "id": "0021",
   "jp": "{col:01}{d:01|ボーガン}{f4}{f4:64}{fa:81}\n{d:00|ルシア}に話しかけたか？{end}",
-  "en": ""
+  "en": "{col:01}Bogan{f4}{f4:64}{fa:81}\nHave you talked to Lucia?{end}"
  },
  {
   "id": "0022",
   "jp": "{col:01}{d:01|ボーガン}{f4}{f4:64}{fa:81}\nあの子は{col:01}ガケ{col}に、\n{d:56|いた}はずだが？{end}",
-  "en": ""
+  "en": "{col:01}Bogan{f4}{f4:64}{fa:81}\nShe should be out at the {col:01}cliff{col}, shouldn't\nshe?{end}"
  },
  {
   "id": "0023",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:5F}{fa:C1}\n{name}、\n{name:01}なら{wait}裏の{col:01}ガケ{col}に行{d:7B|った}{d:0F|らしい}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Lucia{f4}{f4:5F}{fa:C1}\n{name}, if you're looking for\n{name:01},{wait}sounds like she went to the {col:01}cliff{col} out back.{end}"
  },
  {
   "id": "0024",
   "jp": "{col:01}{d:01|ボーガン}{f4}{f4:64}{fa:81}\n気を付けて行ってこい。{end}",
-  "en": ""
+  "en": "{col:01}Bogan{f4}{f4:64}{fa:81}\nTake care out there.{end}"
  },
  {
   "id": "0025",
   "jp": "{col:01}{name:03}{spd:01}{f4}{f4:53}{fa:C1}\n気を付けてな。{wait}帰ってきたら、俺が旅の\n途中でおそわ{d:7B|った}、{wait}うまい物{d:64|でも}\nつくってやるぞ。{wait}ああ、それから{d:52|これ}だけは\nおぼえておく{d:66|んだ。}{wait}俺達の使う武器は、\n徐々に壊れていく。{wait}壊れてなくなる前に武器屋で\n修理{d:51|する}か、または{wait}たくさんの武器を買い込んで\n行くとか、{d:51|する}と{d:72|いい。}{wait}まあ、{d:76|この}世には、\n壊{d:6B|れない}すごい武器も\nたくさん{d:61|ある}がな。{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{spd:01}{f4}{f4:53}{fa:C1}\nTake care.{wait}When you get back, I'll whip you up\nsomething tasty{wait}I picked up on my travels.{wait}Oh, and here's one thing you'd better\nremember.{wait}The weapons we use wear out bit by bit.{wait}Before they break and are gone for good,\nget them repaired at a weapon shop, or{wait}stock up on plenty of weapons before you\nhead out, something like that.{wait}Mind you, this world's got plenty of\namazing weapons that never break.{end}"
  },
  {
   "id": "0026",
   "jp": "{col:01}★{col}の振り分けを\n状況におうじて行う{d:67|のだ。}{wait}たとえば、足がおそい、\nジャンプ力がたり{d:6C|ない}と\n感じた時は、素早さに\n{col:01}★{col}を振り分ける事で、{wait}その能力が上がる{d:66|んだ。}{end}",
-  "en": ""
+  "en": "{col:01}Stars{col}: allot them to\nsuit the situation.{wait}For example, if you feel you're too slow or\ncan't jump high enough, allot {col:01}stars{col} to\nSpeed,{wait}and that ability will go up.{end}"
  },
  {
   "id": "0027",
   "jp": "何かこま{d:7B|った}事があれば\nお城の{col:01}きゅうてい魔術師{col}に\n聞くと{d:73|いい}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "If you're ever in trouble, try asking the\n{col:01}court magician{col} at the castle.{end}"
  },
  {
   "id": "0028",
   "jp": "{d:2E|ロンディウム}{d:8D|王国}は\n{d:76|この}大陸一番の軍事力を\n持つ大国だ。{wait}{d:52|これ}も昔おられた、\n{d:01|ボーガン}隊長のお力に{wait}よるも{d:67|のだ。}{end}",
-  "en": ""
+  "en": "The Kingdom of Rondium has the strongest\narmy on this continent.{wait}And that's thanks to Captain Bogan,{wait}who served here long ago.{end}"
  },
  {
   "id": "0029",
   "jp": "はぁー、いそが{d:71|しい}。\n{d:76|この}城は広いから、\nおそうじが大変だわ。{end}",
-  "en": ""
+  "en": "Phew, so busy! This castle is so big, the\ncleaning never ends.{end}"
  },
  {
   "id": "002A",
   "jp": "あっ、{d:8E|あなた}は！\nおひさしぶり{d:5C|です}。{end}",
-  "en": ""
+  "en": "Oh, it's you! It's been so long.{end}"
  },
  {
   "id": "002B",
   "jp": "こんにちは。{end}",
-  "en": ""
+  "en": "Hello.{end}"
  },
  {
   "id": "002C",
   "jp": "みょうなカッコのおじいさん\nがいなくなっちゃ{d:7B|った}。{end}",
-  "en": ""
+  "en": "That old man in the funny getup isn't\naround anymore.{end}"
  },
  {
   "id": "002D",
   "jp": "やっと{d:32|ステルム}との\n連絡がつ{d:56|いた}{d:0F|らしい}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Seems we've finally gotten word from\nStelm.{end}"
  },
  {
   "id": "002E",
   "jp": "{d:75|ここ}数日、{d:32|ステルム}公国との\n連絡がと{d:6B|れない}{d:0F|らしい}{d:66|んだ。}{wait}謎の軍隊に制あつされた\n{d:09|という}噂も{d:61|ある}が{d:79|・・・}{end}",
-  "en": ""
+  "en": "We haven't heard a thing from Stelm Duchy\nfor several days.{wait}There's talk that a mysterious army has\ntaken it over...{end}"
  },
  {
   "id": "002F",
   "jp": "{d:76|この}先の{col:01}ワイアル{col}から\n{col:01}{d:32|ステルム}公国{col}へ行け{d:6E|るわ。}{end}",
-  "en": ""
+  "en": "From {col:01}Wyall{col} up ahead, you can get to {col:01}Stelm\nDuchy{col}.{end}"
  },
  {
   "id": "0030",
   "jp": "わーい、わーい。{end}",
-  "en": ""
+  "en": "Yay, yay!{end}"
  },
  {
   "id": "0031",
   "jp": "おねえちゃん！\n{d:21|いっしょ}に遊んで{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Big sis! Come play with us!{end}"
  },
  {
   "id": "0032",
   "jp": "{d:27|お兄ちゃん}格好{d:73|いい}なぁ。{end}",
-  "en": ""
+  "en": "Wow, mister, you look so cool!{end}"
  },
  {
   "id": "0033",
   "jp": "お前は何者だ！{end}",
-  "en": ""
+  "en": "Who are you!?{end}"
  },
  {
   "id": "0034",
   "jp": "{d:44|ここは}通さん！{end}",
-  "en": ""
+  "en": "You're not getting through here!{end}"
  },
  {
   "id": "0035",
   "jp": "お通り{d:47|下さい。}{end}",
-  "en": ""
+  "en": "You may pass.{end}"
  },
  {
   "id": "0036",
   "jp": "最近、めっきり客が減って\n商売あが{d:7B|った}りだぜ。{end}",
-  "en": ""
+  "en": "Business has really dried up lately. I'm\ngoing broke here.{end}"
  },
  {
   "id": "0037",
   "jp": "各地でだいかつやく{d:7F|して}る\n二人組の話をよく聞くぜ。{end}",
-  "en": ""
+  "en": "I keep hearing stories about a pair doing\ngreat deeds all over the place.{end}"
  },
  {
   "id": "0038",
   "jp": "最近は、悪い噂を\nよく、みみに{d:51|する}{d:6D|よ。}\n気を付け{d:6C|ない}とね。{end}",
-  "en": ""
+  "en": "I've been hearing a lot of bad news lately.\nBetter be careful.{end}"
  },
  {
   "id": "0039",
   "jp": "{col:01}ラッシュ{spd:01}\nおっ、その剣は！{wait}{d:74|おまえ}ら、\nただもん{d:60|じゃ}ねえな。{wait}俺の名前は、\nラッシュ・アイアンファング\nしが{d:6C|ない}ぼうけん者さ。{wait}よろしくな。{wait}{d:53|そうだ}、せんぱいと{d:7F|して}\n一つアドバイスを{wait}{d:7F|して}やろう。{wait}{d:0B|おまえ達}の能力で{d:61|ある}{col:01}★{col}は、{wait}その時々におうじて\n振り分ける事で、{wait}{d:8C|本当}の意味を持つのさ。{wait}うまく使えば、ぼうけんも\nヘッチャラだ！{end}",
-  "en": ""
+  "en": "{col:01}Rush{spd:01}\nWhoa, that sword!{wait}You guys are no ordinary folks.{wait}The name's Rush Ironfang. Just a humble\nadventurer.{wait}Nice to meet ya.{wait}Tell you what, as your senior, I'll give you{wait}a piece of advice.{wait}Your abilities, your {col:01}stars{col},{wait}when you allot them to suit the moment,{wait}that's when they really mean something.\nUse them well, and adventuring will be a\nbreeze!{end}"
  },
  {
   "id": "003A",
   "jp": "いらっしゃい！\nゆっくり{d:7F|して}いってね。{end}",
-  "en": ""
+  "en": "Welcome! Make yourselves at home.{end}"
  },
  {
   "id": "003B",
   "jp": "いつも{d:24|ありがとう}。{end}",
-  "en": ""
+  "en": "Thanks as always.{end}"
  },
  {
   "id": "003C",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\nそれは{d:79|・・・}\nも{d:0D|しかし}て「{item:1B}」{d:1B|！！}{wait}私にその花をゆずって\nもらえ{d:4B|ません}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2いやだ{choice:00:003E:006D}",
-  "en": ""
+  "en": "{col:01}Meiya{spd:01}\nThat... could it be the\n\"{item:1B}\"!?{wait}Would you please let me have that flower?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No way.{choice:00:003E:006D}"
  },
  {
   "id": "003D",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\n私にその花をゆずって\nもらえ{d:4B|ません}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2いやだ{choice:00:003E:006D}",
-  "en": ""
+  "en": "{col:01}Meiya{spd:01}\nWould you please let me have that flower?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No way.{choice:00:003E:006D}"
  },
  {
   "id": "003E",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\nえっ、{d:8C|本当}に{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Meiya{spd:01}\nHuh? Really...?{end}"
  },
  {
   "id": "003F",
   "jp": "{col:01}エディア\nまたよってね。{end}",
-  "en": ""
+  "en": "{col:01}Edia\nCome again!{end}"
  },
  {
   "id": "0040",
   "jp": "{fe:10}{col:01}エディア{spd:01}\n{d:79|・・・}うそをついていて\nごめん{d:45|なさい}。{wait}あの人は{d:28|お父さん}{d:60|じゃ}\n{d:6C|ない}の。{wait}{d:28|お父さん}がいなく{d:69|なって}{wait}とてもさびしか{d:7B|った}\nから{d:79|・・・}{d:79|・・・}{wait}{d:8C|本当}にごめん{d:45|なさい}。{wait}そういえば、{d:52|これ}っ！{wait}以前仲よく{d:7F|して}もらって{d:56|いた}\n{col:01}「{name:02}」{col}って\n人からもら{d:7B|った}物だけど、{wait}何かの役に立つかも。{wait}持って行って。{wait}なく{d:69|なって}しまって、\nまた必要にな{d:7B|った}ら{wait}家に取りにきて。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Edia{spd:01}\n...I'm sorry I lied to you.{wait}That man isn't our dad.{wait}After Dad was gone,{wait}we were so lonely......{wait}I'm really, really sorry.{wait}Oh, that's right, this!{wait}Someone called {col:01}\"{name:02}\"{col}, who used to\nbe good friends with us, gave it to me.{wait}It might be useful to you somehow.{wait}Take it with you.{wait}If you lose it and need it again,{wait}come get it from our house.{end}"
  },
  {
   "id": "0041",
   "jp": "{col:01}エディア\nつい、{d:28|お父さん}が\n生きかえ{d:7B|った}ん{d:60|じゃ}\n{d:6C|ない}かって{d:79|・・・}{fd}{fe:10}{goto:00:0040}",
-  "en": ""
+  "en": "{col:01}Edia\nI just thought... maybe Dad had come back\nto life...{fd}{fe:10}{goto:00:0040}"
  },
  {
   "id": "0042",
   "jp": "{col:01}エディア\n旅に出て{d:56|いた}\n{d:28|お父さん}が、帰って来たの。{end}",
-  "en": ""
+  "en": "{col:01}Edia\nOur dad was away traveling, and now he's\ncome home!{end}"
  },
  {
   "id": "0043",
   "jp": "{col:01}ロイ\nゆっくり{d:7F|して}いってね。{end}",
-  "en": ""
+  "en": "{col:01}Roy\nMake yourself at home.{end}"
  },
  {
   "id": "0044",
   "jp": "{col:01}ロイ\n{d:28|お父さん}\n今度いつ帰ってくるのかな。{end}",
-  "en": ""
+  "en": "{col:01}Roy\nI wonder when Dad will come home next.{end}"
  },
  {
   "id": "0045",
   "jp": "{col:01}ロイ\n{d:28|お父さん}は、ワイアルの方に\n行{d:7B|った}んだ{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Roy\nDad went off toward Wyall.{end}"
  },
  {
   "id": "0046",
   "jp": "{col:01}ロイ\n{d:28|お父さん}が帰って来た{d:66|んだ。}{end}",
-  "en": ""
+  "en": "{col:01}Roy\nDad came home!{end}"
  },
  {
   "id": "0047",
   "jp": "{col:01}エディア\n{d:52|これ}、どうぞ。{end}",
-  "en": ""
+  "en": "{col:01}Edia\nHere, take this.{end}"
  },
  {
   "id": "0048",
   "jp": "{col:01}{d:80|シーザー王}{spd:01}\n{d:11|ワシ}は{d:2E|ロンディウム}{d:8D|王国}の\n国王シーザーだ。\n話は{d:81|ガルザック}から聞{d:56|いた}。{wait}よく来{d:0C|てくれ}た\n{d:01|ボーガン}の子ら{d:6D|よ。}{wait}ゆっくりと{d:7F|して}いくが{d:72|いい。}{wait}何かわから{d:6C|ない}事があれば、\n城内の者に聞くと{d:72|いい。}{end}",
-  "en": ""
+  "en": "{col:01}King Caesar{spd:01}\nI am Caesar, King of Rondium. Garzack has\ntold me everything.{wait}Welcome, children of Bogan.{wait}Make yourselves at home.{wait}If there's anything you don't understand,\nask anyone in the castle.{end}"
  },
  {
   "id": "0049",
   "jp": "{col:01}{d:80|シーザー王}{spd:01}\nその{d:26|おぬし}の持つ剣は、\n聖剣{col:01}「{item:30}」{col}と呼ばれ\n後ろのかべの「聖盾」に{wait}かけて{d:61|ある}二本の聖剣と\nともに、わが国にふるくから{wait}伝わる、三聖剣の内の\n一本で{d:25|あるの}だ。{wait}{d:01|ボーガン}にはわが国の{wait}騎士団長と{d:7F|して}、よく仕えて\nもらって、感謝{d:7F|して}{d:56|いた}。{wait}聖剣をおくるぐらいでは\nそのおんにむく{d:4F|いる}事は{wait}{d:89|出来な}いと思{d:7B|った}が{wait}剣をおくる事が、\n{d:11|ワシ}に出来るせ{d:73|いい}っぱいの\n感謝のあかしだ{d:7B|った}{d:67|のだ。}{end}",
-  "en": ""
+  "en": "{col:01}King Caesar{spd:01}\nThat sword of yours is called the holy\nsword {col:01}\"{item:30}\"{col}.{wait}Together with the two holy swords\nhanging on the \"Holy Shield\" on the wall\nbehind me,{wait}it is one of the Three Holy Swords handed\ndown in our kingdom since ancient times.{wait}Bogan served our kingdom{wait}well as Captain of the Knights, and I was\ngrateful to him.{wait}I knew a holy sword alone could never\nrepay{wait}all I owed him,{wait}but that sword was the greatest token of\nthanks I had to give.{end}"
  },
  {
   "id": "004A",
   "jp": "{col:01}{d:81|ガルザック}\n貴殿の持つその剣は、\nすば{d:0F|らしい}力を持って{d:4F|いる}。\n大切にされるがよい。{end}",
-  "en": ""
+  "en": "{col:01}Garzack\nThat sword of yours possesses\nremarkable power. Do take good care of it.{end}"
  },
  {
   "id": "004B",
   "jp": "{col:01}{d:81|ガルザック}{spd:01}\nみょうな格好を{d:62|した}\nおじいさん{d:79|・・・}？{fd:12}\nああ、それなら\n{col:01}「{name:02}」{col}と\nいう人{d:5C|です}。{wait}わが国には{col:01}13、4年前{col}に\n一度、たずねて来られた事が\nあり{d:59|ます。}{wait}その時{d:01|ボーガン}隊長が、\n騎士団をおやめに{wait}{d:69|なって}しまわれたので\nよくおぼえてい{d:59|ます。}{wait}{name:02}さんは、\n何年か前に一度、{d:76|この}国に\nもどって来られて、くら{d:7F|して}\nおられたよう{d:5C|です}が{d:79|・・・}{wait}今は{col:01}{d:32|ステルム}公国{col}に移られた\nと聞いてい{d:59|ます。}{end}",
-  "en": ""
+  "en": "{col:01}Garzack{spd:01}\nAn oddly dressed old man...?{fd:12}\nAh, then that would be a man called\n{col:01}\"{name:02}\"{col}.{wait}He visited our kingdom once, {col:01}13 or 14\nyears ago{col}.{wait}That was when Captain Bogan{wait}left the Knights, so I remember it well.{wait}{name:02}-san came back to this kingdom\nonce some years ago and seemed to be\nliving here, but...{wait}I hear he has since moved to {col:01}Stelm Duchy{col}.{end}"
  },
  {
   "id": "004C",
   "jp": "{col:01}{d:80|シーザー王}{spd:01}\n{d:11|ワシ}がもう少しわかければ、\nお前達と{d:21|いっしょ}に戦いに{wait}行く{d:5D|のじゃ}がなぁ。\nがはははは！{end}",
-  "en": ""
+  "en": "{col:01}King Caesar{spd:01}\nIf only I were a bit younger,{wait}I'd be off fighting right alongside you!\nGahahahaha!{end}"
  },
  {
   "id": "004D",
   "jp": "{col:01}{d:81|ガルザック}{spd:01}\n扉を開く方法は、\n鍵ばかりとはかぎら{d:6C|ない}{wait}と、昔{d:01|ボーガン}隊長から\nおしえてもら{d:7B|った}事が\nあり{d:59|ます。}{end}",
-  "en": ""
+  "en": "{col:01}Garzack{spd:01}\nA key is not the only way to open a door.{wait}Or so Captain Bogan taught me, long ago.{end}"
  },
  {
   "id": "004E",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n私は、{d:76|この}城のきゅうてい\n魔術師{d:82|メファウス}。{wait}知りたい事が{d:61|ある}なら\nえんりょなく聞くが{d:72|いい。}{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nI am Mephaus, court magician of this\ncastle.{wait}If there is anything you wish to know, feel\nfree to ask.{end}"
  },
  {
   "id": "004F",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n私はあた{d:0F|らしい}魔法の\nけんきゅうを{wait}{d:4D|している}のだ{d:6D|よ。}{wait}おかしな格好を{d:62|した}{wait}「ガラクタ」を造って{d:4F|いる}\nようなじいさんとは違う！{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nI am conducting research{wait}into new magic, you see.{wait}I'm nothing like that oddly dressed{wait}old man who builds \"junk\"!{end}"
  },
  {
   "id": "0050",
   "jp": "{col:01}{d:82|メファウス}\nあた{d:0F|らしい}魔法の調子は\nどうかな？{end}",
-  "en": ""
+  "en": "{col:01}Mephaus\nHow is the new magic working out?{end}"
  },
  {
   "id": "0051",
   "jp": "なぜ君達みたいな者が\n城内をうろついて{d:4E|いるの}だ？{end}",
-  "en": ""
+  "en": "Why are people like you wandering about\nthe castle?{end}"
  },
  {
   "id": "0052",
   "jp": "そう言えば、最近、大陸の\nあちらこちらが、謎の軍隊に{wait}よって、制あつされて{d:4F|いる}\n{d:0F|らしい}。{wait}わが国は、我々が{d:4F|いる}から{wait}{d:40|だいじょうぶ}{d:5C|です}がね。{end}",
-  "en": ""
+  "en": "Come to think of it, they say a mysterious\narmy{wait}has been seizing places all over the\ncontinent lately.{wait}Our kingdom has us, though,{wait}so we'll be fine.{end}"
  },
  {
   "id": "0053",
   "jp": "はっ、私に御用で{d:5A|しょう}か？{end}",
-  "en": ""
+  "en": "Sir! Is there something you need?{end}"
  },
  {
   "id": "0054",
   "jp": "城下で、おかしな格好を{d:62|した}\nおじいさんをよく見たのだが\n最近見{d:6C|ない}なぁ。{wait}{col:01}隊長{col}がくわ{d:71|しい}事を\n知って{d:56|いた}ようだが{d:79|・・・}{end}",
-  "en": ""
+  "en": "I used to see an oddly dressed old man\naround town a lot, but not lately.{wait}The {col:01}Captain{col} seemed to know more about\nit...{end}"
  },
  {
   "id": "0055",
   "jp": "料理を作るのが\n私の生きがい{d:50|なんだ}。{end}",
-  "en": ""
+  "en": "Cooking is what I live for.{end}"
  },
  {
   "id": "0056",
   "jp": "エディアとロイ{d:09|という}\n姉と弟が{d:76|この}城下に{d:4F|いる}が、\n彼女達の父親は、料理の腕が\n一流だ{d:7B|った}{d:6D|よ。}{wait}{d:79|・・・}{d:64|でも}、少し前に\nなく{d:69|なって}{d:42|しまった}{d:66|んだ。}{end}",
-  "en": ""
+  "en": "There's a sister and brother here in town,\nEdia and Roy. Their father was a\nfirst-rate cook.{wait}...But he passed away a while back.{end}"
  },
  {
   "id": "0057",
   "jp": "{d:32|ステルム}公国へむかう\n{d:87|トンネル}が、数日前の\n大あめで、入口が崩れて\n通れなく{d:69|なって}{d:4E|いるの}{d:6D|よ。}{wait}{d:32|ステルム}から道具が\nとどかなくて苦{d:71|しい}んだけど{wait}あんた達になら\n売ってあげるわ{d:79|・・・}{end}",
-  "en": ""
+  "en": "The tunnel to Stelm Duchy caved in at the\nentrance in the heavy rain a few days ago,\nso nobody can get through.{wait}No goods are coming in from Stelm, so\ntimes are hard, but{wait}for you folks, I'll make a sale...{end}"
  },
  {
   "id": "0058",
   "jp": "{d:76|この}先を少し南に行{d:7B|った}所に\n{d:61|ある}{d:87|トンネル}をぬけた先に\n{d:30|マリア}の村が\n{d:25|あるの}{d:60|じゃ}が{d:79|・・・}{end}",
-  "en": ""
+  "en": "If you go a little south of here and\nthrough the tunnel, you'll come to Maria\nVillage, but...{end}"
  },
  {
   "id": "0059",
   "jp": "{d:83|ヴェルダーの大森林}には、\n獣人村が{d:61|ある}{d:09|という}噂{d:6D|よ。}\nそこには、腕の{d:73|いい}占い師の\nおばあさんが{d:4F|いる}んだって。{wait}さが{d:7F|して}る人や、さがし物が\n{d:61|ある}んだ{d:7B|った}ら\n獣人村をさが{d:7F|して}みたら。{end}",
-  "en": ""
+  "en": "They say there's a Beastfolk Village in the\nGreat Velder Forest, with an old lady there\nwho's a really good fortune-teller.{wait}If you're looking for someone or something,\nwhy not go find the Beastfolk Village?{end}"
  },
  {
   "id": "005A",
   "jp": "獣人村の西には不思議な\n{col:01}{d:1A|遺跡}{col}が{d:61|ある}{d:09|という}噂だ。{end}",
-  "en": ""
+  "en": "They say there are strange {col:01}ruins{col} west of\nthe Beastfolk Village.{end}"
  },
  {
   "id": "005B",
   "jp": "{d:87|トンネル}洞窟は、最近\nあちらこちらが崩れ出し\n{d:84|クリーチャー}が出て来て{d:4F|いる}\n{d:09|という}噂も{d:61|ある}ぞ。{wait}そのせいで、{d:76|この}村には\nめっきり旅人が、\nこなくな{d:7B|った}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "They say parts of the Tunnel Cave have\nstarted caving in lately, and creatures\nhave been coming out.{wait}Because of that, travelers hardly ever\ncome to this village anymore.{end}"
  },
  {
   "id": "005C",
   "jp": "{d:87|トンネル}のどしゃ崩れを\nはいじょ{d:51|する}には、\n{col:01}「{item:0E}」{col}があれば\nすぐ{d:65|だろう}に{d:79|・・・}{wait}だけど、{d:8C|本当}はみな、\n洞窟の中のかい物が{wait}恐ろ{d:71|しい}ん{d:60|じゃ}{d:79|・・・}{end}",
-  "en": ""
+  "en": "Clearing the rockslide out of the tunnel\nwould be quick work with\n{col:01}\"{item:0E}\"{col}...{wait}But truth is, everyone's just scared{wait}of the monster inside the cave...{end}"
  },
  {
   "id": "005D",
   "jp": "どしゃ崩れが、\nはいじょされた{d:53|そうだ}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "I hear the rockslide has been cleared.{end}"
  },
  {
   "id": "005E",
   "jp": "あら、かわ{d:73|いい}ぼうやね。{end}",
-  "en": ""
+  "en": "My, what a cute little boy.{end}"
  },
  {
   "id": "005F",
   "jp": "{d:79|・・・}フン！{end}",
-  "en": ""
+  "en": "...Hmph!{end}"
  },
  {
   "id": "0060",
   "jp": "{d:76|この}村の南西に広がる森は、\n{col:01}「{d:83|ヴェルダーの大森林}」{col}と、\n呼ばれて{d:4E|いるの}{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "The forest that spreads southwest of\nthis village is called {col:01}\"the Great Velder\nForest.\"{col}{end}"
  },
  {
   "id": "0061",
   "jp": "大森林の奥には、獣人達が\nすむ獣人村が{d:61|ある}{d:09|という}。{wait}ただ、普通の{d:19|人間}だけ{d:5E|じゃあ}\n入る事は{d:89|出来な}い{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "They say that deep in the great forest is\nthe Beastfolk Village, where the beastfolk\nlive.{wait}But ordinary humans can't get in.{end}"
  },
  {
   "id": "0062",
   "jp": "やっと{d:87|トンネル}が\n通れるようにな{d:7B|った}\nらしくて、商売が\nまた始められ{d:6E|るわ。}{end}",
-  "en": ""
+  "en": "Seems the tunnel's finally open again, so I\ncan get back to business.{end}"
  },
  {
   "id": "0063",
   "jp": "どうも2、3日前に\n{d:32|ステルム}が黒い兵士達に\n攻めこまれた{d:0F|らしい}{d:0E|のじゃ。}{wait}生き残{d:7B|った}人が何人か\n{d:76|この}村に逃げこんできた{wait}が{d:79|・・・}{d:44|ここは}{d:40|だいじょうぶ}\nなん{d:60|じゃ}ろうか？{end}",
-  "en": ""
+  "en": "It seems Stelm was attacked by black\nsoldiers two or three days ago.{wait}A few survivors fled to this village,{wait}but... will we be all right here?{end}"
  },
  {
   "id": "0064",
   "jp": "{d:32|ステルム}は、解放された\nみたい{d:60|じゃ}のう。{end}",
-  "en": ""
+  "en": "Looks like Stelm has been liberated.{end}"
  },
  {
   "id": "0065",
   "jp": "宿屋の二かいに、\nえらい大人の人が{wait}{d:4F|いる}んだって。{wait}知ってる？{wait}そういえば僕{d:76|この}前、\n獣人さんを見た{d:6D|よ。}{wait}格好{d:57|よかった}なぁ。{end}",
-  "en": ""
+  "en": "They say some really important grown-up{wait}is staying on the inn's second floor.{wait}Did you know?{wait}Oh yeah, the other day I saw one of the\nbeastfolk!{wait}He looked so cool!{end}"
  },
  {
   "id": "0066",
   "jp": "{d:29|突然}、{d:70|黒ずくめ}の格好を{d:62|した}\n兵達が攻撃{d:7F|して}きて、\n占領されて{d:42|しまった}{d:66|んだ。}{wait}何人かは、逃げ出せたと\n思うが{d:79|・・・}{end}",
-  "en": ""
+  "en": "All of a sudden, soldiers dressed all in black\nattacked, and the place was occupied.{wait}I think a few people managed to escape,\nbut...{end}"
  },
  {
   "id": "0067",
   "jp": "そう言えば、変な格好を{d:62|した}\n老人が、つかまって{d:56|いた}わ。{end}",
-  "en": ""
+  "en": "Come to think of it, an oddly dressed old\nman was taken prisoner.{end}"
  },
  {
   "id": "0068",
   "jp": "彼等は、{d:35|ライドロイド}{d:1F|帝国}軍\nと名のってい{d:4C|ました。}{end}",
-  "en": ""
+  "en": "They called themselves the Raidroid\nImperial Army.{end}"
  },
  {
   "id": "0069",
   "jp": "そう言えば、変な格好を{d:62|した}\n老人が、つかまって{d:56|いた}わ。{wait}そうそう、{d:8E|あなた}の様な。{end}",
-  "en": ""
+  "en": "Come to think of it, an oddly dressed old\nman was taken prisoner.{wait}Yes, yes, one just like you.{end}"
  },
  {
   "id": "006A",
   "jp": "{d:79|・・・}オレは見た！{wait}洞窟の奥ふかく、\n体を伸ば{d:7F|して}襲ってくる{wait}あいつを{d:1B|！！}{wait}あんな所に二度と行く\nものか、ブルブル{d:79|・・・}！{end}",
-  "en": ""
+  "en": "...I saw it!{wait}Deep, deep in the cave, stretching its body\nout to attack...{wait}that thing!!{wait}You'll never get me back in there again,\nbrrr...!{end}"
  },
  {
   "id": "006B",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\n{d:8F|おねがい}し{d:59|ます。}{wait}どうか私の話を{d:79|・・・}\nねがいを聞いて{d:47|下さい。}{wait}実は、私の父が不治の\nやまいにかかって\nしまって{d:79|・・・}{wait}その父のやまいを治す事が\n出来るのが、南西に広がる{wait}{d:83|ヴェルダーの大森林}の奥に\nさいて{d:4F|いる}{col:01}「{item:1B}」{col}{d:09|という}\n花だけなの。{wait}だけどその場所には\n{d:84|クリーチャー}が多くいて\n私では取りに行け{d:6C|ない}の。{wait}{d:8F|おねがい}{d:5C|です}、私のかわりに\n{col:01}「{item:1B}」{col}を取りに行って\nもらえ{d:4B|ません}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2いやだ{choice:00:006C:006D}",
-  "en": ""
+  "en": "{col:01}Meiya{spd:01}\nPlease.{wait}Please, hear my story... my wish.{wait}You see, my father has fallen ill with an\nincurable disease...{wait}The only thing that can cure him{wait}is a flower called {col:01}\"{item:1B}\"{col},\nwhich blooms deep in the Great Velder\nForest to the southwest.{wait}But that place is full of creatures, and I\ncan't go get it myself.{wait}Please, would you go and get the\n{col:01}\"{item:1B}\"{col} for me?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No way.{choice:00:006C:006D}"
  },
  {
   "id": "006C",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\n{d:24|ありがとう}！{wait}「{item:1B}」は、赤い小さな\n花で、森の奥の水辺に{wait}ひっそりとさいてい{d:59|ます。}{wait}{d:8F|おねがい}します、\n私は、{d:75|ここ}で、{wait}ご無事をいのってい{d:59|ます。}{end}",
-  "en": ""
+  "en": "{col:01}Meiya{spd:01}\nThank you!{wait}The \"{item:1B}\" is a small red\nflower. It blooms quietly{wait}by the water, deep in the forest.{wait}Please... I'll be right here,{wait}praying for your safe return.{end}"
  },
  {
   "id": "006D",
   "jp": "{col:01}{d:86|メイヤ}\nそう{d:5C|です}よね{d:79|・・・}{wait}ごめん{d:45|なさい}。{end}",
-  "en": ""
+  "en": "{col:01}Meiya\nOf course...{wait}I'm sorry.{end}"
  },
  {
   "id": "006E",
   "jp": "{col:01}{d:86|メイヤ}\n{d:8F|おねがい}し{d:59|ます。}\n私のかわりに{col:01}「{item:1B}」{col}を\n取って来てもらえ{d:4B|ません}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2いやだ{choice:00:006C:006D}",
-  "en": ""
+  "en": "{col:01}Meiya\nPlease. Would you go and get the\n{col:01}\"{item:1B}\"{col} for me?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No way.{choice:00:006C:006D}"
  },
  {
   "id": "006F",
   "jp": "ごめんね。{wait}まだ出来て{d:6C|ない}の{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Sorry.{wait}It's not ready yet.{end}"
  },
  {
   "id": "0070",
   "jp": "あずかっとくわね。\n「{item:13}」を調合{d:51|する}には\nすごく時間がかかるの。{wait}悪いけど、明日に{d:64|でも}\n取りにきてね。{end}",
-  "en": ""
+  "en": "I'll hang on to this. Compounding the\n\"{item:13}\" takes a really long\ntime.{wait}Sorry, but come back for it tomorrow or\nso.{end}"
  },
  {
   "id": "0071",
   "jp": "村の西に{d:61|ある}{d:1A|遺跡}では\n昔から不思議な事が\n起こるので、{wait}村の守り神みたいな物だと\n思われてい{d:59|ます。}{end}",
-  "en": ""
+  "en": "Strange things have happened at the ruins\nwest of the village since long ago,{wait}so people think of them as a sort of\nguardian of the village.{end}"
  },
  {
   "id": "0072",
   "jp": "昔、私達は{d:19|人間}と関わるのを\nさけてき{d:4C|ました。}{wait}だけど最近、わかい人達の\n間で考えをかえる人が{wait}ふえてきてい{d:59|ます。}{wait}そ{d:7F|して}私もその一人なの。{end}",
-  "en": ""
+  "en": "Long ago, we kept away from humans.{wait}But lately, more and more young people{wait}are changing their minds.{wait}And I'm one of them.{end}"
  },
  {
   "id": "0073",
   "jp": "村にすむ、\n{d:85|オギリン}おばあさんは、{wait}何{d:64|でも}占える\nすごい人なの{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Old Ogilin, who lives in the village,{wait}is an amazing woman who can tell any\nfortune.{end}"
  },
  {
   "id": "0074",
   "jp": "あっ！あれ！？{wait}{d:8E|あなた}は{d:19|人間}？{wait}それとも私達の{d:3F|仲間}？{end}",
-  "en": ""
+  "en": "Oh! Huh!?{wait}Are you a human?{wait}Or one of us?{end}"
  },
  {
   "id": "0075",
   "jp": "大地には我々獣人族が、{wait}海には人魚族がい{d:59|ます。}{end}",
-  "en": ""
+  "en": "On land, there are us beastfolk,{wait}and in the sea, the merfolk.{end}"
  },
  {
   "id": "0076",
   "jp": "あっ人魚族の方{d:5C|です}ね。{wait}{d:40|だいじょうぶ}{d:68|なんで}すか？\n{d:77|こんな所}に来て{d:79|・・・}{end}",
-  "en": ""
+  "en": "Oh, you're one of the merfolk!{wait}Are you all right? Coming to a place like\nthis...{end}"
  },
  {
   "id": "0077",
   "jp": "{d:8E|あなた}は{d:19|人間}族だけど、\n女の子{d:54|だから}話せ{d:6E|るわ。}{wait}メイアは{d:19|人間}族の男の子に\n興味が{d:25|あるの}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "You're a human, but you're a girl, so I can\ntell you.{wait}Meiya is interested in human boys.{end}"
  },
  {
   "id": "0078",
   "jp": "{col:01}ギルム{spd:01}\nすまんのう。{wait}今の{d:11|ワシ}に出来るのは\n{d:75|ここ}までのよう{d:5F|じゃ。}{wait}また来{d:0C|てくれ}。{end}",
-  "en": ""
+  "en": "{col:01}Gilm{spd:01}\nSorry about this.{wait}It seems this is as far as I can take it for\nnow.{wait}Come back again.{end}"
  },
  {
   "id": "0079",
   "jp": "{col:01}ギルム\nもうその剣は、\n最強のはず{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "{col:01}Gilm\nThat sword ought to be as strong as it\ngets now.{end}"
  },
  {
   "id": "007A",
   "jp": "{col:01}ギルム{spd:01}\n{d:11|ワシ}は武器を直{d:62|した}り、\n鍛えたり{d:4D|している}{d:0E|のじゃ。}{wait}{d:56|いた}んだ武器を、\n直{d:7F|して}やるぞ。{end}",
-  "en": ""
+  "en": "{col:01}Gilm{spd:01}\nI repair weapons and forge them.{wait}I'll fix up your damaged weapons for you.{end}"
  },
  {
   "id": "007B",
   "jp": "{col:01}{d:85|オギリン}{spd:01}\n何かこま{d:7B|った}事が\n{d:25|あるの}かい？{wait}さがし物、たずね人、\n自分の将来{d:79|・・・}\n何{d:64|でも}占ってあげる{d:6D|よ。}{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n  1父の行方\n  2敵の事\n  3自分の将来{choice:01:0081:0081:0081}",
-  "en": ""
+  "en": "{col:01}Ogilin{spd:01}\nIs something troubling you?{wait}Lost things, missing people, your own\nfuture... I'll read any fortune for you.{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n  1Where Dad is\n  2The enemy\n  3My future{choice:01:0081:0081:0081}"
  },
  {
   "id": "007C",
   "jp": "{col:01}{d:85|オギリン}{spd:01}\n{d:0B|おまえ達}にも、そ{d:7F|して}\n{d:0B|おまえ達}の父にも、かこくな\n運命が待っておる{d:60|じゃ}ろう。{wait}が、{fd:11}それにうちくだかれては\nならぬ。{wait}キーワードは、岬{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "{col:01}Ogilin{spd:01}\nA cruel fate awaits you, and your father\nas well.{wait}But{fd:11} you must not let it crush you.{wait}The key word is \"cape.\"{end}"
  },
  {
   "id": "007D",
   "jp": "{col:01}{d:85|オギリン}{spd:01}\n憎悪{d:5F|じゃ。}{wait}はげ{d:71|しい}憎悪を持{d:7B|った}男の\nそんざいを感じる{d:0E|のじゃ。}{wait}そ{d:7F|して}その後ろには{d:79|・・・}{wait}{col:01}「{d:17|ボルボーザ}」{col}{d:1B|！！}{wait}まがまが{d:71|しい}ふんいきを\n持{d:7B|った}、{d:76|この}言葉が{wait}うかんできた{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Ogilin{spd:01}\nHatred.{wait}I sense a man filled with fierce hatred.{wait}And behind him...{wait}{col:01}\"Bolboza\"{col}!!{wait}That word, with its sinister air,{wait}has come to me.{end}"
  },
  {
   "id": "007E",
   "jp": "{col:01}{d:85|オギリン}{spd:01}\n{d:74|おまえ}はやがて強大な\n敵に会い、恐ろ{d:71|しい}運命に\nまき込まれる{d:60|じゃ}ろう。{wait}{d:76|この}「ぶんけん」の内ようを\nおぼえておく{d:0E|のじゃ。}{wait}きっと{d:74|おまえ}の役に\n立つ{d:60|じゃ}ろう。{wait}「やがて、天にかぎりなく\n近く、まがまが{d:71|しい}部屋に{wait}あまたの勇者がたどりつく時\n大いなる{col:01}「きょうふ」{col}が{wait}勇者の前に\n立ちはだかる{d:65|だろう}。{wait}勇者が手にもちし、\n{col:01}あおき剣{col}は{col:01}「きょうふ」{col}を\nしばり、うち倒す。{wait}{d:0D|しかし}、しんなる\n{col:01}「きょうふ」{col}が{d:79|・・・}」{wait}そこから先は、\nよめぬがおぼえておくと\nよい{d:60|じゃ}ろう。{end}",
-  "en": ""
+  "en": "{col:01}Ogilin{spd:01}\nBefore long, you will meet a mighty foe and\nbe caught up in a terrible fate.{wait}Remember the words of this \"ancient\ntext.\"{wait}They will surely be of use to you.{wait}\"In time, when many heroes reach a\nsinister chamber{wait}that lies boundlessly close to the heavens,\na great {col:01}'Terror'{col} shall{wait}stand before the heroes.{wait}The {col:01}blue sword{col} in the hero's hand shall\nbind the {col:01}'Terror'{col} and strike it down.{wait}But the true {col:01}'Terror'{col}...\"{wait}Beyond that, I cannot read it, but you\nwould do well to remember it.{end}"
  },
  {
   "id": "007F",
   "jp": "{col:01}{d:85|オギリン}{spd:01}\n私にわかるのは、\n{d:75|ここ}まで{d:5F|じゃ。}{wait}後は、自ら道を\n切り開いて行く{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "{col:01}Ogilin{spd:01}\nThat is all I can see.{wait}From here on, you must carve out your\nown path.{end}"
  },
  {
   "id": "0080",
   "jp": "{col:01}{d:85|オギリン}\nすま{d:6C|ない}ねぇ。\n{d:75|ここ}んとこ、体の具合が\n悪くて占え{d:6C|ない}んだ{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Ogilin\nSorry, dear. I've been feeling poorly lately\nand can't read fortunes.{end}"
  },
  {
   "id": "0081",
   "jp": "{col:01}{d:85|オギリン}\nうーん{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Ogilin\nHmmm...{end}"
  },
  {
   "id": "0082",
   "jp": "{col:01}{d:85|オギリン}\nそれ以上は何も見え{d:6C|ない}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Ogilin\nI can't see anything beyond that.{end}"
  },
  {
   "id": "0083",
   "jp": "{d:24|ありがとう}、旅の方。{wait}娘の無理を聞いて\n{d:56|いた}だいて{d:79|・・・}{wait}そ{d:7F|して}私を、救って\n下さ{d:7B|った}事を感謝し{d:59|ます。}{end}",
-  "en": ""
+  "en": "Thank you, traveler.{wait}For indulging my daughter's selfish\nrequest...{wait}and for saving me. I'm truly grateful.{end}"
  },
  {
   "id": "0084",
   "jp": "{d:24|ありがとう}。{end}",
-  "en": ""
+  "en": "Thank you.{end}"
  },
  {
   "id": "0085",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\n先程は、{d:8C|本当}に{d:24|ありがとう}\nござい{d:4C|ました。}{wait}おかげで{d:28|お父さん}の命も\n助かり{d:4C|ました。}{wait}何も出来{d:4B|ません}が、\nどうかお休みに{d:69|なって}\nいって{d:47|下さい。}{end}",
-  "en": ""
+  "en": "{col:01}Meiya{spd:01}\nThank you so much for earlier.{wait}Thanks to you, my father's life was saved.{wait}I can't offer you much, but please stay\nand rest.{end}"
  },
  {
   "id": "0086",
   "jp": "{col:01}{d:86|メイヤ}\n外はどうで{d:62|した}か？\nおつかれで{d:5A|しょう}。{wait}どうぞ休んでいって{d:47|下さい。}{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2やめとくよ{choice:00:01BD:01BE}",
-  "en": ""
+  "en": "{col:01}Meiya\nHow was it out there? You must be tired.{wait}Please, stay and rest.{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2I'll pass.{choice:00:01BD:01BE}"
  },
  {
   "id": "0087",
   "jp": "{d:76|この}公国は全て{d:1F|帝国}の物だ。{end}",
-  "en": ""
+  "en": "This whole duchy belongs to the Empire.{end}"
  },
  {
   "id": "0088",
   "jp": "{d:75|ここ}に近づくん{d:60|じゃ}{d:6C|ない}！{end}",
-  "en": ""
+  "en": "Stay away from here!{end}"
  },
  {
   "id": "0089",
   "jp": "{d:76|この}国での{d:8C|本当}の目的物が\n見つか{d:7B|った}{d:0F|らしい}。{wait}{d:44|ここは}もう\n用ずみだ{d:79|・・・}な。{end}",
-  "en": ""
+  "en": "Seems they found what they were really\nafter in this country.{wait}So we're done with this place... I guess.{end}"
  },
  {
   "id": "008A",
   "jp": "何者！？{wait}今や{d:76|この}城は我々の基地だ。\n近付く者は、\nようしゃせんぞ！{end}",
-  "en": ""
+  "en": "Who goes there!?{wait}This castle is our base now. Anyone who\ncomes near gets no mercy!{end}"
  },
  {
   "id": "008B",
   "jp": "直ちに{d:76|この}場所から消えろ！{end}",
-  "en": ""
+  "en": "Get out of here at once!{end}"
  },
  {
   "id": "008C",
   "jp": "生きて帰れると思うなよ！{end}",
-  "en": ""
+  "en": "Don't think you'll get out of here alive!{end}"
  },
  {
   "id": "008D",
   "jp": "い{d:7B|った}い何が、\nおこって{d:4E|いるの}{d:65|だろう}。{end}",
-  "en": ""
+  "en": "What on earth is going on?{end}"
  },
  {
   "id": "008E",
   "jp": "{d:3A|ゴッドホープ}岬は、{wait}{d:76|この}国を出て、北西の方に\n{d:25|あるの}。{wait}岬には昔から壊れたような\n変な{d:1A|遺跡}が{d:61|ある}わ。{end}",
-  "en": ""
+  "en": "Cape Godhope{wait}is to the northwest, once you leave this\ncountry.{wait}There's a strange ruin on the cape that's\nlooked half broken for as long as anyone\nremembers.{end}"
  },
  {
   "id": "008F",
   "jp": "少し前にみょうな格好を{d:62|した}\nおじいさんが、岬の方へ\nむかってい{d:7B|った}ぞ。{end}",
-  "en": ""
+  "en": "A while ago, an oddly dressed old man\nheaded off toward the cape.{end}"
  },
  {
   "id": "0090",
   "jp": "少し前にかわ{d:73|いい}女の子が、\n岬の方へむかってい{d:7B|った}ぞ。{end}",
-  "en": ""
+  "en": "A while ago, a cute girl headed off toward\nthe cape.{end}"
  },
  {
   "id": "0091",
   "jp": "黒い兵士達のせいで\n私達は商売が{d:89|出来な}いの{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Thanks to those black soldiers, we can't\ndo any business.{end}"
  },
  {
   "id": "0092",
   "jp": "やっと、解放されて\n{d:57|よかった}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "So glad we're finally free.{end}"
  },
  {
   "id": "0093",
   "jp": "何も売{d:6B|れない}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "I can't sell you anything.{end}"
  },
  {
   "id": "0094",
   "jp": "すみ{d:4B|ません}ねぇ。{wait}武器は{d:1F|帝国}軍の方以外には\nお売り{d:7F|して}はいけ{d:6C|ない}事に\n{d:69|なって}{d:4F|いる}ん{d:5C|です}{d:6D|よ。}{wait}かんべん{d:7F|して}{d:47|下さい。}{end}",
-  "en": ""
+  "en": "Terribly sorry.{wait}We're not allowed to sell weapons to\nanyone but the Imperial Army.{wait}Please forgive me.{end}"
  },
  {
   "id": "0095",
   "jp": "やっと誰に{d:64|でも}売って\nよくな{d:7B|った}の{d:5C|です}が、{wait}売り上げは、減{d:7B|った}\nような{d:79|・・・}{end}",
-  "en": ""
+  "en": "We're finally allowed to sell to anyone\nagain, but{wait}somehow sales seem to have gone down...{end}"
  },
  {
   "id": "0096",
   "jp": "軍隊のやつらから、\n商売を{d:7F|して}はいけ{d:6C|ない}と\n言われてますんでさぁ。{wait}うちは全然関係無いと\n思うん{d:5C|です}がねぇ。{end}",
-  "en": ""
+  "en": "The army folks told us we're not allowed\nto do business.{wait}Though I don't see what we've got to do\nwith anything.{end}"
  },
  {
   "id": "0097",
   "jp": "いらっしゃい！{end}",
-  "en": ""
+  "en": "Welcome!{end}"
  },
  {
   "id": "0098",
   "jp": "{col:01}ヴォルサムリー{spd:01}\n{d:2E|ロンディウム}騎士団は\n何を{d:4D|している}のか？{wait}もはや彼らしか、\n奴らには勝てまい！{end}",
-  "en": ""
+  "en": "{col:01}Volsamry{spd:01}\nWhat are the Rondium Knights doing?{wait}Only they can defeat those fiends now!{end}"
  },
  {
   "id": "0099",
   "jp": "黒い兵士達が来たとき、\nどうなる事かと思いま{d:62|した}が{wait}おじょう様が御無事で\nなによりで{d:62|した}。{end}",
-  "en": ""
+  "en": "When the black soldiers came, I didn't know\nwhat would happen, but{wait}I'm just glad the young lady is safe.{end}"
  },
  {
   "id": "009A",
   "jp": "不安{d:5C|です}わ。{wait}{d:52|これ}からい{d:7B|った}い\nどうなるので{d:5A|しょう}？{wait}{d:75|ここ}も、危険では\n{d:6C|ない}ので{d:5A|しょう}か？{end}",
-  "en": ""
+  "en": "I'm so uneasy.{wait}What on earth will happen now?{wait}Isn't it dangerous here, too?{end}"
  },
  {
   "id": "009B",
   "jp": "何{d:09|という}事で{d:5A|しょう}！{wait}我が国が他国の攻撃を\nうける{d:58|なんて}！{end}",
-  "en": ""
+  "en": "How could this happen!?{wait}Our nation, attacked by another country!{end}"
  },
  {
   "id": "009C",
   "jp": "もうしわけござい{d:4B|ません}が、\n{d:75|ここ}の所ずっとかし切りに\n{d:69|なって}おり{d:59|ます。}{wait}御了{d:5A|しょう}{d:48|下さい}ませ。{end}",
-  "en": ""
+  "en": "My deepest apologies, but this place has\nbeen reserved for a private party for\nsome time now.{wait}We ask for your understanding.{end}"
  },
  {
   "id": "009D",
   "jp": "{col:01}★{col}が、{num}増えた！{end}",
-  "en": ""
+  "en": "{col:01}Stars{col} increased by {num}!{end}"
  },
  {
   "id": "009E",
   "jp": "いらっしゃい。{wait}あっ、{d:76|この}間は{d:24|ありがとう}\nござい{d:4C|ました。}{wait}ごゆっくり{d:7F|して}{d:47|下さい。}{end}",
-  "en": ""
+  "en": "Welcome.{wait}Oh, thank you so much for the other day.{wait}Please take your time.{end}"
  },
  {
   "id": "009F",
   "jp": "中身はカラッポだ{d:7B|った}。{end}",
-  "en": ""
+  "en": "It was empty.{end}"
  },
  {
   "id": "00A0",
   "jp": "＊{col:01}{item_v}{col}を\n {d:07|手に入れた}！{end}",
-  "en": ""
+  "en": "* Got the {col:01}{item_v}{col}!{end}"
  },
  {
   "id": "00A1",
   "jp": "最近、我が軍にたてつく\nやつらが{d:4F|いる}{d:0F|らしい}。{end}",
-  "en": ""
+  "en": "Seems someone's been going around\ndefying our army lately.{end}"
  },
  {
   "id": "00A2",
   "jp": "うーむ、{d:7C|そうか}{d:79|・・・}{end}",
-  "en": ""
+  "en": "Hmm, I see...{end}"
  },
  {
   "id": "00A3",
   "jp": "{col:01}{name:02}{f4}{f4:55}{fa:B1}\n体を休める{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:55}{fa:B1}\nGet some rest now.{end}"
  },
  {
   "id": "00A4",
   "jp": "{col:01}{name:01}{f4}{f4:46}{fa:B1}\n休んだ方が{d:73|いい}わ。{end}",
-  "en": ""
+  "en": "{col:01}{name:01}{f4}{f4:46}{fa:B1}\nYou'd better rest.{end}"
  },
  {
   "id": "00A5",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\n{d:24|ありがとう}ございます！{wait}{d:52|これ}で{d:28|お父さん}も\n助かり{d:59|ます。}{wait}今から村まで案内しますから{wait}私についてきて{d:47|下さい。}{end}",
-  "en": ""
+  "en": "{col:01}Meiya{spd:01}\nThank you so much!{wait}Now my father will be saved.{wait}I'll show you the way to the village,{wait}so please follow me.{end}"
  },
  {
   "id": "00A6",
   "jp": "くっ{d:79|・・・}メ・イヤ{d:79|・・・}\n{d:79|・・・}{d:79|・・・}{end}",
-  "en": ""
+  "en": "Ngh... Mei...ya... ......{end}"
  },
  {
   "id": "00A7",
   "jp": "{col:01}ヴォルサムリー\nさあ{col:01}「{item:0C}」{col}を\nうけとるが{d:72|いい。}{end}",
-  "en": ""
+  "en": "{col:01}Volsamry\nNow, accept this {col:01}\"{item:0C}\"{col}.{end}"
  },
  {
   "id": "00A8",
   "jp": "{col:01}ヴォルサムリー{spd:01}\n感謝{d:51|する}ぞ。{wait}貴公達は、我が公国を救って\n{d:43|くれた}えいゆうと{d:7F|して}{wait}{d:76|この}{col:01}「{item:0C}」{col}を\nさずけよう。{end}",
-  "en": ""
+  "en": "{col:01}Volsamry{spd:01}\nYou have my thanks.{wait}As the heroes who saved our duchy,{wait}I bestow upon you this\n{col:01}\"{item:0C}\"{col}.{end}"
  },
  {
   "id": "00A9",
   "jp": "おお君達か。{wait}いつ{d:64|でも}たずねて\nくるが{d:73|いい}ぞ。{end}",
-  "en": ""
+  "en": "Ah, it's you.{wait}Come visit anytime.{end}"
  },
  {
   "id": "00AA",
   "jp": "{d:24|ありがとう}ござい{d:4C|ました。}\n{d:52|これ}でおじょう様のくらしも\n楽になり{d:59|ます。}{end}",
-  "en": ""
+  "en": "Thank you so much. Now the young lady's\nlife will be easier.{end}"
  },
  {
   "id": "00AB",
   "jp": "{d:8C|本当}に{d:24|ありがとう}\nござい{d:4C|ました。}{wait}{d:79|・・・}またお会い\nできますか？{end}",
-  "en": ""
+  "en": "Thank you so very much.{wait}...Will we meet again?{end}"
  },
  {
   "id": "00AC",
   "jp": "{d:8C|本当}に{d:24|ありがとう}\nござい{d:4C|ました。}{end}",
-  "en": ""
+  "en": "Thank you so very much.{end}"
  },
  {
   "id": "00AD",
   "jp": "やっと城に戻って来れ{d:6F|たわ。}{end}",
-  "en": ""
+  "en": "At last, I'm back in my castle.{end}"
  },
  {
   "id": "00AE",
   "jp": "ふうー、つかれるわね。{end}",
-  "en": ""
+  "en": "Phew, how tiring.{end}"
  },
  {
   "id": "00AF",
   "jp": "{d:76|この}近くの洞窟に{d:61|ある}\n{col:01}「{item:13}」{col}をもっ{d:0C|てくれ}ば、{wait}きおくを呼びもどす薬を\nタダで作ってあげるわ{d:79|・・・}{wait}まあ無理だと思うけどね。{end}",
-  "en": ""
+  "en": "If you bring me the {col:01}\"{item:13}\"{col}\nfrom a cave near here,{wait}I'll make you a medicine that brings back\nlost memories, free of charge...{wait}Not that I think you can manage it.{end}"
  },
  {
   "id": "00B0",
   "jp": "それは{col:01}「{item:13}」{col}{d:1B|！！}{wait}早速きおくを呼びもどす薬{wait}{col:01}「{item:14}」{col}に\n調合{d:7F|して}あげ{d:6E|るわ。}{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2いやだ{choice:00:0070:00B2}",
-  "en": ""
+  "en": "That's the {col:01}\"{item:13}\"{col}!!{wait}I'll compound it right away into a medicine\nthat brings back memories,{wait}{col:01}\"{item:14}\"{col}.{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No way.{choice:00:0070:00B2}"
  },
  {
   "id": "00B1",
   "jp": "{d:73|いい}ところに来たわね。\n今できたところ{d:6D|よ。}{wait}はい、どうぞ。{end}",
-  "en": ""
+  "en": "You came at just the right time. It's just\nfinished.{wait}Here you go.{end}"
  },
  {
   "id": "00B2",
   "jp": "そう{d:79|・・・}ざんねんだわ。{end}",
-  "en": ""
+  "en": "I see... What a shame.{end}"
  },
  {
   "id": "00B3",
   "jp": "君の持って{d:4F|いる}剣は聖剣！？{wait}だけど本来の力を\n失って{d:4F|いる}ようね。{wait}私は噂でしか聞{d:56|いた}事は\n{d:6C|ない}んだけど{d:79|・・・}{wait}その力を回復させるには、\n特別な力をも{d:7B|った}{d:39|鍛冶屋}に\nたのんで鍛え直{d:7F|して}\nもらうしか{d:6C|ない}そう{d:6D|よ。}{end}",
-  "en": ""
+  "en": "The sword you carry... is that a holy\nsword!?{wait}But it seems to have lost its true power.{wait}I've only heard rumors, but...{wait}apparently the only way to restore its\npower is to have a blacksmith with special\npowers reforge it.{end}"
  },
  {
   "id": "00B4",
   "jp": "「{item:13}」は実は、\nアクセサリーのよい\n調合材料になるのよねー。{end}",
-  "en": ""
+  "en": "The \"{item:13}\" actually makes\na great ingredient for accessories, you\nknow.{end}"
  },
  {
   "id": "00B5",
   "jp": "少し、剣の力を\n取り戻{d:7F|して}るみたいね。{wait}{d:64|でも}まだ秘めた\n力を宿{d:4D|している}わ。{end}",
-  "en": ""
+  "en": "Your sword seems to have regained some\nof its power.{wait}But there's still power hidden within it.{end}"
  },
  {
   "id": "00B6",
   "jp": "その剣は、かなり力を\n取り戻{d:62|した}わね。{end}",
-  "en": ""
+  "en": "That sword has regained a lot of its\npower.{end}"
  },
  {
   "id": "00B7",
   "jp": "すごいっ{d:1B|！！}{wait}その剣は、最強の力を\n取り戻{d:62|した}みたいね。{end}",
-  "en": ""
+  "en": "Amazing!!{wait}That sword seems to have regained its full\npower.{end}"
  },
  {
   "id": "00B8",
   "jp": "{col:01}{d:82|メファウス}\nそう言えば、君達は失われた\nきおくをよみがえらせる事が{wait}出来る薬を知って{d:4F|いる}かね？{fe}{col:01}{name}{f4}{f4:41}{fa:B1}\n\n  1知って{d:4F|いる}\n  2知ら{d:6C|ない}{choice:00:00B9:00BA}",
-  "en": ""
+  "en": "{col:01}Mephaus\nCome to think of it, do you know of a\nmedicine that can restore{wait}lost memories?{fe}{col:01}{name}{f4}{f4:41}{fa:B1}\n\n  1I know of it.\n  2Never heard of it.{choice:00:00B9:00BA}"
  },
  {
   "id": "00B9",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n西の洞窟に{col:01}「{item:13}」{col}が\n{d:61|ある}{d:09|という}噂が{d:25|あるの}だ。{wait}{d:0D|しかし}、西の洞窟には昔から\n大きな{d:84|クリーチャー}が{d:4F|いる}。{wait}「{item:13}」を取りにいこうと\n多くの者がちょうせん{d:7F|して}、{wait}取って来れた者は、\n数えるほどしか{d:6C|ない}{d:67|のだ。}{wait}一番最近では、\n元騎士団長だ{d:7B|った}男が、{wait}自分のつまのために\n取りにいって帰ってきたと{wait}いう話が{d:61|ある}。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nRumor has it that the\n{col:01}\"{item:13}\"{col} lies in the west\ncave.{wait}However, a great creature has dwelt in\nthe west cave since long ago.{wait}Many have tried to fetch the\n\"{item:13}\",{wait}but those who came back with it are few\nindeed.{wait}The most recent story{wait}is of a man, once Captain of the Knights,{wait}who went to fetch it for his wife and\nreturned.{end}"
  },
  {
   "id": "00BA",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n{col:01}「{item:13}」{col}{d:09|という}\nコウ物を錬金術で\n{col:01}調合{col}{d:7F|して}もらうと、{wait}{col:01}「{item:14}」{col}{d:09|という}\n薬になる。{wait}その薬を、きおくを\n無く{d:62|した}人にのませると{wait}きおくがよみがえるのだ{d:6D|よ。}{wait}ただし、特別のちゅうもんに\nなるので、{d:5A|しょう}めんから\nたのん{d:64|でも}ダメ{d:50|なんだ}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nIf the mineral called\n{col:01}\"{item:13}\"{col} is {col:01}compounded{col}\nthrough alchemy,{wait}it becomes a medicine called\n{col:01}\"{item:14}\"{col}.{wait}Give that medicine to someone who has\nlost their memory,{wait}and their memories will return.{wait}However, it is a special order, so simply\nasking for it outright won't work.{end}"
  },
  {
   "id": "00BB",
   "jp": "{col:01}{d:82|メファウス}\nおお、ありがたい。{wait}では{d:52|これ}を。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus\nOh, splendid.{wait}Then, here you are.{end}"
  },
  {
   "id": "00BC",
   "jp": "{col:01}{d:82|メファウス}\n{d:7C|そうか}ね{d:79|・・・}ざんね{d:66|んだ。}{end}",
-  "en": ""
+  "en": "{col:01}Mephaus\nI see... A pity.{end}"
  },
  {
   "id": "00BD",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\nおお、それは\nまさしく{col:01}「{item:13}」{col}{d:1B|！！}{wait}その石の調合は、錬金術屋の\n彼女に直せつたのむ事だ。{wait}そうすれば、\n彼女が{col:01}「{item:14}」{col}に{wait}{d:7F|して}くれる{d:65|だろう}。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nOh, that is indeed the\n{col:01}\"{item:13}\"{col}!!{wait}To have that stone compounded, ask the\nalchemist herself.{wait}Then she should make it into\n{col:01}\"{item:14}\"{col} for you.{end}"
  },
  {
   "id": "00BE",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\nおお、君の持つその緑玉は\n何か不思議な力を感じる。{wait}どう{d:65|だろう}、{d:76|この}私に\nその玉を調べさせて{wait}もらえ{d:6C|ない}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1はい\n  2けっこう{d:5C|です}{choice:00:00BF:00BC}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nOh, I sense a mysterious power in that\nEmerald of yours.{wait}What do you say? Would you let me study\nthat gem{wait}for a while?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No, thanks.{choice:00:00BF:00BC}"
  },
  {
   "id": "00BF",
   "jp": "{col:01}{d:82|メファウス}\n{d:24|ありがとう}。{wait}では、早速調べてみよう。{wait}少し待ってい{d:0C|てくれ}。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus\nThank you.{wait}I'll examine it at once.{wait}Wait here a little while.{end}"
  },
  {
   "id": "00C0",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\nおお、その玉にも{d:76|この}間の\n物と同じ力を感じるぞ。{wait}その玉も私がはたらきを\n取り戻{d:7F|して}やろう。{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1はい\n  2けっこう{d:5C|です}{choice:00:00BF:00BC}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nOh, I sense the same power in that gem as\nin the last one.{wait}I can restore that gem's workings as well.{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No, thanks.{choice:00:00BF:00BC}"
  },
  {
   "id": "00C1",
   "jp": "いらっしゃいませ。{end}",
-  "en": ""
+  "en": "Welcome.{end}"
  },
  {
   "id": "00C2",
   "jp": "一泊10ゴールド{d:5C|です}が\nお泊まりになられますか？\n  1はい\n  2{d:73|いい}え{choice:00:00C3:00CA}",
-  "en": ""
+  "en": "It's 10 gold a night.\nWould you like to stay?\n  1Yes\n  2No{choice:00:00C3:00CA}"
  },
  {
   "id": "00C3",
   "jp": "ごゆっくりどうぞ。{end}",
-  "en": ""
+  "en": "Have a good rest.{end}"
  },
  {
   "id": "00C4",
   "jp": "{col:01}{d:82|メファウス}\n{col:01}「{item:D5}」{col}を使って\nみ{d:6C|ない}かね？{fe}{col:01}{name:01}{f4}{f4:46}{fa:B1}\n\n  1うん\n  2いやだ{choice:00:00BB:00BC}",
-  "en": ""
+  "en": "{col:01}Mephaus\nWould you like to try using\n{col:01}\"{item:D5}\"{col}?{fe}{col:01}{name:01}{f4}{f4:46}{fa:B1}\n\n  1Sure!\n  2No way.{choice:00:00BB:00BC}"
  },
  {
   "id": "00C5",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\nおお、ちょうどよい所に。{wait}あた{d:0F|らしい}{col:01}「{item:D5}」{col}と\nいう魔法を開発{d:62|した}。{wait}{d:52|これ}を使ってみ{d:6C|ない}かね？{fe}{spd}{col:01}{name:01}{f4}{f4:46}{fa:B1}\n\n  1うん\n  2いやだ{choice:00:00BB:00BC}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nAh, you've come at just the right time.{wait}I've developed a new spell called\n{col:01}\"{item:D5}\"{col}.{wait}Would you like to try it?{fe}{spd}{col:01}{name:01}{f4}{f4:46}{fa:B1}\n\n  1Sure!\n  2No way.{choice:00:00BB:00BC}"
  },
  {
   "id": "00C6",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n{d:76|この}緑玉本来の、はたらきを\n取り戻せたようだ。{wait}その玉を装備{d:7F|して}おくと\n体力が徐々に回復{d:7F|して}いく。{wait}さあ、かえ{d:7F|して}おこう。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nThis Emerald seems to have regained its\noriginal workings.{wait}Equip it, and your HP will gradually recover.{wait}Now, I return it to you.{end}"
  },
  {
   "id": "00C7",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n{d:76|この}黄玉もまた本来の\nはたらきを取り戻{d:62|した}。{wait}黄玉を装備{d:51|する}と、状態の\n変化を防ぐ力をもつ。{wait}さあ、かえ{d:7F|して}おこう。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nThis Topaz, too, has regained its original\nworkings.{wait}Equip the Topaz, and it will ward off\nstatus ailments.{wait}Now, I return it to you.{end}"
  },
  {
   "id": "00C8",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n{d:76|この}青玉も本来の\nはたらきを取り戻せた。\n{d:76|この}青玉を装備{d:51|する}と、{wait}魔力を少しずつ\n回復させる事が出来る。{wait}さあ、かえ{d:7F|して}おこう。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nThis Sapphire has regained its original\nworkings as well. Equip this Sapphire,{wait}and it will slowly restore your MP.{wait}Now, I return it to you.{end}"
  },
  {
   "id": "00C9",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\n{d:76|この}紅玉もまた、\n装備{d:51|する}と、{wait}攻撃力を二倍に{d:51|する}事が\n出来る様にな{d:7B|った}。{wait}さあ、かえ{d:7F|して}おこう。{end}",
-  "en": ""
+  "en": "{col:01}Mephaus{spd:01}\nThis Ruby, too, when equipped,{wait}will now double your attack power.{wait}Now, I return it to you.{end}"
  },
  {
   "id": "00CA",
   "jp": "{d:24|ありがとう}ござい{d:4C|ました。}\nまたおこしください。{end}",
-  "en": ""
+  "en": "Thank you very much. Please come again.{end}"
  },
  {
   "id": "00CB",
   "jp": "おっと、しつれい{d:5C|です}が\n残金が足り{d:6C|ない}よう{d:5C|です}。{end}",
-  "en": ""
+  "en": "Oh, pardon me, but it seems you're short\nof money.{end}"
  },
  {
   "id": "00CC",
   "jp": "＊{col:01}{num}{col}Gを\n {d:07|手に入れた}！{end}",
-  "en": ""
+  "en": "* Got {col:01}{num}{col} gold!{end}"
  },
  {
   "id": "00CD",
   "jp": "次の日のあさ{d:79|・・・}{end:11}",
-  "en": ""
+  "en": "The next morning...{end:11}"
  },
  {
   "id": "00CE",
   "jp": "その日の夜{d:79|・・・}{end:11}",
-  "en": ""
+  "en": "That night...{end:11}"
  },
  {
   "id": "00CF",
   "jp": "＊{col:01}{item_v}{col}を\n {d:07|手に入れた}！{wait:11}{d:0D|しかし}持ち物がいっぱいで\n持てなか{d:7B|った}ので宝ばこに{wait:11}かえ{d:7F|して}置{d:56|いた}。{end}",
-  "en": ""
+  "en": "* Got the {col:01}{item_v}{col}!{wait:11}But you couldn't carry any more, so you\nput it back{wait:11}in the treasure chest.{end}"
  }
 ]

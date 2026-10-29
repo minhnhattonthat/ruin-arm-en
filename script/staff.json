@@ -2,79 +2,79 @@
  {
   "id": "S00",
   "jp": "{pos:00C4}プロダクション{pos:0148}マネージャー{pos:0248}間庭 英作{end:FF}",
-  "en": "",
+  "en": "{pos:00C4}Production{pos:0148}Manager{pos:0248}E. Maniwa{end:FF}",
   "hold": 180
  },
  {
   "id": "S01",
   "jp": "{pos:0420}プロデューサー{pos:0524}東海林 隆{pos:05A4}宮河 恭夫{end:FF}",
-  "en": "",
+  "en": "{pos:0420}Producers{pos:0524}T. Shoji{pos:05A4}Y.Miyakawa{end:FF}",
   "hold": 180
  },
  {
   "id": "S02",
   "jp": "{pos:00E0}ディレクター{pos:01E4}清水 泰臣{pos:0404}アドバイザー{pos:0508}大久保 悌伸{pos:0588}鈴木 敏弘{end:FF}",
-  "en": "",
+  "en": "{pos:00E0}Director{pos:01E4}Y. Shimizu{pos:0404}Advisors{pos:0508}Y. Okubo{pos:0588}T. Suzuki{end:FF}",
   "hold": 180
  },
  {
   "id": "S03",
   "jp": "{pos:00C4}声優{pos:01C8}阪口 大助{pos:0248}山本 恵美子{pos:02C8}霞 三十朗{pos:04A4}渡部 直美{pos:0524}陶山 章夫{pos:05A4}乃村 健次{end:FF}",
-  "en": "",
+  "en": "{pos:00C4}Cast{pos:01C8}Sakaguchi{pos:0248}E.Yamamoto{pos:02C8}S. Kasumi{pos:04A4}N.Watanabe{pos:0524}A. Suyama{pos:05A4}K. Nomura{end:FF}",
   "hold": 180
  },
  {
   "id": "S04",
   "jp": "{pos:00E0}キャラクター{pos:016C}デザイン{pos:0264}山田 隆弥{pos:0404}ストーリー原案{pos:0508}勝又 淳{end:FF}",
-  "en": "",
+  "en": "{pos:00E0}Character{pos:016C}Design{pos:0264}T. Yamada{pos:0404}Original Story{pos:0508}Jun K.{end:FF}",
   "hold": 180
  },
  {
   "id": "S05",
   "jp": "{pos:00C4}スペシャルサンクス{pos:0244}集英社{pos:02C4}月刊Vジャンプ{pos:04A4}鳥嶋 和彦{pos:0524}高橋 俊昌{pos:05A4}図本 堅史{end:FF}",
-  "en": "",
+  "en": "{pos:00C4}Special Thanks{pos:0244} {pos:02C4}Monthly V Jump{pos:04A4}Torishima{pos:0524}Takahashi{pos:05A4}K. Zumoto{end:FF}",
   "hold": 180
  },
  {
   "id": "S06",
   "jp": "{pos:0160}集英社{pos:01DC}週刊少年ジャンプ{pos:0488}堀江 信彦{pos:0508}町田 宗治{pos:0588}松本 常男{end:FF}",
-  "en": "",
+  "en": "{pos:0160}Weekly{pos:01DC}Shonen Jump{pos:0488}N. Horie{pos:0508}S. Machida{pos:0588}Matsumoto{end:FF}",
   "hold": 180
  },
  {
   "id": "S07",
   "jp": "{pos:0148}赤松 直人{pos:01C8}原 ゆかり{pos:0248}岩原 誠{pos:0420}アシストワーク{pos:0524}渡辺 浩孝{end:FF}",
-  "en": "",
+  "en": "{pos:0148}N.Akamatsu{pos:01C8}Y. Hara{pos:0248}Iwahara{pos:0420}Assistance{pos:0524}H.Watanabe{end:FF}",
   "hold": 180
  },
  {
   "id": "S08",
   "jp": "{pos:00C4}ゲームデザイン{pos:01C8}りょうた様{pos:0248}田 鞭々{pos:02C8}ひでちゃん{pos:04A4}けっさん{pos:0524}STOMP{end:FF}",
-  "en": "",
+  "en": "{pos:00C4}Game Design{pos:01C8}Ryota-sama{pos:0248}B. Den{pos:02C8}Hide-chan{pos:04A4}Kessan{pos:0524}STOMP{end:FF}",
   "hold": 180
  },
  {
   "id": "S09",
   "jp": "{pos:00C4}プログラム{pos:01C8}ハッピィはせい{pos:0248}Q{pos:02C8}C{pos:0420}S{pos:04A0}ゼン{pos:0520} M{pos:05A0}まるこぱぱ{pos:0620}RYU{end:FF}",
-  "en": "",
+  "en": "{pos:00C4}Program{pos:01C8}Happy Hasei{pos:0248}Q{pos:02C8}C{pos:0420}S{pos:04A0}Zen{pos:0520} M{pos:05A0}MarukoPapa{pos:0620}RYU{end:FF}",
   "hold": 180
  },
  {
   "id": "S0A",
   "jp": "{pos:00E0}グラフィック{pos:0164}デザイン{pos:0264}黒田屋6作{pos:02E4}織田君{pos:0364}たこちう？{pos:0488}J DESIGNS{pos:0508}ポチっと犬じろう{pos:0588}ぬーぴー{pos:0608}わや{end:FF}",
-  "en": "",
+  "en": "{pos:00E0}Graphic{pos:0164}Design{pos:0264}R.Kurodaya{pos:02E4}Odakun{pos:0364}Takochu?{pos:0488}J DESIGNS{pos:0508}Pochitto Inujiro{pos:0588}Nupi{pos:0608}Waya{end:FF}",
   "hold": 180
  },
  {
   "id": "S0B",
   "jp": "{pos:00C4}サウンド{pos:014C}エンジニア{pos:0244}SWITCH・E{pos:02C4}STUDIO M2{pos:0344}ST・TYPE M{pos:03C4}PRINCE E{pos:0444}CHATRU{end:FF}",
-  "en": "",
+  "en": "{pos:00C4}Sound{pos:014C}Engineers{pos:0244}SWITCH.E{pos:02C4}STUDIO M2{pos:0344}ST.TYPE M{pos:03C4}PRINCE E{pos:0444}CHATRU{end:FF}",
   "hold": 180
  },
  {
   "id": "S0C",
   "jp": "{pos:00E0}スーパー{pos:016C}バイザー{pos:0260}岬 額々{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}チーミン{end:FF}",
-  "en": "",
+  "en": "{pos:00E0}Super-{pos:016C}visors{pos:0260}G.Misaki{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}Chimin{end:FF}",
   "hold": 180
  }
 ]

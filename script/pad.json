@@ -3,13 +3,13 @@
   "id": "pad_00",
   "max": 8,
   "jp": "コントローラ1",
-  "en": ""
+  "en": "Controller 1"
  },
  {
   "id": "pad_01",
   "max": 8,
   "jp": "コントローラ2",
-  "en": ""
+  "en": "Controller 2"
  },
  {
   "id": "pad_02",

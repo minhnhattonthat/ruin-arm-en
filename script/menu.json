@@ -11,168 +11,168 @@
   "max": 18,
   "pos": "0300",
   "jp": "右装左装体装使う入替並び捨〔てる〕〔つよ〕〔める〕合分",
-  "en": ""
+  "en": "RghtLeftBodyUse SwapSortDropHoneJoin"
  },
  {
   "id": "8496A4",
   "max": 12,
   "pos": "0300",
   "jp": "〔ｾｰ〕〔ﾌﾞ〕〔ﾌﾟﾛ〕〔ﾃｸﾄ〕〔ｺ〕〔ﾋﾟｰ〕〔ﾁｪ〕〔ﾝｼﾞ〕〔ﾃﾞﾘ〕〔ｰﾄ〕〔ﾛｰ〕〔ﾄﾞ〕",
-  "en": ""
+  "en": "SaveLockCopySwapWipeLoad"
  },
  {
   "id": "84CB92",
   "max": 2,
   "pos": "0004",
   "jp": "道具",
-  "en": ""
+  "en": "Item"
  },
  {
   "id": "84CB99",
   "max": 2,
   "pos": "0010",
   "jp": "能力",
-  "en": ""
+  "en": "Stat"
  },
  {
   "id": "84CBA0",
   "max": 2,
   "pos": "001C",
   "jp": "振分",
-  "en": ""
+  "en": "Pts"
  },
  {
   "id": "84CBA7",
   "max": 2,
   "pos": "0028",
   "jp": "〔ｼﾞｮ〕〔ｲ〕",
-  "en": ""
+  "en": "Pad"
  },
  {
   "id": "84CBAE",
   "max": 2,
   "pos": "0034",
   "jp": "環境",
-  "en": ""
+  "en": "Opts"
  },
  {
   "id": "84CBB7",
   "max": 2,
   "pos": "0004",
   "jp": "〔ｵｰ〕〔ﾄ〕",
-  "en": ""
+  "en": "Auto"
  },
  {
   "id": "84CBBE",
   "max": 2,
   "pos": "0010",
   "jp": "〔人物〕〔紹介〕",
-  "en": ""
+  "en": "Bios"
  },
  {
   "id": "84CBC5",
   "max": 2,
   "pos": "001C",
   "jp": "〔ﾌｧ〕〔ｲﾙ〕",
-  "en": ""
+  "en": "File"
  },
  {
   "id": "84CBCE",
   "max": 2,
   "pos": "0004",
   "jp": "買う",
-  "en": ""
+  "en": "Buy"
  },
  {
   "id": "84CBD5",
   "max": 2,
   "pos": "0010",
   "jp": "売る",
-  "en": ""
+  "en": "Sell"
  },
  {
   "id": "84CBDC",
   "max": 2,
   "pos": "001C",
   "jp": "道具",
-  "en": ""
+  "en": "Item"
  },
  {
   "id": "84CBE3",
   "max": 2,
   "pos": "0028",
   "jp": "修理",
-  "en": ""
+  "en": "Fix"
  },
  {
   "id": "84CBEA",
   "max": 2,
   "pos": "0034",
   "jp": "〔ｵｰ₂〕〔ﾀﾞｰ〕",
-  "en": ""
+  "en": "Make"
  },
  {
   "id": "84CBF3",
   "max": 2,
   "pos": "0004",
   "jp": "預〔ける〕",
-  "en": ""
+  "en": "Keep"
  },
  {
   "id": "84CBFA",
   "max": 2,
   "pos": "0010",
   "jp": "引取",
-  "en": ""
+  "en": "Take"
  },
  {
   "id": "84CC01",
   "max": 2,
   "pos": "001C",
   "jp": "道具",
-  "en": ""
+  "en": "Item"
  },
  {
   "id": "84CC08",
   "max": 2,
   "pos": "0028",
   "jp": "売る",
-  "en": ""
+  "en": "Sell"
  },
  {
   "id": "84CC11",
   "max": 4,
   "pos": "0004",
   "jp": "文字入力",
-  "en": ""
+  "en": "Input"
  },
  {
   "id": "84CC68",
   "max": 2,
   "pos": "0004",
   "jp": "〔ﾄﾞﾛ〕〔ｰ〕",
-  "en": ""
+  "en": "Draw"
  },
  {
   "id": "84CC6F",
   "max": 2,
   "pos": "0010",
   "jp": "〔ﾎﾞｯ〕〔ｸｽ〕",
-  "en": ""
+  "en": "Box"
  },
  {
   "id": "84CC76",
   "max": 2,
   "pos": "001C",
   "jp": "〔ﾌﾘ〕〔ｯﾌﾟ〕",
-  "en": ""
+  "en": "Flip"
  },
  {
   "id": "84CC7D",
   "max": 2,
   "pos": "0028",
   "jp": "〔ｺ〕〔ﾋﾟｰ〕",
-  "en": ""
+  "en": "Copy"
  },
  {
   "id": "84CC84",
@@ -186,273 +186,273 @@
   "max": 2,
   "pos": "0004",
   "jp": "〔ﾋﾞｯ〕〔ﾎﾞｲ〕",
-  "en": ""
+  "en": "Bits"
  },
  {
   "id": "84CC94",
   "max": 2,
   "pos": "0010",
   "jp": "〔ﾛｰ〕〔ﾄﾞ〕",
-  "en": ""
+  "en": "Load"
  },
  {
   "id": "84CC9B",
   "max": 2,
   "pos": "001C",
   "jp": "〔ｾｰ〕〔ﾌﾞ〕",
-  "en": ""
+  "en": "Save"
  },
  {
   "id": "84CCA4",
   "max": 2,
   "pos": "0004",
   "jp": "かな",
-  "en": ""
+  "en": "ABC"
  },
  {
   "id": "84CCAB",
   "max": 2,
   "pos": "0010",
   "jp": "漢1",
-  "en": ""
+  "en": "abc"
  },
  {
   "id": "84CCB2",
   "max": 2,
   "pos": "001C",
   "jp": "漢2",
-  "en": ""
+  "en": "Sym"
  },
  {
   "id": "84CCB9",
   "max": 2,
   "pos": "0028",
   "jp": "〔ｴﾃﾞ〕〔ｨｯﾄ〕",
-  "en": ""
+  "en": "Edit"
  },
  {
   "id": "84CCC0",
   "max": 2,
   "pos": "0034",
   "jp": "終了",
-  "en": ""
+  "en": "Done"
  },
  {
   "id": "84CCC9",
   "max": 2,
   "pos": "0004",
   "jp": "かな",
-  "en": ""
+  "en": "ABC"
  },
  {
   "id": "84CCD0",
   "max": 2,
   "pos": "0010",
   "jp": "漢1",
-  "en": ""
+  "en": "abc"
  },
  {
   "id": "84CCD7",
   "max": 2,
   "pos": "001C",
   "jp": "漢2",
-  "en": ""
+  "en": "Sym"
  },
  {
   "id": "84CCE0",
   "max": 2,
   "pos": "0004",
   "jp": "移動",
-  "en": ""
+  "en": "Move"
  },
  {
   "id": "84CCE7",
   "max": 2,
   "pos": "0010",
   "jp": "道具",
-  "en": ""
+  "en": "Item"
  },
  {
   "id": "84CCEE",
   "max": 2,
   "pos": "001C",
   "jp": "攻撃",
-  "en": ""
+  "en": "Atk"
  },
  {
   "id": "84CCF5",
   "max": 2,
   "pos": "0028",
   "jp": "回復",
-  "en": ""
+  "en": "Heal"
  },
  {
   "id": "84CCFC",
   "max": 2,
   "pos": "0034",
   "jp": "魔法",
-  "en": ""
+  "en": "Cast"
  },
  {
   "id": "84CD05",
   "max": 2,
   "pos": "0004",
   "jp": "種類",
-  "en": ""
+  "en": "Type"
  },
  {
   "id": "84CD0C",
   "max": 2,
   "pos": "0010",
   "jp": "材料",
-  "en": ""
+  "en": "Mats"
  },
  {
   "id": "84CD13",
   "max": 2,
   "pos": "001C",
   "jp": "名前",
-  "en": ""
+  "en": "Name"
  },
  {
   "id": "84CD1A",
   "max": 2,
   "pos": "0028",
   "jp": "振分",
-  "en": ""
+  "en": "Pts"
  },
  {
   "id": "84CD21",
   "max": 2,
   "pos": "0034",
   "jp": "中止",
-  "en": ""
+  "en": "Quit"
  },
  {
   "id": "84CD2A",
   "max": 8,
   "pos": "0004",
   "jp": "誰が持ちますか？",
-  "en": ""
+  "en": "Who'll carry it?"
  },
  {
   "id": "84CD3F",
   "max": 9,
   "pos": "0004",
   "jp": "これ以上持てません",
-  "en": ""
+  "en": "Can't carry more."
  },
  {
   "id": "84CD56",
   "max": 14,
   "pos": "0004",
   "jp": "武器のタイプを選択して下さい",
-  "en": ""
+  "en": "Choose a weapon type."
  },
  {
   "id": "84CD77",
   "max": 14,
   "pos": "0004",
   "jp": "使用する材料を選択して下さい",
-  "en": ""
+  "en": "Choose the materials."
  },
  {
   "id": "84CD98",
   "max": 12,
   "pos": "0004",
   "jp": "能力値を振り分けて下さい",
-  "en": ""
+  "en": "Allot your stat points."
  },
  {
   "id": "84CDB5",
   "max": 11,
   "pos": "0004",
   "jp": "どこから変更しますか？",
-  "en": ""
+  "en": "Change which part?"
  },
  {
   "id": "84CDD0",
   "max": 11,
   "pos": "0004",
   "jp": "これ以上預けられません",
-  "en": ""
+  "en": "Can't store any more."
  },
  {
   "id": "84CDEB",
   "max": 7,
   "pos": "0004",
   "jp": "お金が足らない",
-  "en": ""
+  "en": "Short on gold."
  },
  {
   "id": "84CDFE",
   "max": 14,
   "pos": "0004",
   "jp": "これ以上オーダーは出来ません",
-  "en": ""
+  "en": "Can't order any more."
  },
  {
   "id": "84CE1F",
   "max": 2,
   "pos": "0004",
   "jp": "攻撃",
-  "en": ""
+  "en": "Atk"
  },
  {
   "id": "84CE26",
   "max": 2,
   "pos": "0018",
   "jp": "防御",
-  "en": ""
+  "en": "Def"
  },
  {
   "id": "84CE2D",
   "max": 3,
   "pos": "002C",
   "jp": "最大耐",
-  "en": ""
+  "en": "Life"
  },
  {
   "id": "84CE36",
   "max": 5,
   "pos": "0084",
   "jp": "使 〔(〕 〔)〕",
-  "en": ""
+  "en": "Use  (  )"
  },
  {
   "id": "84CE43",
   "max": 5,
   "pos": "009C",
   "jp": "た 〔(〕 〔)〕",
-  "en": ""
+  "en": "Hold (  )"
  },
  {
   "id": "84CE52",
   "max": 6,
   "pos": "0004",
   "jp": "よいですか？",
-  "en": ""
+  "en": "Is this OK?"
  },
  {
   "id": "84CE61",
   "max": 2,
   "pos": "0022",
   "jp": "はい",
-  "en": ""
+  "en": "Yes"
  },
  {
   "id": "84CE68",
   "max": 3,
   "pos": "0030",
   "jp": "いいえ",
-  "en": ""
+  "en": "No"
  },
  {
   "id": "84CE73",
   "max": 2,
   "pos": "0010",
   "jp": "名前",
-  "en": ""
+  "en": "Name"
  },
  {
   "id": "84CE7A",
@@ -473,70 +473,70 @@
   "max": 2,
   "pos": "0190",
   "jp": "攻撃",
-  "en": ""
+  "en": "Atk"
  },
  {
   "id": "84CE8F",
   "max": 3,
   "pos": "01AA",
   "jp": "〔(〕右〔)〕",
-  "en": ""
+  "en": "(R)"
  },
  {
   "id": "84CE98",
   "max": 3,
   "pos": "022A",
   "jp": "〔(〕左〔)〕",
-  "en": ""
+  "en": "(L)"
  },
  {
   "id": "84CEA1",
   "max": 2,
   "pos": "0290",
   "jp": "防御",
-  "en": ""
+  "en": "Def"
  },
  {
   "id": "84CEA8",
   "max": 2,
   "pos": "0310",
   "jp": "早さ",
-  "en": ""
+  "en": "Spd"
  },
  {
   "id": "84CEAF",
   "max": 2,
   "pos": "0390",
   "jp": "金貨",
-  "en": ""
+  "en": "Gold"
  },
  {
   "id": "84CEB6",
   "max": 1,
   "pos": "03AE",
   "jp": "枚",
-  "en": ""
+  "en": "G"
  },
  {
   "id": "84CEBD",
   "max": 3,
   "pos": "0004",
   "jp": "〔ﾌｧ〕〔ｲﾙ〕1",
-  "en": ""
+  "en": "File 1"
  },
  {
   "id": "84CEC6",
   "max": 2,
   "pos": "0028",
   "jp": "時間",
-  "en": ""
+  "en": "Time"
  },
  {
   "id": "84CECD",
   "max": 2,
   "pos": "0090",
   "jp": "名前",
-  "en": ""
+  "en": "Name"
  },
  {
   "id": "84CED4",
@@ -557,21 +557,21 @@
   "max": 3,
   "pos": "0204",
   "jp": "〔ﾌｧ〕〔ｲﾙ〕2",
-  "en": ""
+  "en": "File 2"
  },
  {
   "id": "84CEE9",
   "max": 2,
   "pos": "0228",
   "jp": "時間",
-  "en": ""
+  "en": "Time"
  },
  {
   "id": "84CEF0",
   "max": 2,
   "pos": "0290",
   "jp": "名前",
-  "en": ""
+  "en": "Name"
  },
  {
   "id": "84CEF7",
@@ -599,7 +599,7 @@
   "max": 1,
   "pos": "0030",
   "jp": "終",
-  "en": ""
+  "en": "OK"
  },
  {
   "id": "84CF0F",
@@ -613,406 +613,406 @@
   "max": 2,
   "pos": "0010",
   "jp": "名前",
-  "en": ""
+  "en": "Name"
  },
  {
   "id": "84CF1D",
   "max": 2,
   "pos": "0090",
   "jp": "種族",
-  "en": ""
+  "en": "Race"
  },
  {
   "id": "84CF24",
   "max": 2,
   "pos": "0110",
   "jp": "性別",
-  "en": ""
+  "en": "Sex"
  },
  {
   "id": "84CF2B",
   "max": 2,
   "pos": "0128",
   "jp": "年齢",
-  "en": ""
+  "en": "Age"
  },
  {
   "id": "84CF32",
   "max": 1,
   "pos": "0138",
   "jp": "才",
-  "en": ""
+  "en": "yr"
  },
  {
   "id": "84CF37",
   "max": 2,
   "pos": "0190",
   "jp": "身長",
-  "en": ""
+  "en": "Hgt"
  },
  {
   "id": "84CF3E",
   "max": 1,
   "pos": "01A0",
   "jp": "〔cm〕",
-  "en": ""
+  "en": "cm"
  },
  {
   "id": "84CF43",
   "max": 2,
   "pos": "01A8",
   "jp": "体重",
-  "en": ""
+  "en": "Wgt"
  },
  {
   "id": "84CF4A",
   "max": 1,
   "pos": "01B8",
   "jp": "〔kg〕",
-  "en": ""
+  "en": "kg"
  },
  {
   "id": "84CF4F",
   "max": 2,
   "pos": "0210",
   "jp": "〔3ｻ〕〔ｲｽﾞ〕",
-  "en": ""
+  "en": "BWH"
  },
  {
   "id": "84CF56",
   "max": 1,
   "pos": "0220",
   "jp": "〔cm〕",
-  "en": ""
+  "en": "cm"
  },
  {
   "id": "84CF5B",
   "max": 1,
   "pos": "022C",
   "jp": "〔cm〕",
-  "en": ""
+  "en": "cm"
  },
  {
   "id": "84CF60",
   "max": 1,
   "pos": "0238",
   "jp": "〔cm〕",
-  "en": ""
+  "en": "cm"
  },
  {
   "id": "84CF65",
   "max": 2,
   "pos": "0290",
   "jp": "特技",
-  "en": ""
+  "en": "Arts"
  },
  {
   "id": "84CF6C",
   "max": 2,
   "pos": "0310",
   "jp": "好き",
-  "en": ""
+  "en": "Like"
  },
  {
   "id": "84CF73",
   "max": 2,
   "pos": "0390",
   "jp": "嫌い",
-  "en": ""
+  "en": "Hate"
  },
  {
   "id": "84CF7A",
   "max": 2,
   "pos": "0410",
   "jp": "性格",
-  "en": ""
+  "en": "Type"
  },
  {
   "id": "84CF89",
   "max": 3,
   "pos": "0410",
   "jp": "人間族",
-  "en": ""
+  "en": "Human"
  },
  {
   "id": "84CF94",
   "max": 3,
   "pos": "0410",
   "jp": "人魚族",
-  "en": ""
+  "en": "Mer"
  },
  {
   "id": "84CF9F",
   "max": 3,
   "pos": "0410",
   "jp": "翼人族",
-  "en": ""
+  "en": "Winged"
  },
  {
   "id": "84CFAE",
   "max": 1,
   "pos": "0410",
   "jp": "男",
-  "en": ""
+  "en": "M"
  },
  {
   "id": "84CFB5",
   "max": 1,
   "pos": "0410",
   "jp": "女",
-  "en": ""
+  "en": "F"
  },
  {
   "id": "84CFCA",
   "max": 7,
   "pos": "0410",
   "jp": "剣技〔(〕横振り〔)〕",
-  "en": ""
+  "en": "Sword (slash)"
  },
  {
   "id": "84CFDD",
   "max": 2,
   "pos": "0410",
   "jp": "魔法",
-  "en": ""
+  "en": "Cast"
  },
  {
   "id": "84CFE6",
   "max": 5,
   "pos": "0410",
   "jp": "ランチャー",
-  "en": ""
+  "en": "Launcher"
  },
  {
   "id": "84CFF5",
   "max": 2,
   "pos": "0410",
   "jp": "斧技",
-  "en": ""
+  "en": "Axe"
  },
  {
   "id": "84CFFE",
   "max": 2,
   "pos": "0410",
   "jp": "槍技",
-  "en": ""
+  "en": "Pike"
  },
  {
   "id": "84D007",
   "max": 6,
   "pos": "0410",
   "jp": "剣技〔(〕突き〔)〕",
-  "en": ""
+  "en": "Sword (stab)"
  },
  {
   "id": "84D018",
   "max": 5,
   "pos": "0410",
   "jp": "おしゃべり",
-  "en": ""
+  "en": "Chatting"
  },
  {
   "id": "84D035",
   "max": 4,
   "pos": "0410",
   "jp": "ぼうけん",
-  "en": ""
+  "en": "Journeys"
  },
  {
   "id": "84D042",
   "max": 5,
   "pos": "0410",
   "jp": "あまいもの",
-  "en": ""
+  "en": "Sweets"
  },
  {
   "id": "84D051",
   "max": 2,
   "pos": "0410",
   "jp": "発明",
-  "en": ""
+  "en": "Tech"
  },
  {
   "id": "84D05A",
   "max": 7,
   "pos": "0410",
   "jp": "さんぽ、ひるね",
-  "en": ""
+  "en": "Walks, naps"
  },
  {
   "id": "84D06D",
   "max": 6,
   "pos": "0410",
   "jp": "本をよむこと",
-  "en": ""
+  "en": "Reading"
  },
  {
   "id": "84D07E",
   "max": 5,
   "pos": "0410",
   "jp": "戦い、勝利",
-  "en": ""
+  "en": "Wars, wins"
  },
  {
   "id": "84D08D",
   "max": 3,
   "pos": "0410",
   "jp": "水あび",
-  "en": ""
+  "en": "Baths"
  },
  {
   "id": "84D0A6",
   "max": 4,
   "pos": "0410",
   "jp": "たいくつ",
-  "en": ""
+  "en": "Boredom"
  },
  {
   "id": "84D0B3",
   "max": 6,
   "pos": "0410",
   "jp": "すっぱいもの",
-  "en": ""
+  "en": "Sour food"
  },
  {
   "id": "84D0C4",
   "max": 7,
   "pos": "0410",
   "jp": "発明のしっぱい",
-  "en": ""
+  "en": "Failed gadgets"
  },
  {
   "id": "84D0D7",
   "max": 5,
   "pos": "0410",
   "jp": "考えること",
-  "en": ""
+  "en": "Thinking"
  },
  {
   "id": "84D0E6",
   "max": 4,
   "pos": "0410",
   "jp": "カミナリ",
-  "en": ""
+  "en": "Thunder"
  },
  {
   "id": "84D0F3",
   "max": 2,
   "pos": "0410",
   "jp": "仲間",
-  "en": ""
+  "en": "Pals"
  },
  {
   "id": "84D0FC",
   "max": 4,
   "pos": "0410",
   "jp": "にんじん",
-  "en": ""
+  "en": "Carrots"
  },
  {
   "id": "84D117",
   "max": 5,
   "pos": "0410",
   "jp": "ねっけつ漢",
-  "en": ""
+  "en": "Hotblooded"
  },
  {
   "id": "84D126",
   "max": 6,
   "pos": "0410",
   "jp": "明るくて素直",
-  "en": ""
+  "en": "Sunny, frank"
  },
  {
   "id": "84D137",
   "max": 8,
   "pos": "0410",
   "jp": "おっちょこちょい",
-  "en": ""
+  "en": "Scatterbrained"
  },
  {
   "id": "84D14C",
   "max": 5,
   "pos": "0410",
   "jp": "おおざっぱ",
-  "en": ""
+  "en": "Slapdash"
  },
  {
   "id": "84D15B",
   "max": 6,
   "pos": "0410",
   "jp": "かんじょう的",
-  "en": ""
+  "en": "Emotional"
  },
  {
   "id": "84D16C",
   "max": 5,
   "pos": "0410",
   "jp": "ごうじょう",
-  "en": ""
+  "en": "Stubborn"
  },
  {
   "id": "84D17B",
   "max": 5,
   "pos": "0410",
   "jp": "まけず嫌い",
-  "en": ""
+  "en": "Sore loser"
  },
  {
   "id": "84D18A",
   "max": 2,
   "pos": "0004",
   "jp": "外字",
-  "en": ""
+  "en": "Font"
  },
  {
   "id": "84D191",
   "max": 2,
   "pos": "0020",
   "jp": "参照",
-  "en": ""
+  "en": "View"
  },
  {
   "id": "84D19A",
   "max": 7,
   "pos": "0004",
   "jp": "終了しますか・",
-  "en": ""
+  "en": "Finish now?"
  },
  {
   "id": "84D1AB",
   "max": 2,
   "pos": "0014",
   "jp": "はい",
-  "en": ""
+  "en": "Yes"
  },
  {
   "id": "84D1B2",
   "max": 3,
   "pos": "0024",
   "jp": "いいえ",
-  "en": ""
+  "en": "No"
  },
  {
   "id": "84D1BD",
   "max": 5,
   "pos": "0004",
   "jp": "スクロール",
-  "en": ""
+  "en": "Scrolling"
  },
  {
   "id": "84D1CA",
   "max": 7,
   "pos": "0084",
   "jp": "メッセージ速度",
-  "en": ""
+  "en": "Message Speed"
  },
  {
   "id": "84D1DB",
   "max": 4,
   "pos": "0104",
   "jp": "サウンド",
-  "en": ""
+  "en": "Sound"
  },
  {
   "id": "84D1E6",
@@ -1033,56 +1033,56 @@
   "max": 8,
   "pos": "0284",
   "jp": "サンプリング音声",
-  "en": ""
+  "en": "Voice Samples"
  },
  {
   "id": "84D21B",
   "max": 4,
   "pos": "0000",
   "jp": " 広 い",
-  "en": ""
+  "en": " Wide"
  },
  {
   "id": "84D228",
   "max": 4,
   "pos": "0000",
   "jp": " 狭 い",
-  "en": ""
+  "en": " Narrow"
  },
  {
   "id": "84D23B",
   "max": 4,
   "pos": "0000",
   "jp": " 中 速",
-  "en": ""
+  "en": " Medium"
  },
  {
   "id": "84D248",
   "max": 4,
   "pos": "0000",
   "jp": " 高 速",
-  "en": ""
+  "en": " Fast"
  },
  {
   "id": "84D255",
   "max": 4,
   "pos": "0000",
   "jp": " 低 速",
-  "en": ""
+  "en": " Slow"
  },
  {
   "id": "84D266",
   "max": 4,
   "pos": "0000",
   "jp": "ステレオ",
-  "en": ""
+  "en": "Stereo"
  },
  {
   "id": "84D273",
   "max": 4,
   "pos": "0000",
   "jp": "モノラル",
-  "en": ""
+  "en": "Mono"
  },
  {
   "id": "84D284",
@@ -1131,42 +1131,42 @@
   "max": 6,
   "pos": "000C",
   "jp": "体力   〔x〕",
-  "en": ""
+  "en": "Vitality  x"
  },
  {
   "id": "84D2E9",
   "max": 6,
   "pos": "008C",
   "jp": "魔力   〔x〕",
-  "en": ""
+  "en": "Magic     x"
  },
  {
   "id": "84D2F8",
   "max": 6,
   "pos": "010C",
   "jp": "腕力   〔x〕",
-  "en": ""
+  "en": "Strength  x"
  },
  {
   "id": "84D307",
   "max": 6,
   "pos": "018C",
   "jp": "守備   〔x〕",
-  "en": ""
+  "en": "Defense   x"
  },
  {
   "id": "84D316",
   "max": 6,
   "pos": "020C",
   "jp": "身軽   〔x〕",
-  "en": ""
+  "en": "Agility   x"
  },
  {
   "id": "84D325",
   "max": 5,
   "pos": "02A8",
   "jp": "残り  個",
-  "en": ""
+  "en": "Left    pt"
  },
  {
   "id": "84D334",
@@ -1187,112 +1187,112 @@
   "max": 2,
   "pos": "0104",
   "jp": "攻撃",
-  "en": ""
+  "en": "Atk"
  },
  {
   "id": "84D349",
   "max": 3,
   "pos": "011C",
   "jp": "〔(〕右〔)〕",
-  "en": ""
+  "en": "(R)"
  },
  {
   "id": "84D352",
   "max": 3,
   "pos": "019C",
   "jp": "〔(〕左〔)〕",
-  "en": ""
+  "en": "(L)"
  },
  {
   "id": "84D35B",
   "max": 2,
   "pos": "0024",
   "jp": "防御",
-  "en": ""
+  "en": "Def"
  },
  {
   "id": "84D362",
   "max": 2,
   "pos": "00A4",
   "jp": "早さ",
-  "en": ""
+  "en": "Spd"
  },
  {
   "id": "84D36B",
   "max": 7,
   "pos": "0004",
   "jp": "道具の装備方法",
-  "en": ""
+  "en": "Equip Method"
  },
  {
   "id": "84D37C",
   "max": 6,
   "pos": "0084",
   "jp": "話す、調べる",
-  "en": ""
+  "en": "Talk/Examine"
  },
  {
   "id": "84D38B",
   "max": 2,
   "pos": "0104",
   "jp": "右手",
-  "en": ""
+  "en": "Rght"
  },
  {
   "id": "84D392",
   "max": 2,
   "pos": "0184",
   "jp": "左手",
-  "en": ""
+  "en": "Left"
  },
  {
   "id": "84D399",
   "max": 1,
   "pos": "0204",
   "jp": "体",
-  "en": ""
+  "en": "Bd"
  },
  {
   "id": "84D39E",
   "max": 10,
   "pos": "0284",
   "jp": "道具の変更〔(〕次の行〔)〕",
-  "en": ""
+  "en": "Next Item Row"
  },
  {
   "id": "84D3B5",
   "max": 10,
   "pos": "0304",
   "jp": "道具の変更〔(〕前の行〔)〕",
-  "en": ""
+  "en": "Previous Item Row"
  },
  {
   "id": "84D3CC",
   "max": 10,
   "pos": "0384",
   "jp": "道具使用時の目標変更",
-  "en": ""
+  "en": "Change Item Target"
  },
  {
   "id": "84D3E3",
   "max": 5,
   "pos": "0404",
   "jp": "協力必殺技",
-  "en": ""
+  "en": "Combo"
  },
  {
   "id": "84D408",
   "max": 4,
   "pos": "0000",
   "jp": " 自 動",
-  "en": ""
+  "en": " Auto"
  },
  {
   "id": "84D415",
   "max": 4,
   "pos": "0000",
   "jp": " 手 動",
-  "en": ""
+  "en": " Manual"
  },
  {
   "id": "84D42A",
@@ -1341,7 +1341,7 @@
   "max": 4,
   "pos": "0000",
   "jp": " L＋R",
-  "en": ""
+  "en": " L+R"
  },
  {
   "id": "84D48D",
@@ -1355,483 +1355,483 @@
   "max": 9,
   "pos": "0008",
   "jp": "右手の道具〔(〕 〔)〕‥",
-  "en": ""
+  "en": "Right Item (  ) .."
  },
  {
   "id": "84D4B1",
   "max": 9,
   "pos": "0088",
   "jp": "ため行動    ‥",
-  "en": ""
+  "en": "Charge          .."
  },
  {
   "id": "84D4C6",
   "max": 9,
   "pos": "0188",
   "jp": "左手の道具〔(〕 〔)〕‥",
-  "en": ""
+  "en": "Left Item  (  ) .."
  },
  {
   "id": "84D4DB",
   "max": 9,
   "pos": "0208",
   "jp": "ため行動    ‥",
-  "en": ""
+  "en": "Charge          .."
  },
  {
   "id": "84D4F0",
   "max": 9,
   "pos": "0308",
   "jp": "体の道具 〔(〕 〔)〕‥",
-  "en": ""
+  "en": "Body Item  (  ) .."
  },
  {
   "id": "84D505",
   "max": 9,
   "pos": "0388",
   "jp": "ため行動    ‥",
-  "en": ""
+  "en": "Charge          .."
  },
  {
   "id": "84D550",
   "max": 7,
   "pos": "0008",
   "jp": "MPの使用範囲",
-  "en": ""
+  "en": "MP Usage Range"
  },
  {
   "id": "84D561",
   "max": 7,
   "pos": "0094",
   "jp": "〔0%〕     〔100%〕",
-  "en": ""
+  "en": "0%        100%"
  },
  {
   "id": "84D574",
   "max": 3,
   "pos": "0008",
   "jp": "戦闘‥",
-  "en": ""
+  "en": "Battle"
  },
  {
   "id": "84D57D",
   "max": 4,
   "pos": "0108",
   "jp": "目標範囲",
-  "en": ""
+  "en": "Target"
  },
  {
   "id": "84D588",
   "max": 7,
   "pos": "0194",
   "jp": "狭     広",
-  "en": ""
+  "en": "Narrow    Wide"
  },
  {
   "id": "84D5C3",
   "max": 4,
   "pos": "0008",
   "jp": "移動範囲",
-  "en": ""
+  "en": "Movement"
  },
  {
   "id": "84D5CE",
   "max": 7,
   "pos": "0094",
   "jp": "狭     広",
-  "en": ""
+  "en": "Narrow    Wide"
  },
  {
   "id": "84D5E1",
   "max": 13,
   "pos": "0008",
   "jp": "回復を行う目標のHPの割合",
-  "en": ""
+  "en": "Heal when HP falls to"
  },
  {
   "id": "84D5FE",
   "max": 9,
   "pos": "008C",
   "jp": "自分〔0%〕     〔100%〕",
-  "en": ""
+  "en": "Self0%        100%"
  },
  {
   "id": "84D613",
   "max": 9,
   "pos": "010C",
   "jp": "仲間〔0%〕     〔100%〕",
-  "en": ""
+  "en": "Ally0%        100%"
  },
  {
   "id": "84D62A",
   "max": 3,
   "pos": "0090",
   "jp": "操作‥",
-  "en": ""
+  "en": "Mode.."
  },
  {
   "id": "84D633",
   "max": 3,
   "pos": "0190",
   "jp": "操作‥",
-  "en": ""
+  "en": "Mode.."
  },
  {
   "id": "84D678",
   "max": 3,
   "pos": "0004",
   "jp": "金 額",
-  "en": ""
+  "en": "Price"
  },
  {
   "id": "84D681",
   "max": 1,
   "pos": "003A",
   "jp": "枚",
-  "en": ""
+  "en": "G"
  },
  {
   "id": "84D686",
   "max": 3,
   "pos": "0084",
   "jp": "所持金",
-  "en": ""
+  "en": "Funds"
  },
  {
   "id": "84D68F",
   "max": 1,
   "pos": "00BA",
   "jp": "枚",
-  "en": ""
+  "en": "G"
  },
  {
   "id": "84D696",
   "max": 14,
   "pos": "0004",
   "jp": "個数＝  〔(〕 個〔)〕 減  増",
-  "en": ""
+  "en": "Count=     (  pc)    -     +"
  },
  {
   "id": "84D6B7",
   "max": 3,
   "pos": "0004",
   "jp": "名 前",
-  "en": ""
+  "en": "Name"
  },
  {
   "id": "84D6C0",
   "max": 3,
   "pos": "0084",
   "jp": "タイプ",
-  "en": ""
+  "en": "Type"
  },
  {
   "id": "84D6C9",
   "max": 6,
   "pos": "0104",
   "jp": "サイズ  型",
-  "en": ""
+  "en": "Size"
  },
  {
   "id": "84D6D8",
   "max": 3,
   "pos": "0184",
   "jp": "使用材",
-  "en": ""
+  "en": "Mats"
  },
  {
   "id": "84D6E1",
   "max": 3,
   "pos": "0204",
   "jp": "能力値",
-  "en": ""
+  "en": "Stats"
  },
  {
   "id": "84D6EA",
   "max": 10,
   "pos": "0284",
   "jp": "修正値   ×  ＝",
-  "en": ""
+  "en": "Bonus        x     ="
  },
  {
   "id": "84D701",
   "max": 12,
   "pos": "0304",
   "jp": "最終値 能力値×修正値＝",
-  "en": ""
+  "en": "Final: Stats x Bonus ="
  },
  {
   "id": "84D71C",
   "max": 3,
   "pos": "0384",
   "jp": "攻撃力",
-  "en": ""
+  "en": "Attack"
  },
  {
   "id": "84D725",
   "max": 3,
   "pos": "03B0",
   "jp": "耐久度",
-  "en": ""
+  "en": "Life"
  },
  {
   "id": "84D730",
   "max": 14,
   "pos": "0004",
   "jp": "中止しますか？ はい いいえ",
-  "en": ""
+  "en": "Really cancel?  Yes   No"
  },
  {
   "id": "84D751",
   "max": 12,
   "pos": "0004",
   "jp": "大型   中型   小型",
-  "en": ""
+  "en": "Large     Medium    Mini"
  },
  {
   "id": "84D76E",
   "max": 14,
   "pos": "0004",
   "jp": "道具の名前 まかせる 付ける",
-  "en": ""
+  "en": "Item Name   Default   Custom"
  },
  {
   "id": "84D78F",
   "max": 14,
   "pos": "0004",
   "jp": "変更しますか？ はい いいえ",
-  "en": ""
+  "en": "Change it?      Yes   No"
  },
  {
   "id": "84D7B0",
   "max": 14,
   "pos": "0004",
   "jp": "作りますか？  はい いいえ",
-  "en": ""
+  "en": "Make it?        Yes   No"
  },
  {
   "id": "84D7D1",
   "max": 10,
   "pos": "000C",
   "jp": "主人公の名前を自分で",
-  "en": ""
+  "en": "Name the hero"
  },
  {
   "id": "84D7E8",
   "max": 6,
   "pos": "008C",
   "jp": "付けますか？",
-  "en": ""
+  "en": "yourself?"
  },
  {
   "id": "84D7F7",
   "max": 8,
   "pos": "011C",
   "jp": "まかせる 付ける",
-  "en": ""
+  "en": "Default   Custom"
  },
  {
   "id": "84D80C",
   "max": 3,
   "pos": "0084",
   "jp": "主人公",
-  "en": ""
+  "en": "Hero"
  },
  {
   "id": "84D815",
   "max": 11,
   "pos": "0184",
   "jp": "これでよろしいですか？",
-  "en": ""
+  "en": "Is this all right?"
  },
  {
   "id": "84D82E",
   "max": 6,
   "pos": "0224",
   "jp": "はい いいえ",
-  "en": ""
+  "en": "Yes   No"
  },
  {
   "id": "84D83F",
   "max": 13,
   "pos": "0004",
   "jp": "どちらですか？ 主人公 妹",
-  "en": ""
+  "en": "Which one?    Hero  Sister"
  },
  {
   "id": "84D85E",
   "max": 8,
   "pos": "000C",
   "jp": "妹の名前を自分で",
-  "en": ""
+  "en": "Name the sister"
  },
  {
   "id": "84D871",
   "max": 6,
   "pos": "008C",
   "jp": "付けますか？",
-  "en": ""
+  "en": "yourself?"
  },
  {
   "id": "84D880",
   "max": 8,
   "pos": "011C",
   "jp": "まかせる 付ける",
-  "en": ""
+  "en": "Default   Custom"
  },
  {
   "id": "84D895",
   "max": 3,
   "pos": "0084",
   "jp": "主人公",
-  "en": ""
+  "en": "Hero"
  },
  {
   "id": "84D89E",
   "max": 1,
   "pos": "0188",
   "jp": "妹",
-  "en": ""
+  "en": "Si"
  },
  {
   "id": "84D8A3",
   "max": 11,
   "pos": "0284",
   "jp": "すべてよろしいですか？",
-  "en": ""
+  "en": "Is everything OK?"
  },
  {
   "id": "84D8BC",
   "max": 6,
   "pos": "0324",
   "jp": "はい いいえ",
-  "en": ""
+  "en": "Yes   No"
  },
  {
   "id": "84D8CD",
   "max": 4,
   "pos": "000C",
   "jp": "錬金術師",
-  "en": ""
+  "en": "Alchemy"
  },
  {
   "id": "84D8D8",
   "max": 6,
   "pos": "01A4",
   "jp": "はい いいえ",
-  "en": ""
+  "en": "Yes   No"
  },
  {
   "id": "84D8E9",
   "max": 4,
   "pos": "000C",
   "jp": "錬金術師",
-  "en": ""
+  "en": "Alchemy"
  },
  {
   "id": "84D8F4",
   "max": 7,
   "pos": "008C",
   "jp": "｢完成しました",
-  "en": ""
+  "en": "\"It's done!"
  },
  {
   "id": "84D905",
   "max": 10,
   "pos": "0110",
   "jp": "もうー度造りますか？",
-  "en": ""
+  "en": "Make another one?"
  },
  {
   "id": "84D91C",
   "max": 6,
   "pos": "01A4",
   "jp": "はい いいえ",
-  "en": ""
+  "en": "Yes   No"
  },
  {
   "id": "84D92D",
   "max": 4,
   "pos": "000C",
   "jp": "錬金術師",
-  "en": ""
+  "en": "Alchemy"
  },
  {
   "id": "84D938",
   "max": 12,
   "pos": "008C",
   "jp": "｢ 番目はどの元素を加え",
-  "en": ""
+  "en": " \"  : Which element will"
  },
  {
   "id": "84D953",
   "max": 4,
   "pos": "0110",
   "jp": "ますか？",
-  "en": ""
+  "en": "you add?"
  },
  {
   "id": "84D95E",
   "max": 11,
   "pos": "0190",
   "jp": "土  火  水  空気",
-  "en": ""
+  "en": "Earth Fire  Water Air"
  },
  {
   "id": "84D979",
   "max": 4,
   "pos": "000C",
   "jp": "錬金術師",
-  "en": ""
+  "en": "Alchemy"
  },
  {
   "id": "84D984",
   "max": 13,
   "pos": "0188",
   "jp": "造りますか？ はい いいえ",
-  "en": ""
+  "en": "Make it?      Yes   No"
  },
  {
   "id": "84D9A3",
   "max": 4,
   "pos": "000C",
   "jp": "錬金術師",
-  "en": ""
+  "en": "Alchemy"
  },
  {
   "id": "84D9AE",
   "max": 12,
   "pos": "008C",
   "jp": "｢どうするか選んで下さい",
-  "en": ""
+  "en": "\"Choose what to do."
  },
  {
   "id": "84D9C9",
   "max": 9,
   "pos": "0198",
   "jp": "加熱する 冷却する",
-  "en": ""
+  "en": "Heat      Cool"
  },
  {
   "id": "84D9E0",
   "max": 4,
   "pos": "000C",
   "jp": "錬金術師",
-  "en": ""
+  "en": "Alchemy"
  },
  {
   "id": "84D9EB",
   "max": 9,
   "pos": "008C",
   "jp": "｢誰が持ちますか？",
-  "en": ""
+  "en": "\"Who'll carry it?"
  },
  {
   "id": "84DA02",
   "max": 4,
   "pos": "000C",
   "jp": "錬金術師",
-  "en": ""
+  "en": "Alchemy"
  },
  {
   "id": "84DA0F",
@@ -1873,286 +1873,286 @@
   "max": 3,
   "pos": "0028",
   "jp": "能力値",
-  "en": ""
+  "en": "Stats"
  },
  {
   "id": "84E038",
   "max": 2,
   "pos": "0004",
   "jp": "開始",
-  "en": ""
+  "en": "New"
  },
  {
   "id": "84E03F",
   "max": 2,
   "pos": "0010",
   "jp": "続き",
-  "en": ""
+  "en": "Load"
  },
  {
   "id": "84E048",
   "max": 2,
   "pos": "0004",
   "jp": "入力",
-  "en": ""
+  "en": "Type"
  },
  {
   "id": "84E04F",
   "max": 2,
   "pos": "0010",
   "jp": "終了",
-  "en": ""
+  "en": "Done"
  },
  {
   "id": "84E058",
   "max": 2,
   "pos": "0004",
   "jp": "〔ﾛｰ〕〔ﾄﾞ〕",
-  "en": ""
+  "en": "Load"
  },
  {
   "id": "84E05F",
   "max": 2,
   "pos": "0010",
   "jp": "〔ｺ〕〔ﾋﾟｰ〕",
-  "en": ""
+  "en": "Copy"
  },
  {
   "id": "84E066",
   "max": 2,
   "pos": "001C",
   "jp": "〔ﾁｪ〕〔ﾝｼﾞ〕",
-  "en": ""
+  "en": "Swap"
  },
  {
   "id": "84E06D",
   "max": 2,
   "pos": "0028",
   "jp": "〔ﾌﾟﾛ〕〔ﾃｸﾄ〕",
-  "en": ""
+  "en": "Lock"
  },
  {
   "id": "84E074",
   "max": 2,
   "pos": "0034",
   "jp": "〔ﾃﾞﾘ〕〔ｰﾄ〕",
-  "en": ""
+  "en": "Wipe"
  },
  {
   "id": "84E07D",
   "max": 2,
   "pos": "0004",
   "jp": "造る",
-  "en": ""
+  "en": "Make"
  },
  {
   "id": "84E084",
   "max": 2,
   "pos": "0010",
   "jp": "道具",
-  "en": ""
+  "en": "Item"
  },
  {
   "id": "84E08B",
   "max": 2,
   "pos": "001C",
   "jp": "売る",
-  "en": ""
+  "en": "Sell"
  },
  {
   "id": "84E15E",
   "max": 12,
   "pos": "0004",
   "jp": "しかし何も起らなかった‥",
-  "en": ""
+  "en": "But nothing happened..."
  },
  {
   "id": "84E17B",
   "max": 12,
   "pos": "000C",
   "jp": "｢それでは私の出す質問に",
-  "en": ""
+  "en": "\"Now then, answer the"
  },
  {
   "id": "84E196",
   "max": 9,
   "pos": "0090",
   "jp": "答えていって下さい",
-  "en": ""
+  "en": "questions I ask."
  },
  {
   "id": "84E1AD",
   "max": 11,
   "pos": "000C",
   "jp": "｢最初からやり直します",
-  "en": ""
+  "en": "\"Start again from the"
  },
  {
   "id": "84E1C6",
   "max": 2,
   "pos": "0090",
   "jp": "か？",
-  "en": ""
+  "en": "top?"
  },
  {
   "id": "84E1CF",
   "max": 10,
   "pos": "000C",
   "jp": "｢中止するのですか？",
-  "en": ""
+  "en": "\"You want to stop?"
  },
  {
   "id": "84E1E8",
   "max": 12,
   "pos": "000C",
   "jp": "｢これは全然だめですね…",
-  "en": ""
+  "en": "\"This is hopeless..."
  },
  {
   "id": "84E205",
   "max": 12,
   "pos": "000C",
   "jp": "｢いまひとつだと思います",
-  "en": ""
+  "en": "\"It's a little lacking"
  },
  {
   "id": "84E220",
   "max": 2,
   "pos": "0090",
   "jp": "が…",
-  "en": ""
+  "en": "..."
  },
  {
   "id": "84E229",
   "max": 12,
   "pos": "000C",
   "jp": "｢そこそこ、といった所で",
-  "en": ""
+  "en": "\"About average, I'd"
  },
  {
   "id": "84E244",
   "max": 2,
   "pos": "0090",
   "jp": "すね",
-  "en": ""
+  "en": "say."
  },
  {
   "id": "84E24D",
   "max": 12,
   "pos": "000C",
   "jp": "｢なかなかの物が出来ます",
-  "en": ""
+  "en": "\"Quite a good one coming"
  },
  {
   "id": "84E268",
   "max": 1,
   "pos": "0090",
   "jp": "よ",
-  "en": ""
+  "en": "up"
  },
  {
   "id": "84E26F",
   "max": 12,
   "pos": "000C",
   "jp": "｢おそらく可成な物になる",
-  "en": ""
+  "en": "\"It'll likely be quite"
  },
  {
   "id": "84E28A",
   "max": 4,
   "pos": "0090",
   "jp": "でしょう",
-  "en": ""
+  "en": "good."
  },
  {
   "id": "84E297",
   "max": 12,
   "pos": "000C",
   "jp": "｢すごい出来になりそうで",
-  "en": ""
+  "en": "\"A superb one's coming"
  },
  {
   "id": "84E2B2",
   "max": 1,
   "pos": "0090",
   "jp": "す",
-  "en": ""
+  "en": "up"
  },
  {
   "id": "84E2B9",
   "max": 12,
   "pos": "000C",
   "jp": "｢途方もない物が出来るか",
-  "en": ""
+  "en": "\"This might turn out"
  },
  {
   "id": "84E2D4",
   "max": 6,
   "pos": "0090",
   "jp": "もしれません",
-  "en": ""
+  "en": "incredible."
  },
  {
   "id": "84E2E5",
   "max": 7,
   "pos": "020C",
   "jp": "｢完成しました",
-  "en": ""
+  "en": "\"It's done!"
  },
  {
   "id": "84E2F6",
   "max": 10,
   "pos": "0210",
   "jp": "もうー度造りますか？",
-  "en": ""
+  "en": "Make another one?"
  },
  {
   "id": "84E30F",
   "max": 12,
   "pos": "000C",
   "jp": "｢これ以上道具は持てない",
-  "en": ""
+  "en": "\"You can't carry any"
  },
  {
   "id": "84E32A",
   "max": 3,
   "pos": "0090",
   "jp": "ですよ",
-  "en": ""
+  "en": "more."
  },
  {
   "id": "84E335",
   "max": 12,
   "pos": "000C",
   "jp": "｢お金が足らないようです",
-  "en": ""
+  "en": "\"You seem short on gold"
  },
  {
   "id": "84E350",
   "max": 2,
   "pos": "0090",
   "jp": "が…",
-  "en": ""
+  "en": "..."
  },
  {
   "id": "84E359",
   "max": 12,
   "pos": "000C",
   "jp": "｢これ以上造る事は出来ま",
-  "en": ""
+  "en": "\"I can't make any"
  },
  {
   "id": "84E374",
   "max": 2,
   "pos": "0090",
   "jp": "せん",
-  "en": ""
+  "en": "more"
  },
  {
   "id": "84E37D",
   "max": 7,
   "pos": "0004",
   "jp": "仲間はいません",
-  "en": ""
+  "en": "No companions."
  }
 ]

@@ -15,5 +15,5 @@ def test_script_english_lint():
     import batches
     script, gl = batches.load_script(), batches.glossary()
     errs = [f"{e['id']}: {m}" for name, es in script.items() for e in es if e["en"]
-            for m in batches.entry_errors(name, e, e["en"], gl)]
+            for m in batches.entry_errors(name, e, e["en"], gl, merged=True)]
     assert not errs, "\n".join(errs[:40])

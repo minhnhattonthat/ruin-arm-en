@@ -3,54 +3,54 @@
   "id": "equip_01",
   "max": 2,
   "jp": "両手",
-  "en": ""
+  "en": "Both"
  },
  {
   "id": "equip_02",
   "max": 2,
   "jp": "〔ｾｯ〕〔ﾄ₂〕",
-  "en": ""
+  "en": "Set"
  },
  {
   "id": "equip_03",
   "max": 2,
   "jp": "〔ﾀﾞｰ〕＝",
-  "en": ""
+  "en": "Dart"
  },
  {
   "id": "equip_04",
   "max": 2,
   "jp": "空",
-  "en": ""
+  "en": "None"
  },
  {
   "id": "equip_05",
   "max": 2,
   "jp": "木矢",
-  "en": ""
+  "en": "Wood"
  },
  {
   "id": "equip_06",
   "max": 2,
   "jp": "鉄矢",
-  "en": ""
+  "en": "Iron"
  },
  {
   "id": "equip_07",
   "max": 2,
   "jp": "金矢",
-  "en": ""
+  "en": "Gold"
  },
  {
   "id": "equip_08",
   "max": 2,
   "jp": "光₂矢",
-  "en": ""
+  "en": "Lite"
  },
  {
   "id": "equip_09",
   "max": 2,
   "jp": "炎矢",
-  "en": ""
+  "en": "Fire"
  }
 ]

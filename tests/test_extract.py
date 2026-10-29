@@ -82,6 +82,8 @@ def test_en_reaches_rom(s, tmp_path, monkeypatch):
     ids = {}
     for name in ("msg13", "item"):
         e = json.loads((extract.SCRIPT / f"{name}.json").read_text(encoding="utf-8"))
+        for x in e:
+            x["en"] = ""
         e[1]["en"] = "AB{end}" if name == "msg13" else "AB"
         ids[name] = e[1]
         (tmp_path / f"{name}.json").write_text(json.dumps(e, ensure_ascii=False), encoding="utf-8")

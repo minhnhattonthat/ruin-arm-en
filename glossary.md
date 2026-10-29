@@ -146,5 +146,24 @@ Default names offered at the name entry (name_hero / name_sister, 7 letters max)
 | インゴット | Ingot | | | |
 | 必殺技 | special | | 協力必殺技 = combo special | |
 | ゴールド | gold | | currency | |
+| 村長 | Chief | | Village Chief (speaker header) | |
+| 宿屋 | inn | | 宿屋の主人 = Innkeeper | |
+| 合い言葉 | password | | also キーワード / パスワード (the ruin password) | |
+| 洞窟の鍵 | Cave Key | | | |
+| 協力必殺技 | combo special | | タメ = charge | |
+| 特殊部隊 | Special Forces | | | |
 
 ## Decisions from earlier batches
+- Speaker headers carry the full title: "Earth General Goldo", "Water General Deene", "Wind General Hude", "Flame
+  General Freed", "Imperial Guard General Zain", "Dark Princess Knight Milia", "King Caesar". 手紙 header = "Letter",
+  隊長 = "Captain", 国王 / 助手 / 勇者 (narration in Zieg's story) = "King" / "Assistant" / "Hero".
+- 四天王が一人 = "one of the Four Heavenly Kings". はっ (soldier answering) = "Yes, sir!".
+- 持ち物がいっぱいです = "* X's inventory is full." / "* Your inventory is full."
+- 様 after a name stays -sama (Fara-sama, Neil-sama); 王女様 alone = "Your Highness" / "the Princess".
+  {name:02}じいちゃん = "Grandpa {name:02}"; おばさん (to an adult woman) = "Auntie".
+- ★ (stat points, no ★ in the font) = "Stars", coloured as in the JP.
+- Bolboza / machine katakana lines in capitals; 01AC's backwards katakana is written backwards in capitals.
+- Credits headings: Production Manager, Producers, Director, Advisors, Cast, Character Design, Original Story, Special
+  Thanks, Assistance, Game Design, Program, Graphic Design, Sound Engineers, Supervisors; 集英社 = Shueisha, 月刊Vジャンプ
+  = Monthly V Jump, 週刊少年ジャンプ = Weekly Shonen Jump. Full staff names live in msg02 (b014); the staff roll (b015)
+  holds shortened forms until the phase-7 relocation (LONG list in docs/status.md).

@@ -3,432 +3,432 @@
   "id": "place_00",
   "max": 8,
   "jp": "アーフ村",
-  "en": ""
+  "en": "Aaf Village"
  },
  {
   "id": "place_01",
   "max": 8,
   "jp": "ワイアルの村",
-  "en": ""
+  "en": "Wyall Village"
  },
  {
   "id": "place_02",
   "max": 8,
   "jp": "獣人村",
-  "en": ""
+  "en": "Beast Village"
  },
  {
   "id": "place_03",
   "max": 8,
   "jp": "ラベンナの村",
-  "en": ""
+  "en": "Ravenna Village"
  },
  {
   "id": "place_04",
   "max": 8,
   "jp": "マリアの村",
-  "en": ""
+  "en": "Maria Village"
  },
  {
   "id": "place_05",
   "max": 8,
   "jp": "ルテア自治領",
-  "en": ""
+  "en": "Rutea Region"
  },
  {
   "id": "place_06",
   "max": 8,
   "jp": "ステルムの町",
-  "en": ""
+  "en": "Stelm Town"
  },
  {
   "id": "place_07",
   "max": 8,
   "jp": "ジークの家",
-  "en": ""
+  "en": "Zieg's House"
  },
  {
   "id": "place_08",
   "max": 8,
   "jp": "バルドア城城前",
-  "en": ""
+  "en": "Outside Baldoa"
  },
  {
   "id": "place_09",
   "max": 8,
   "jp": "ルテア屋敷",
-  "en": ""
+  "en": "Rutea Mansion"
  },
  {
   "id": "place_0A",
   "max": 8,
   "jp": "メディオム城",
-  "en": ""
+  "en": "Medeom Castle"
  },
  {
   "id": "place_0B",
   "max": 8,
   "jp": "サライ城",
-  "en": ""
+  "en": "Sarai Castle"
  },
  {
   "id": "place_0C",
   "max": 8,
   "jp": "ゴッドホープ遺跡",
-  "en": ""
+  "en": "Godhope Ruins"
  },
  {
   "id": "place_0D",
   "max": 8,
   "jp": "ラベンナ遺跡",
-  "en": ""
+  "en": "Ravenna Ruins"
  },
  {
   "id": "place_0E",
   "max": 8,
   "jp": "獣人村遺跡",
-  "en": ""
+  "en": "Beastfolk Ruins"
  },
  {
   "id": "place_0F",
   "max": 8,
   "jp": "ルテア近くの道",
-  "en": ""
+  "en": "Road near Rutea"
  },
  {
   "id": "place_10",
   "max": 8,
   "jp": "ティフヌ近くの道",
-  "en": ""
+  "en": "Road near Tifnu"
  },
  {
   "id": "place_11",
   "max": 8,
   "jp": "カダム遺跡",
-  "en": ""
+  "en": "Kadam Ruins"
  },
  {
   "id": "place_12",
   "max": 8,
   "jp": "ティフヌ領",
-  "en": ""
+  "en": "Tifnu Region"
  },
  {
   "id": "place_13",
   "max": 8,
   "jp": "カダム町跡",
-  "en": ""
+  "en": "Kadam Town Ruins"
  },
  {
   "id": "place_14",
   "max": 8,
   "jp": "マリアへと続く道",
-  "en": ""
+  "en": "Road to Maria"
  },
  {
   "id": "place_15",
   "max": 8,
   "jp": "洞窟に続く道",
-  "en": ""
+  "en": "Road to the Cave"
  },
  {
   "id": "place_16",
   "max": 8,
   "jp": "マリア近くの道",
-  "en": ""
+  "en": "Road near Maria"
  },
  {
   "id": "place_17",
   "max": 8,
   "jp": "獣人村近くの道",
-  "en": ""
+  "en": "By Beast Village"
  },
  {
   "id": "place_18",
   "max": 8,
   "jp": "ゴッドホープ岬へ",
-  "en": ""
+  "en": "To Cape Godhope"
  },
  {
   "id": "place_19",
   "max": 8,
   "jp": "ラベンナ近くの道",
-  "en": ""
+  "en": "Near Ravenna"
  },
  {
   "id": "place_1A",
   "max": 8,
   "jp": "ヴェルダの大森林",
-  "en": ""
+  "en": "Velder Forest"
  },
  {
   "id": "place_1B",
   "max": 8,
   "jp": "マリアから獣人村",
-  "en": ""
+  "en": "To Beast Village"
  },
  {
   "id": "place_1C",
   "max": 8,
   "jp": "アーフ洞窟への道",
-  "en": ""
+  "en": "Road to Aaf Cave"
  },
  {
   "id": "place_1D",
   "max": 8,
   "jp": "ワースの村",
-  "en": ""
+  "en": "Worth Village"
  },
  {
   "id": "place_1E",
   "max": 8,
   "jp": "ワース近くの道",
-  "en": ""
+  "en": "Road near Worth"
  },
  {
   "id": "place_1F",
   "max": 8,
   "jp": "マースナルの町",
-  "en": ""
+  "en": "Marsnal Town"
  },
  {
   "id": "place_20",
   "max": 8,
   "jp": "マースナル町近く",
-  "en": ""
+  "en": "Near Marsnal"
  },
  {
   "id": "place_21",
   "max": 8,
   "jp": "海底遺跡",
-  "en": ""
+  "en": "Undersea Ruins"
  },
  {
   "id": "place_22",
   "max": 8,
   "jp": "ロンディウムの町",
-  "en": ""
+  "en": "Rondium Town"
  },
  {
   "id": "place_23",
   "max": 8,
   "jp": "マリアの村",
-  "en": ""
+  "en": "Maria Village"
  },
  {
   "id": "place_24",
   "max": 8,
   "jp": "メディオムの町",
-  "en": ""
+  "en": "Medeom Town"
  },
  {
   "id": "place_25",
   "max": 8,
   "jp": "ロンディウム近く",
-  "en": ""
+  "en": "Near Rondium"
  },
  {
   "id": "place_26",
   "max": 8,
   "jp": "ラベンナへ続く道",
-  "en": ""
+  "en": "Road to Ravenna"
  },
  {
   "id": "place_27",
   "max": 8,
   "jp": "メディオム遺跡",
-  "en": ""
+  "en": "Medeom Ruins"
  },
  {
   "id": "place_28",
   "max": 8,
   "jp": "アーフ近くのがけ",
-  "en": ""
+  "en": "Cliff near Aaf"
  },
  {
   "id": "place_29",
   "max": 8,
   "jp": "ゴッドホープ岬",
-  "en": ""
+  "en": "Cape Godhope"
  },
  {
   "id": "place_2A",
   "max": 8,
   "jp": "ロンディウム城前",
-  "en": ""
+  "en": "Outside Rondium"
  },
  {
   "id": "place_2B",
   "max": 8,
   "jp": "フェフス城城前",
-  "en": ""
+  "en": "Outside Fefus"
  },
  {
   "id": "place_2C",
   "max": 8,
   "jp": "メディオム城前",
-  "en": ""
+  "en": "Outside Medeom"
  },
  {
   "id": "place_2D",
   "max": 8,
   "jp": "海底基地前",
-  "en": ""
+  "en": "Outside Sea Base"
  },
  {
   "id": "place_2E",
   "max": 8,
   "jp": "海底洞窟入口",
-  "en": ""
+  "en": "Sea Cave Mouth"
  },
  {
   "id": "place_2F",
   "max": 8,
   "jp": "サライ城城前",
-  "en": ""
+  "en": "Outside Sarai"
  },
  {
   "id": "place_30",
   "max": 8,
   "jp": "アーフ近くの道",
-  "en": ""
+  "en": "Road near Aaf"
  },
  {
   "id": "place_31",
   "max": 8,
   "jp": "ルテア屋敷前",
-  "en": ""
+  "en": "Rutea Manor Gate"
  },
  {
   "id": "place_32",
   "max": 8,
   "jp": "ティフヌ屋敷前",
-  "en": ""
+  "en": "Tifnu Manor Gate"
  },
  {
   "id": "place_33",
   "max": 8,
   "jp": "ロンディウム城",
-  "en": ""
+  "en": "Rondium Castle"
  },
  {
   "id": "place_34",
   "max": 8,
   "jp": "獣人村から遺跡へ",
-  "en": ""
+  "en": "To Beast Ruins"
  },
  {
   "id": "place_35",
   "max": 8,
   "jp": "トンネル洞窟へ",
-  "en": ""
+  "en": "To Tunnel Cave"
  },
  {
   "id": "place_36",
   "max": 8,
   "jp": "レジスタンス",
-  "en": ""
+  "en": "Resistance"
  },
  {
   "id": "place_37",
   "max": 8,
   "jp": "フェフス城ぬけ道",
-  "en": ""
+  "en": "Fefus Secret Way"
  },
  {
   "id": "place_38",
   "max": 8,
   "jp": "妖しい洞窟",
-  "en": ""
+  "en": "Eerie Cave"
  },
  {
   "id": "place_39",
   "max": 8,
   "jp": "海辺の洞窟",
-  "en": ""
+  "en": "Seaside Cave"
  },
  {
   "id": "place_3A",
   "max": 8,
   "jp": "キラキラ洞窟",
-  "en": ""
+  "en": "Glitter Cave"
  },
  {
   "id": "place_3B",
   "max": 8,
   "jp": "バルドア城上部",
-  "en": ""
+  "en": "Upper Baldoa"
  },
  {
   "id": "place_3C",
   "max": 8,
   "jp": "アーフ洞窟",
-  "en": ""
+  "en": "Aaf Cave"
  },
  {
   "id": "place_3D",
   "max": 8,
   "jp": "ロンディウム洞窟",
-  "en": ""
+  "en": "Rondium Cave"
  },
  {
   "id": "place_3E",
   "max": 8,
   "jp": "トンネル洞窟",
-  "en": ""
+  "en": "Tunnel Cave"
  },
  {
   "id": "place_3F",
   "max": 8,
   "jp": "ルテア屋敷地下道",
-  "en": ""
+  "en": "Rutea Underpass"
  },
  {
   "id": "place_40",
   "max": 8,
   "jp": "ティフヌ屋敷",
-  "en": ""
+  "en": "Tifnu Mansion"
  },
  {
   "id": "place_41",
   "max": 8,
   "jp": "メディオム城地下",
-  "en": ""
+  "en": "Medeom Basement"
  },
  {
   "id": "place_42",
   "max": 8,
   "jp": "マリア近くの洞窟",
-  "en": ""
+  "en": "Cave near Maria"
  },
  {
   "id": "place_43",
   "max": 8,
   "jp": "フェフス城",
-  "en": ""
+  "en": "Fefus Castle"
  },
  {
   "id": "place_44",
   "max": 8,
   "jp": "サライ城海底洞窟",
-  "en": ""
+  "en": "Sarai Sea Cave"
  },
  {
   "id": "place_45",
   "max": 8,
   "jp": "ケムル海底基地",
-  "en": ""
+  "en": "Kemul Sea Base"
  },
  {
   "id": "place_46",
   "max": 8,
   "jp": "バルドア城",
-  "en": ""
+  "en": "Baldoa Castle"
  },
  {
   "id": "place_47",
   "max": 8,
   "jp": "バルドア城",
-  "en": ""
+  "en": "Baldoa Castle"
  }
 ]

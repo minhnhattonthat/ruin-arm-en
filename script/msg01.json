@@ -37,971 +37,971 @@
    "0120"
   ],
   "jp": "{d:8C|本当}なの！？{wait}本国で何かが\nおこって{d:4F|いる}{d:09|という}噂は？{end}",
-  "en": ""
+  "en": "Is it true!?{wait}The rumor that something is happening\nback in the homeland?{end}"
  },
  {
   "id": "0121",
   "jp": "{name:04}様、一体\nどちらに行かれるの{d:5B|ですか}？{end}",
-  "en": ""
+  "en": "{name:04}-sama, where on earth are you\ngoing?{end}"
  },
  {
   "id": "0122",
   "jp": "{name:04}様も、\n女王様も無事で{wait}{d:8C|本当}に{d:57|よかった}わ。{end}",
-  "en": ""
+  "en": "{name:04}-sama and Her Majesty the\nQueen, both safe and sound...{wait}I'm so relieved.{end}"
  },
  {
   "id": "0123",
   "jp": "それは{col:01}「{item:16}」{col}！？{wait}{d:8C|本当}にあ{d:7B|った}のね。{wait}昔話の中だけの物と\n{d:49|思って}{d:56|いた}わ。{wait}ロマンティックよねー{wait}そのリングは、人魚族から\n{d:19|人間}族への種族をこえた\n愛のかけはしと{d:7F|して}、{wait}おくられる物なの{d:6D|よ。}{end}",
-  "en": ""
+  "en": "That's the {col:01}\"{item:16}\"{col}!?{wait}So it really exists.{wait}I thought it was something from old tales.{wait}How romantic!{wait}That ring is given by a merfolk to a human,\nas a bridge of love that crosses the\nraces.{end}"
  },
  {
   "id": "0124",
   "jp": "王女様、あの指輪の事は？{end}",
-  "en": ""
+  "en": "Your Highness, what about that ring?{end}"
  },
  {
   "id": "0125",
   "jp": "私に何の用{d:5B|ですか}な？{end}",
-  "en": ""
+  "en": "And what might you want with me?{end}"
  },
  {
   "id": "0126",
   "jp": "{name:04}王女様、\nお気を付けて。{end}",
-  "en": ""
+  "en": "Princess {name:04}, please take care.{end}"
  },
  {
   "id": "0127",
   "jp": "{col:01}{d:00|ルシア}\n{d:79|・・・}{d:79|・・・}\n{d:79|・・・}{name}。{end}",
-  "en": ""
+  "en": "{col:01}Lucia\n......\n...{name}.{end}"
  },
  {
   "id": "0128",
   "jp": "かん者のよう体は\nあまりよくあり{d:4B|ません}ね。{end}",
-  "en": ""
+  "en": "The patient isn't doing very well, I'm\nafraid.{end}"
  },
  {
   "id": "0129",
   "jp": "こまります{d:1B|！！}\n中に入ら{d:6C|ない}で{d:47|下さい。}{end}",
-  "en": ""
+  "en": "Please, you mustn't!! Don't go inside.{end}"
  },
  {
   "id": "012A",
   "jp": "今は会議中{d:5C|です}ので\n入れ{d:4B|ません}。{end}",
-  "en": ""
+  "en": "A council is in session, so you can't go in.{end}"
  },
  {
   "id": "012B",
   "jp": "王女様より、おおせ\nつかっており{d:59|ます。}{wait}どうぞお入り{d:47|下さい。}{end}",
-  "en": ""
+  "en": "The Princess has given me my orders.{wait}Please, go right in.{end}"
  },
  {
   "id": "012C",
   "jp": "今は、ふうさ中{d:5C|です}。\n{d:75|ここ}をお通し{d:51|する}\nわけにはまいり{d:4B|ません}。{end}",
-  "en": ""
+  "en": "This area is sealed off right now. I cannot\nlet you through.{end}"
  },
  {
   "id": "012D",
   "jp": "もうしわけあり{d:4B|ません}が\n通す事は、出来{d:4B|ません}。{end}",
-  "en": ""
+  "en": "I'm terribly sorry, but I can't let you pass.{end}"
  },
  {
   "id": "012E",
   "jp": "お気を付け{d:47|下さい。}{end}",
-  "en": ""
+  "en": "Please be careful.{end}"
  },
  {
   "id": "012F",
   "jp": "地上の人が、{d:77|こんな所}に\n{d:4F|いる}{d:58|なんて}{d:79|・・・}{end}",
-  "en": ""
+  "en": "A surface-dweller, in a place like this...{end}"
  },
  {
   "id": "0130",
   "jp": "{d:76|この}国には、世界一の{d:39|鍛冶屋}\n{col:01}{d:12|ハヌトゥ}{col}が{d:4F|いる}。{wait}地上には彼ほどすぐれた男は\nいまい、ヘヘン。{end}",
-  "en": ""
+  "en": "This kingdom has the finest blacksmith in\nthe world, {col:01}Hanutu{col}.{wait}There's no man on the surface half as\nskilled. Heh heh!{end}"
  },
  {
   "id": "0131",
   "jp": "はるか上方に、地上の世界が\n{d:61|ある}{d:09|という}{d:79|・・・}{wait}一度で{d:73|いい}から\n行ってみたい{d:79|・・・}{end}",
-  "en": ""
+  "en": "They say the surface world lies far, far\nabove us...{wait}Just once, I'd love to go there...{end}"
  },
  {
   "id": "0132",
   "jp": "{d:76|この}国からやつらを\nおいはらっ{d:0C|てくれ}たのは\n{d:8E|あなた}方ね、{d:24|ありがとう}。{end}",
-  "en": ""
+  "en": "You're the ones who drove them out of\nour kingdom, aren't you? Thank you.{end}"
  },
  {
   "id": "0133",
   "jp": "{col:01}{d:12|ハヌトゥ}{spd:01}\n私は武器を直{d:62|した}り、\n鍛えたり{d:4D|している}。{wait}{d:56|いた}んだ武器があれば、\n直{d:7F|して}やるぞ。{end}",
-  "en": ""
+  "en": "{col:01}Hanutu{spd:01}\nI repair and forge weapons.{wait}Bring me any damaged weapon, and I shall\nmend it.{end}"
  },
  {
   "id": "0134",
   "jp": "{col:01}{name:03}{f4}{f4:53}{fa:C1}\n気をつけてな、二人とも。{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:53}{fa:C1}\nTake care, you two.{end}"
  },
  {
   "id": "0135",
   "jp": "{col:01}{d:12|ハヌトゥ}{spd:01}\nすまぬ。\n私には、それ以上の回復は{wait}無理のようだ。{end}",
-  "en": ""
+  "en": "{col:01}Hanutu{spd:01}\nForgive me. Restoring it any further{wait}is beyond me, it seems.{end}"
  },
  {
   "id": "0136",
   "jp": "いらっしゃいませ。\nさー仕事、仕事。{end}",
-  "en": ""
+  "en": "Welcome. Right then, back to work, back to\nwork!{end}"
  },
  {
   "id": "0137",
   "jp": "{d:24|ありがとう}ござい{d:4C|ました。}{end}",
-  "en": ""
+  "en": "Thank you very much.{end}"
  },
  {
   "id": "0138",
   "jp": "{col:01}{d:13|サーラ}\n感謝{d:7F|して}い{d:59|ます。}{wait}{d:8C|本当}に{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Saara\nI am grateful to you.{wait}Truly...{end}"
  },
  {
   "id": "0139",
   "jp": "何者だ！{end}",
-  "en": ""
+  "en": "Who goes there!{end}"
  },
  {
   "id": "013A",
   "jp": "{d:0A|きさまら}しんにゅう者だな！{end}",
-  "en": ""
+  "en": "You lot are intruders!{end}"
  },
  {
   "id": "013B",
   "jp": "{d:75|ここ}に{d:56|いた}{d:35|ライドロイド}軍は\n南の{col:01}{d:2D|ティフヌ}領{col}に\n逃げてい{d:7B|った}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "The Raidroid army that was here fled\nsouth to the {col:01}Tifnu Region{col}.{end}"
  },
  {
   "id": "013C",
   "jp": "最近、南の{col:01}{d:2C|ルテア}{col}から、\n{d:1F|帝国}特殊部隊が来るんだ{d:6D|よ。}{wait}やつらの目的は、\n{col:01}トラ頭の大男{col}と、\n{col:01}タルをかぶ{d:7B|った}ジジイ{col}、\n{col:01}13、4才の女の子{col}そ{d:7F|して}、{wait}{col:01}ハネの生えた小さな女の子を\n{col:01}連れた男の子{col}{d:0F|らしい}{d:79|・・・}{wait}その格好{d:79|・・・}{d:79|・・・}{wait:11}あんたまさかっ！？{end}",
-  "en": ""
+  "en": "Lately the Imperial Special Forces have\nbeen coming up from {col:01}Rutea{col}, to the south.{wait}Seems they're after {col:01}a tiger-headed giant{col},\n{col:01}an old geezer wearing a barrel{col}, {col:01}a girl of 13\nor 14{col}, and...{wait}{col:01}a boy traveling with {col:01}a small winged girl{col}...{wait}That getup...{wait:11}Don't tell me you're...!?{end}"
  },
  {
   "id": "013D",
   "jp": "{d:1F|帝国}には、{col:01}地・水・火・風の\n{col:01}{d:1E|魔将}{col}と呼ばれる将軍が、\n四人{d:4F|いる}{d:0F|らしい}。{wait}{col:01}最近、あた{d:0F|らしい}将軍が一人\n{col:01}増えた{d:0F|らしい}ぞ。{end}",
-  "en": ""
+  "en": "They say the Empire has four commanders\ncalled the {col:01}Earth, Water, Flame and {col:01}Wind\nGenerals{col}.{wait}{col:01}And word is, one more {col:01}general joined them\nrecently.{end}"
  },
  {
   "id": "013E",
   "jp": "{d:58|なんて}事を{d:7F|して}{d:43|くれた}{d:5D|のじゃ}\n{d:52|これ}で{d:76|この}町もおしまい{d:60|じゃ}！{end}",
-  "en": ""
+  "en": "What have you gone and done! This town is\nfinished now!{end}"
  },
  {
   "id": "013F",
   "jp": "そう言えば、宿屋に\n{col:01}トラ頭の大男{col}と、\n{col:01}おかしな格好を{d:62|した}老人{col}が、\n泊まって{d:56|いた}ぞ。{end}",
-  "en": ""
+  "en": "Come to think of it, {col:01}a tiger-headed giant{col}\nand {col:01}an oddly dressed old man{col} were staying\nat the inn.{end}"
  },
  {
   "id": "0140",
   "jp": "あんたあの時の{d:79|・・・}{wait}無事だ{d:7B|った}のか！\n{d:57|よかった}なぁ。{end}",
-  "en": ""
+  "en": "You're the one from back then...{wait}You made it out okay! Thank goodness.{end}"
  },
  {
   "id": "0141",
   "jp": "{d:2C|ルテア}には、特殊部隊に\nつかま{d:7B|った}人々が、おおぜい\n連れさられてい{d:7B|った}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Lots of people captured by the Special\nForces were carted off to Rutea.{end}"
  },
  {
   "id": "0142",
   "jp": "つかま{d:7B|った}人々は\nどうな{d:7B|った}ん{d:65|だろう}ねぇ。{end}",
-  "en": ""
+  "en": "I wonder what became of the people they\ncaptured...{end}"
  },
  {
   "id": "0143",
   "jp": "{d:2C|ルテア}は、あっと言う間に\n{d:35|ライドロイド}軍に占領されて\n{d:42|しまった}。{wait}軍を指揮{d:7F|して}{d:55|いたの}は、\n{col:01}風{d:1E|魔将}{col}とか{wait}言って{d:56|いた}{d:0F|らしい}が{d:79|・・・}{end}",
-  "en": ""
+  "en": "Rutea was occupied by the Raidroid army\nin the blink of an eye.{wait}The one commanding the army was called\nthe {col:01}Wind General{col}, or{wait}something like that, I heard...{end}"
  },
  {
   "id": "0144",
   "jp": "{d:2C|ルテア}自治領は、解放された\n{d:0F|らしい}な{d:79|・・・}{end}",
-  "en": ""
+  "en": "Sounds like the Rutea Region has been\nliberated...{end}"
  },
  {
   "id": "0145",
   "jp": "風{d:1E|魔将}と呼ばれる将軍は\n残こくで、ひきょう者\n{d:0F|らしい}{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "They say this general they call the Wind\nGeneral is cruel, and a coward to boot.{end}"
  },
  {
   "id": "0146",
   "jp": "風{d:1E|魔将}と呼ばれる将軍は\n残こくで、ひきょう者\n{d:79|・・・}だ{d:7B|った}{d:0F|らしい}ぞ。{end}",
-  "en": ""
+  "en": "They say this general they called the Wind\nGeneral was cruel, and a coward to boot...\nor so he was.{end}"
  },
  {
   "id": "0147",
   "jp": "合い言葉は{col:01}「{d:3D|カダム}」{col}{d:5C|です}。{end}",
-  "en": ""
+  "en": "The password is {col:01}\"Kadam\"{col}.{end}"
  },
  {
   "id": "0148",
   "jp": "今は無き{col:01}「{d:3D|カダム}」{col}は、\nすば{d:0F|らしい}{d:8D|王国}だ{d:7B|った}と\n聞いてい{d:59|ます。}{end}",
-  "en": ""
+  "en": "I've heard that {col:01}\"Kadam\"{col}, a kingdom now\nlost, was a wonderful place.{end}"
  },
  {
   "id": "0149",
   "jp": "{d:37|レジスタンス}をやってた時は\nいつ死んじまうかと、\nヒヤヒヤ{d:62|した}ぜ。{end}",
-  "en": ""
+  "en": "Back when I was in the Resistance, I was\nscared stiff I'd die any minute.{end}"
  },
  {
   "id": "014A",
   "jp": "あの人はもう帰って\nこ{d:6C|ない}{d:79|・・・}{wait}もう二度と{d:78|こんな}思いは\n{d:62|した}く{d:6C|ない}わ。{end}",
-  "en": ""
+  "en": "He's never coming back...{wait}I never want to feel like this again.{end}"
  },
  {
   "id": "014B",
   "jp": "{d:38|メディオム}の人々も\nひどい目にあって{d:4F|いる}ん\n{d:65|だろう}か？{end}",
-  "en": ""
+  "en": "Are the people of Medeom suffering\nterribly too, I wonder?{end}"
  },
  {
   "id": "014C",
   "jp": "{d:44|ここは}、あんた達が\n来る様な所{d:60|じゃ}{d:6C|ない}。{wait}帰{d:7B|った}、帰{d:7B|った}。{end}",
-  "en": ""
+  "en": "This ain't the kind of place for the likes of\nyou.{wait}Go on home, go on.{end}"
  },
  {
   "id": "014D",
   "jp": "もう二度と、ひのあたる\n場所に出て来{d:6B|れない}と\n{d:49|思って}い{d:4C|ました。}{wait}{d:24|ありがとう}ござい{d:4C|ました。}{end}",
-  "en": ""
+  "en": "I thought I'd never see the light of day\nagain.{wait}Thank you so much.{end}"
  },
  {
   "id": "014E",
   "jp": "あそ{d:76|この}{col:01}すみに{d:4F|いる}男{col}に\n話しかけたかい？{end}",
-  "en": ""
+  "en": "Have you talked to {col:01}the man in the corner{col}\nover there?{end}"
  },
  {
   "id": "014F",
   "jp": "また活気がもどって来た{d:6D|よ。}{end}",
-  "en": ""
+  "en": "The town's lively again.{end}"
  },
  {
   "id": "0150",
   "jp": "親父、{d:60|じゃ}ん{d:60|じゃ}ん\nたべ物を持って来い{d:1B|！！}{end}",
-  "en": ""
+  "en": "Hey, pops! Keep the food coming!!{end}"
  },
  {
   "id": "0151",
   "jp": "楽{d:71|しい}なぁー。{end}",
-  "en": ""
+  "en": "This is so much fun!{end}"
  },
  {
   "id": "0152",
   "jp": "あんなやつら本気を出せば、\nコテンパンだ{d:7B|った}のに{d:6D|よ。}{end}",
-  "en": ""
+  "en": "If we'd gotten serious, we'd have smashed\nthose guys flat.{end}"
  },
  {
   "id": "0153",
   "jp": "{col:01}{d:1C|エイソッド}{spd:01}\nよく来{d:0C|てくれ}た、{col:01}同志{col}{d:6D|よ。}{wait}私は{d:76|この}{d:37|レジスタンス}\n{col:01}「{d:3D|カダム}の雷」{col}のリーダー\nロバート・{d:1C|エイソッド}だ。{wait}君達の事は、何度か話に\n聞いて{d:4F|いる}。{wait}{d:1F|帝国}最強と言われて{d:4F|いる}\n四{d:1E|魔将}の内、地と水を倒し、{wait}風{d:1E|魔将}もまた、{d:76|この}国まで\nしりぞけた。{wait}まさに君達は\n我々のきぼうの星だ。{wait}我々は、少しずつ力を\nたくわえ{d:1F|帝国}にたいこう{d:51|する}\nために、反乱軍をつく{d:7B|った}。{wait}君達が来たのは時が来た、\n{d:09|という}事かも知れぬ。{wait}明日作戦を決行{d:51|する}。{wait}君達には、別動隊と{d:7F|して}\nちょくせつ風{d:1E|魔将}をたたいて\nもら{d:56|いた}い。{wait}たのむぞっ。{end}",
-  "en": ""
+  "en": "{col:01}Aysod{spd:01}\nWelcome, {col:01}comrades{col}.{wait}I am Robert Aysod, leader of this\nResistance, the {col:01}\"Thunder of Kadam\"{col}.{wait}I have heard of you more than once.{wait}Of the Four Dark Generals, said to be the\nEmpire's strongest, you defeated Earth\nand Water,{wait}and drove the Wind General back as far as\nthis land.{wait}Truly, you are our star of hope.{wait}We have been slowly gathering our\nstrength, and formed this rebel army to\nstand against the Empire.{wait}Your arrival may well mean the time has\ncome.{wait}Tomorrow, we launch our operation.{wait}I want you to act as a separate unit and\nstrike at the Wind General directly.{wait}I am counting on you.{end}"
  },
  {
   "id": "0154",
   "jp": "{col:01}{d:1C|エイソッド}\n今は体を休めておい{d:0C|てくれ}。{end}",
-  "en": ""
+  "en": "{col:01}Aysod\nRest yourselves for now.{end}"
  },
  {
   "id": "0155",
   "jp": "{d:1C|エイソッド}卿は、{d:76|この}地の\n領主様だ{d:7B|った}お人だ。{wait}やつらの{d:29|突然}の攻撃に\n領地を守りきれなか{d:7B|った}。{wait}その事に、おおいに責にんを\n感じ、{d:76|この}反乱軍をお作りに{wait}なられた{d:67|のだ。}{end}",
-  "en": ""
+  "en": "Lord Aysod was the ruler of this land.{wait}When they launched their sudden attack,\nhe couldn't protect his domain.{wait}He took that very much to heart, and so{wait}he formed this rebel army.{end}"
  },
  {
   "id": "0156",
   "jp": "{d:0A|きさまら}の様な関係の{d:6C|ない}\n者の手をかりずとも、{wait}オレ達の国は、オレ達の力で\nとりかえ{d:7F|して}みせる。{end}",
-  "en": ""
+  "en": "We don't need help from outsiders like you\nlot.{wait}We'll take back our country with our own\ntwo hands.{end}"
  },
  {
   "id": "0157",
   "jp": "{d:1C|エイソッド}卿の娘{d:1D|レイナ}は、\n美{d:71|しい}娘さ{d:66|んだ。}{end}",
-  "en": ""
+  "en": "Lord Aysod's daughter Reina is a beautiful\nyoung lady.{end}"
  },
  {
   "id": "0158",
   "jp": "{d:23|あなた達}だけがたよりだわ。{end}",
-  "en": ""
+  "en": "You're our only hope.{end}"
  },
  {
   "id": "0159",
   "jp": "{d:1D|レイナ}も年頃{d:54|だから}、{wait}好きな人{d:64|でも}\n{d:4F|いる}みたいね{d:79|・・・}{wait}{d:64|でも}、{d:50|なんだ}かとっても\nなやんでたみたい。{wait}お父様がきび{d:71|しい}人{d:54|だから}\nかしらね{d:79|・・・}{end}",
-  "en": ""
+  "en": "Reina's at that age, after all...{wait}Seems she's got someone she's sweet\non...{wait}But she seemed awfully troubled about\nsomething.{wait}Maybe because her father is so strict...{end}"
  },
  {
   "id": "015A",
   "jp": "{col:01}{d:1D|レイナ}\nどうか、\n父上をお守り{d:47|下さい。}{end}",
-  "en": ""
+  "en": "{col:01}Reina\nPlease, protect my father.{end}"
  },
  {
   "id": "015B",
   "jp": "{col:01}{d:1D|レイナ}\n作戦は明日{d:5B|ですか}！？{wait}{d:79|・・・}{d:79|・・・}{wait}そう{d:5B|ですか}{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Reina\nThe operation is tomorrow!?{wait}...{wait}I see...{end}"
  },
  {
   "id": "015C",
   "jp": "{col:01}{d:1C|エイソッド}\nそろそろやつらの\n基地へのりこむぞ！{wait}用意は{d:73|いい}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1OK\n  2まだ{d:5C|です}{choice:00:10FD:10FE}",
-  "en": ""
+  "en": "{col:01}Aysod\nIt's nearly time to storm their base!{wait}Are you ready?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1OK\n  2Not yet{choice:00:10FD:10FE}"
  },
  {
   "id": "015D",
   "jp": "{col:01}＊{name:01}の\n{col:01} 持ち物がいっぱい{d:5C|です}。{end}",
-  "en": ""
+  "en": "{col:01}* {name:01}'s\n{col:01} inventory is full.{end}"
  },
  {
   "id": "015E",
   "jp": "{col:01}{d:1C|エイソッド}\n{d:8F|おねがい}だ、\n奴を倒{d:7F|して}くれ！{end}",
-  "en": ""
+  "en": "{col:01}Aysod\nI beg you, defeat him!{end}"
  },
  {
   "id": "015F",
   "jp": "{d:8F|おねがい}します！\n{d:44|ここは}私達で何とかします！{end}",
-  "en": ""
+  "en": "Please go! We'll handle things here!{end}"
  },
  {
   "id": "0160",
   "jp": "{d:0A|きさまら}も\n{d:37|レジスタンス}か！？{end}",
-  "en": ""
+  "en": "So you're with the Resistance too!?{end}"
  },
  {
   "id": "0161",
   "jp": "{col:01}＊{name}の\n{col:01} 持ち物がいっぱい{d:5C|です}。{end}",
-  "en": ""
+  "en": "{col:01}* {name}'s\n{col:01} inventory is full.{end}"
  },
  {
   "id": "0162",
   "jp": "{col:01}{d:1C|エイソッド}\nがんばっ{d:0C|てくれ}。{wait}君達の活やくを\nきたい{d:4D|している}。{end}",
-  "en": ""
+  "en": "{col:01}Aysod\nGive it your all.{wait}I expect great things from you.{end}"
  },
  {
   "id": "0163",
   "jp": "{d:7E|早く}奴を倒{d:7F|して}くれ{d:1B|！！}{end}",
-  "en": ""
+  "en": "Hurry and defeat him!!{end}"
  },
  {
   "id": "0164",
   "jp": "{d:76|この}国を救って下さ{d:7B|った}\nそうで、{d:24|ありがとう}\nござい{d:4C|ました。}{end}",
-  "en": ""
+  "en": "I hear you saved this land. Thank you so\nvery much.{end}"
  },
  {
   "id": "0165",
   "jp": "{col:01}{d:1D|レイナ}{spd:01}\n{d:79|・・・}すみ{d:4B|ません}で{d:62|した}。{wait}{d:8F|おねがい}{d:5C|です}、きっと\n{d:38|メディオム}の人々も\n救ってあげて{d:47|下さい。}{end}",
-  "en": ""
+  "en": "{col:01}Reina{spd:01}\n...I'm so sorry.{wait}Please, I beg you... save the people of\nMedeom too.{end}"
  },
  {
   "id": "0166",
   "jp": "となりの国の{d:38|メディオム}には\n国をとび出{d:62|した}王子が\n{d:56|いた}{d:53|そうだ}。{wait}{d:76|この}話は、口外せぬよう\nおふれが出た{d:0F|らしい}が、{wait}{d:76|この}国の奴ならみんな\n知って{d:4F|いる}と思う{d:6D|よ。}{end}",
-  "en": ""
+  "en": "I hear the kingdom next door, Medeom, had\na prince who ran off and left the country.{wait}Word is an order went out not to speak of\nit, but{wait}I reckon everybody in this country knows.{end}"
  },
  {
   "id": "0167",
   "jp": "{d:38|メディオム}{d:8D|王国}には昔、\n{col:01}二人の王子{col}が{d:56|いた}\n{d:09|という}噂が{d:25|あるの}。{wait}その王子達は今も行方不明で{wait}仕方なく二人の妹君で{d:61|ある}\n{col:01}{d:05|ファーラ}{col}様が、\n{d:76|この}国を治められて{d:4E|いるの}。{wait}王子達さえいれば\n{d:05|ファーラ}様は{d:78|こんな}戦いに\nまきこまれる事は、\nなか{d:7B|った}はずなのに{d:79|・・・}{end}",
-  "en": ""
+  "en": "They say the Kingdom of Medeom once had\n{col:01}two princes{col}.{wait}The princes are still missing, so{wait}their younger sister, {col:01}Fara{col}-sama, has had\nno choice but to rule the kingdom.{wait}If only the princes were here, Fara-sama\nwould never have been dragged into a war\nlike this...{end}"
  },
  {
   "id": "0168",
   "jp": "また、{d:75|ここ}で商売できて\nうれ{d:71|しい}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "It's good to be doing business here again.{end}"
  },
  {
   "id": "0169",
   "jp": "ちいっ！{d:1F|帝国}と商売{d:89|出来な}く\nなっちま{d:7B|った}{d:79|・・・}{wait}何か用は{d:61|ある}かい？{end}",
-  "en": ""
+  "en": "Tch! Now I can't do business with the\nEmpire...{wait}Need something?{end}"
  },
  {
   "id": "016A",
   "jp": "見かけ{d:6C|ない}かおだな{d:79|・・・}\nぼうけん者か？{end}",
-  "en": ""
+  "en": "Don't recognize your face... You an\nadventurer?{end}"
  },
  {
   "id": "016B",
   "jp": "{col:01}3日後{col}、{d:76|この}国の女王が\n公開{d:8B|しょぶん}される。{wait}その時まで、もめ事を\nおこ{d:7F|して}はならぬ、と\n言われて{d:4E|いるの}だ。{end}",
-  "en": ""
+  "en": "{col:01}In three days{col}, this kingdom's queen will be\npublicly executed.{wait}Until then, we've been told not to stir up\nany trouble.{end}"
  },
  {
   "id": "016C",
   "jp": "公開{d:8B|しょぶん}まで、\n{col:01}後2日{col}だ。{end}",
-  "en": ""
+  "en": "{col:01}Two more days{col} until the public execution.{end}"
  },
  {
   "id": "016D",
   "jp": "公開{d:8B|しょぶん}は{col:01}明日{col}だ。{end}",
-  "en": ""
+  "en": "The public execution is {col:01}tomorrow{col}.{end}"
  },
  {
   "id": "016E",
   "jp": "とうとう{col:01}今日、\n{col:01}{d:8B|しょぶん}が行われる{col}。{end}",
-  "en": ""
+  "en": "At last, {col:01}today {col:01}is the day of the execution{col}.{end}"
  },
  {
   "id": "016F",
   "jp": "ネイル様が、なぜ殺され\nなければなら{d:6C|ない}のか？{wait}なっとくがいかぬ。{end}",
-  "en": ""
+  "en": "Why must Neil-sama be put to death?{wait}I can't accept it.{end}"
  },
  {
   "id": "0170",
   "jp": "兵士達が、うろうろ{d:51|する}のは\nいやだが、りゃくだつや\nぼうりょくが{d:6C|ない}ので\nまだマシだ。{end}",
-  "en": ""
+  "en": "I don't like soldiers prowling around, but at\nleast there's no looting or violence. Could\nbe worse.{end}"
  },
  {
   "id": "0171",
   "jp": "{d:05|ファーラ}様が殺されるぅ。{wait}どうすれば{d:73|いい}の、\nどうすれば{d:79|・・・}{end}",
-  "en": ""
+  "en": "They're going to kill Fara-sama!{wait}What do we do? What do we do...?{end}"
  },
  {
   "id": "0172",
   "jp": "{d:76|この}地をおさめる\n{col:01}{name:05}{col}{d:09|という}\n指揮官は公正な人みたいだ。{end}",
-  "en": ""
+  "en": "The commander who governs here,\n{col:01}{name:05}{col}, seems to be a fair man.{end}"
  },
  {
   "id": "0173",
   "jp": "町の広場に立てふだが\n出て{d:56|いた}。{wait}私には何の事かさっぱり\n分からなか{d:7B|った}が。{end}",
-  "en": ""
+  "en": "A notice went up on the board in the town\nsquare.{wait}I couldn't make heads or tails of it, though.{end}"
  },
  {
   "id": "0174",
   "jp": "噂では{col:01}行方不明に{d:69|なって}{d:56|いた}\n{col:01}王子達が、帰って来て{d:4F|いる}\nとか{d:79|・・・}{wait}まさかなぁ{d:79|・・・}{end}",
-  "en": ""
+  "en": "Rumor has it that {col:01}the princes who went\nmissing {col:01}have come back...{wait}Nah, couldn't be...{end}"
  },
  {
   "id": "0175",
   "jp": "{col:01}{name:05}{col}{d:09|という}\n指揮官は、なぜかずっと\n{d:05|ファーラ}様をかばって\n{d:56|いた}みたいだ。{end}",
-  "en": ""
+  "en": "{col:01}{name:05}{col}, that commander... for some\nreason, he always seemed to be shielding\nFara-sama.{end}"
  },
  {
   "id": "0176",
   "jp": "王家に伝わる{d:16|宝玉}\n{col:01}「{item:1A}」{col}とは\n何で{d:5A|しょう}？{wait}そんな物があ{d:7B|った}のかしら？{end}",
-  "en": ""
+  "en": "The royal family's heirloom gem,\n{col:01}\"{item:1A}\"{col}... what could that\nbe?{wait}Was there ever such a thing?{end}"
  },
  {
   "id": "0177",
   "jp": "{d:05|ファーラ}様を{d:7D|助け}て下さって\n{d:24|ありがとう}ござい{d:4C|ました。}{end}",
-  "en": ""
+  "en": "Thank you for saving Fara-sama.{end}"
  },
  {
   "id": "0178",
   "jp": "王家の{d:16|宝玉}なんか\n{d:05|ファーラ}様以外に誰が\n持って{d:4F|いる}と{wait}いうので{d:5A|しょう}。{end}",
-  "en": ""
+  "en": "A royal gem? Who besides Fara-sama could\npossibly{wait}have such a thing?{end}"
  },
  {
   "id": "0179",
   "jp": "{d:35|ライドロイド}{d:1F|帝国}のやつらを\nやっつけて{d:47|下さい。}{end}",
-  "en": ""
+  "en": "Please, take down those Raidroid Empire\nthugs.{end}"
  },
  {
   "id": "017A",
   "jp": "誰か{d:05|ファーラ}様を{d:7D|助け}る人は\nい{d:6C|ない}のか？{end}",
-  "en": ""
+  "en": "Is there no one who'll save Fara-sama?{end}"
  },
  {
   "id": "017B",
   "jp": "あんた達はえいゆうだ。{end}",
-  "en": ""
+  "en": "You're heroes.{end}"
  },
  {
   "id": "017C",
   "jp": "「今から3日後に、\n{d:38|メディオム}{d:8D|王国}王女{d:05|ファーラ}\nを{d:8B|しょぶん}{d:51|する}。{wait}王女を{d:7D|助け}たければ、王家に\n伝わる{d:16|宝玉}{col:01}{item:1A}\nを持って来い。 {d:02|ザイン}」{end}",
-  "en": ""
+  "en": "\"Three days from now, Princess Fara of\nthe Kingdom of Medeom shall be executed.{wait}If you wish to save the Princess, bring me\nthe gem handed down in the royal family:\n{col:01}{item:1A}. --Zain\"{end}"
  },
  {
   "id": "017D",
   "jp": "{d:29|突然}の{d:1F|帝国}軍の来襲だ{d:7B|った}。{wait}もし王子達が{d:75|ここ}に\n{d:56|いた}ら、{d:78|こんな}事には\nならなか{d:7B|った}ろうに{d:79|・・・}{end}",
-  "en": ""
+  "en": "The Imperial army attacked out of\nnowhere.{wait}If only the princes had been here, this\nnever would have happened...{end}"
  },
  {
   "id": "017E",
   "jp": "数日前に、{col:01}{d:2D|ティフヌ}{col}の方から\nから、女の子が連れて\nこられたみたいだ。{end}",
-  "en": ""
+  "en": "A few days ago, it seems a girl was\nbrought here from {col:01}Tifnu{col}.{end}"
  },
  {
   "id": "017F",
   "jp": "あの{name:05}{d:09|という}\n指揮官は、どこか\nネーラン様のおもかげが\n{d:25|あるの}{d:60|じゃ}が{d:79|・・・}{end}",
-  "en": ""
+  "en": "That commander, {name:05}... something\nabout him reminds me of Neiran-sama...{end}"
  },
  {
   "id": "0180",
   "jp": "昔、{col:01}城にぬけ道{col}があ{d:7B|った}と\n言う噂を聞{d:56|いた}事が{d:61|ある}。{end}",
-  "en": ""
+  "en": "I once heard a rumor that the castle used\nto have {col:01}a secret passage{col}.{end}"
  },
  {
   "id": "0181",
   "jp": "{d:76|この}間、空き家に人が何人も\n入って行くのを見たが、{wait}あれは気のせいだ{d:7B|った}の\n{d:65|だろう}か？{end}",
-  "en": ""
+  "en": "The other day I saw several people going\ninto an empty house,{wait}but maybe I just imagined it?{end}"
  },
  {
   "id": "0182",
   "jp": "私は{d:76|この}宿屋の女主人{d:5C|です}。\n以後御見知りおきを{d:79|・・・}{end}",
-  "en": ""
+  "en": "I am the landlady of this inn. A pleasure to\nmake your acquaintance...{end}"
  },
  {
   "id": "0183",
   "jp": "{col:01}{name:01}\nがんばってね、{d:27|お兄ちゃん}。{end}",
-  "en": ""
+  "en": "{col:01}{name:01}\nGood luck, big brother.{end}"
  },
  {
   "id": "0184",
   "jp": "{col:01}{name:02}\nたのむぞ、\n{name}。{end}",
-  "en": ""
+  "en": "{col:01}{name:02}\nI'm counting on you, {name}.{end}"
  },
  {
   "id": "0185",
   "jp": "{col:01}{name:04}\n気をつけてね、\n{name}。{end}",
-  "en": ""
+  "en": "{col:01}{name:04}\nBe careful, {name}.{end}"
  },
  {
   "id": "0186",
   "jp": "{d:79|・・・}帰れ。{end}",
-  "en": ""
+  "en": "...Leave.{end}"
  },
  {
   "id": "0187",
   "jp": "{name}達は\n力つきた。{end}",
-  "en": ""
+  "en": "{name} and the others have fallen.{end}"
  },
  {
   "id": "0188",
   "jp": "{d:05|ファーラ}様が、\n{d:8B|しょぶん}されてしまう。{end}",
-  "en": ""
+  "en": "They're going to execute Fara-sama.{end}"
  },
  {
   "id": "0189",
   "jp": "誰か{d:7D|助け}{d:0C|てくれ}る人は\nい{d:6C|ない}のか？{end}",
-  "en": ""
+  "en": "Isn't there anyone who'll help us?{end}"
  },
  {
   "id": "018A",
   "jp": "{d:35|ライドロイド}のやつらめ。{end}",
-  "en": ""
+  "en": "Curse those Raidroid thugs.{end}"
  },
  {
   "id": "018B",
   "jp": "「{item:1A}」とは\nい{d:7B|った}い{d:79|・・・}？{end}",
-  "en": ""
+  "en": "\"{item:1A}\"... what on earth is\nthat...?{end}"
  },
  {
   "id": "018C",
   "jp": "{col:01}{d:05|ファーラ}{spd:01}{f4}{f4:6E}{fa:81}\n私は、いつま{d:64|でも}\nネーラン兄さんの\n帰りをまってい{d:59|ます。}{wait}{d:76|この}国を出て西に行{d:7B|った}所に\n{d:1F|帝国}の人達が利用{d:7F|して}{d:56|いた}\n{col:01}{d:1A|遺跡}{col}が{d:61|ある}はず{d:5C|です}。{wait}{d:1A|遺跡}を使う{col:01}キーワード{col}は、\n{col:01}「{d:35|ライドロイド}{d:1F|帝国}」\nだ{d:7B|った}と思い{d:59|ます。}{end}",
-  "en": ""
+  "en": "{col:01}Fara{spd:01}{f4}{f4:6E}{fa:81}\nI will always be waiting for my brother\nNeiran to come home.{wait}West of this kingdom, there should be a\n{col:01}ruin{col} that the Empire's people were using.{wait}I believe the {col:01}password{col} to use the ruin was\n{col:01}\"Raidroid Empire\".{end}"
  },
  {
   "id": "018D",
   "jp": "{col:01}{d:05|ファーラ}{f4}{f4:6E}{fa:81}\n{d:1A|遺跡}を使う{col:01}キーワード{col}は、\n{col:01}「{d:35|ライドロイド}{d:1F|帝国}」{col}{d:5C|です}。{wait}お気をつけて{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Fara{f4}{f4:6E}{fa:81}\nThe {col:01}password{col} to use the ruin is {col:01}\"Raidroid\nEmpire\"{col}.{wait}Please be careful...{end}"
  },
  {
   "id": "018E",
   "jp": "{col:01}{d:05|ファーラ}{f4}{f4:6E}{fa:81}\nお帰りをお待ち{d:7F|して}い{d:59|ます。}\nネーラン兄様。{end}",
-  "en": ""
+  "en": "{col:01}Fara{f4}{f4:6E}{fa:81}\nI'll be waiting for you to come home,\nBrother Neiran.{end}"
  },
  {
   "id": "018F",
   "jp": "{col:01}パスワード{col}ヲ\n入力シテクダサイ。{end}",
-  "en": ""
+  "en": "{col:01}PASSWORD{col} REQUIRED. PLEASE ENTER IT.{end}"
  },
  {
   "id": "0190",
   "jp": "{col:01}「{d:35|ライドロイド}{d:1F|帝国}」\n{col:01}パスワード{col}ヲ\nカクニンシマシタ。{end}",
-  "en": ""
+  "en": "{col:01}\"RAIDROID EMPIRE\" {col:01}PASSWORD{col}\nCONFIRMED.{end}"
  },
  {
   "id": "0191",
   "jp": "{col:01}パスワード{col}ガチガイマス。{end}",
-  "en": ""
+  "en": "{col:01}PASSWORD{col} INCORRECT.{end}"
  },
  {
   "id": "0192",
   "jp": "王女様といえどこまり{d:59|ます。}{end}",
-  "en": ""
+  "en": "Princess or not, I can't allow this.{end}"
  },
  {
   "id": "0193",
   "jp": "{name:04}様、\n{d:41|どうし}て{d:76|この}様な所に。{end}",
-  "en": ""
+  "en": "{name:04}-sama, what are you doing in a\nplace like this?{end}"
  },
  {
   "id": "0194",
   "jp": "{name:04}様、\n{d:39|鍛冶屋}の{d:12|ハヌトゥ}は世界で\n一番すぐれた{d:39|鍛冶屋}{d:5C|です}。{end}",
-  "en": ""
+  "en": "{name:04}-sama, Hanutu the blacksmith is\nthe finest blacksmith in the world.{end}"
  },
  {
   "id": "0195",
   "jp": "{name:04}様{d:79|・・・}\nはっ！何か御用{d:5B|ですか}っ{d:1B|！！}{end}",
-  "en": ""
+  "en": "{name:04}-sama... Ah! H-how may I help\nyou!!{end}"
  },
  {
   "id": "0196",
   "jp": "{col:01}＊持ち物がいっぱい{d:5C|です}。{end}",
-  "en": ""
+  "en": "{col:01}* Your inventory is full.{end}"
  },
  {
   "id": "0197",
   "jp": "何もかかれてい{d:6C|ない}。{end}",
-  "en": ""
+  "en": "Nothing is written here.{end}"
  },
  {
   "id": "0198",
   "jp": "{col:01}{d:13|サーラ}\n{name:04}{d:79|・・・}\n{d:24|ありがとう}{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Saara\n{name:04}...\nThank you...{end}"
  },
  {
   "id": "0199",
   "jp": "{d:35|ライドロイド}の本国は、\n最も西の{col:01}{d:3C|アーノゥン地方}{col}{d:60|じゃ}\n{d:6C|ない}かと噂されて{d:4F|いる}。{wait}{d:3C|アーノゥン地方}にはかつて、\n{col:01}「{d:3D|カダム}」{col}{d:09|という}ゆたかな\n国があ{d:7B|った}が、{wait}{col:01}10年以上も前に{col}、連絡が\n途絶えて{d:42|しまった}。{end}",
-  "en": ""
+  "en": "Rumor has it the Raidroid homeland lies in\nthe {col:01}Arnoun region{col}, farthest west of all.{wait}Once there was a rich country in the\nArnoun region called {col:01}\"Kadam\"{col},{wait}but {col:01}over 10 years ago{col}, all contact with it\nwas lost.{end}"
  },
  {
   "id": "019A",
   "jp": "昔、{d:3C|アーノゥン地方}にあ{d:7B|った}\n「{d:3D|カダム}」{d:09|という}{d:8D|王国}は、{wait}{col:01}{d:29|突然}のばく発{col}によって\n全滅{d:62|した}{d:0F|らしい}{d:0E|のじゃ。}{wait}{col:01}一人も生き残りはい{d:6C|ない}\n{d:09|という}話{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "That kingdom called \"Kadam,\" out in the\nArnoun region long ago...{wait}They say it was wiped out by {col:01}a sudden\nexplosion{col}.{wait}{col:01}Word is, not a single soul survived.{end}"
  },
  {
   "id": "019B",
   "jp": "{col:01}{d:14|マルガリータ}\n私の部屋に、\n無断で入ら{d:6C|ない}で\nちょうだい{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}Margarita\nDon't you dare come into my room without\npermission!!{end}"
  },
  {
   "id": "019C",
   "jp": "{col:01}{d:14|マルガリータ}\nあ・り・が・と。{wait}国をとりかえ{d:7F|して}くれて、\n感謝{d:7F|して}あ・げ・る・わ。{end}",
-  "en": ""
+  "en": "{col:01}Margarita\nThank-you-ve-ry-much.{wait}You took my country back, so I'll\ngra-cious-ly be grate-ful.{end}"
  },
  {
   "id": "019D",
   "jp": "いらっしゃい。\n〔(〕兵士以外の者が{d:77|こんな所}に\n来たらヤバイぞ。〔)〕{end}",
-  "en": ""
+  "en": "Welcome. (Anyone who isn't a soldier\ncoming in here is gonna be in trouble.){end}"
  },
  {
   "id": "019E",
   "jp": "{d:24|ありがとう}{d:6D|よ。}{wait}領主の{d:14|マルガリータ}様は、\n屋敷にお帰りに\nなら{d:6C|ない}{d:66|んだ。}{end}",
-  "en": ""
+  "en": "Thanks a bunch.{wait}Our ruler, Margarita-sama, won't come\nhome to her mansion.{end}"
  },
  {
   "id": "019F",
   "jp": "いらっしゃいませ。\nゆっくり{d:7F|して}{d:48|下さい}ね。{end}",
-  "en": ""
+  "en": "Welcome. Please make yourselves at home.{end}"
  },
  {
   "id": "01A0",
   "jp": "{col:01}{name:04}\n私もついて行きたい{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}{name:04}\nI wish I could go with you...{end}"
  },
  {
   "id": "01A1",
   "jp": "{col:01}ラッシュ{spd:01}\nよう、久しぶりだな。\nオレだよ、ラッシュだ{d:6D|よ。}{wait}{d:76|この}国がききと聞いて\n来たんだが、{d:18|ちょっと}\nおそか{d:7B|った}ようだな{d:79|・・・}{wait}またぶらりと旅に出る{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Rush{spd:01}\nHey, long time no see. It's me, Rush.{wait}I heard this country was in trouble and\ncame running, but looks like I'm a bit late...{wait}Guess I'll wander off on my travels again.{end}"
  },
  {
   "id": "01A2",
   "jp": "{col:01}{name:03}\n{d:44|ここは}俺にまかせて\n{d:7E|早く}奴をおいかけるんだ！{end}",
-  "en": ""
+  "en": "{col:01}{name:03}\nLeave this to me! Hurry, go after him!{end}"
  },
  {
   "id": "01A3",
   "jp": "{col:01}{name:02}\n{d:44|ここは}{d:11|ワシ}にまか{d:7F|して}\n{d:7E|早く}奴をおいかける{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:02}\nLeave this to me, young'un. Hurry and go\nafter him.{end}"
  },
  {
   "id": "01A4",
   "jp": "数日後{d:79|・・・}{end:11}",
-  "en": ""
+  "en": "A few days later...{end:11}"
  },
  {
   "id": "01A5",
   "jp": "{col:01}{name:01}{spd:01}\n{d:24|ありがとう}ござい{d:4C|ました。}{wait}すごくごやっかいに\nなっちゃって{d:79|・・・}{fd}{fe:10}{goto:00:01A6}",
-  "en": ""
+  "en": "{col:01}{name:01}{spd:01}\nThank you so much.{wait}We've been such a bother to you...{fd}{fe:10}{goto:00:01A6}"
  },
  {
   "id": "01A6",
   "jp": "{fe:10}{col:01}ロア{spd:01}\n気にしなくて{d:73|いい}んだ{d:6D|よ。}{wait}{d:8C|本当}は、いつま{d:64|でも}\n{d:75|ここ}にい{d:0C|てくれ}て{wait}{d:73|いい}んだけど{d:79|・・・}{fd}{fe:10}{goto:00:01B0}",
-  "en": ""
+  "en": "{fe:10}{col:01}Roa{spd:01}\nDon't you worry about that.{wait}Truth is, I'd be happy to have you{wait}stay here as long as you like, but...{fd}{fe:10}{goto:00:01B0}"
  },
  {
   "id": "01A7",
   "jp": "{col:01}{name:01}\nおばさん{d:79|・・・}{d:24|ありがとう}。{wait}とりあえず、私達は\n{d:2E|ロンディウム}にむかい{d:59|ます。}{fd}{fe:10}{goto:00:01BC}",
-  "en": ""
+  "en": "{col:01}{name:01}\nAuntie... thank you.{wait}For now, we'll head for Rondium.{fd}{fe:10}{goto:00:01BC}"
  },
  {
   "id": "01A8",
   "jp": "最近、となりのエディアと\nロイの父親をよく見るなぁ。{end}",
-  "en": ""
+  "en": "I've been seeing a lot of Edia and Roy's\nfather from next door lately.{end}"
  },
  {
   "id": "01A9",
   "jp": "武器は使うと壊れていく。\n外に出るなら\n多めに持つと{d:73|いい}ぞ。{end}",
-  "en": ""
+  "en": "Weapons break down as you use them. If\nyou're heading out, best carry plenty.{end}"
  },
  {
   "id": "01AA",
   "jp": "{name:04}様、\nこおりのゆかは、\n{item:0E}で{wait}あなが開けられるん\n{d:5C|です}って。{end}",
-  "en": ""
+  "en": "{name:04}-sama, they say that with the\n{item:0E}{wait}you can open holes in icy floors.{end}"
  },
  {
   "id": "01AB",
   "jp": "{name:02}じいちゃん\nが、ぼうけんの話を{wait}{d:7F|して}{d:43|くれた}{d:66|んだ。}{wait}ダンジョンのスイッチにも\nいろいろあって、{wait}タルを置{d:56|いた}り、\n自分でふんだり、{wait}敵にふませたり{d:51|する}物も\n{d:61|ある}んだってさ。{wait}僕も大きくな{d:7B|った}ら、\nいろいろな洞窟で、{wait}たんけん{d:51|する}{d:66|んだ。}{end}",
-  "en": ""
+  "en": "Grandpa {name:02} told me{wait}all about his adventures!{wait}He says there are all kinds of switches in\ndungeons.{wait}Some you put barrels on, some you step\non yourself,{wait}and some you have to get enemies to step\non!{wait}When I grow up, I'm gonna go{wait}exploring all kinds of caves!{end}"
  },
  {
   "id": "01AC",
   "jp": "クツズキテッヨニキイレ\nハイテウコ{end}",
-  "en": ""
+  "en": "ROREPME EHT SMRAH YGRENE TIRIPS{end}"
  },
  {
   "id": "01AD",
   "jp": "{d:79|・・・}かつて世界は、\n「キカイ」と「魔法」に\nよって超文明を\nきずきあげて{d:56|いた}。{wait}{d:0D|しかし}、{d:19|人間}のよくぼうは\nとどまる事を知らず、\nついには自らを、崩壊させて\n{d:42|しまった}。{wait}{d:79|・・・}時は流れ、文明の\n名残は「{d:1A|遺跡}」と{d:7F|して}\n世界の各地に\nてんざい{d:4D|している}。{wait}そんな世界の中で\n人々はたくましく\n生きて{d:56|いた}{d:79|・・・}{end}",
-  "en": ""
+  "en": "...Long ago, the world built a\nsuper-civilization upon \"machines\" and\n\"magic.\"{wait}But human greed knew no bounds, and in\nthe end it brought about its own collapse.{wait}...Time passed, and the remnants of that\ncivilization now lie scattered across the\nworld as \"ruins.\"{wait}And in such a world, people lived on, strong\nand resilient...{end}"
  },
  {
   "id": "01AE",
   "jp": "風{d:1E|魔将}は、旅の者達に\nたおされた{d:53|そうだ}{d:6D|よ。}{wait}そ{d:76|この}騎士も戦いに\n来た{d:0F|らしい}がおそか{d:7B|った}{wait}みたいだねぇ。{end}",
-  "en": ""
+  "en": "They say the Wind General was beaten by\nsome travelers.{wait}Seems that knight there came to fight too,\nbut he got here too late,{wait}from the looks of it.{end}"
  },
  {
   "id": "01AF",
   "jp": "TO BE\nCONTINUED\nご期待{d:48|下さい}！{end}",
-  "en": ""
+  "en": "TO BE\nCONTINUED\nStay tuned!{end}"
  },
  {
   "id": "01B0",
   "jp": "{fe:10}{col:01}{name:01}{spd:01}\nそんな{d:79|・・・}{wait}{d:52|これ}以上{d:75|ここ}に{d:4F|いる}と\nおばさん達にも{wait}ごめいわくが、\nかかっちゃうから。{wait}それに、一日{d:64|でも}{d:7E|早く}\n{d:28|お父さん}を{wait}さが{d:62|した}い{d:79|・・・}{fd}{fe:10}{goto:00:01B1}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:01}{spd:01}\nOh, but...{wait}If we stay here any longer, we'll end up{wait}causing trouble for you and your family\ntoo.{wait}Besides, I want to find Dad{wait}as soon as I possibly can...{fd}{fe:10}{goto:00:01B1}"
  },
  {
   "id": "01B1",
   "jp": "{fe:10}{col:01}ロア{spd:01}\n{d:79|・・・}{d:79|・・・}{wait}気をつけてお行き。{wait}それから、{d:78|こんな}物しか\n用意できなか{d:7B|った}けど{wait}持って行っておくれ。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Roa{spd:01}\n...{wait}Take care, now.{wait}And... it's not much, but{wait}take this along with you.{end}"
  },
  {
   "id": "01B2",
   "jp": "{d:03|ヒュード}様は、連れてきた\n女達を、どう{d:51|する}つもり\n{d:50|なんだ}ろう？{end}",
-  "en": ""
+  "en": "What does Hude-sama mean to do with the\nwomen he brought here?{end}"
  },
  {
   "id": "01B3",
   "jp": "{d:79|・・・}{d:01|ボーガン}{d:79|・・・}？{end}",
-  "en": ""
+  "en": "...Bogan...?{end}"
  },
  {
   "id": "01B4",
   "jp": "知っとるかの？{wait}それぞれとくいと{d:51|する}武器を\n装備{d:4D|している}時は、{wait}そのボタンをおし続ける事で\n{col:01}タメ{col}る事ができ、{wait}必殺技をだす事が\n出来る{d:5D|のじゃ}！{end}",
-  "en": ""
+  "en": "Did you know?{wait}When you have the weapon you're best\nwith equipped,{wait}you can hold down its button to {col:01}charge{col},{wait}and then unleash a special attack!{end}"
  },
  {
   "id": "01B5",
   "jp": "普通にジャンプ{d:7F|して}も、\nとどか{d:6C|ない}時なんかは、{wait}少し体をのり出{d:7F|して}、\nジャンプ{d:62|した}り{d:51|する}の{d:6D|よ。}{end}",
-  "en": ""
+  "en": "When a normal jump won't get you there,{wait}try leaning out a little before you jump.{end}"
  },
  {
   "id": "01B6",
   "jp": "旅の戦士から聞{d:56|いた}んだけど\n二人で同時に、{col:01}タメ{col}を\n開放{d:51|する}と、協力必殺技を{wait}だせるん{d:5C|です}って。{end}",
-  "en": ""
+  "en": "A traveling warrior told me that if two\npeople release their {col:01}charge{col} at the same\ntime,{wait}they can pull off a combo special!{end}"
  },
  {
   "id": "01B7",
   "jp": "敵は貴重なアイテムを\n持って{d:4F|いる}事が{d:61|ある}って\n兄ちゃんから聞{d:56|いた}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "My big bro told me enemies sometimes\ncarry rare items.{end}"
  },
  {
   "id": "01B8",
   "jp": "{d:76|この}世界には、\n敵を倒す時に100〔%〕宝物を\nおとさせる事の出来る{wait}不思議なアイテムを\n持{d:7B|った}敵が{d:4F|いる}って、\n何かの本でよんだ事が{wait}{d:61|ある}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "In this world, there are enemies that carry\na mysterious item{wait}that makes foes drop treasure 100% of\nthe time when beaten.{wait}I read about it in some book!{end}"
  },
  {
   "id": "01B9",
   "jp": "{col:01}Lボタン{col}、をおしながら\nそれぞれの装備ボタンを{wait}おす事でコマンドがめんに\n行かずに装備を{wait}変更{d:51|する}事が可能な{d:67|のだ。}{end}",
-  "en": ""
+  "en": "{col:01}Hold the L Button{col} and press an equip\nbutton{wait}to switch equipment without going{wait}into the command screen!{end}"
  },
  {
   "id": "01BA",
   "jp": "{col:01}Rボタン{col}、をおすことで\nCOMで{d:61|ある}キャラクターを{wait}引きよせたり、{wait}二かいに引っぱり上げて\nもら{d:7B|った}り、{wait}二人で物をお{d:62|した}り、{wait}二人で物を持ち上げたり\n出来る{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "{col:01}Press the R Button{col} to pull a\nCOM-controlled character to you,{wait}have them haul you up to the floor above,{wait}push things together,{wait}or lift things together!{end}"
  },
  {
   "id": "01BB",
   "jp": "{col:01}L、Rボタン{col}、を同時に\nおしながら回復させると、\n相手を回復させられるの{d:6D|よ。}{wait}こうやって{d:7D|助け}合ってね。{end}",
-  "en": ""
+  "en": "{col:01}Hold the L and R Buttons{col} while you heal to\nheal your partner instead.{wait}Help each other out like that!{end}"
  },
  {
   "id": "01BC",
   "jp": "{fe:10}{col:01}ロア{spd:01}\nがんばるの{d:6D|よ。}{wait}{name}、\nまた会える{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Roa{spd:01}\nHang in there.{wait}{name}, we'll meet again.{end}"
  },
  {
   "id": "01BD",
   "jp": "{col:01}{d:86|メイヤ}\n旅のお話を聞かせてね。{end}",
-  "en": ""
+  "en": "{col:01}Meiya\nTell me stories about your travels!{end}"
  },
  {
   "id": "01BE",
   "jp": "{col:01}{d:86|メイヤ}\nまた遊びにきてね。{end}",
-  "en": ""
+  "en": "{col:01}Meiya\nCome play again!{end}"
  },
  {
   "id": "01BF",
   "jp": "{col:01}{d:14|マルガリータ}{spd:01}\n私は{d:76|この}国の領主、\n{d:14|マルガリータ}。{wait}私の美しさにつられて\n私の部屋に無断で\n入ら{d:6C|ない}でちょうだい{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}Margarita{spd:01}\nI am the ruler of this land, Margarita.{wait}Don't go wandering into my room uninvited,\nlured by my beauty!!{end}"
  },
  {
   "id": "01C0",
   "jp": "{col:01}シンシア{spd:01}\nんっ{d:79|・・・}何か用？{wait}あらあら、{d:78|こんな}に\nよご{d:7F|して}{d:79|・・・}{wait}ほらっ、\nふいてあげ{d:6E|るわ。}{wait}{f3:05}{d:79|・・・}{d:79|・・・}{f3:0F}\n{d:23|あなた達}が、\n何を{d:4D|している}のか、{wait}私は知ら{d:6C|ない}けど\nくじけずにがんばるの{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Cynthia{spd:01}\nHm... What is it?{wait}Oh my, look how dirty you've gotten...{wait}Here, let me wipe you off.{wait}{f3:05}...{f3:0F} I don't know what you two are up to,{wait}but don't give up. Keep at it.{end}"
  },
  {
   "id": "01C1",
   "jp": "自然は大切に{d:51|する}{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "Take good care of nature, you hear?{end}"
  },
  {
   "id": "01C2",
   "jp": "{col:01}ロア{spd:01}\n{name}、{wait}{d:01|ボーガン}は？{wait}何だか変な男達が、おおぜい\n{name}達の、{wait}家にむか{d:7B|った}\nみたいだけど{d:79|・・・}{wait}{d:40|だいじょうぶ}だ{d:7B|った}の？{end}",
-  "en": ""
+  "en": "{col:01}Roa{spd:01}\n{name}...{wait}Where's Bogan?{wait}A whole crowd of strange men seemed to\nbe{wait}heading for your house, {name}...{wait}Are you all right?{end}"
  },
  {
   "id": "01C3",
   "jp": "{col:01}サラ\n{d:79|・・・}何が{d:25|あるの}？{end}",
-  "en": ""
+  "en": "{col:01}Sara\n...What is it?{end}"
  },
  {
   "id": "01C4",
   "jp": "あんなすごい奴らを\n倒{d:62|した}のは君達かい？{wait}スゴイ{d:60|じゃ}{d:6C|ない}か！{end}",
-  "en": ""
+  "en": "Was it you who beat those amazing guys?{wait}That's incredible!{end}"
  },
  {
   "id": "01C5",
   "jp": "俺に何か用かい。{end}",
-  "en": ""
+  "en": "Need something from me?{end}"
  },
  {
   "id": "01C6",
   "jp": "{d:0A|きさまら}ごときに{d:79|・・・}{end}",
-  "en": ""
+  "en": "Beaten by the likes of you...{end}"
  },
  {
   "id": "01C7",
   "jp": "うわっ、いてぇ！{end}",
-  "en": ""
+  "en": "Whoa, ouch!{end}"
  },
  {
   "id": "01C8",
   "jp": "{d:79|・・・}{d:41|どうし}たら\nええん{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "...Whatever shall I do?{end}"
  },
  {
   "id": "01C9",
   "jp": "{d:76|この}美{d:71|しい}フーベルの大地に\nあんなおぞま{d:71|しい}{wait}{col:01}キカイのとりで{col}を\n造る{d:58|なんて}{d:79|・・・}{end}",
-  "en": ""
+  "en": "In this beautiful Land of Fubel, to build\nsuch a hideous{wait}{col:01}machine fortress{col}...{end}"
  },
  {
   "id": "01CA",
   "jp": "ヴォルサムリー様は、{wait}{d:76|この}国をまっ先に\n逃げ出{d:62|した}{d:53|そうだ}。{wait}{d:0D|しかし}、姫様は最後まで\n我々の事を心配{d:7F|して}下さ{d:7B|った}\n{d:0F|らしい}{d:79|・・・}{end}",
-  "en": ""
+  "en": "Volsamry-sama...{wait}they say he was the very first to flee the\ncountry.{wait}But the princess, they say, worried about\nus right to the end...{end}"
  },
  {
   "id": "01CB",
   "jp": "{d:35|ライドロイド}{d:1F|帝国}軍{d:79|・・・}\nいつ、どこから、\n何のために来たのか？{end}",
-  "en": ""
+  "en": "The Raidroid Empire's army... When did they\ncome, from where, and why?{end}"
  },
  {
   "id": "01CC",
   "jp": "{col:01}{d:00|ルシア}\nきゃあ{d:1B|！！}{fd}{fe:10}{goto:00:01CD}",
-  "en": ""
+  "en": "{col:01}Lucia\nEeek!!{fd}{fe:10}{goto:00:01CD}"
  },
  {
   "id": "01CD",
   "jp": "{fe:10}{col:01}{name:01}\n{d:00|ルシア}はあぶ{d:6C|ない}から\n{d:27|お兄ちゃん}の所に\nかくれて{d:45|なさい}！{fd}{fe:10}{goto:00:01CE}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:01}\nIt's dangerous, Lucia! Go hide with big\nbrother!{fd}{fe:10}{goto:00:01CE}"
  },
  {
   "id": "01CE",
   "jp": "{fe:10}{col:01}{d:00|ルシア}\nわか{d:7B|った}！\nたのんだわよ、二人とも{d:1B|！！}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia\nOkay! I'm counting on you two!!{end}"
  },
  {
   "id": "01CF",
   "jp": "{col:01}{d:00|ルシア}\nまけ{d:6C|ない}でよ！\n{name}{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}Lucia\nDon't you dare lose, {name}!!{end}"
  },
  {
   "id": "01D0",
   "jp": "{col:01}{d:00|ルシア}{spd:01}\nぷはぁ！\nきゅうくつだ{d:7B|った}わ！{end}",
-  "en": ""
+  "en": "{col:01}Lucia{spd:01}\nPwah! That was cramped!{end}"
  },
  {
   "id": "01D1",
   "jp": "僕たち、やっと\nけっこん出来るね。{end}",
-  "en": ""
+  "en": "We can finally get married!{end}"
  },
  {
   "id": "01D2",
   "jp": "うれ{d:71|しい}わ{d:79|・・・}ポッ{end}",
-  "en": ""
+  "en": "I'm so happy... *blush*{end}"
  },
  {
   "id": "01D3",
   "jp": "また、のみにいきたいぜ。{end}",
-  "en": ""
+  "en": "I wanna go drinking again.{end}"
  },
  {
   "id": "01D4",
   "jp": "おうっ{d:1B|！！}\n君達、今しあわせかい？{end}",
-  "en": ""
+  "en": "Hey there!! You two happy these days?{end}"
  },
  {
   "id": "01D5",
   "jp": "{d:79|・・・}{d:76|この}町を、\n私達の手で復興させて\nみせるわ{d:79|・・・}{end}",
-  "en": ""
+  "en": "...We'll rebuild this town with our own\nhands...{end}"
  },
  {
   "id": "01D6",
   "jp": "また{d:05|ファーラ}様は、\nくろうしなくちゃなら{d:6C|ない}。{end}",
-  "en": ""
+  "en": "Now Fara-sama will have a hard time of it\nall over again.{end}"
  },
  {
   "id": "01D7",
   "jp": "{name:05}が、\nネーラン様だ{d:7B|った}\n{d:58|なんて}{d:79|・・・}{end}",
-  "en": ""
+  "en": "To think {name:05} was Neiran-sama...{end}"
  },
  {
   "id": "01D8",
   "jp": "敵の{name:05}様は、\nかっこ{d:73|いい}わ{d:79|・・・}{end}",
-  "en": ""
+  "en": "That enemy commander, {name:05}-sama,\nis so dreamy...{end}"
  },
  {
   "id": "01D9",
   "jp": "おれは、じゆうだ！{end}",
-  "en": ""
+  "en": "I'm free!{end}"
  },
  {
   "id": "01DA",
   "jp": "{d:14|マルガリータ}様は、\n帰ってきて下さら{d:6C|ない}\nのかなぁ。{end}",
-  "en": ""
+  "en": "Won't Margarita-sama ever come home?{end}"
  },
  {
   "id": "01DB",
   "jp": "{d:35|ライドロイド}の将軍は\n嫌な奴だ{d:7B|った}わ。{end}",
-  "en": ""
+  "en": "That Raidroid general was a nasty piece of\nwork.{end}"
  },
  {
   "id": "01DC",
   "jp": "いらっしゃい！{wait}{d:73|いい}物がそろってる{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Welcome!{wait}We've got good stuff in stock.{end}"
  },
  {
   "id": "01DD",
   "jp": "{d:24|ありがとう}ござい{d:4C|ました。}{wait}またおこし{d:47|下さい。}{end}",
-  "en": ""
+  "en": "Thank you very much.{wait}Please come again.{end}"
  },
  {
   "id": "01DE",
   "jp": "誰にも言うな{d:6D|よ。}{wait}実は、兵士達が話{d:7F|して}るのを\n聞{d:56|いた}んだが、{d:76|この}地に\n攻め込んできた将軍は{wait}{col:01}地{d:1E|魔将}ゴルドー{col}とか\n言う{d:0F|らしい}。{wait}{d:1F|帝国}軍には更に三人の{d:1E|魔将}が\nいて、地{d:1E|魔将}と合わせて\n{col:01}四{d:1E|魔将}{col}とか\n言われて{d:4F|いる}{d:0F|らしい}ぞ。{end}",
-  "en": ""
+  "en": "Don't tell anyone.{wait}Truth is, I overheard the soldiers talking.\nThe general who invaded this land{wait}is called {col:01}Goldo, the Earth General{col}, or\nsomething.{wait}They say the Imperial army has three\nmore Generals, and together with the\nEarth General they're called the {col:01}Four Dark\nGenerals{col}.{end}"
  },
  {
   "id": "01DF",
   "jp": "{d:15|ラミアウォリアー}{d:79|・・・}\nその名を聞くだけで\nふるえてくる。{wait}あんな奴を配下に\n{d:4D|している}水{d:1E|魔将}ディーネとは\nどんなに恐ろ{d:71|しい}奴\nなん{d:60|じゃ}ろう。{end}",
-  "en": ""
+  "en": "Lamia Warrior... just hearing that name\nmakes me tremble.{wait}How terrifying must Deene, the Water\nGeneral, be, to command a creature like\nthat?{end}"
  },
  {
   "id": "01E0",
   "jp": "{col:01}{d:13|サーラ}{spd:01}{f5:D0}{f4}{f5:C1}{f4:65}{fa:81}\nそうなの{d:79|・・・}\n{d:8E|あなた}は{d:01|ボーガン}の{d:79|・・・}{wait}そういえばどこか\nおもかげが{d:79|・・・}{wait}{d:79|・・・}{d:01|ボーガン}{d:79|・・・}{wait}{name}、\n{name:04}を\nよろしく{d:8F|おねがい}しますね。{end}",
-  "en": ""
+  "en": "{col:01}Saara{spd:01}{f5:D0}{f4}{f5:C1}{f4:65}{fa:81}\nI see... So you're Bogan's...{wait}Now that you mention it, there's something\nof him in your face...{wait}...Bogan...{wait}{name}, please take good care of\n{name:04}.{end}"
  },
  {
   "id": "01E1",
   "jp": "きゃっ{d:1B|！！}\n{d:76|この}ぉ！\nえいっ、えいっ{d:1B|！！}{end}",
-  "en": ""
+  "en": "Eek!! Why, you! Take that, and that!!{end}"
  }
 ]

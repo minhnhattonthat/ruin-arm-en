@@ -2,27 +2,27 @@
  {
   "id": "1100",
   "jp": "{fe:10}{col:01}{name:04}{f4:5B}\nバカを言わ{d:6C|ない}の{d:1B|！！}{fd}{fe:10}{goto:00:10F4}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{f4:5B}\nDon't talk nonsense!!{fd}{fe:10}{goto:00:10F4}"
  },
  {
   "id": "1101",
   "jp": "{fe:10}{d:8F|おねがい}{d:5F|じゃ。}{wait}考え直{d:7F|して}{d:48|下さい}ませ、\n姫様！{fd}{fe:10}{goto:00:1102}",
-  "en": ""
+  "en": "{fe:10}I beg you.{wait}Please reconsider, Princess!{fd}{fe:10}{goto:00:1102}"
  },
  {
   "id": "1102",
   "jp": "{fe:10}{col:01}{name:04}{f4:5C}{fa:81}\n{d:79|・・・}{d:79|・・・}{fd}{fe:10}{goto:00:1103}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{f4:5C}{fa:81}\n......{fd}{fe:10}{goto:00:1103}"
  },
  {
   "id": "1103",
   "jp": "{fe:10}{d:8F|おねがい}{d:60|じゃ}、{wait}{name}殿\n姫様をお{d:7D|助け}下され！{fe}{col:01}{name}{f4:41}{fa:A1}\n\n  1う、うん\n  2え、やだ{choice:00:1104:1105}",
-  "en": ""
+  "en": "{fe:10}I beg you,{wait}{name}-dono, please help the Princess!{fe}{col:01}{name}{f4:41}{fa:A1}\n\n  1Y-yeah\n  2Huh, no way{choice:00:1104:1105}"
  },
  {
   "id": "1104",
   "jp": "{d:24|ありがとう}ござい{d:59|ます。}{wait}姫様、{d:76|この}お方が\n手伝って下さるそう{d:5C|です}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "Thank you kindly.{wait}Princess, this gentleman says he'll help\nyou.{end}"
  },
  {
   "id": "orphan_83B834",
@@ -32,92 +32,92 @@
  {
   "id": "1105",
   "jp": "はっ？{d:11|ワシ}のみみも、\nもうろくしま{d:62|した}かの。{wait}{name}殿、\nもう一度聞いても\nよろ{d:71|しい}{d:5B|ですか}の？{fd}{fe:10}{goto:00:1103}",
-  "en": ""
+  "en": "Eh? Have my old ears finally gone?{wait}{name}-dono, might I ask you once\nmore?{fd}{fe:10}{goto:00:1103}"
  },
  {
   "id": "1106",
   "jp": "姫様、危険{d:5C|です}！{fd}{fe:10}{goto:00:1107}",
-  "en": ""
+  "en": "Princess, it's dangerous!{fd}{fe:10}{goto:00:1107}"
  },
  {
   "id": "1107",
   "jp": "{fe:10}{col:01}{name:04}{f4}{f4:5B}{fa:E1}\nかまい{d:4B|ません}。\n{d:75|ここ}を通し{d:45|なさい}！{fd}{fe:10}{goto:00:1108}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{f4}{f4:5B}{fa:E1}\nI don't care. Let me pass!{fd}{fe:10}{goto:00:1108}"
  },
  {
   "id": "1108",
   "jp": "{fe:10}{fa:01}はっ、わかり{d:4C|ました。}{wait}{d:10|ならば}、せめて{d:52|これ}を\nお持ち{d:47|下さい。}{wait}{d:52|これ}を使えば、洞窟で\nまよ{d:7B|った}時{d:64|でも}、{wait}すぐにだっしゅつ{d:51|する}事が\n出来{d:59|ます。}{end}",
-  "en": ""
+  "en": "{fe:10}{fa:01}Y-yes, Your Highness.{wait}Then at least take this with you.{wait}With it, even if you get lost in a cave,{wait}you can escape right away.{end}"
  },
  {
   "id": "1109",
   "jp": "{col:01}{d:12|ハヌトゥ}{spd:01}\n私は、{d:39|鍛冶屋}の{d:12|ハヌトゥ}と\nもうす。{wait}おお、{d:74|おまえ}が持つ\nその黄金の剣は{d:79|・・・}\nすごいわざものだ！{wait}だが、その黄金の剣の精霊は\n力を無く{d:4D|している}。{wait}{d:76|この}私に、その剣をうたせて\nもらえ{d:6C|ない}か？{wait}私は一度で{d:73|いい}から\nそんなすごいわざものに\nつちを付けて{wait}みたか{d:7B|った}のだ！{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1{d:8F|おねがい}します\n  2だめ{d:5C|です}{choice:00:110A:110C}",
-  "en": ""
+  "en": "{col:01}Hanutu{spd:01}\nI am Hanutu, the blacksmith.{wait}Oh, that golden sword you carry... What a\nmagnificent blade!{wait}But the spirit of that golden sword has\nlost its power.{wait}Would you let me forge that sword?{wait}Just once, I have longed to take my\nhammer{wait}to a blade as magnificent as that!{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Please do\n  2No{choice:00:110A:110C}"
  },
  {
   "id": "110A",
   "jp": "{col:01}{d:12|ハヌトゥ}\nよし、すぐにかかろう。{end}",
-  "en": ""
+  "en": "{col:01}Hanutu\nGood. I shall begin at once.{end}"
  },
  {
   "id": "110B",
   "jp": "{col:01}{d:12|ハヌトゥ}{spd:01}\nおわ{d:7B|った}。{wait}{d:0D|しかし}、{d:76|この}剣は{wait}まだ、かくされた力を\n秘めて{d:4F|いる}、{wait}{d:0D|しかし}、私に出来るのは\n{d:75|ここ}までのようだ。{fe}{col:01}＊剣の力が少し回復{d:62|した}。{end}",
-  "en": ""
+  "en": "{col:01}Hanutu{spd:01}\nIt is done.{wait}However, this sword{wait}still holds a hidden power.{wait}But it seems this is as far as I can take it.{fe}{col:01}* The sword's power has been partly\nrestored.{end}"
  },
  {
   "id": "110C",
   "jp": "{col:01}{d:12|ハヌトゥ}\n{d:7C|そうか}、{d:0D|しかし}いつ{d:64|でも}\n私に鍛えさせ{d:0C|てくれ}。{end}",
-  "en": ""
+  "en": "{col:01}Hanutu\nI see. But let me temper it anytime.{end}"
  },
  {
   "id": "110D",
   "jp": "{col:01}{d:15|ラミアウォリアー}\n{d:0A|きさまら}何者だ！{end}",
-  "en": ""
+  "en": "{col:01}Lamia Warrior\nWho are you!{end}"
  },
  {
   "id": "110E",
   "jp": "{col:01}{name:04}{spd:01}\n私は{d:34|マースナル}{d:8D|王国}王女\n{name:04}！{wait}我が{d:8D|王国}を苦しめる\n悪者達め、{wait}{d:76|この}国から出ていき{d:45|なさい}！{fd}{fe:10}{goto:00:110F}",
-  "en": ""
+  "en": "{col:01}{name:04}{spd:01}\nI am {name:04}, Princess of the Kingdom\nof Marsnal!{wait}You villains who torment my kingdom,{wait}leave this country at once!{fd}{fe:10}{goto:00:110F}"
  },
  {
   "id": "110F",
   "jp": "{fe:10}{col:01}{d:15|ラミアウォリアー}{spd:01}\nフフン、{d:7C|そうか}{d:20|きさま}が\n{name:04}か{d:79|・・・}{wait}{d:10|ならば}アレを持って\nきた{d:65|だろう}な。{fd}{fe:10}{goto:00:1110}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lamia Warrior{spd:01}\nHmph, so you are {name:04}...{wait}Then I trust you've brought it.{fd}{fe:10}{goto:00:1110}"
  },
  {
   "id": "1110",
   "jp": "{fe:10}{col:01}{name:04}\n何の事！？{fd}{fe:10}{goto:00:1111}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}\nWhat are you talking about!?{fd}{fe:10}{goto:00:1111}"
  },
  {
   "id": "1111",
   "jp": "{fe:10}{col:01}{d:15|ラミアウォリアー}{spd:01}\n知らぬとは言わせぬぞ。{wait}{d:20|きさま}の持つ\n{col:01}「{item:19}」{col}と交換に、{wait}女王の命を{d:7D|助け}る{d:09|という}のが\nじょうけんであ{d:7B|った}はずだ。{fd}{fe:10}{goto:00:1112}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lamia Warrior{spd:01}\nDon't pretend you don't know.{wait}In exchange for the\n{col:01}\"{item:19}\"{col} you carry,{wait}we would spare the Queen's life. That was\nthe deal.{fd}{fe:10}{goto:00:1112}"
  },
  {
   "id": "1112",
   "jp": "{fe:10}{col:01}{name:04}\n{d:68|なんで}すって！？\nそんなの聞いてい{d:6C|ない}わ{d:1B|！！}{fd}{fe:10}{goto:00:1113}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}\nWhat did you say!? I never heard anything\nabout that!!{fd}{fe:10}{goto:00:1113}"
  },
  {
   "id": "1113",
   "jp": "{fe:10}{col:01}{d:15|ラミアウォリアー}{spd:01}\nほほう、{d:10|ならば}\n今、聞{d:56|いた}{d:65|だろう}。{wait}どうだ、{d:7E|早く}サファイアを\nこちらに渡せ。{wait}女王がどう{d:69|なって}も\n知らぬぞ。{fd}{fe:10}{goto:00:1114}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lamia Warrior{spd:01}\nOho, well, now you've heard it.{wait}Well? Hand the Sapphire over, quickly.{wait}Or I can't vouch for what happens to the\nQueen.{fd}{fe:10}{goto:00:1114}"
  },
  {
   "id": "1114",
   "jp": "{fe:10}{col:01}{name:04}\nそんな事はさせ{d:6C|ない}わ{d:1B|！！}{fd}{fe:10}{goto:00:1115}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}\nI won't let you do that!!{fd}{fe:10}{goto:00:1115}"
  },
  {
   "id": "1115",
   "jp": "{fe:10}{col:01}{d:15|ラミアウォリアー}{spd:01}\nおもしろい！{wait}力ずく{d:64|でも}{d:09|という}ワケか。{wait}そうしよう。{wait}私も{d:78|こんな}時間のかかる\nやり方は、なっとくが\nいかなか{d:7B|った}{d:67|のだ。}{wait}万が一、{d:0B|おまえ達}が\n勝つような事があれば、{wait}女王の{d:4F|いる}場所を\nおしえてやろう！{fd}{fe:10}{goto:00:1116}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lamia Warrior{spd:01}\nInteresting!{wait}So you'd take it by force?{wait}Very well.{wait}I was never satisfied with such a slow\nmethod myself.{wait}If, by some chance, you should win,{wait}I'll tell you where the Queen is!{fd}{fe:10}{goto:00:1116}"
  },
  {
   "id": "1116",
   "jp": "{fe:10}{col:01}{name:04}\nそうっ！\n{d:73|いい}わ{d:1B|！！}{wait}かかってき{d:45|なさい}っ{d:1B|！！}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}\nSo be it! Fine!!{wait}Come at me!!{end}"
  },
  {
   "id": "1117",
@@ -126,52 +126,52 @@
    "1118"
   ],
   "jp": "{col:01}{d:15|ラミアウォリアー}\n{d:78|こんな}バカな！？\nまさか{d:76|この}私がまけるとは。{fd}{fe:10}{goto:00:1119}",
-  "en": ""
+  "en": "{col:01}Lamia Warrior\nImpossible!? To think that I would lose...{fd}{fe:10}{goto:00:1119}"
  },
  {
   "id": "1119",
   "jp": "{fe:10}{col:01}{name:04}\n{d:7E|早く}お母様の{d:79|・・・}\n女王の{d:4F|いる}場所を\nおしえ{d:45|なさい}！{fd}{fe:10}{goto:00:111A}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}\nQuickly, tell me where Mother... where the\nQueen is!{fd}{fe:10}{goto:00:111A}"
  },
  {
   "id": "111A",
   "jp": "{fe:10}{col:01}{d:15|ラミアウォリアー}\n我主君水{d:1E|魔将}ディーネ様が\n{d:04|ライドロイド帝国海底基地}に\n連れてい{d:7B|った}わ！{fd}{fe:10}{goto:00:111B}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lamia Warrior\nMy master, Water General Deene-sama,\ntook her to the Raidroid Empire's Undersea\nBase!{fd}{fe:10}{goto:00:111B}"
  },
  {
   "id": "111B",
   "jp": "{fe:10}{col:01}{name:04}\n{d:04|ライドロイド帝国海底基地}？{fd}{fe:10}{goto:00:111C}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}\nThe Raidroid Empire's Undersea Base?{fd}{fe:10}{goto:00:111C}"
  },
  {
   "id": "111C",
   "jp": "{fe:10}{col:01}{d:15|ラミアウォリアー}{spd:01}\n{d:53|そうだ}、{wait}{d:7E|早く}行か{d:6C|ない}と女王が\nどうなるか解ら{d:6C|ない}ぞ！{wait}海底基地は、\n{d:76|この}国の北に{d:61|ある}。{wait}せいぜいそこで、\nじごくを味わうが{d:73|いい}！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lamia Warrior{spd:01}\nThat's right.{wait}Hurry, or who knows what will become of\nthe Queen!{wait}The Undersea Base lies north of this\ncountry.{wait}Go there and taste hell to your heart's\ncontent!{end}"
  },
  {
   "id": "111D",
   "jp": "{col:01}{name:04}{f5:C0}{f4}{f5:D1}{f4:5D}{fa:A1}\n{name}、\n{d:00|ルシア}さんの傷は、\nお母様の力でなお{d:7B|った}わ。{fd}{fe:10}{goto:00:111E}",
-  "en": ""
+  "en": "{col:01}{name:04}{f5:C0}{f4}{f5:D1}{f4:5D}{fa:A1}\n{name}, Lucia-san's wounds have been\nhealed by Mother's power.{fd}{fe:10}{goto:00:111E}"
  },
  {
   "id": "111E",
   "jp": "{fe:10}{fa:01}{col:01}{d:00|ルシア}{spd:01}{f4:62}{fa:C1}\nほんと！\nすっかりなおっちゃ{d:7B|った}。{wait}{name}、{wait}{d:7E|早く}{name:01}を\nさがしに行かなくっちゃね。{fe}＊{d:00|ルシア}が{d:06|仲間になった！}{end}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Lucia{spd:01}{f4:62}{fa:C1}\nIt's true! I'm all better now.{wait}{name},{wait}we'd better hurry and go look for\n{name:01}.{fe}* Lucia joined the party!{end}"
  },
  {
   "id": "111F",
   "jp": "{fa:01}{col:01}{d:13|サーラ}{spd:01}{f5:C0}{f4}{f5:D1}{f4:65}{fa:B1}\n{name:04}、\nしつれいの無いように{wait}{name}殿を\nおおくりし{d:45|なさい}。{end}",
-  "en": ""
+  "en": "{fa:01}{col:01}Saara{spd:01}{f5:C0}{f4}{f5:D1}{f4:65}{fa:B1}\n{name:04}, be courteous{wait}as you see {name}-dono off.{end}"
  },
  {
   "id": "1120",
   "jp": "{col:01}水{d:1E|魔将}ディーネ{spd:01}{f5:C0}{f4}{f5:D1}{f4:68}{fa:C1}\nオーホッホッホッ！\nよく来たわね。{wait}{col:01}「青玉」{col}を{d:7E|早く}出し{d:45|なさい}。{wait}そうすれば、{d:76|この}優{d:71|しい}\n水{d:1E|魔将}ディーネ様は、\n命まで取ら{d:6C|ない}わ。{wait}悪い話{d:60|じゃ}{d:6C|ない}と\n思うけど{d:79|・・・}？{fd}{fe:10}{goto:00:1121}",
-  "en": ""
+  "en": "{col:01}Water General Deene{spd:01}{f5:C0}{f4}{f5:D1}{f4:68}{fa:C1}\nOhohohoho! So you came.{wait}Hand over the {col:01}\"Sapphire\"{col} at once.{wait}If you do, the kind Water General\nDeene-sama won't take your lives.{wait}Not a bad deal, I'd say...?{fd}{fe:10}{goto:00:1121}"
  },
  {
   "id": "1121",
   "jp": "{fe:10}{col:01}{name:04}{spd:01}{f4:5B}{fa:A1}\n取れる物なら\n取ってごらん！{wait}私は誰にもまけ{d:6C|ない}わ！\nかかってき{d:45|なさい}！{fd}{fe:10}{goto:00:1124}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{spd:01}{f4:5B}{fa:A1}\nTake it if you can!{wait}I won't lose to anyone! Come at me!{fd}{fe:10}{goto:00:1124}"
  },
  {
   "id": "1122",
@@ -181,272 +181,272 @@
    "1124"
   ],
   "jp": "{fe:10}{col:01}水{d:1E|魔将}ディーネ{f4:68}{fa:C1}\nキィー、ゆるさ{d:6C|ない}！\nやつざきに{d:7F|して}あげるわ{d:1B|！！}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Water General Deene{f4:68}{fa:C1}\nEeek, unforgivable! I'll tear you to pieces!!{end}"
  },
  {
   "id": "1125",
   "jp": "{col:01}{name:04}{f5:C0}{f4}{f5:D1}{f4:5D}{fa:A1}\nさあ、{d:7E|早く}お母様を\nさがしま{d:5A|しょう}。{end}",
-  "en": ""
+  "en": "{col:01}{name:04}{f5:C0}{f4}{f5:D1}{f4:5D}{fa:A1}\nCome on, let's hurry and find Mother.{end}"
  },
  {
   "id": "1126",
   "jp": "{col:01}{d:13|サーラ}{f5:40}{f4}{f5:D1}{f4:65}{fa:C1}\n{name:04}{d:79|・・・}{fd}{fe:10}{goto:00:1127}",
-  "en": ""
+  "en": "{col:01}Saara{f5:40}{f4}{f5:D1}{f4:65}{fa:C1}\n{name:04}...{fd}{fe:10}{goto:00:1127}"
  },
  {
   "id": "1127",
   "jp": "{fe:10}{fa:01}{col:01}{name:04}{f4:5C}{fa:A1}\nお母さま{d:79|・・・}{fd}{fe:10}{goto:00:1128}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}{name:04}{f4:5C}{fa:A1}\nMother...{fd}{fe:10}{goto:00:1128}"
  },
  {
   "id": "1128",
   "jp": "{fe:10}{fa:01}{col:01}{d:13|サーラ}{f4:65}{fa:C1}\nよく来{d:0C|てくれ}{d:4C|ました。}{fd}{fe:10}{goto:00:1129}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Saara{f4:65}{fa:C1}\nYou did well to come.{fd}{fe:10}{goto:00:1129}"
  },
  {
   "id": "1129",
   "jp": "{fe:10}{fa:01}{col:01}{name:04}{f4:5D}{fa:A1}\nはい。{fd}{fe:10}{goto:00:112A}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}{name:04}{f4:5D}{fa:A1}\nYes.{fd}{fe:10}{goto:00:112A}"
  },
  {
   "id": "112A",
   "jp": "{fe:10}{fa:01}{col:01}{d:13|サーラ}{spd:01}{f4:65}{fa:C1}\n{d:0D|しかし}、もし私に何かあれば\n{d:8E|あなた}が次の女王{d:5C|です}。{wait}もう{d:78|こんな}危険な事を{d:7F|して}は\nいけ{d:4B|ません}。{fd}{fe:10}{goto:00:112B}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Saara{spd:01}{f4:65}{fa:C1}\nHowever, if anything should happen to me,\nyou will be the next queen.{wait}You must not do anything so dangerous\nagain.{fd}{fe:10}{goto:00:112B}"
  },
  {
   "id": "112B",
   "jp": "{fe:10}{fa:01}{col:01}{name:04}{f4:5E}{fa:A1}\nそれは{d:79|・・・}{d:64|でも}{d:79|・・・}{fd}{fe:10}{goto:00:112C}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}{name:04}{f4:5E}{fa:A1}\nThat's... but...{fd}{fe:10}{goto:00:112C}"
  },
  {
   "id": "112C",
   "jp": "{fe:10}{fa:01}{col:01}{d:13|サーラ}{f4:65}{fa:C1}\nわかりま{d:62|した}か？{fd}{fe:10}{goto:00:112D}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Saara{f4:65}{fa:C1}\nDo you understand?{fd}{fe:10}{goto:00:112D}"
  },
  {
   "id": "112D",
   "jp": "{fe:10}{fa:01}{col:01}{name:04}{f4:5C}{fa:A1}\nは{d:79|・・・}はい。{fd}{fe:10}{goto:00:112E}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}{name:04}{f4:5C}{fa:A1}\nY... yes.{fd}{fe:10}{goto:00:112E}"
  },
  {
   "id": "112E",
   "jp": "{fe:10}{fa:01}{col:01}{d:13|サーラ}{f4:65}{fa:C1}\nところで{d:8E|あなた}は？{end}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Saara{f4:65}{fa:C1}\nAnd who might you be?{end}"
  },
  {
   "id": "112F",
   "jp": "{col:01}{name:04}{f5:40}{f4}{f5:D1}{f4:5D}{fa:A1}\n{name}といって、\n地上の者{d:5C|です}。{fd}{fe:10}{goto:00:1130}",
-  "en": ""
+  "en": "{col:01}{name:04}{f5:40}{f4}{f5:D1}{f4:5D}{fa:A1}\nHis name is {name}. He's from the\nsurface.{fd}{fe:10}{goto:00:1130}"
  },
  {
   "id": "1130",
   "jp": "{fe:10}{fa:01}{col:01}{d:13|サーラ}{f4:65}{fa:C1}\nなっ！？{wait}その指に{d:25|あるの}は{d:79|・・・}{wait}まさか「{item:16}」！？{fd}{fe:10}{goto:00:1131}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Saara{f4:65}{fa:C1}\nWhat!?{wait}That, on your finger...{wait}Surely not the \"{item:16}\"!?{fd}{fe:10}{goto:00:1131}"
  },
  {
   "id": "1131",
   "jp": "{fe:10}{fa:01}{col:01}{name:04}{f4:5A}{fa:A1}\nはっ、はい。{wait}お母様、{d:64|でも}それは\nあくま{d:64|でも}{d:79|・・・}{fd}{fe:10}{goto:00:1132}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}{name:04}{f4:5A}{fa:A1}\nY-yes.{wait}But Mother, that's only...{fd}{fe:10}{goto:00:1132}"
  },
  {
   "id": "1132",
   "jp": "{fe:10}{fa:01}{col:01}{d:13|サーラ}{spd:01}{f4:65}{fa:C1}\n{d:79|・・・}{d:79|・・・}{wait}地上の方よ、{d:7D|助け}られた事は\nもちろん感謝し{d:59|ます。}{wait}{d:0D|しかし}、{d:76|この}大地は\nかこに地上との関わりを{wait}断っており{d:59|ます。}{wait}出来るだけ{d:7E|早く}地上に\n戻られますよう。{wait}地上へは海底基地を更に\n北にぬけた所に{d:61|ある}、\n{d:1A|遺跡}を使う事で{wait}帰れるで{d:5A|しょう}。{wait}そこまでは\n{name:04}に\nついて行かせ{d:59|ます。}{end}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Saara{spd:01}{f4:65}{fa:C1}\n...{wait}Person of the surface, of course I am\ngrateful to you for saving me.{wait}However, this land long ago severed{wait}its ties with the surface.{wait}I ask that you return to the surface as\nsoon as you can.{wait}You may use the ruins that lie farther\nnorth, beyond the Undersea Base,{wait}to return home.{wait}{name:04} will accompany you as far as\nthere.{end}"
  },
  {
   "id": "1133",
   "jp": "{col:01}{name:04}{f5:40}{f4}{f5:D1}{f4:5E}{fa:A1}\nお母様{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}{name:04}{f5:40}{f4}{f5:D1}{f4:5E}{fa:A1}\nMother...{end}"
  },
  {
   "id": "1134",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:5F}{fa:A1}\n前に{d:75|ここ}によくにた場所を\n見た事が{d:61|ある}わ。{wait}ねえ{name}。{fd}{fe:10}{goto:00:1135}",
-  "en": ""
+  "en": "{col:01}Lucia{f4}{f4:5F}{fa:A1}\nI've seen a place a lot like this before.{wait}Right, {name}?{fd}{fe:10}{goto:00:1135}"
  },
  {
   "id": "1135",
   "jp": "{fe:10}{col:01}{name:04}{spd:01}{f4:9A}{fa:C2}\n{d:75|ここ}と同じ物が他にも{d:79|・・・}\n{d:1A|遺跡}は世界各地に\n{d:25|あるの}かしら。{fd}{fe:10}{goto:00:1136}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{spd:01}{f4:9A}{fa:C2}\nThere are others just like this...? I wonder\nif there are ruins all over the world.{fd}{fe:10}{goto:00:1136}"
  },
  {
   "id": "1136",
   "jp": "{fe:10}{col:01}{d:00|ルシア}\nわから{d:6C|ない}。{wait}ところでどうすれば{d:75|ここ}から\n地上へ行けるん{d:65|だろう}？{fd}{fe:10}{goto:00:1137}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia\nDunno.{wait}Anyway, how do we get to the surface\nfrom here?{fd}{fe:10}{goto:00:1137}"
  },
  {
   "id": "1137",
   "jp": "{fe:10}{col:01}{name:04}\nどうもサークルの中心を\n調べる事で、地上へ\n行けるみたいね。{fd}{fe:10}{goto:00:1138}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}\nIt seems you can get to the surface by\nexamining the center of the circle.{fd}{fe:10}{goto:00:1138}"
  },
  {
   "id": "1138",
   "jp": "{fe:10}{col:01}{d:00|ルシア}\n{d:5E|じゃあ}私達は{d:52|これ}で{d:79|・・・}{fd}{fe:10}{goto:00:1139}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia\nWell then, we'll be off...{fd}{fe:10}{goto:00:1139}"
  },
  {
   "id": "1139",
   "jp": "{fe:10}{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nあっ、{d:53|そうだ}わ。{wait}{d:76|この}「{item:19}」の\n事{d:50|なんだ}けど、{wait}{d:23|あなた達}に持っていて\nほ{d:71|しい}の。{wait}その方が、安全だと\n思うから{d:79|・・・}{fd}{fe:10}{goto:00:113A}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nOh, that's right.{wait}About this \"{item:19}\"...{wait}I'd like you to hold on to it.{wait}I think it'll be safer that way...{fd}{fe:10}{goto:00:113A}"
  },
  {
   "id": "113A",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{spd:01}{f4:5F}{fa:A1}\nそうね。{wait}{d:52|これ}が{d:61|ある}とまた{wait}あいつらに襲われる\n可能性が{d:61|ある}もんね。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{spd:01}{f4:5F}{fa:A1}\nMakes sense.{wait}With this around,{wait}those creeps might come after you again,\nhuh.{end}"
  },
  {
   "id": "113B",
   "jp": "{col:01}{name:04}{f4}{f4:9A}{fa:C2}\nあっ、そんな意味{d:60|じゃ}{d:79|・・・}\n{d:64|でも}{d:79|・・・}{d:24|ありがとう}。{wait}大切に持っていてね。{fe}＊{col:01}{item:19}{col}を\n {d:07|手に入れた}。{end}",
-  "en": ""
+  "en": "{col:01}{name:04}{f4}{f4:9A}{fa:C2}\nOh, that's not what I meant... But... thank\nyou.{wait}Take good care of it.{fe}* Got the {col:01}{item:19}{col}!{end}"
  },
  {
   "id": "113C",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{f4:62}{fa:A1}\nいつ{d:64|でも}取りに来てね！{wait}{d:5E|じゃあ}そろそろ{d:79|・・・}{wait}いくわ。{fd}{fe:10}{goto:00:113F}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{f4:62}{fa:A1}\nCome and get it anytime!{wait}Well, I guess it's time...{wait}we'd better go.{fd}{fe:10}{goto:00:113F}"
  },
  {
   "id": "113D",
   "jp": "{fe:10}{col:01}{name:04}{f4:9D}{fa:C2}\nう、うん、{d:40|だいじょうぶ}{d:6D|よ。}{fd}{fe:10}{goto:00:113C}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{f4:9D}{fa:C2}\nY-yes, it's fine.{fd}{fe:10}{goto:00:113C}"
  },
  {
   "id": "113E",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:5F}{fa:A1}\nわかってるわ{d:6D|よ。}\n{d:64|でも}国の宝を{d:79|・・・}{d:73|いい}の？{fd}{fe:10}{goto:00:113D}",
-  "en": ""
+  "en": "{col:01}Lucia{f4}{f4:5F}{fa:A1}\nI know that. But your country's treasure...\nare you sure?{fd}{fe:10}{goto:00:113D}"
  },
  {
   "id": "113F",
   "jp": "{fe:10}{col:01}{name:04}{f4:9C}{fa:C2}\nえっ、うん。{wait}あの、{name}\nそのリングね{d:79|・・・}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{f4:9C}{fa:C2}\nOh, um, right.{wait}Um, {name}, about that ring...{end}"
  },
  {
   "id": "1140",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:5F}{fa:B1}\nあの王女様、最後に何を\n言おうと{d:62|した}のかな{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Lucia{f4}{f4:5F}{fa:B1}\nI wonder what that princess was trying to\nsay at the end...{end}"
  },
  {
   "id": "1141",
   "jp": "{col:01}{name:04}{f4}{f4:9A}{fa:C2}\n{d:57|よかった}、気がつ{d:55|いたの}ね。{wait}{d:8E|あなた}は3日間もねむり\n続けてたの{d:6D|よ。}{fd}{fe:10}{goto:00:1142}",
-  "en": ""
+  "en": "{col:01}{name:04}{f4}{f4:9A}{fa:C2}\nThank goodness, you're awake.{wait}You've been asleep for three whole days.{fd}{fe:10}{goto:00:1142}"
  },
  {
   "id": "1142",
   "jp": "{fe:10}{col:01}{name}{f4:41}{fa:81}\n\n  1きみは？\n  2{d:44|ここは}一体？{choice:00:1143:1144}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name}{f4:41}{fa:81}\n\n  1Who are you?\n  2Where am I?{choice:00:1143:1144}"
  },
  {
   "id": "1143",
   "jp": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nまだ私の名前も言って\nなか{d:7B|った}わね、私の名前は\n{name:04}、{wait}{name:04}・{d:34|マースナル}{d:5C|です}。{wait}{d:8E|あなた}の名前は？{wait:11}{d:79|・・・}{name}ね。{wait}よろしく。{end}",
-  "en": ""
+  "en": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nI haven't even told you my name yet, have\nI? My name is {name:04},{wait}{name:04} Marsnal.{wait}What's your name?{wait:11}...{name}, is it?{wait}Nice to meet you.{end}"
  },
  {
   "id": "1144",
   "jp": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\n{d:44|ここは}、{d:23|あなた達}{d:19|人間}族が\nすんで{d:4F|いる}大陸のはるか下方\n海の底に{d:61|ある}大地。{wait}私達はフーベルの大地と\n呼んで{d:4F|いる}わ。{end}",
-  "en": ""
+  "en": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nThis is a land at the bottom of the sea,\nfar below the continent where you humans\nlive.{wait}We call it the Land of Fubel.{end}"
  },
  {
   "id": "1145",
   "jp": "{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1なぜ僕は{d:77|こんな所}に？\n  2{d:00|ルシア}は？{choice:00:1146:1147}",
-  "en": ""
+  "en": "{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Why am I here?\n  2Where's Lucia?{choice:00:1146:1147}"
  },
  {
   "id": "1146",
   "jp": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\n外の様子が気に{d:69|なって}\n家の外に出てみたら、{wait}{d:8E|あなた}が上の方から\nゆっくりとおりてきたの。{wait}私はあわてて、{d:8E|あなた}を\n{d:75|ここ}に運びこんだの。{end}",
-  "en": ""
+  "en": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nI was worried about what was going on\noutside, so I stepped out of the house,{wait}and there you were, drifting slowly down\nfrom above.{wait}I hurried and carried you in here.{end}"
  },
  {
   "id": "1147",
   "jp": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nあの娘さんの事ね。{wait}実はすごく言いにくい事\n{d:50|なんだ}けど、{wait}今、彼女は大変危険な状態に\n{d:61|ある}わ。{wait}私達もいろいろ手を\nつく{d:7F|して}は{wait}{d:4E|いるの}だけど{d:79|・・・}{wait}{d:7D|助け}られるかどうか{d:79|・・・}{wait}何にせよ、{d:75|ここ}のきざいでは\nどうにも{d:79|・・・}{wait}も{d:0D|しかし}たら、お母様の\n力で{d:7D|助け}られるかも{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}{name:04}{spd:01}{f4}{f4:9A}{fa:C2}\nYou mean that girl.{wait}This is very hard to say,{wait}but right now she's in very serious danger.{wait}We've been doing everything we can,{wait}but...{wait}I don't know if we can save her...{wait}Either way, with the equipment here,\nthere's nothing we can...{wait}Maybe Mother's power could save her...{end}"
  },
  {
   "id": "1148",
   "jp": "姫様、会議の時間{d:5C|です}。{wait}会議室の方まで\nおこし{d:47|下さい。}{fd}{fe:10}{goto:00:1149}",
-  "en": ""
+  "en": "Princess, it's time for the council.{wait}Please come to the council chamber.{fd}{fe:10}{goto:00:1149}"
  },
  {
   "id": "1149",
   "jp": "{fe:10}{col:01}{name:04}{spd:01}{f4}{f4:5A}{fa:C1}\n分かり{d:4C|ました。}{wait}直ちに参り{d:59|ます。}{wait}少し待っていてください。{wait}{name}、\n{d:8E|あなた}が{d:75|ここ}でいきを\n{d:51|する}事が出来るのは、{wait}その{col:01}「{item:16}」{col}の\nおかげなの、けっ{d:7F|して}\n手ばなさ{d:6C|ない}でね。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:04}{spd:01}{f4}{f4:5A}{fa:C1}\nUnderstood.{wait}I'll be there at once.{wait}Please wait here a moment.{wait}{name}, the only reason you can\nbreathe here is that\n{col:01}\"{item:16}\"{col}, so never let go of\nit.{end}"
  },
  {
   "id": "114A",
   "jp": "{col:01}{name:03}{f4}{f4:53}{fa:A1}\nまかせておけ！\n俺がいればひゃく人力だ！{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:53}{fa:A1}\nLeave it to me! With me around, it's like\nhaving a hundred men!{end}"
  },
  {
   "id": "114B",
   "jp": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\n{d:7C|そうか}、ざんね{d:66|んだ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\nI see. That's a shame.{end}"
  },
  {
   "id": "114C",
   "jp": "{col:01}{name:03}{f4}{f4:53}{fa:A1}\nよし、明日でよう。{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:53}{fa:A1}\nRight, we head out tomorrow.{end}"
  },
  {
   "id": "114D",
   "jp": "{col:01}{name:02}{f4}{f4:99}{fa:C2}\n{d:00|ルシア}、{name}\nどこ行ってた{d:0E|のじゃ。}{fd}{fe:10}{goto:00:114E}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:99}{fa:C2}\nLucia, {name}, where have you been?{fd}{fe:10}{goto:00:114E}"
  },
  {
   "id": "114E",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{f4:60}{fa:A1}\nどこ行ってたって\n聞きたいのは私達の方{d:6D|よ。}{fd}{fe:10}{goto:00:114F}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{f4:60}{fa:A1}\n\"Where have you been\"? We're the ones\nwho want to ask that!{fd}{fe:10}{goto:00:114F}"
  },
  {
   "id": "114F",
   "jp": "{fe:10}{col:01}{name:02}{spd:01}{f4:98}\nいやー実は、あの光に\nとばされた後、{d:76|この}町の\n近くに倒れて{d:56|いた}ん{d:5F|じゃ。}{wait}そ{d:7F|して}{d:7D|助け}られて、{d:75|ここ}で{wait}世話に{d:69|なって}{d:55|いたの}{d:5F|じゃ。}{wait}そう{d:60|じゃ}、また{d:11|ワシ}もつれて\nいっ{d:0C|てくれ}んか？{wait}まあどっちに{d:7F|して}も{d:11|ワシ}は\n行かねばならぬが{d:79|・・・}{fe}{spd}{col:01}{name}{f4:41}{fa:81}\n\n  1もちろん{d:5C|です}\n  2えんりょしときます{choice:00:1150:1151}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:02}{spd:01}{f4:98}\nWell, truth is, after that light blew me\naway, I ended up collapsed near this town.{wait}Then I was rescued, and I've been{wait}staying here since.{wait}Oh, that's right, would you take me along\nagain?{wait}Mind you, I have to go either way...{fe}{spd}{col:01}{name}{f4:41}{fa:81}\n\n  1Of course\n  2I'll pass{choice:00:1150:1151}"
  },
  {
   "id": "1150",
   "jp": "{col:01}{name:02}{f4}{f4:58}{fa:C1}\nよっしゃ！\nまかせる{d:0E|のじゃ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:58}{fa:C1}\nSplendid! Leave it to me.{end}"
  },
  {
   "id": "1151",
   "jp": "{col:01}{name:02}{f4}{f4:57}{fa:C1}\n{d:11|ワシ}は役に立つ{d:5D|のじゃ}がな。{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:57}{fa:C1}\nAnd here I'd be so useful, too.{end}"
  },
  {
   "id": "1152",
   "jp": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\n{name}、\n{name:01}は敵に\nつかま{d:7B|った}のでは{d:6C|ない}かの。{fd}{fe:10}{goto:00:1153}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\n{name}, mightn't {name:01} have been\ncaught by the enemy?{fd}{fe:10}{goto:00:1153}"
  },
  {
   "id": "1153",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{f4:9F}{fa:A2}\n行ってみま{d:5A|しょう}。\n{name}！{fd}{fe:10}{goto:00:1154}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{f4:9F}{fa:A2}\nLet's go and see, {name}!{fd}{fe:10}{goto:00:1154}"
  },
  {
   "id": "1154",
   "jp": "{fe:10}{col:01}{name:02}\n{d:2C|ルテア}のぬけ道は\n{d:11|ワシ}が知っとるぞ。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:02}\nI know the secret way into Rutea, I'll have\nyou know.{end}"
  },
  {
   "id": "1155",
   "jp": "{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\n{name}、{d:00|ルシア}\nまずは、やつらにつかまって\n{d:4F|いる}人々の中に{wait}{name:01}が、\n{d:4F|いる}かもしれん。{wait}そいつらを{d:7D|助け}に行こう！{fd}{fe:10}{goto:00:1156}",
-  "en": ""
+  "en": "{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\n{name}, Lucia, first off, among the\npeople those guys have caught...{wait}{name:01} might be there.{wait}Let's go rescue them!{fd}{fe:10}{goto:00:1156}"
  },
  {
   "id": "1156",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{f4:9F}{fa:C2}\nどう{d:51|する}？\n{name}。{fe}{col:01}{name}{f4:41}{fa:81}\n\n  1よし！行こう！\n  2何で僕達が{d:79|・・・}{choice:00:1157:1158}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{f4:9F}{fa:C2}\nWhat'll we do, {name}?{fe}{col:01}{name}{f4:41}{fa:81}\n\n  1Right! Let's go!\n  2Why should we...{choice:00:1157:1158}"
  },
  {
   "id": "1157",
   "jp": "{col:01}{name:03}{f4}{f4:53}{fa:A1}\n奴等のはなを\nあか{d:7F|して}やろうぜ。{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:53}{fa:A1}\nLet's show those creeps what's what.{end}"
  },
  {
   "id": "1158",
   "jp": "{col:01}{name:03}{spd:01}{f4}{f4:54}{fa:A1}\nそんな事{d:60|じゃ}\n{name:01}の事なんか{wait}いつまで立っても\n{d:7D|助け}ら{d:6B|れない}ぞ！{wait}それにだまって\n{d:76|この}まま見すごすのか！{fd}{fe:10}{goto:00:1159}",
-  "en": ""
+  "en": "{col:01}{name:03}{spd:01}{f4}{f4:54}{fa:A1}\nWith that attitude,{wait}you'll never save {name:01}, no matter\nhow long it takes!{wait}Besides, are you just gonna stand by and\nlook the other way!?{fd}{fe:10}{goto:00:1159}"
  },
  {
   "id": "1159",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{f4:9F}{fa:C2}\nそうね、行きましょ。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{f4:9F}{fa:C2}\nYou're right. Let's go.{end}"
  },
  {
   "id": "115A",
@@ -455,32 +455,32 @@
    "115B"
   ],
   "jp": "{col:01}{name:02}{f4}{f4:56}{fa:C1}\n{name}、\n{d:11|ワシ}はまだ行かんぞ。{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:56}{fa:C1}\n{name}, I'm not going just yet.{end}"
  },
  {
   "id": "115C",
   "jp": "{col:01}{name:03}{f4}{f4:51}{fa:A1}\nやりかけた事を投げ出{d:7F|して}\n行けるか{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:51}{fa:A1}\nLike I'd leave with the job half done!!{end}"
  },
  {
   "id": "115D",
   "jp": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\n{d:88|こっち}{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\nThis way.{end}"
  },
  {
   "id": "115E",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:C1}\n{d:75|ここ}{d:60|じゃ}、{d:75|ここ}{d:5F|じゃ。}{wait}ありゃ、こりゃいかん。{wait}やつらに塞がれた様{d:5F|じゃ。}{wait}よーし、二人で同時\n攻撃{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:C1}\nHere, it's right here.{wait}Uh-oh, this won't do.{wait}Looks like they've blocked it off.{wait}Right, the two of us attack at once.{end}"
  },
  {
   "id": "115F",
   "jp": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\nよーし、突撃！{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\nRight, charge!{end}"
  },
  {
   "id": "1160",
   "jp": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\n{d:76|この}まま一気に行く{d:66|んだ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\nLet's push straight on through!{end}"
  },
  {
   "id": "1161",
@@ -489,32 +489,32 @@
    "1162"
   ],
   "jp": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\nいかん、{d:5A|しょう}めんから\nのりこむのは無理{d:5F|じゃ。}{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\nNo good, we can't storm in from the front.{end}"
  },
  {
   "id": "1163",
   "jp": "{col:01}{name:03}{f4}{f4:54}{fa:A1}\nむおっ！{wait}{d:77|こんな所}にぬけ道が\n{d:61|ある}とは{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:54}{fa:A1}\nWhoa!{wait}A secret passage in a place like this!!{end}"
  },
  {
   "id": "1164",
   "jp": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\nよし！\nのりこむぞ{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\nAll right!\nLet's storm in!!{end}"
  },
  {
   "id": "1165",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:81}\n{d:44|ここは}{d:23|あなた達}の様な者が\n来る所ではあり{d:4B|ません}。{wait}{d:75|ここ}が、四天王最強の\n風{d:1E|魔将}{d:03|ヒュード}様の部屋と{wait}知っての行動{d:5B|ですか}？{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:81}\nThis is no place for the likes of you.{wait}Are you aware that this is the chamber of\nthe Wind General Hude-sama,{wait}strongest of the Four Heavenly Kings?{end}"
  },
  {
   "id": "1166",
   "jp": "{col:01}{name:02}{f4}{f4:56}{fa:C1}\n{name:01}はどこ{d:60|じゃ}！{fd}{fe:10}{goto:00:1167}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:56}{fa:C1}\nWhere's {name:01}!{fd}{fe:10}{goto:00:1167}"
  },
  {
   "id": "1167",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4}{f4:69}{fa:81}\n知りたければ私を倒{d:7F|して}\nみることだね！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude{f4}{f4:69}{fa:81}\nIf you want to know, try defeating me!{end}"
  },
  {
   "id": "1168",
@@ -524,187 +524,187 @@
    "116A"
   ],
   "jp": "{col:01}{name:03}{f4}{f4:51}{fa:C1}\n{d:20|きさま}ぁー{d:1B|！！}\nその娘を\nどう{d:51|する}つもりだ！？{fd}{fe:10}{goto:00:116B}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:51}{fa:C1}\nYou bastard!! What are you planning to do\nwith that girl!?{fd}{fe:10}{goto:00:116B}"
  },
  {
   "id": "116B",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4:69}{fa:81}\nヒャーハッハッハッ\nその子を{d:41|どうし}ようと{wait}私の勝手{d:60|じゃ}\n{d:6C|ない}{d:5B|ですか}っ！？{fd}{fe:10}{goto:00:116C}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude{spd:01}{f4:69}{fa:81}\nHyahahaha! What I do with the girl{wait}is my own business, isn't it!?{fd}{fe:10}{goto:00:116C}"
  },
  {
   "id": "116C",
   "jp": "{fe:10}{col:01}{name:03}\nぶっ倒{d:7F|して}やる{d:1B|！！}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:03}\nI'll knock you flat!!{end}"
  },
  {
   "id": "116D",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{f5:D0}{f4}{f5:C1}{f4:69}{fa:E1}\n{d:76|この}私が、{d:23|あなた達}に\nおくれをとるとは。{wait}信じら{d:6B|れない}{d:79|・・・}{fd}{fe:10}{goto:00:116E}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{f5:D0}{f4}{f5:C1}{f4:69}{fa:E1}\nThat I should be bested by the likes of\nyou...{wait}Unbelievable...{fd}{fe:10}{goto:00:116E}"
  },
  {
   "id": "116E",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}\nおっと、{d:61|ある}女性達を\n別室にまねいてあり{d:59|ます。}{wait}その女性を殺されたく\nなければ{wait}{d:75|ここ}を動か{d:6C|ない}事{d:5C|です}ね！{fd}{fe:10}{goto:00:116F}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude{spd:01}\nAh-ah-ah, I've invited certain ladies into\nanother room.{wait}If you'd rather those ladies weren't killed,{wait}I suggest you stay right where you are!{fd}{fe:10}{goto:00:116F}"
  },
  {
   "id": "116F",
   "jp": "{fe:10}{fa:01}{col:01}{d:00|ルシア}{f4:63}{fa:A1}\n{name:01}{d:1B|！！}{fd}{fe:10}{goto:00:1170}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Lucia{f4:63}{fa:A1}\n{name:01}!!{fd}{fe:10}{goto:00:1170}"
  },
  {
   "id": "1170",
   "jp": "{fe:10}{fa:01}{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4:69}{fa:E1}\nヒャアハハハハ！\nまたお会いしま{d:5A|しょう}。{end}",
-  "en": ""
+  "en": "{fe:10}{fa:01}{col:01}Wind General Hude{f4:69}{fa:E1}\nHyaahahahaha! Until we meet again.{end}"
  },
  {
   "id": "1171",
   "jp": "{d:23|あなた達}は、\n{name}さんと\n{d:3F|仲間}のみなさんでは\nあり{d:4B|ません}か？{end}",
-  "en": ""
+  "en": "Excuse me, but aren't you {name}-san\nand his companions?{end}"
  },
  {
   "id": "1172",
   "jp": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\nそう{d:60|じゃ}が、あんた達は？{fd}{fe:10}{goto:00:1174}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:55}{fa:C1}\nThat we are. And who might you be?{fd}{fe:10}{goto:00:1174}"
  },
  {
   "id": "1173",
   "jp": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\n何だ。\n俺達に何か用か？{fd}{fe:10}{goto:00:1174}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:50}{fa:A1}\nWhat is it? You want something with us?{fd}{fe:10}{goto:00:1174}"
  },
  {
   "id": "1174",
   "jp": "{fe:10}{fa:01}はい。{fe}私は、{d:76|この}国で{d:1F|帝国}の\n反乱軍を組織{d:7F|して}\n{d:4F|いる}者の一人{d:5C|です}。{wait}敵の{d:22|じょうほう}から\n{d:23|あなた達}の噂は、{wait}よく聞いてい{d:4C|ました。}{wait}我々に手をか{d:7F|して}\n{d:56|いた}だけ{d:4B|ません}か？{fe}{col:01}{name}{f4:41}{fa:81}\n\n  1わかりま{d:62|した}\n  2いや{d:5C|です}{choice:00:1175:1176}",
-  "en": ""
+  "en": "{fe:10}{fa:01}Yes.{fe}I am one of those organizing a rebel army\nagainst the Empire in this land.{wait}We have heard a great deal about you\nfrom the enemy's own reports.{wait}Would you lend us your aid?{fe}{col:01}{name}{f4:41}{fa:81}\n\n  1All right\n  2No way{choice:00:1175:1176}"
  },
  {
   "id": "1175",
   "jp": "{fa:01}{d:24|ありがとう}ござい{d:59|ます。}{wait}私達の本部に一度、おこし\n{d:47|下さい。}{wait}我々の本部は、酒場の地下に\nあり{d:59|ます。}{wait}酒場の片すみに{d:4F|いる}男に\n合い言葉を伝えて{d:47|下さい。}{wait}案内{d:7F|して}くれ{d:59|ます。}{wait}合い言葉は{col:01}「{d:3D|カダム}」{col}{d:5C|です}。{end}",
-  "en": ""
+  "en": "{fa:01}Thank you so much.{wait}Please pay a visit to our headquarters.{wait}Our headquarters is beneath the tavern.{wait}Tell the password to the man in the corner\nof the tavern.{wait}He will show you the way.{wait}The password is {col:01}\"Kadam\"{col}.{end}"
  },
  {
   "id": "1176",
   "jp": "わかりま{d:62|した}\nざんねん{d:5C|です}。{end}",
-  "en": ""
+  "en": "I see. That's a shame.{end}"
  },
  {
   "id": "1177",
   "jp": "{d:79|・・・}何だ？{fe}{col:01}{name}{f4}{f5:A1}{f4:41}{fa:81}\n  1黒バラ\n  2{d:3D|カダム}\n  3子犬{choice:01:1178:117A:1179}",
-  "en": ""
+  "en": "...What?{fe}{col:01}{name}{f4}{f5:A1}{f4:41}{fa:81}\n  1Black Rose\n  2Kadam\n  3Puppy{choice:01:1178:117A:1179}"
  },
  {
   "id": "1178",
   "jp": "{d:79|・・・}何のことだ、一体？{end}",
-  "en": ""
+  "en": "...What are you on about?{end}"
  },
  {
   "id": "1179",
   "jp": "犬{d:64|でも}かって{d:4E|いるの}か？{end}",
-  "en": ""
+  "en": "What, you keep a dog or something?{end}"
  },
  {
   "id": "117A",
   "jp": "そのテーブルを\nお{d:7F|して}みるが{d:72|いい。}{end}",
-  "en": ""
+  "en": "Try pushing that table.{end}"
  },
  {
   "id": "117B",
   "jp": "{col:01}{d:1C|エイソッド}{spd:01}\nよし、じゅんびは出来た。{wait}今からやつらを{d:76|この}地から\nおいはらう。{wait}みなの命、{d:76|この}私にくれ。{fd}{fe:10}{goto:00:117C}",
-  "en": ""
+  "en": "{col:01}Aysod{spd:01}\nGood, the preparations are complete.{wait}Now we drive them out of this land.{wait}All of you, place your lives in my hands.{fd}{fe:10}{goto:00:117C}"
  },
  {
   "id": "117C",
   "jp": "{fe:10}{col:01}{d:1C|エイソッド}{spd:01}\n本隊は私とともに\n{d:5A|しょう}めんから、\nそ{d:7F|して}{wait}{name}君達は\n直せつ、敵指揮官で{d:61|ある}{wait}風{d:1E|魔将}{d:03|ヒュード}の{d:4F|いる}\n王座をたたい{d:0C|てくれ}。{wait}{d:76|この}作戦のせいこうは、\n君達の力にかかって{d:4F|いる}。{wait}たのんだぞ。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Aysod{spd:01}\nThe main force will attack head-on with\nme.{wait}{name}-kun, you and your friends will\nstrike directly at the enemy commander,{wait}Wind General Hude, in his throne room.{wait}The success of this operation rests on\nyour strength.{wait}I'm counting on you.{end}"
  },
  {
   "id": "117D",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:E1}\nヒャアハハハハ！{wait}また会いま{d:62|した}ね。{wait}{d:23|あなた達}の作戦など、\nお見通し{d:5C|です}。{wait}{d:2C|ルテア}では一度、{d:23|あなた達}に\nおくれを取りま{d:62|した}が今度は{wait}万が一にもそんな事は、\nありえ{d:6C|ない}。なぜなら、{wait}{d:23|あなた達}の中に{d:4F|いる}\n協力者が{d:22|じょうほう}を{wait}くれま{d:62|した}からねー。{wait}{d:5A|しょう}かいしま{d:5A|しょう}。{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:E1}\nHyaahahahaha!{wait}We meet again.{wait}I see right through your little plan.{wait}You got the better of me once in Rutea,\nbut this time{wait}that will never happen, not in a million\nyears. Because, you see,{wait}someone among you has been so kind as to\ngive me{wait}information, hmm?{wait}Allow me to make the introduction.{end}"
  },
  {
   "id": "117E",
   "jp": "{col:01}{d:00|ルシア}{f4:63}{fa:C1}\nあ、{d:8E|あなた}は！？\n{d:1D|レイナ}っ{d:1B|！！}{fd}{fe:10}{goto:00:117F}",
-  "en": ""
+  "en": "{col:01}Lucia{f4:63}{fa:C1}\nY-you!? Reina!!{fd}{fe:10}{goto:00:117F}"
  },
  {
   "id": "117F",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4:69}{fa:E1}\n{d:76|この}女性は、私の言う事を\nよく聞い{d:0C|てくれ}ま{d:7F|して}ね、{wait}{d:23|あなた達}の事をすべて\n話{d:7F|して}{d:43|くれた}の{d:5C|です}{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude{spd:01}{f4:69}{fa:E1}\nThis lady listens so very well to what I tell\nher,{wait}and she told me everything about you.{end}"
  },
  {
   "id": "1180",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:63}{fa:C1}\n{d:41|どうし}てなの！{fd}{fe:10}{goto:00:1181}",
-  "en": ""
+  "en": "{col:01}Lucia{f4}{f4:63}{fa:C1}\nBut why!?{fd}{fe:10}{goto:00:1181}"
  },
  {
   "id": "1181",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\n{d:03|ヒュード}様のためなの！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\nI did it for Hude-sama!{end}"
  },
  {
   "id": "1182",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:81}\n{d:23|あなた達}を殺{d:62|した}後で、{wait}さみしくなら{d:6C|ない}ように\nおもての人達も、始末{d:7F|して}{wait}あげます{d:6D|よ。}{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:81}\nAfter I've killed you all,{wait}I'll take care of the people outside as well,{wait}so you won't get lonely.{end}"
  },
  {
   "id": "1183",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:E1}\n彼等を倒{d:62|した}の{d:5B|ですか}！{wait}なかなかやりますね。{wait}{d:0D|しかし}、{d:76|この}私の所へは\n来{d:6B|れない}で{d:5A|しょう}。{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:E1}\nYou defeated them!?{wait}Not bad at all.{wait}But you will never make it to where I am.{end}"
  },
  {
   "id": "1184",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}\nバッ、バカな！{wait}あのわなをすべて\nかわ{d:62|した}の{d:5B|ですか}！？{wait}{d:1D|レイナ}{d:88|こっち}へ来{d:45|なさい}。{fd}{fe:10}{goto:00:1185}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}\nIm-impossible!{wait}You got past every one of those traps!?{wait}Reina, come here.{fd}{fe:10}{goto:00:1185}"
  },
  {
   "id": "1185",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\nなっ、何をなされます！？{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\nWh-what are you doing!?{end}"
  },
  {
   "id": "1186",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}\n{d:23|あなた達}、{d:76|この}女性を\n殺されたくなか{d:7B|った}ら{wait}おとなしく死んで\nもらいま{d:5A|しょう}か。{fd}{fe:10}{goto:00:1187}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}\nIf you don't want this woman killed,{wait}be good and die quietly, won't you?{fd}{fe:10}{goto:00:1187}"
  },
  {
   "id": "1187",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\nそんな！\n私を殺す{d:58|なんて}{wait}うそ{d:5C|です}よね、{d:03|ヒュード}様。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\nNo! You wouldn't kill me...{wait}That isn't true, is it, Hude-sama?{end}"
  },
  {
   "id": "1188",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}\nウヒャヒャヒャ、\nバカなおんな{d:6D|よ。}{wait}最初から{d:74|おまえ}など利用{d:7F|して}\n{d:56|いた}だけにすぎぬわ！{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}\nUhyahyahya! Stupid woman!{wait}I was only ever using you, from the very\nbeginning!{end}"
  },
  {
   "id": "1189",
   "jp": "{col:01}{d:1C|エイソッド}\n{d:41|どうし}た！\n何をやって{d:4F|いる}んだ！？{end}",
-  "en": ""
+  "en": "{col:01}Aysod\nWhat's going on? What are you doing!?{end}"
  },
  {
   "id": "118A",
   "jp": "{col:01}{d:1D|レイナ}\nお父様！{fd}{fe:10}{goto:00:118B}",
-  "en": ""
+  "en": "{col:01}Reina\nFather!{fd}{fe:10}{goto:00:118B}"
  },
  {
   "id": "118B",
   "jp": "{fe:10}{col:01}{d:1C|エイソッド}\n{d:1D|レイナ}っ！\nなぜ{d:74|おまえ}が{d:75|ここ}に！？{fd}{fe:10}{goto:00:118C}",
-  "en": ""
+  "en": "{fe:10}{col:01}Aysod\nReina! Why are you here!?{fd}{fe:10}{goto:00:118C}"
  },
  {
   "id": "118C",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\n{d:79|・・・}{d:79|・・・}{fd}{fe:10}{goto:00:118D}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\n......{fd}{fe:10}{goto:00:118D}"
  },
  {
   "id": "118D",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}\nウヒャヒャヒャヒャ！\n感動の親子のたいめんか？{wait}うら切り者の、{d:74|おまえ}の娘は\n少しは、役に立{d:7B|った}ぞ！{fd}{fe:10}{goto:00:118E}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude{spd:01}\nUhyahyahyahya! A touching family reunion,\nis it?{wait}Your traitor of a daughter was of some\nuse to me!{fd}{fe:10}{goto:00:118E}"
  },
  {
   "id": "118E",
   "jp": "{fe:10}{col:01}{d:1C|エイソッド}\nうら切り者だとっ{d:1B|！！}{wait}どういう事だっ！{fd}{fe:10}{goto:00:1190}",
-  "en": ""
+  "en": "{fe:10}{col:01}Aysod\nTraitor!?{wait}What do you mean!?{fd}{fe:10}{goto:00:1190}"
  },
  {
   "id": "118F",
@@ -713,27 +713,27 @@
    "1190"
   ],
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}\n{d:0A|きさまら}{d:37|レジスタンス}の\n行動は{d:74|おまえ}の娘のおかげで\nすべてつつぬけよ{d:1B|！！}{fd}{fe:10}{goto:00:1191}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude\nThanks to your daughter, I knew every\nmove you Resistance rats made!!{fd}{fe:10}{goto:00:1191}"
  },
  {
   "id": "1191",
   "jp": "{fe:10}{col:01}{d:1C|エイソッド}\nなっ、なに！{fd}{fe:10}{goto:00:1192}",
-  "en": ""
+  "en": "{fe:10}{col:01}Aysod\nWh-what!{fd}{fe:10}{goto:00:1192}"
  },
  {
   "id": "1192",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\n{d:79|・・・}{d:63|ゆるして}お父様、\n彼を愛{d:7F|して}{d:55|いたの}よ！{fd}{fe:10}{goto:00:1193}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\n...Forgive me, Father. I loved him!{fd}{fe:10}{goto:00:1193}"
  },
  {
   "id": "1193",
   "jp": "{fe:10}{col:01}{d:1C|エイソッド}{spd:01}\nばかなっ！{wait}{d:74|おまえ}のせいで、\n我々の{d:3F|仲間}が危険な目に\nあって{d:4E|いるの}だ。{wait}{d:74|おまえ}が{d:62|した}事は、\nゆるさ{d:6B|れない}。{fd}{fe:10}{goto:00:1194}",
-  "en": ""
+  "en": "{fe:10}{col:01}Aysod{spd:01}\nYou fool!{wait}Because of you, our comrades are in\ndanger.{wait}What you have done cannot be forgiven.{fd}{fe:10}{goto:00:1194}"
  },
  {
   "id": "1194",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\nお、お父様！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\nF-Father!{end}"
  },
  {
   "id": "1195",
@@ -742,27 +742,27 @@
    "1196"
   ],
   "jp": "{col:01}{d:1C|エイソッド}{spd:01}\n{d:63|ゆるして}{d:47|下さい。}{wait}{d:8E|あなた}方がたよりだと\n{d:73|いい}ながら、内部に{wait}うら切り者をかかえて\n{d:56|いた}とは{d:79|・・・}{fd}{fe:10}{goto:00:1197}",
-  "en": ""
+  "en": "{col:01}Aysod{spd:01}\nPlease forgive me.{wait}I said we were relying on you, and all the\nwhile{wait}I was harboring a traitor in our own\nranks...{fd}{fe:10}{goto:00:1197}"
  },
  {
   "id": "1197",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}\nうるさいぞ{d:1B|！！}{wait}さっさと死ね、{d:0B|おまえ達}。\n{d:76|この}女を殺すぞ！{fd}{fe:10}{goto:00:1198}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude\nShut up!!{wait}Hurry up and die, all of you, or this woman\ndies!{fd}{fe:10}{goto:00:1198}"
  },
  {
   "id": "1198",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\nお父様、\n{name}さん達、{wait}ごめい惑をおかけし{d:4C|ました。}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\nFather... {name}-san, everyone...{wait}I'm so sorry for all the trouble I caused.{end}"
  },
  {
   "id": "1199",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}\nなっ、なに！\nばかなっ{d:1B|！！}{wait}いつのまにナイフを！\nやめっ{d:79|・・・}{fd}{fe:10}{goto:00:119A}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}\nWh-what! Impossible!!{wait}When did you get that knife!? Sto--...{fd}{fe:10}{goto:00:119A}"
  },
  {
   "id": "119A",
   "jp": "{fe:10}{col:01}{d:1D|レイナ}\n{d:03|ヒュード}様、\n{d:24|ありがとう}{d:79|・・・}{wait}うっ！{fd}{fe:10}{goto:00:119C}",
-  "en": ""
+  "en": "{fe:10}{col:01}Reina\nHude-sama... thank you...{wait}Ugh!{fd}{fe:10}{goto:00:119C}"
  },
  {
   "id": "119B",
@@ -771,17 +771,17 @@
    "119C"
   ],
   "jp": "{fe:10}{col:01}{d:1C|エイソッド}\n{d:1D|レイナ}ーっ{d:1B|！！}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Aysod\nReinaaa!!{end}"
  },
  {
   "id": "119D",
   "jp": "{col:01}{d:1D|レイナ}\n{d:79|・・・}おとうさま{d:79|・・・}\nごめんね{d:79|・・・}{fd}{fe:10}{goto:00:119E}",
-  "en": ""
+  "en": "{col:01}Reina\n...Father... I'm sorry...{fd}{fe:10}{goto:00:119E}"
  },
  {
   "id": "119E",
   "jp": "{fe:10}{col:01}{d:1C|エイソッド}\n{d:1D|レイナ}っ！\nしっかりしろ！\nまだ、{d:40|だいじょうぶ}だ！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Aysod\nReina! Hang on! You'll be all right!{end}"
  },
  {
   "id": "119F",
@@ -791,7 +791,7 @@
    "11A1"
   ],
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:E1}\nまっ、まって{d:47|下さい。}{wait}私を殺すと、{d:22|じょうほう}が\n手に入ら{d:6C|ない}{d:5C|です}よ！{wait}今、戦って{d:4F|いる}敵の事、\n{d:1F|帝国}の事、{d:23|あなた達}が{wait}さが{d:4D|している}\n娘の事とかね{d:79|・・・}{fd}{fe:10}{goto:00:11A4}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:E1}\nW-wait, please.{wait}If you kill me, you won't get any\ninformation!{wait}About the enemies you're fighting now,\nabout the Empire,{wait}about the girl you're looking for...{fd}{fe:10}{goto:00:11A4}"
  },
  {
   "id": "11A2",
@@ -801,17 +801,17 @@
    "11A4"
   ],
   "jp": "{fe:10}{col:01}{d:00|ルシア}{f4:60}{fa:A1}\n{d:7E|早く}おしえ{d:45|なさい}よっ{d:1B|！！}{fd}{fe:10}{goto:00:11A5}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{f4:60}{fa:A1}\nThen spill it, quick!!{fd}{fe:10}{goto:00:11A5}"
  },
  {
   "id": "11A5",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4:69}{fa:E1}\nまず、{d:23|あなた達}が{d:76|この}私を\n殺さ{d:6C|ない}とやくそく{d:7F|して}\nく{d:6B|れない}とねぇ{d:79|・・・}{fd}{fe:10}{goto:00:11A6}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude{f4:69}{fa:E1}\nFirst, you'll have to promise me you won't\nkill me...{fd}{fe:10}{goto:00:11A6}"
  },
  {
   "id": "11A6",
   "jp": "{fe:10}{col:01}{d:00|ルシア}\nどう{d:51|する}？{name}{fe}{col:01}{name}{f4:41}{fa:81}\n  1ゆるさ{d:6C|ない}！\n  2やくそく{d:51|する}\n  3{d:22|じょうほう}だけ聞く{choice:01:11A8:11AB:11BD}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia\nWhat do we do, {name}?{fe}{col:01}{name}{f4:41}{fa:81}\n  1No mercy!\n  2I promise\n  3Just get the info{choice:01:11A8:11AB:11BD}"
  },
  {
   "id": "11A7",
@@ -820,47 +820,47 @@
    "11A8"
   ],
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:E1}\n{d:0B|おまえ達}では、四{d:1E|魔将}最強の\nフリードはおろか、{wait}{d:02|ザイン}様に\nかなうはずが{d:6C|ない}。{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:E1}\nThe likes of you could never beat Freed,\nstrongest of the Four Dark Generals,{wait}much less Zain-sama.{end}"
  },
  {
   "id": "11A9",
   "jp": "{col:01}{d:00|ルシア}{spd:01}{f4}{f4:60}{fa:A1}\n{name}、\n{name:01}の{wait}{d:22|じょうほう}は無くな{d:7B|った}わ。{end}",
-  "en": ""
+  "en": "{col:01}Lucia{spd:01}{f4}{f4:60}{fa:A1}\n{name}, now we've got nothing{wait}on where {name:01} is.{end}"
  },
  {
   "id": "11AA",
   "jp": "{col:01}闇姫騎士{d:8A|ミリア}{spd:01}{f4}{f4:6A}{fa:E1}\nひきょう者{d:03|ヒュード}は、\n死んだようね。{wait}はじめま{d:7F|して}、\n{name}。{wait}私の名前は闇姫騎士{col:01}〔(〕ダーク\n{col:01}プリンセスナイト〔)〕{col}{d:8A|ミリア}！{wait}私は{d:38|メディオム}{d:8D|王国}に{d:4F|いる}。{wait}命がおしくなければ\nいつ{d:64|でも}来るが{d:73|いい}！{end}",
-  "en": ""
+  "en": "{col:01}Dark Princess Knight Milia{spd:01}{f4}{f4:6A}{fa:E1}\nSo the coward Hude is dead, it seems.{wait}How do you do, {name}?{wait}I am the {col:01}Dark {col:01}Princess Knight{col} Milia!{wait}I am in the Kingdom of Medeom.{wait}If your life means nothing to you, come\nwhenever you like!{end}"
  },
  {
   "id": "11AB",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4}{f4:69}{fa:E1}\nそうで{d:5A|しょう}。{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{f4}{f4:69}{fa:E1}\nThat's more like it.{end}"
  },
  {
   "id": "11AC",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}\n何を知りたい{d:5B|ですか}？{fe}{col:01}{name}{f4:41}{fa:81}\n  1妹の行方\n  2敵の事\n  3{d:35|ライドロイド}{d:1F|帝国}の事{choice:01:11AD:11AE:11B4}",
-  "en": ""
+  "en": "{col:01}Wind General Hude\nWhat would you like to know?{fe}{col:01}{name}{f4:41}{fa:81}\n  1Where's my sister\n  2The enemy\n  3The Raidroid Empire{choice:01:11AD:11AE:11B4}"
  },
  {
   "id": "11AD",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4}{f4:69}{fa:E1}\n{d:8E|あなた}の妹は私が、\n{d:38|メディオム}{d:8D|王国}へ\nおくり{d:4C|ました。}{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{f4}{f4:69}{fa:E1}\nI sent your sister to the Kingdom of\nMedeom.{end}"
  },
  {
   "id": "11AE",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:E1}\n{d:02|ザイン}様は、\nすば{d:0F|らしい}お方{d:5C|です}。{wait}我々をみちびいて\n下さる人{d:5C|です}。{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:E1}\nZain-sama is a magnificent man.{wait}He is the one who will lead us.{end}"
  },
  {
   "id": "11AF",
   "jp": "{col:01}{name:02}{f4}{f4:56}{fa:C1}\n{d:02|ザイン}、奴を止めねば！{end}",
-  "en": ""
+  "en": "{col:01}{name:02}{f4}{f4:56}{fa:C1}\nZain... He must be stopped!{end}"
  },
  {
   "id": "11B0",
   "jp": "{col:01}{name:03}{f4}{f4:54}{fa:A1}\n{d:02|ザイン}だと！{wait}奴が生きて{d:4E|いるの}か？{end}",
-  "en": ""
+  "en": "{col:01}{name:03}{f4}{f4:54}{fa:A1}\nZain, you say!?{wait}He's alive?{end}"
  },
  {
   "id": "11B1",
@@ -871,7 +871,7 @@
    "11B4"
   ],
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:E1}\n{d:35|ライドロイド}{d:1F|帝国}は、\n13年前に{d:02|ザイン}様が\nつくられた。{wait}{d:76|この}世を作り直す\nために{d:79|・・・}{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:E1}\nZain-sama founded the Raidroid Empire 13\nyears ago.{wait}To remake this world...{end}"
  },
  {
   "id": "11B5",
@@ -880,7 +880,7 @@
    "11B6"
   ],
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4}{f4:69}{fa:E1}\n何か聞きたい事{d:64|でも}\nありますか？{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{f4}{f4:69}{fa:E1}\nIs there anything else you wish to ask?{end}"
  },
  {
   "id": "11B7",
@@ -891,27 +891,27 @@
    "11BA"
   ],
   "jp": "{col:01}闇姫騎士{d:8A|ミリア}{f4}{f4:6A}{fa:A1}\nうら切り者め！{end}",
-  "en": ""
+  "en": "{col:01}Dark Princess Knight Milia{f4}{f4:6A}{fa:A1}\nTraitor!{end}"
  },
  {
   "id": "11BB",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4}{f4:69}{fa:E1}\nぐわっ！{end}",
-  "en": ""
+  "en": "{col:01}Wind General Hude{f4}{f4:69}{fa:E1}\nGwaagh!{end}"
  },
  {
   "id": "11BC",
   "jp": "{col:01}闇姫騎士{d:8A|ミリア}{spd:01}{f4}{f4:6A}{fa:A1}\n{d:0B|おまえ達}も{d:38|メディオム}に\nくればじごくに\nおくってやるよ、{wait}あーはっはっはっ！{end}",
-  "en": ""
+  "en": "{col:01}Dark Princess Knight Milia{spd:01}{f4}{f4:6A}{fa:A1}\nCome to Medeom, and I'll send you to hell\ntoo,{wait}ahahahaha!{end}"
  },
  {
   "id": "11BD",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:60}{fa:A1}\nはやく話すの{d:6D|よ。}{fd}{fe:10}{goto:00:11BE}",
-  "en": ""
+  "en": "{col:01}Lucia{f4}{f4:60}{fa:A1}\nOut with it, quick.{fd}{fe:10}{goto:00:11BE}"
  },
  {
   "id": "11BE",
   "jp": "{fe:10}{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4:69}{fa:E1}\n{d:8C|本当}に{d:7D|助け}て\nくれるので{d:5A|しょう}ね？{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Wind General Hude{f4:69}{fa:E1}\nYou really will spare me, won't you?{end}"
  },
  {
   "id": "11BF",
@@ -924,17 +924,17 @@
    "11C4"
   ],
   "jp": "{col:01}闇姫騎士{d:8A|ミリア}{spd:01}{f4}{f4:6A}{fa:E1}\nうふふ。\n{d:23|あなた達}もワルね。{wait}{d:22|じょうほう}だけ聞いて\n{d:03|ヒュード}を殺すつもり\nだ{d:7B|った}んでしょ。{wait}{d:23|あなた達}の知りたい事は、\n{d:38|メディオム}に{d:61|ある}わ。{wait}まってるわよっ、\n{name}さんっ！{end}",
-  "en": ""
+  "en": "{col:01}Dark Princess Knight Milia{spd:01}{f4}{f4:6A}{fa:E1}\nUfufu. You're quite the villains yourselves.{wait}You meant to hear what he knew and then\nkill Hude, didn't you?{wait}What you want to know is in Medeom.{wait}I'll be waiting, {name}-san!{end}"
  },
  {
   "id": "11C5",
   "jp": "{col:01}{d:1C|エイソッド}{spd:01}\n{d:24|ありがとう}。{wait}君達のおかげで、{d:76|この}国を\n取り戻すことが出来た。{wait}{d:0D|しかし}{d:79|・・・}\n{d:79|・・・}{d:38|メディオム}{d:8D|王国}か。{wait}あの国は、かつて\n{d:2E|ロンディウム}と力を\n二分{d:7F|して}{d:56|いた}強国だ。{wait}最近{d:35|ライドロイド}軍の基地と\n{d:7F|して}使用されて{d:4F|いる}{d:0F|らしい}。{fd}{fe:10}{goto:00:11C6}",
-  "en": ""
+  "en": "{col:01}Aysod{spd:01}\nThank you.{wait}Thanks to you, we have taken this land\nback.{wait}But... the Kingdom of Medeom...{wait}That nation was once a great power, the\nequal of Rondium.{wait}Lately it seems to be in use as a base for\nthe Raidroid army.{fd}{fe:10}{goto:00:11C6}"
  },
  {
   "id": "11C6",
   "jp": "{fe:10}ほうこくし{d:59|ます。}\n{d:1C|エイソッド}卿。{end}",
-  "en": ""
+  "en": "{fe:10}A report, Lord Aysod.{end}"
  },
  {
   "id": "11C7",
@@ -943,7 +943,7 @@
    "11C8"
   ],
   "jp": "{d:38|メディオム}で王家の者が公開\n{d:8B|しょぶん}になるとの事{d:5C|です}。{fd}{fe:10}{goto:00:11CA}",
-  "en": ""
+  "en": "They say a member of the royal family is\nto be publicly executed in Medeom.{fd}{fe:10}{goto:00:11CA}"
  },
  {
   "id": "11C9",
@@ -952,7 +952,7 @@
    "11CA"
   ],
   "jp": "{fe:10}{col:01}{name:03}\nなにっ！\nファ、{d:05|ファーラ}が！？{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:03}\nWhat!? F-Fara!?{end}"
  },
  {
   "id": "11CB",
@@ -961,27 +961,27 @@
    "11CC"
   ],
   "jp": "{col:01}{d:00|ルシア}\n{name:03}！\nどこに行くの！？{end}",
-  "en": ""
+  "en": "{col:01}Lucia\n{name:03}! Where are you going!?{end}"
  },
  {
   "id": "11CD",
   "jp": "さらに近衛{d:1E|魔将}{d:02|ザイン}直ぞく\n指揮官{name:05}が{wait}{d:05|ファーラ}姫公開{d:8B|しょぶん}に\n反たい{d:62|した}ため、{wait}裏切り者とみなされ\n{d:21|いっしょ}に{d:8B|しょぶん}される{wait}との噂{d:5C|です}。{end}",
-  "en": ""
+  "en": "Furthermore, {name:05}, a commander\ndirectly under Imperial Guard General Zain,{wait}opposed the public execution of Princess\nFara,{wait}so he has been branded a traitor and will\nbe executed with her.{wait}Or so the rumor goes.{end}"
  },
  {
   "id": "11CE",
   "jp": "{col:01}{d:1C|エイソッド}\nどういう事だ。\nなにかのわななのか？{end}",
-  "en": ""
+  "en": "{col:01}Aysod\nWhat does this mean? Is it some kind of\ntrap?{end}"
  },
  {
   "id": "11CF",
   "jp": "{col:01}{name:05}{f4}{f4:4F}{fa:81}\n{d:0B|おまえ達}はっ！？\nなぜ{d:77|こんな所}に{d:79|・・・}{fd}{fe:10}{goto:00:11D0}",
-  "en": ""
+  "en": "{col:01}{name:05}{f4}{f4:4F}{fa:81}\nYou!? What are you doing here...?{fd}{fe:10}{goto:00:11D0}"
  },
  {
   "id": "11D0",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{spd:01}{f4:A0}{fa:A2}\n{d:8E|あなた}は{d:01|ボーガン}を\nおいかけて{d:56|いた}指揮官ね。{wait}なぜ、{d:1F|帝国}を裏切ってまで\n{d:05|ファーラ}姫をかばおうと{wait}{d:62|した}の？{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{spd:01}{f4:A0}{fa:A2}\nYou're the commander who was chasing\nBogan, right?{wait}Why did you try to protect Princess Fara,{wait}even if it meant betraying the Empire?{end}"
  },
  {
   "id": "11D1",
@@ -991,7 +991,7 @@
    "11D3"
   ],
   "jp": "{fe:10}{col:01}{name:05}{spd:01}{f4:4C}{fa:81}\nうるさい！{wait}{d:0B|おまえ達}にそんな事を\n言う必要は{d:6C|ない}！{wait}{d:75|ここ}から出{d:7F|して}もら{d:7B|った}\nカリはいつかかえすが、{wait}{d:0B|おまえ達}の{d:3F|仲間}になる気は\n{d:6C|ない}！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:05}{spd:01}{f4:4C}{fa:81}\nShut up!{wait}I don't have to tell you anything!{wait}I'll repay you for getting me out of here\nsomeday,{wait}but I have no intention of joining you!{end}"
  },
  {
   "id": "11D4",
@@ -1000,22 +1000,22 @@
    "11D5"
   ],
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}\n{d:20|きさま}、{d:41|どうし}て{d:75|ここ}に？{fd}{fe:10}{goto:00:11D6}",
-  "en": ""
+  "en": "{col:01}Imperial Guard General Zain\nYou. What are you doing here?{fd}{fe:10}{goto:00:11D6}"
  },
  {
   "id": "11D6",
   "jp": "{fe:10}{col:01}{name:05}{spd:01}\nそんな事より\n考え直{d:7F|して}{d:47|下さい。}{wait}命令{d:7F|して}下されば{wait}「紅玉」は、私が取りに\nいきますものを{d:79|・・・}{fd}{fe:10}{goto:00:11D7}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:05}{spd:01}\nNever mind that. Please reconsider.{wait}Had you only given the order,{wait}I would have gone for the \"Ruby\" myself...{fd}{fe:10}{goto:00:11D7}"
  },
  {
   "id": "11D7",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\n「緑玉」の時の失態を、\nわすれたわけでは{d:61|ある}まい？{fd}{fe:10}{goto:00:11D8}",
-  "en": ""
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nSurely you have not forgotten your\nblunder with the \"Emerald\"?{fd}{fe:10}{goto:00:11D8}"
  },
  {
   "id": "11D8",
   "jp": "{fe:10}{col:01}{name:05}\nそ、それは{d:79|・・・}{fd}{fe:10}{goto:00:11DA}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:05}\nTh-that was...{fd}{fe:10}{goto:00:11DA}"
  },
  {
   "id": "11D9",
@@ -1024,7 +1024,7 @@
    "11DA"
   ],
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n{name:05}、\n君には失ぼう{d:62|した}{d:6D|よ。}{wait}それに一度{d:64|でも}私に\nたてつ{d:56|いた}者は、{wait}生か{d:7F|して}おくわけには\n行か{d:6C|ない}{d:67|のだ。}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\n{name:05}, you have disappointed me.{wait}Besides, anyone who has defied me even\nonce{wait}cannot be allowed to live.{end}"
  },
  {
   "id": "11DB",
@@ -1034,62 +1034,62 @@
    "11DD"
   ],
   "jp": "{col:01}{name:05}\n{d:20|きさま}！{wait}なぜだ。{fd}{fe:10}{goto:00:11DE}",
-  "en": ""
+  "en": "{col:01}{name:05}\nDamn you!{wait}Why!?{fd}{fe:10}{goto:00:11DE}"
  },
  {
   "id": "11DE",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nほう、何者だ{d:79|・・・}？{fd}{fe:10}{goto:00:11DF}",
-  "en": ""
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nOh? And who might you be...?{fd}{fe:10}{goto:00:11DF}"
  },
  {
   "id": "11DF",
   "jp": "{fe:10}{col:01}{name:03}\n{d:79|・・・}くっ。{wait}持ってきたぞ、ほら\n{d:52|これ}が{col:01}「{item:1A}」{col}だ！{fd}{fe:10}{goto:00:11E0}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:03}\n...Ngh.{wait}I've brought it. Here, this is the\n{col:01}\"{item:1A}\"{col}!{fd}{fe:10}{goto:00:11E0}"
  },
  {
   "id": "11E0",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n{d:20|きさま}、マスクをかぶって\n{d:4F|いる}がその{d:16|宝玉}{d:79|・・・}{wait}{name:03}だな。{wait}よし、{d:05|ファーラ}、取りに\n行く{d:66|んだ。}{fd}{fe:10}{goto:00:11E1}",
-  "en": ""
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYou hide behind a mask, but that gem...{wait}You are {name:03}.{wait}Very well. Fara, go and fetch it.{fd}{fe:10}{goto:00:11E1}"
  },
  {
   "id": "11E1",
   "jp": "{fe:10}{col:01}{d:05|ファーラ}\n{d:79|・・・}は・い{d:79|・・・}{fd}{fe:10}{goto:00:11E2}",
-  "en": ""
+  "en": "{fe:10}{col:01}Fara\n...Y...e...s...{fd}{fe:10}{goto:00:11E2}"
  },
  {
   "id": "11E2",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nついでにそいつの命も\nうばってしまえ。{fd}{fe:10}{goto:00:11E3}",
-  "en": ""
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nAnd while you're at it, take his life too.{fd}{fe:10}{goto:00:11E3}"
  },
  {
   "id": "11E3",
   "jp": "{fe:10}{col:01}{name:03}\nひきょうだぞ{d:1B|！！}{fd}{fe:10}{goto:00:11E4}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:03}\nYou coward!!{fd}{fe:10}{goto:00:11E4}"
  },
  {
   "id": "11E4",
   "jp": "{fe:10}{col:01}{name:05}{spd:01}\nまさか{d:79|・・・}{d:20|きさま}が\nその{d:16|宝玉}を持って{d:4F|いる}と{wait}いうことは{d:79|・・・}{d:7C|そうか}！{wait}{d:20|きさま}が俺の\n兄なのか！？{fd}{fe:10}{goto:00:11E5}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:05}{spd:01}\nIt can't be... If you have that gem,{wait}that means... I see!{wait}You... are my brother!?{fd}{fe:10}{goto:00:11E5}"
  },
  {
   "id": "11E5",
   "jp": "{fe:10}{col:01}{d:00|ルシア}{spd:01}\n何なの！？{wait}どういう事！{wait}{name:03}が\n{name:05}の兄！？{fd}{fe:10}{goto:00:11E6}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{spd:01}\nWhat!?{wait}What's going on!?{wait}{name:03} is {name:05}'s brother!?{fd}{fe:10}{goto:00:11E6}"
  },
  {
   "id": "11E6",
   "jp": "{fe:10}{col:01}{name:03}\nやめろ、{d:05|ファーラ}！\n目をさますんだ！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:03}\nStop it, Fara! Wake up!{end}"
  },
  {
   "id": "11E7",
   "jp": "{col:01}{d:05|ファーラ}\n{d:79|・・・}う・う・う{d:79|・・・}\nいゃああああっ{d:1B|！！}{end}",
-  "en": ""
+  "en": "{col:01}Fara\n...Ah... ah... ah... Nooooooo!!{end}"
  },
  {
   "id": "11E8",
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\nばかなっ！{wait}王女にかけた\nじゅばくが{wait}とけてしまうとは！？{fd}{fe:10}{goto:00:11EA}",
-  "en": ""
+  "en": "{col:01}Imperial Guard General Zain{spd:01}\nImpossible!{wait}The curse I laid on the princess{wait}has been broken!?{fd}{fe:10}{goto:00:11EA}"
  },
  {
   "id": "11E9",
@@ -1098,17 +1098,17 @@
    "11EA"
   ],
   "jp": "{fe:10}{col:01}{name:03}\n{d:05|ファーラ}っ{d:1B|！！}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:03}\nFara!!{end}"
  },
  {
   "id": "11EB",
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}\n仕方が{d:6C|ない}、{d:44|ここは}ひくか！{end}",
-  "en": ""
+  "en": "{col:01}Imperial Guard General Zain\nNo help for it. I shall withdraw for now!{end}"
  },
  {
   "id": "11EC",
   "jp": "{col:01}{name:03}\nくっ、逃がすかっ！{end}",
-  "en": ""
+  "en": "{col:01}{name:03}\nNgh, you won't get away!{end}"
  },
  {
   "id": "11ED",
@@ -1117,12 +1117,12 @@
    "11EE"
   ],
   "jp": "{fe:10}{col:01}{name:05}\nまて、{d:20|きさま}は{d:76|この}俺が\n相手を{d:7F|して}やる。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:05}\nHold it. I'm the one you'll be fighting.{end}"
  },
  {
   "id": "11EF",
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\nの{d:76|この}ことおいかけてくる\nとはな、{d:74|おまえ}らごときが{wait}{d:76|この}私を倒せると\n{d:49|思って}{d:4E|いるの}か？{fd}{fe:10}{goto:00:11F1}",
-  "en": ""
+  "en": "{col:01}Imperial Guard General Zain{spd:01}\nSo you came blundering after me. Do the\nlikes of you{wait}truly believe you can defeat me?{fd}{fe:10}{goto:00:11F1}"
  },
  {
   "id": "11F0",
@@ -1131,7 +1131,7 @@
    "11F1"
   ],
   "jp": "{fe:10}{col:01}{name:02}\n{d:02|ザイン}、{d:76|この}目で{d:74|おまえ}の\nすがたを見た時でさえ、まだ\n信じられなか{d:7B|った}ぞ{d:79|・・・}{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:02}\nZain... even seeing you with my own eyes, I\nstill couldn't believe it...{end}"
  },
  {
   "id": "11F2",
@@ -1140,17 +1140,17 @@
    "11F3"
   ],
   "jp": "{col:01}闇姫騎士{d:8A|ミリア}\n{d:02|ザイン}様、{d:44|ここは}私めに\nおまかせを{d:79|・・・}{d:02|ザイン}様は\nお引き{d:47|下さい。}{fd}{fe:10}{goto:00:11F4}",
-  "en": ""
+  "en": "{col:01}Dark Princess Knight Milia\nZain-sama, leave this to me... You should\nwithdraw, Zain-sama.{fd}{fe:10}{goto:00:11F4}"
  },
  {
   "id": "11F4",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\n{d:8A|ミリア}よ、後はたのんだぞ。{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nMilia, I leave the rest to you.{end}"
  },
  {
   "id": "11F5",
   "jp": "{col:01}{d:00|ルシア}{f5:D0}{f4}{f5:C1}{f4:63}{fa:A1}\n{name:01}！？\nもう何が何だかさっぱり\nわかん{d:6C|ない}よ！{fd}{fe:10}{goto:00:11F7}",
-  "en": ""
+  "en": "{col:01}Lucia{f5:D0}{f4}{f5:C1}{f4:63}{fa:A1}\n{name:01}!? I have no idea what's going\non anymore!{fd}{fe:10}{goto:00:11F7}"
  },
  {
   "id": "11F6",
@@ -1159,17 +1159,17 @@
    "11F7"
   ],
   "jp": "{fe:10}{col:01}闇姫騎士{d:8A|ミリア}{f4:6A}{fa:E1}\n{d:23|あなた達}の相手は\n私が{d:7F|して}あげるわ！{end}",
-  "en": ""
+  "en": "{fe:10}{col:01}Dark Princess Knight Milia{f4:6A}{fa:E1}\nI'll be the one to deal with you!{end}"
  },
  {
   "id": "11F8",
   "jp": "{col:01}{d:00|ルシア}{f5:D0}{f4}{f5:C1}{f4:63}{fa:A1}\n{name:01}{d:1B|！！}{fd}{fe:10}{goto:00:11F9}",
-  "en": ""
+  "en": "{col:01}Lucia{f5:D0}{f4}{f5:C1}{f4:63}{fa:A1}\n{name:01}!!{fd}{fe:10}{goto:00:11F9}"
  },
  {
   "id": "11F9",
   "jp": "{fe:10}{col:01}{name:01}{f4:4A}{fa:C1}\n{d:44|ここは}どこっ、私はい{d:7B|った}い\n何を{d:7F|して}{d:55|いたの}？{fd}{fe:10}{goto:00:11FB}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:01}{f4:4A}{fa:C1}\nWhere am I? What... what was I doing?{fd}{fe:10}{goto:00:11FB}"
  },
  {
   "id": "11FA",
@@ -1178,7 +1178,7 @@
    "11FB"
   ],
   "jp": "{fe:10}{col:01}{name:02}{f4:58}{fa:E1}\n{name:01}っ！{wait}気がつ{d:56|いた}か？{fd}{fe:10}{goto:00:11FF}",
-  "en": ""
+  "en": "{fe:10}{col:01}{name:02}{f4:58}{fa:E1}\n{name:01}!{wait}You've come to?{fd}{fe:10}{goto:00:11FF}"
  },
  {
   "id": "11FC",
@@ -1189,6 +1189,6 @@
    "11FF"
   ],
   "jp": "{fe:10}{col:01}{d:00|ルシア}{f4:63}{fa:A1}\n{d:53|そうだ}っ、{name:03}が\nあぶ{d:6C|ない}っ！{fd}{fe:10}{goto:00:1200}",
-  "en": ""
+  "en": "{fe:10}{col:01}Lucia{f4:63}{fa:A1}\nOh no, {name:03} is in danger!{fd}{fe:10}{goto:00:1200}"
  }
 ]

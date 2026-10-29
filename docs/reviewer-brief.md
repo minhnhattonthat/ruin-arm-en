@@ -1,13 +1,17 @@
-# Translation reviewer brief - <Game title>
+# Translation reviewer brief - Ruin Arm (SNES)
 
-You review one batch of a JP->`<target language>` fan translation. Read-only: no edits, no git, no subagents.
+You review one batch of a JP->English fan translation. Read-only: no edits, no git, no subagents.
 Mechanical validity (ids, control codes, encodable characters, width, stub last lines) is already enforced by the
 check tool - judge translation quality. Return the report as your final message: subagents cannot write files, so the
 controller saves it.
 
 ## Inputs (paths in your dispatch)
 - Pairs file: every translated entry as `>> id | JP` / `EN` with +-2 context lines. Read ALL of it, in passes if large.
-- `glossary.md` (rulings at the top), `docs/style-reference.md`, the translator's report (unverified claims).
+- `glossary.md` (rulings at the top), `docs/style-reference.md`, `docs/synopsis.md` (who is who, reveals), the
+  translator's report (unverified claims).
+- Pairs format: `{name}` = hero, `{name:01}` = sister, `{name:02}`-`{name:05}` = Zieg/Toran/Posena/Neil (player
+  can rename); other `{...}` are game codes (ignore them unless a name/item variable makes broken grammar). Line
+  breaks were flattened; the tool wraps. Honorifics are kept on purpose (D1: Lucia-san, {name}-dono).
 
 ## Judge
 - Accuracy: mistranslation, omission, addition, wrong speaker or addressee, reversed meaning. Quote the JP and say
