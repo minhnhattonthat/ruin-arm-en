@@ -26,6 +26,11 @@ Names (`name_hero`/`name_sister`) use singles (the name entry edits them letter 
 | `$81E8B7` | message id → block table `$838642` → 16-bit pointer | `msg_ptr`: 24-bit pointer per id from MSGTAB `$D28000` (`0x1400` ids x 3). Untranslated ids keep their original address; blocks `$03-$0F` alias `$01` as before |
 | `$81E4B9` | `{num}` digit + `$A1` (full-width) | + `$0430` (English digits) |
 | `$81E92E`, `$85EC2D` | cell drawer (and its copy for the name entry): `TXA / CMP #$7F00` | `font_a`/`font_b`: codes `$0400-$07FE` read FONT2 `$D08000`, others go back to the original path |
+| `$8296F0` | ruin password: `$140C` 8 words == `$829711` | `password`: same compare, a-z singles folded to A-Z (`build.py` writes `RAIDROID` at `$829711`) |
+
+Every byte the build changes goes through `build.put` (or, for asar and the checksum, a logged diff) into
+`build/ruinarm_en.writes.txt`; `tests/test_build.py` runs `romdiff.py` with it and holds writes inside the original
+ROM to fields, staff, grids/password, hook sites and the checksum.
 
 Free WRAM `$7E:9000-$9FFF`: no write in any `tools/lua/wramuse.lua` run (8 scenes + the 187-map tour;
 `tools/wramfree.py`). Used: `$9F00-$9F7F` scratch cells, `$9F80-$9F99` VWF vars.
@@ -45,7 +50,7 @@ Expansion: `$D08000` FONT2 (32 KB), `$D18000` code + widths, `$D28000` MSGTAB, `
 | `{num}` | English digits, 6 px each | |
 | Fixed fields (menus, items, places, ingots, status...) | **2 letters per cell** of the field (`max` in script/*.json), a pair ≤ 16 px by construction | menus, status, shop, name confirm shots |
 | Names (`name_hero`, `name_sister`) | **7 letters** (one per cell) | status / name confirm shots |
-| Staff roll | 2 letters per original glyph per positioned run (repacked in place) | `credits_0/5/10` shots |
+| Staff roll | 2 letters per cell from the run's `{pos}` column to tile 31 (strings relocated; a `{pos}` may move column, not row) | `credits_0..12` shots (heading row only: the field HUD hides the rest) |
 | Dialogue choices (`{choice}`) | guess: same 223 px lines; not seen in a shot yet | - |
 | Ending messages (block `$02`) | not measured: the ending screen setup is a debug-tool gap (`debug.md`) | - |
 
@@ -54,7 +59,12 @@ Expansion: `$D08000` FONT2 (32 KB), `$D18000` code + widths, `$D28000` MSGTAB, `
 - Digraph cells leave a gap after each pair (item names read `ab cd ef`): a menu VWF in `$849B38` (records) and
   `$849B5D` (item names) would render each record proportionally across its own cells, storage still 2 letters a
   word. Hero/sister names in menus show one letter per 16 px cell.
+- **Short menu labels** (103 menu fields of 2 cells = 32 px: Stat, Opts, Atk, Def, Spd, Hgt, Wgt, Mats...): measured
+  in phase 7, the font is too wide for full words there even proportionally (lowercase 5-6 px: Status 35 px, Options
+  38, Defense 42, Materials 46; packing as many letters as fit a 16 px cell instead of pairs saves under one cell and
+  needs 811 codes vs 564). Full words need more room: command bars have a 48 px slot per command (pos step `$0C`),
+  so 3 cells fit if the cursor and the next label allow it (check each screen); record counts are in the lists
+  themselves (`fixed.py` `menu_lists`, bank `$84`: growing one needs the list rewritten or moved, plus its pointer).
+  A narrow menu font (4 px lowercase) with packed cells would also fit most 6-7 letter words in 2-3 cells.
 - Code-built Japanese: the red `個` after the shop count (and likely `枚`), drawn outside the lists.
-- Name entry grid is kana (`026446-0266xx`); needs an alphabet grid of singles.
 - Title: the small katakana ルインアーム above the logo (graphics, D10).
-- Staff roll is repacked in place: longer English credits need its strings relocated (pointers in bank `$B1`).

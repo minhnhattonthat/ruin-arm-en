@@ -101,9 +101,16 @@ patch found (web search 2026-10-30: only an unlinked forum claim; nothing on rom
   `$85E492`, equip labels `$85E7D4`, AI tactics `$84D5A5`, pad labels `$84D648`, use/act `$84D52C`/`$84D540`,
   alchemy elements `$81FD33` and heat/cool `$81FD5F`, status words `$85DEFE` (FFFF-terminated, 11).
 - Character names (hero `カーマイン`, sister `ボニー`) live in WRAM `$146A` (7 glyphs each).
-- **Name entry grid** (phase 5, not translation): kana + Latin cells 026446-0266xx, kanji grid (reading-grouped)
-  026698-026F0A behind a 39-pointer table at 026698. English needs an alphabet grid instead.
-- **Staff roll** (found in phase 2, `docs/re/debug.md`): `$B1D3E2` (file 18D3E2), 13 pointers (bank `$B1`) to
+- **Name entry grids** (modes かな/漢1/漢2, labels `84CCA4..`): row-pointer tables (bank `$84`) `$84E410` (27 rows of
+  11 words: 5 + blank + 5; row numbers drawn by code), `$84E698` (39) and `$84EADC` (38) (13 words: reading, blank,
+  5 + blank + 5). Row counts are `LDA/CMP/SBC #imm` in both entry routines (`$85B1C8`, copy `$85BDA0`). Phase 7:
+  `build.py` GRIDS writes English singles (ABC / abc / Sym, 3-4 rows each) and the counts.
+- **Ruin password**: typed in the name entry (object handler `$829600`, state machine `$1814`/`$1284`); `$8296F0`
+  compares the 8 words at `$140C` with `$829711` (ライドロイド帝国) and sets `$1816` = `$18` (match) / `$08`. Phase 7:
+  `RAIDROID`, compared case-blind (`asm/vwf.asm` `password`; test `tools/lua/password.lua`). Kadam (0147) is only said,
+  never typed (no other compare of `$140C`).
+- **Staff roll** (found in phase 2, `docs/re/debug.md`; English strings moved to `$B1EC00` by `build.py`, pointers
+  in place): `$B1D3E2` (file 18D3E2), 13 pointers (bank `$B1`) to
   strings of glyph words + `$8000|pos` tilemap-position words, `FFFF`-terminated and followed by one more word
   (`$00B4` on every string: frames the page stays up - guess) (18D3FC-18D7D2, verified by the identity repack), drawn by
   `$B1D210` onto BG3. Not part of the six message blocks; includes a special-thanks page not in block `$02`.

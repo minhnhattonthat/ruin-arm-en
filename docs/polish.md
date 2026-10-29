@@ -31,8 +31,10 @@ rewrite). Critical/Important were fixed before merge. `id - suggestion`.
 - 018F "PLEASE ENTER THE PASSWORD."; 0195 drop stutter; 01C0/01D4 "you two" -> "you"; 01C2; 01C8; 01E0; 01AE
 
 ## Credits
-- 0204 "Story Concept"?; 0207/S09 "Programming"; 0208 "SWITCH-E"; S0A "Oda-kun"; uniform "X. Surname" spacing.
-- Staff name readings are best guesses (0205 Zumoto/Machida, 0206/0209 handles, 0204 Jun Katsumata): unverified.
+- 0204 "Story Concept"?; 0207 "Programming"; 0208 "SWITCH-E" (the staff roll S00-S0C has these since phase 7, D17;
+  block `$02` 0200-020A still has the short forms: make the two lists agree).
+- Staff name readings are best guesses (Zumoto/Machida, handles, Jun Katsumata, Benben Den, Kurodaya Rokusaku,
+  Yasunobu Okubo, Soji Machida): unverified.
 
 ## Fields (b016-b031)
 - place_31/32 Manor vs place_09/40 Mansion; place_19 "Ravenna Road"; place_3F "Rutea Passage"; place_37 "Fefus Back Way"
