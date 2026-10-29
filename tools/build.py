@@ -32,7 +32,7 @@ SIZE = 0x400000
 FONT2 = 0xD08000            # 32 KB: English cells (tools/font.py), same layout as $9F8000
 MSGTAB = 0xD28000           # 0x14 blocks x 256 ids x 3 bytes
 TEXT = 0xD2C000             # relocated messages from here to the end of the ROM, never across a bank
-SINGLE_FIELDS = {"name_hero", "name_sister"}  # names are edited per letter in the name entry: one letter a code
+SINGLE_FIELDS = {"name_hero", "name_sister", "name_party"}  # names are edited per letter in the name entry: one letter a code
 IDS = 0x1400
 
 

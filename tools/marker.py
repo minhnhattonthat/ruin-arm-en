@@ -23,7 +23,7 @@ LINE = 223                    # 14 cells x 16 px; a pen reaching 224 runs the ga
 INSERT = {"name": 56, "item": 112, "item_v": 112, "num": 30}
 FILL = "The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs! "
 DATA = {"848A27"}             # digit/symbol cell palette picked by index (docs/re/text.md)
-TAG = {"menu": "M", "item": "I", "place": "P", "name_hero": "Hero", "name_sister": "Sis", "ingot": "G",
+TAG = {"menu": "M", "item": "I", "place": "P", "name_hero": "Hero", "name_sister": "Sis", "name_party": "Pty","ingot": "G",
        "equip": "E", "tactic": "T", "pad": "C", "use": "U", "act": "A", "element": "L", "heat": "H", "status": "S"}
 PART = re.compile(r"(\{[^{}]*\}|\n)")
 TEXTLIKE = re.compile(r"\{d:[^{}]*\}")

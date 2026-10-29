@@ -45,7 +45,7 @@ def test_sources_dont_overlap(s):
     clash = [(x[2], y[2]) for x, y in zip(spans, spans[1:]) if y[0] < x[1]]
     assert not clash
     assert {k: len(v) for k, v in t.items()} == {
-        "menu": 308, "item": 110, "place": 72, "name_hero": 16, "name_sister": 16, "ingot": 16, "equip": 9,
+        "menu": 308, "item": 110, "place": 72, "name_hero": 16, "name_sister": 16, "name_party": 5, "ingot": 16, "equip": 9,
         "tactic": 5, "pad": 3, "use": 2, "act": 2, "element": 4, "heat": 2, "status": 11}
 
 

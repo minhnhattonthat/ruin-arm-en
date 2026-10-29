@@ -21,6 +21,7 @@ TABLES = {
     "place": (0x02F9CD, 0x10, 72, 8),          # $85F9CD: map/area names
     "name_hero": (0x02C3DC, 0x10, 16, 8),      # $85C3BC pointer list: default names offered for the hero
     "name_sister": (0x02C4FC, 0x10, 16, 8),    # $85C4DC pointer list: default names for the sister
+    "name_party": (0x020100, 0x80, 5, 7),      # $848000 party records copied to $146A at new game ($84844C): slots 2-6
     "ingot": (0x02E492, 0x10, 16, 8),          # $85E472 pointer list
     "equip": (0x02E7D4, 4, 10, 2),             # $85E7BE pointer list: hand/arrow labels (両手, 木矢..)
     "tactic": (0x0255A5, 6, 5, 3),             # $84D59B pointer list: AI aggressiveness (しない..好戦的)
