@@ -3,7 +3,7 @@
 Skill: translate-retro-game; `python tools/skill.py` prints its folder (`$SKILL` below). Read its SKILL.md before ROM, text or QA work. `"$(python tools/skill.py)"` works in bash and PowerShell; never paste a `plugins/cache/<hash>` path.
 
 ## Commands (run from repo root)
-- Build:    `python -X utf8 tools/build.py`  -> build/ruinarm_en.sfc (checks the dump against `rom.sha1` first; not written yet)
+- Build:    `python -X utf8 tools/build.py`  -> build/ruinarm_en.sfc (checks the dump against `rom.sha1` first; repacks every text block via `tools/pack.py`)
 - Check:    `python -X utf8 tools/check.py`  (tests + lint; the pre-commit hook runs this)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/ruinarm_en.sfc --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 tools/debug/warp.py <scene>.. [--rom build/ruinarm_en.sfc] [--save]` (cold boot → `work/qa/warp/<scene>/scene.png`; `--list`, `--all` regenerates every state in `work/states/`, `maps` tours all 187 maps, `map_AARR`/`exit_N` any map; scenes: `tools/debug/scenes.lua`, RAM map: `docs/re/debug.md`; never ask the user to play to a scene)

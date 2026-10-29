@@ -12,7 +12,7 @@ ROM is 2.5 MB (20 Mbit) but the header size byte is `$0C` (4 MB): expanding to 4
 | 0B18A3-0C0000 | 59229 | `$96:98A3-$97:FFFF` | |
 | 27800C-280000 | 32756 | `$CF:800C-$CF:FFFF` | last bank of the ROM |
 | 202E3F-208000 | 20929 | `$C0:AE3F-$C0:FFFF` | |
-| 0C5761-0C8000 | 10399 | `$98:D761-$98:FFFF` | right after script blocks `$00/$13` (same bank: 16-bit pointers reach it) |
+| 0C5764-0C8000 | 10396 | `$98:D764-$98:FFFF` | right after script blocks `$00/$13` (same bank: 16-bit pointers reach it) |
 | 1FE654-200000 | 6572 | `$BF:E654` | |
 | 25E6DB-260000 | 6437 | `$CB:E6DB` | |
 | 0068B0-007FB0 | 5888 | `$80:E8B0` | bank `$80` code bank: hooks |

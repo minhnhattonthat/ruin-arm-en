@@ -60,7 +60,7 @@ patch found (web search 2026-10-30: only an unlinked forum claim; nothing on rom
 | Block | Table | Msgs | Text (file) | Content |
 |---|---|---|---|---|
 | `$00` | `$988000` (0C0000) | 256 | 0C0200-0C3CBE | towns/NPCs |
-| `$13` | `$98BCBE` (0C3CBE) | 256 (110 unique) | 0C3EBE-0C5761 | NPCs, shops |
+| `$13` | `$98BCBE` (0C3CBE) | 256 (110 unique) | 0C3EBE-0C5764 | NPCs, shops (124 slots share the empty message `FFFF` at 0C5762) |
 | `$11` | `$83B54A` (01B54A) | 256 | 01B74A-01EEA4 | story |
 | `$02` | `$BB8000` (1D8000) | 10 | 1D8020-1D846A | ending + staff credits |
 | `$10` | `$BB846A` (1D846A) | 256 | 1D866A-1DBF0A | story |
@@ -70,7 +70,13 @@ patch found (web search 2026-10-30: only an unlinked forum claim; nothing on rom
   018120-018641. Names, places and common endings (`D28 = お父さん`).
 - Orphans inside ranges (no pointer): one dead message at 01B834-01B856, one stray `F600` at 1DF416. Keep them in the
   repack so offsets stay identical.
-- Free after the script: 01EEA4-020000 (4.4 KB, bank `$83`), 0C5761-0C8000 (10 KB, bank `$98`), see `freespace.md`.
+- Free after the script: 01EEA4-020000 (4.4 KB, bank `$83`), 0C5764-0C8000 (10 KB, bank `$98`), see `freespace.md`.
+- Unused slots point at the next block's table (`$00` → `$13`'s, `$02` → `$10`'s): no message, keep them pointing
+  just past their block.
+- **Repack (verified, phase 3):** `tools/pack.py` unpacks dictionary, the six blocks and the staff roll into word
+  lists (shared slots, unused slots and orphans kept) and packs them back; `tools/build.py` wipes each range to `FF`
+  and repacks it, and the ROM comes out byte-identical (`tests/test_identity.py`). Exact ranges are pinned in
+  `test_blocks_cover_known_ranges`.
 
 ## Other text (format known, all strings not yet listed)
 
@@ -82,8 +88,9 @@ patch found (web search 2026-10-30: only an unlinked forum claim; nothing on rom
   ids >= `$DF` come from WRAM `$7E5800` (renamable items?).
 - Character names (hero `カーマイン`, sister `ボニー`) live in WRAM `$146A` (7 glyphs each); defaults and the name
   entry grid not yet located.
-- **Staff roll** (found in phase 2, `docs/re/debug.md`): `$B1D3E2` (file 18D3E2), 11 pointers (bank `$B1`) to
-  strings of glyph words + `$8000|pos` tilemap-position words, `FFFF`-terminated (18D3FC-~18D7xx), drawn by
+- **Staff roll** (found in phase 2, `docs/re/debug.md`): `$B1D3E2` (file 18D3E2), 13 pointers (bank `$B1`) to
+  strings of glyph words + `$8000|pos` tilemap-position words, `FFFF`-terminated and followed by one more word
+  (`$00B4` on every string: frames the page stays up - guess) (18D3FC-18D7D2, verified by the identity repack), drawn by
   `$B1D210` onto BG3. Not part of the six message blocks; includes a special-thanks page not in block `$02`.
   `tests/test_debug.py` decodes page 0.
 - Still to find in phase 4: enemy names, place names on maps, shop/status labels, save screen, name-entry grid,

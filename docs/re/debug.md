@@ -32,8 +32,8 @@ power-on with no mashing; everything else waits on `$0380`. The default hero nam
 
 ## Text found while building it (for phase 4)
 
-- **Staff roll `$B1D3E2`** (file 18D3E2): 11 pointers (bank `$B1`) to `$FFFF`-terminated glyph-word strings with
-  `$8000|pos` tilemap-position words, 18D3FC-18D7xx. Not in the six message blocks; holds the same staff as block
+- **Staff roll `$B1D3E2`** (file 18D3E2): 13 pointers (bank `$B1`) to `$FFFF`-terminated glyph-word strings with
+  `$8000|pos` tilemap-position words (+ one word after `FFFF`), 18D3FC-18D7D2. Not in the six message blocks; holds the same staff as block
   `$02` plus a special-thanks page (集英社, 月刊Vジャンプ, 週刊少年ジャンプ staff). Must be extracted and inserted.
 - Name entry grid, name confirm and the menu sub-pages (items, status, allocation, joy/controls, options) are all
   font-drawn; shots in `work/qa/warp/`.

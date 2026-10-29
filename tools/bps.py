@@ -107,13 +107,23 @@ def apply(src, p):
     return bytes(out)
 
 
+def mirrored_sum(b):
+    """Byte sum with a non-power-of-two tail mirrored up to the next power of two, as the console maps it
+    (2.5 MB = 2 MB + the last 512 KB four times)."""
+    n = len(b)
+    if n & (n - 1) == 0:
+        return sum(b)
+    big = 1 << (n.bit_length() - 1)
+    tail = b[big:]
+    return sum(b[:big]) + mirrored_sum(tail) * (big >> (len(tail) - 1).bit_length())
+
+
 def snes_checksum(rom):
-    """Recompute the header checksum. Picks LoROM/HiROM by which header has a sane map-mode byte.
-    ponytail: plain sum, correct for power-of-two sizes; 3/6 MB ROMs need the mirrored-sum rule."""
+    """Recompute the header checksum. Picks LoROM/HiROM by which header has a sane map-mode byte."""
     rom = bytearray(rom)
     base = 0xFFB0 if len(rom) > 0xFFFF and (rom[0xFFD5] & 0xEF) in (0x21, 0x25, 0x31, 0x35) else 0x7FB0
     rom[base + 0x2C:base + 0x30] = b"\xff\xff\x00\x00"
-    total = sum(rom) & 0xFFFF
+    total = mirrored_sum(rom) & 0xFFFF
     rom[base + 0x2C:base + 0x30] = (total ^ 0xFFFF).to_bytes(2, "little") + total.to_bytes(2, "little")
     return bytes(rom), total
 
