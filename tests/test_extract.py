@@ -72,20 +72,26 @@ def test_codec_tokens():
 
 @needs_rom
 def test_en_reaches_rom(s, tmp_path, monkeypatch):
-    """A message and a fixed field with en set come out of the build with those words."""
+    """A message (relocated, MSGTAB points at it, singles) and a fixed field (in place, digraphs) with en set come out
+    of the build with those words."""
     import build
     import extract
     import fixed
-    from pack import off, unpack_all
+    from en import Codec
+    from pack import off
+    ids = {}
     for name in ("msg13", "item"):
         e = json.loads((extract.SCRIPT / f"{name}.json").read_text(encoding="utf-8"))
         e[1]["en"] = "AB{end}" if name == "msg13" else "AB"
+        ids[name] = e[1]
         (tmp_path / f"{name}.json").write_text(json.dumps(e, ensure_ascii=False), encoding="utf-8")
     monkeypatch.setattr(extract, "SCRIPT", tmp_path)
     rom = build.build(s.d)
     from textdump import Script
     r = Script(rom)
-    b = next(x for x in unpack_all(rom) if x.name == "msg13")
-    assert r.text(b.strings[1]) == "AB{end}" and off(b.addr) == 0x0C3CBE
+    for mid in [ids["msg13"]["id"]] + ids["msg13"].get("slots", []):
+        o = off(build.MSGTAB) + 3 * int(mid, 16)
+        a = int.from_bytes(rom[o:o + 3], "little")
+        assert a >= build.TEXT and r.words(off(a))[0] == Codec().msg("AB{end}"), mid
     f = fixed.fields(s)["item"][1]
-    assert r.text(fixed.words(r, f)) == "AB      "
+    assert fixed.words(r, f) == [Codec.pairs_in(["AB"])["AB"]] + [0] * 7

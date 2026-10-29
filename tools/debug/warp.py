@@ -55,6 +55,7 @@ def main():
     ap.add_argument("--jobs", type=int, default=4)
     ap.add_argument("--list", action="store_true")
     a = ap.parse_args()
+    a.out = a.out.resolve()
     names = scene_names()
     if a.list:
         print("\n".join(names + ["maps", "map_AARR (any map id)", "exit_N (any exit index)"]))

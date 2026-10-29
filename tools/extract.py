@@ -78,18 +78,6 @@ def load(name, fresh):
     return got
 
 
-def apply(s, blocks, rom):
-    """Put every non-empty en into blocks (strings, packed later by the build) and rom (fixed fields, in place)."""
-    for b in blocks:
-        for ws_i, e in enumerate(load(b.name, block_entries(s, b))):
-            if e.get("en"):
-                b.strings[ws_i] = s.encode(e["en"]) + ([e["hold"]] if b.name == "staff" else [])
-    for name, fs in fixed.fields(s).items():
-        for f, e in zip(fs, load(name, field_entries(s, fs))):
-            if e["en"]:
-                fixed.put(s, rom, f, e["en"])
-
-
 def main():
     s = Script()
     SCRIPT.mkdir(exist_ok=True)

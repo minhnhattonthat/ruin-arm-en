@@ -28,13 +28,17 @@ SCENES = {
   menu_joy_ctrl  = { route = "6 start;300 -;6 left;30 -;6 left;30 -;6 a;60 -;6 a;120 -" },
   menu_config    = { route = "6 start;300 -;6 left;30 -;6 a;120 -" },
   -- shop: event $22 (script $AD9222: msg $0057, opcode $57 shop 8, msg $00CA); shop UI is game mode $10-$12
-  shop           = { ev = 0x0022, route = "200 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;300 -" },
-  shop_buy       = { ev = 0x0022, route = "200 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;300 -;6 a;120 -;6 a;120 -" },
-  shop_sell      = { ev = 0x0022, route = "200 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;300 -;6 right;30 -;6 a;120 -;6 a;120 -" },
-  shop_repair    = { ev = 0x0022, route = "200 -;6 a;150 -;6 a;150 -;6 a;150 -;6 a;300 -;6 right;30 -;6 right;30 -;6 right;30 -;6 a;120 -;6 a;120 -" },
+  -- (300-frame gaps: English pages print slower than the 150 the Japanese needed)
+  shop           = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -" },
+  shop_buy       = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;120 -;6 a;120 -" },
+  shop_sell      = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 right;30 -;6 a;120 -;6 a;120 -" },
+  shop_repair    = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 right;30 -;6 right;30 -;6 right;30 -;6 a;120 -;6 a;120 -" },
   -- events and messages
   ev_village_hint = { ev = 0x0010, wait = 150 },
   msg_bonnie     = { msg = 0x1032, wait = 150 },
+  -- width gate: the marker build's msg 1032 is the stress message (tools/marker.py GATE); pages 2 and 3
+  gate_p2        = { msg = 0x1032, wait = 150, route = "6 a;150 -" },
+  gate_p3        = { msg = 0x1032, wait = 150, route = "6 a;150 -;6 a;200 -" },
   -- staff roll overlay ($B1D3E2 strings) drawn over the field: the HUD panels cover part of it; the ending scene's
   -- own screen setup (script near $ADF2F4) is not reached yet. Same for the block $02 ending messages (0x0200
   -- "A YEAR LATER", 0x0201-0209): they open but draw nothing outside that setup (docs/re/debug.md, open leads).

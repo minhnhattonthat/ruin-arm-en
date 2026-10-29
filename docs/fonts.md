@@ -5,5 +5,5 @@ per file; a font with no known licence doesn't go into a release.
 
 | File | Source (URL, version) | Licence | Redistributable in a patch | Used for | Changes made |
 |---|---|---|---|---|---|
-| <fonts/vwf_8px.png> | <drawn for this project> | <MIT, same as repo> | yes | <dialogue VWF> | <-> |
-| <fonts/Title.ttf> | <url, v1.2> | <OFL 1.1> | <yes, as rendered glyphs> | <typeset.py title cards> | <-> |
+| fonts/vwf.txt | drawn for the Dual Orb fan translation by the same owner (minhnhattonthat), copied 2026-10-30 | MIT (that repo's LICENSE, same owner) | yes | all English text: dialogue VWF singles, menu digraph cells (tools/font.py) | header rewritten; `[ ] # *` added; rows placed at cell rows 2-13, no shadow |
+| original font cells `$9F8000` | the game's font | game data, already in the player's ROM | not shipped (kept in place) | Japanese symbols still drawn (○ × ▶ ▼, digits in menus) | none |

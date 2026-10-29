@@ -3,7 +3,9 @@
 Skill: translate-retro-game; `python tools/skill.py` prints its folder (`$SKILL` below). Read its SKILL.md before ROM, text or QA work. `"$(python tools/skill.py)"` works in bash and PowerShell; never paste a `plugins/cache/<hash>` path.
 
 ## Commands (run from repo root)
-- Build:    `python -X utf8 tools/build.py`  -> build/ruinarm_en.sfc (checks the dump against `rom.sha1` first; repacks every text block via `tools/pack.py`)
+- Build:    `python -X utf8 tools/build.py`  -> build/ruinarm_en.sfc (checks `rom.sha1`; 4 MB; asm/vwf.asm via tools/asm.py needs `tools/asar/asar.exe` = asar 1.91 from github.com/RPGHacker/asar/releases, gitignored; engine: `docs/re/vwf.md`)
+- Marker:   `python -X utf8 tools/marker.py && python -X utf8 tools/build.py --script work/marker/script --out build/ruinarm_marker.sfc` (every string = id + full-width filler; msg 1032 = width gate + torture line, scenes `msg_bonnie`/`gate_p2`/`gate_p3`)
+- JP left:  `python -X utf8 tools/jp_reach.py BUILD.sfc --known script/keep_jp.txt` (Japanese any pointer still reaches; the skill's jp_left.py can't walk 16-bit codes)
 - Check:    `python -X utf8 tools/check.py`  (tests + lint; the pre-commit hook runs this)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/ruinarm_en.sfc --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 tools/debug/warp.py <scene>.. [--rom build/ruinarm_en.sfc] [--save]` (cold boot → `work/qa/warp/<scene>/scene.png`; `--list`, `--all` regenerates every state in `work/states/`, `maps` tours all 187 maps, `map_AARR`/`exit_N` any map; scenes: `tools/debug/scenes.lua`, RAM map: `docs/re/debug.md`; never ask the user to play to a scene)

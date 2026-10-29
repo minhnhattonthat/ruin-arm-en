@@ -37,24 +37,39 @@ def glyph_ok(s, w):
     return w < 0x355 and bytes([w & 0xFF, w >> 8]) in s.t.dec
 
 
+def parse_list(s, o):
+    """[(record offset, pos, count)] of a well-formed list at o, else None."""
+    recs, p = [], o
+    while s.w(p) != 0xFFFF and len(recs) <= 40:
+        pos, n = s.w(p), s.d[p + 2]
+        ws = [s.w(p + 3 + 2 * k) for k in range(n)]
+        if pos >= 0x800 or pos & 1 or not 1 <= n <= 32 or not all(glyph_ok(s, w) for w in ws) or not any(ws):
+            return None
+        recs.append((p, pos, n))
+        p += 3 + 2 * n
+    return recs if recs and len(recs) <= 40 else None
+
+
 def menu_lists(s):
-    """[(list offset, [(record offset, pos, count)])] for every well-formed list in MENU."""
+    """[(list offset, [(record offset, pos, count)])] for every well-formed list in MENU.
+
+    A parse can start a few bytes early, on the tail of the data before the list, and still meet the real records
+    after its first one (84:D676 vs the real 84:D678: the pad table's last 0000 read as pos). When a later start
+    inside the first record reaches the same second record, the later start is the list."""
     out, o = [], MENU[0]
     while o < MENU[1]:
-        recs, p = [], o
-        while s.w(p) != 0xFFFF and len(recs) <= 40:
-            pos, n = s.w(p), s.d[p + 2]
-            ws = [s.w(p + 3 + 2 * k) for k in range(n)]
-            if pos >= 0x800 or pos & 1 or not 1 <= n <= 32 or not all(glyph_ok(s, w) for w in ws) or not any(ws):
-                recs = None
-                break
-            recs.append((p, pos, n))
-            p += 3 + 2 * n
-        if recs and len(recs) <= 40:
-            out.append((o, recs))
-            o = p + 2
-        else:
+        recs = parse_list(s, o)
+        if not recs:
             o += 1
+            continue
+        end = recs[0][0] + 3 + 2 * recs[0][2]
+        for o2 in range(o + 1, end - 3):
+            r2 = parse_list(s, o2)
+            if r2 and r2[0][0] + 3 + 2 * r2[0][2] == end:
+                o, recs = o2, r2
+                break
+        out.append((o, recs))
+        o = recs[-1][0] + 3 + 2 * recs[-1][2] + 2
     return out
 
 
@@ -83,11 +98,10 @@ def words(s, f):
     return [s.w(f["off"] + 2 * k) for k in range(f["n"])]
 
 
-def put(s, rom, f, text):
-    """Encode text into field f of rom (bytearray), space-padded. Raises ValueError if it doesn't fit."""
-    ws = s.encode(text)
+def put(rom, f, ws):
+    """Encoded words into field f of rom (bytearray), space-padded. Raises ValueError if they don't fit."""
     if any(w >= 0x8000 for w in ws) or len(ws) > f["n"]:
-        raise ValueError(f"{f['id']}: {text!r} is {len(ws)} words of glyphs only, field holds {f['n']}")
+        raise ValueError(f"{f['id']}: {len(ws)} words (glyphs only), the field holds {f['n']}")
     ws += [0] * (f["n"] - len(ws))
     rom[f["off"]:f["off"] + 2 * f["n"]] = b"".join(w.to_bytes(2, "little") for w in ws)
 

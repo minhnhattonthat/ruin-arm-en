@@ -32,7 +32,7 @@ def off(a):
 class Script:
     def __init__(self, rom=None, tbl=ROOT / "tbl" / "jp.tbl"):
         self.d = rom if rom is not None else ROM.read_bytes()
-        self.t = Table.load(tbl)
+        self.t = tbl if isinstance(tbl, Table) else Table.load(tbl)
 
     def w(self, o):
         return self.d[o] | self.d[o + 1] << 8

@@ -1,4 +1,6 @@
-"""Phase 3 identity build: unpack every text block, wipe it, pack it back: the ROM must come out byte-identical."""
+"""Phase 3 identity: unpack + pack of every text block gives the original bytes. Phase 5: with every en empty, the
+build changes nothing below the expansion but the hook bytes and the header checksum, and MSGTAB holds the
+original message pointers."""
 import sys
 from pathlib import Path
 
@@ -11,12 +13,54 @@ needs_rom = pytest.mark.skipif(not ROM.is_file(), reason="no ROM dump in rom/")
 
 
 @needs_rom
-def test_identity_build():
-    from build import build
+def test_identity_pack():
+    from pack import off, unpack_all, write
     orig = ROM.read_bytes()
-    rom = build(orig)
+    rom = bytearray(orig)
+    for b in unpack_all(orig):
+        rom[off(b.addr):off(b.addr) + b.size()] = b"\xff" * b.size()
+        write(rom, b)
     bad = [i for i, (x, y) in enumerate(zip(orig, rom)) if x != y]
-    assert len(rom) == len(orig) and not bad, f"{len(bad)} bytes differ, first at {bad[0]:06X}" if bad else "size"
+    assert not bad, f"{len(bad)} bytes differ, first at {bad[0]:06X}"
+
+
+@pytest.fixture(scope="module")
+def untranslated(tmp_path_factory):
+    """The build with every en empty (script/ copied with en cleared)."""
+    import json
+    import build
+    import extract
+    d = tmp_path_factory.mktemp("script")
+    for p in extract.SCRIPT.glob("*.json"):
+        es = json.loads(p.read_text(encoding="utf-8"))
+        for e in es:
+            if "en" in e:
+                e["en"] = ""
+        (d / p.name).write_text(json.dumps(es, ensure_ascii=False), encoding="utf-8")
+    old, extract.SCRIPT = extract.SCRIPT, d
+    try:
+        return build.build(ROM.read_bytes())
+    finally:
+        extract.SCRIPT = old
+
+
+@needs_rom
+def test_untranslated_build_changes_only_hooks(untranslated):
+    from asm import HOOKS, off
+    orig = ROM.read_bytes()
+    allowed = {o for a, b in HOOKS.items() for o in range(off(a), off(a) + len(b) // 2)} | set(range(0x7FDC, 0x7FE0))
+    bad = [i for i, (x, y) in enumerate(zip(orig, untranslated)) if x != y and i not in allowed]
+    assert len(untranslated) == 0x400000 and not bad, f"{len(bad)} bytes differ, first at {bad[0]:06X}" if bad else ""
+
+
+@needs_rom
+def test_msgtab_keeps_original_pointers(untranslated):
+    from build import IDS, MSGTAB, msg_table
+    from textdump import Script
+    from pack import off
+    o = off(MSGTAB)
+    got = [int.from_bytes(untranslated[o + 3 * i:o + 3 * i + 3], "little") for i in range(IDS)]
+    assert got == msg_table(Script(ROM.read_bytes()))
 
 
 @needs_rom
