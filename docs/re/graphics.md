@@ -14,10 +14,16 @@ screen, pause-menu tabs `道具 能力 振分 ジョイ 環境`, ending text and
 
 Seen without Japanese: intro/attract demo (fortress, city fire), village map, HUD (portraits, HP bars).
 
+Reached in phase 2 (`tools/debug/warp.py`, shots in `work/qa/warp/`), all look font-drawn (same 16x16 glyphs as the
+dialogue; confirm in the phase 5 marker build): name entry grid, name confirm, pause-menu pages (items, status,
+`振分` allocation, `ジョイ` + controls list, `環境` options), shop (`買う 売る 道具 修理` tabs, buy list, sell list,
+repair), staff roll overlay. The `maps` tour (`work/qa/warp/maps/map_AARR.png`, 187 rooms) is the base for the
+place-banner check.
+
 ## Still to survey
 
-- Mid-game screens only the debug tool can reach: pause-menu sub-pages (items, status, `振分` allocation, `ジョイ`
-  config, `環境` options, save/load), shops, boss/area banners, chapter cards if any, game over, ending.
+- Screens the debug tool can't reach yet (`docs/re/debug.md` §Open leads): save/load screen, boss/area banners,
+  chapter cards if any, game over, the ending scene.
 - Static sweep: every unpacked graphics block. Needs the remaining loaders (`compression.md` §Other loaders) and the
   LZ pointer tables (`$80B00F`, `$94FF04`, `$94DC1A`, `$90E395`) enumerated, then `tiles.py render` sheets read by
   reviewer agents.

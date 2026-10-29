@@ -17,3 +17,4 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 | compression.md | LZSS `$80900E` (+ `tools/lz.py`), call sites, other loaders | LZ verified; other loaders open |
 | freespace.md | `$FF` runs, 4 MB expansion | candidates only |
 | graphics.md | graphics-text survey | reachable screens done; mid-game + static sweep open |
+| debug.md | debug tool: game mode, map/exit warp, event injection, message ids, flags, save image, staff roll | warps/events/messages/menus verified by scene shots; ending scene, game over, flag meanings open |

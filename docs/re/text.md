@@ -82,10 +82,15 @@ patch found (web search 2026-10-30: only an unlinked forum claim; nothing on rom
   ids >= `$DF` come from WRAM `$7E5800` (renamable items?).
 - Character names (hero `カーマイン`, sister `ボニー`) live in WRAM `$146A` (7 glyphs each); defaults and the name
   entry grid not yet located.
+- **Staff roll** (found in phase 2, `docs/re/debug.md`): `$B1D3E2` (file 18D3E2), 11 pointers (bank `$B1`) to
+  strings of glyph words + `$8000|pos` tilemap-position words, `FFFF`-terminated (18D3FC-~18D7xx), drawn by
+  `$B1D210` onto BG3. Not part of the six message blocks; includes a special-thanks page not in block `$02`.
+  `tests/test_debug.py` decodes page 0.
 - Still to find in phase 4: enemy names, place names on maps, shop/status labels, save screen, name-entry grid,
-  any text built in code (`LDA #glyph / STA` chains).
+  any text built in code (`LDA #glyph / STA` chains). Every screen `tools/debug/warp.py` reaches is a check.
 
 ## Tools
 - `tools/textdump.py [--expand]`: whole script, one line per message id → `work/re/script_jp.txt`.
 - `tools/font_sheet.py`: labelled glyph sheets; `--codes` for a zoomed subset.
-- `tools/lua/romreads_all.lua`, `readers.lua`, `lzlog.lua`: trace probes used above.
+- `tools/lua/romreads_all.lua`, `readers.lua`, `lzlog.lua`: trace probes used above; `lzcall.lua` (both LZ
+  entries with JSL return chain), `wlog.lua` (every byte change in a WRAM range with PC).
