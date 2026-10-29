@@ -7,7 +7,7 @@ English font bank and a 24-bit pointer per message id (MSGTAB, read by the hook 
 - messages: encoded in singles (tools/en.py), written to the expansion (TEXT on), MSGTAB points there; an untranslated
   message keeps pointing at its original bytes, which stay in place.
 - fixed fields: in place, digraphs (names: singles), space-padded (tools/fixed.py).
-- staff roll: digraphs, repacked in place (tools/pack.py). The dictionary stays Japanese (D9).
+- staff roll: digraphs; pointers in place, strings moved to STAFF_TEXT. The dictionary stays Japanese (D9).
 The phase-3 identity (unpack + pack = original bytes) is tests/test_identity.py.
 """
 import argparse
@@ -23,7 +23,7 @@ import fixed  # noqa: E402
 import font  # noqa: E402
 from bps import snes_checksum  # noqa: E402
 from en import Codec  # noqa: E402
-from pack import NEXT, off, pack, unpack_all  # noqa: E402
+from pack import NEXT, off, unpack_all  # noqa: E402
 from textdump import BLOCKS, ROM, Script  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,6 +34,7 @@ MSGTAB = 0xD28000           # 0x14 blocks x 256 ids x 3 bytes
 TEXT = 0xD2C000             # relocated messages from here to the end of the ROM, never across a bank
 SINGLE_FIELDS = {"name_hero", "name_sister", "name_party"}  # names are edited per letter in the name entry: one letter a code
 IDS = 0x1400
+STAFF_TEXT = 0xB1EC00       # staff strings: $FF tail of bank $B1 (from $B1:EB54); its pointers are 16-bit, bank $B1
 PASSWORD = (0x011711, "RAIDROID")  # $829711: the 8 words the typed ruin password must match (asm/vwf.asm `password`)
 # Name-entry grids かな/漢1/漢2 -> ABC/abc/Sym (docs/re/text.md §Name entry): (row pointer table, original row count,
 # offsets of that count's immediate in both entry routines $85B1C8/$85BDA0, English rows of 5 + blank + 5 cells).
@@ -121,13 +122,17 @@ def build(orig):
             if e["en"]:
                 put(rom, f["off"], fixed.pad(f, (codec.msg if n in SINGLE_FIELDS else codec.field)(e["en"])), f["id"], orig)
     staff = next(b for b in blocks if b.name == "staff")
-    size = staff.size()
     for i, e in enumerate(ents["staff"]):
         if e["en"]:
             staff.strings[i] = codec.field(e["en"]) + [e["hold"]]
-    if staff.size() > size:  # shortcut: in place only; relocate the staff strings if English credits outgrow them
-        raise SystemExit(f"staff: English needs {staff.size()} bytes, the block has {size}")
-    put(rom, off(staff.addr), pack(staff).ljust(size, b"\xff"), "staff", orig)
+    at, data = [], b""
+    for ws in staff.strings:
+        at.append((STAFF_TEXT + len(data)) & 0xFFFF)
+        data += words_bytes(ws)
+    if (STAFF_TEXT & 0xFFFF) + len(data) > 0x10000:
+        raise SystemExit(f"staff: {len(data)} bytes overflow bank $B1 from {STAFF_TEXT:06X}")
+    put(rom, off(staff.addr), words_bytes(at[i] for i in staff.slots), "staff_ptrs", orig)
+    put(rom, off(STAFF_TEXT), data, "staff", orig)
     name_entry(rom, orig)
 
     tab, cur, new = msg_table(s), TEXT, {}

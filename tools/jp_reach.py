@@ -38,7 +38,7 @@ def reach(rom):
         out.append((f"{i:04X}", s.text(s.words(t)[0])))
     for b in unpack_all(rom):
         if b.name == "staff":
-            out += [(f"S{i:02X}", s.text(ws[:-1])) for i, ws in enumerate(b.strings)]
+            out += [(f"S{k:02X}", s.text(b.strings[i][:-1])) for k, i in enumerate(b.slots)]  # relocated: skip orphans
     for fs in fixed.fields(orig).values():
         out += [(f["id"], s.text(fixed.words(s, f))) for f in fs]
     return out

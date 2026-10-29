@@ -46,13 +46,14 @@ def untranslated(tmp_path_factory):
 
 @needs_rom
 def test_untranslated_build_changes_only_hooks(untranslated):
-    """Besides the hooks and checksum, only the script-independent engine data (name-entry grids, password)."""
+    """Besides the hooks and checksum, only the script-independent engine data (name-entry grids, password, the
+    staff roll moved to the bank $B1 tail)."""
     import build
     from asm import HOOKS, off
     orig = ROM.read_bytes()
     allowed = {o for a, b in HOOKS.items() for o in range(off(a), off(a) + len(b) // 2)} | set(range(0x7FDC, 0x7FE0))
     for o, old, _, by in (w.split(None, 3) for w in build.WRITES):
-        if by.startswith(("grid_", "password")):
+        if by.startswith(("grid_", "password", "staff")):
             allowed.update(range(int(o, 16), int(o, 16) + len(old) // 2))
     bad = [i for i, (x, y) in enumerate(zip(orig, untranslated)) if x != y and i not in allowed]
     assert len(untranslated) == 0x400000 and not bad, f"{len(bad)} bytes differ, first at {bad[0]:06X}" if bad else ""

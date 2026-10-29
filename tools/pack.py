@@ -41,7 +41,7 @@ def sources(s):
     yield "dict", DICT, DICT_N, s.words
     for b, p in s.blocks():
         yield f"msg{b:02X}", p, None, s.words
-    yield "staff", STAFF, None, lambda o: staff_words(s, o)
+    yield "staff", STAFF, 13, lambda o: staff_words(s, o)  # fixed count: the English build moves the strings away
 
 
 def unpack(s, name, addr, n, parse, tables):

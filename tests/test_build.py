@@ -33,6 +33,7 @@ def test_writes_in_allowed_places(built):
     """Inside the original ROM: text fields and the staff block in place, grid/password data, the asm hook sites,
     the header checksum. Everything else goes to the expansion (0x280000+)."""
     import asm
+    import build
     import fixed
     from textdump import Script
     orig, _, writes = built
@@ -44,7 +45,8 @@ def test_writes_in_allowed_places(built):
         o, n = int(o, 16), len(old) // 2
         if o >= len(orig):
             continue
-        ok = (fields.get(by) == o or by == "staff" and o == 0x18D3E2 or by.startswith(("grid_", "password"))
+        ok = (fields.get(by) == o or by.startswith(("grid_", "password"))
+              or by == "staff_ptrs" and o == 0x18D3E2 or by == "staff" and o == asm.off(build.STAFF_TEXT)
               or by == "asm" and any(h <= o < h + 4 and o + n <= h + 4 for h in hooks)
               or by == "checksum" and 0x7FDC <= o and o + n <= 0x7FE0)
         if not ok:

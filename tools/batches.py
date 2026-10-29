@@ -10,7 +10,7 @@ Batch TSV: id, speaker, form, limit, jp. jp has dictionary refs written out ({d:
 the two characters \\n. Output TSV: id, en; \\n in en = a forced line break.
 Messages: en is wrapped here (greedy, LINE px per row, ROWS rows per page, pages split at {wait..}/{fe..}); a page
 that starts with a speaker ({col:01}Name\\n) keeps that row. Fixed fields: 2 letters per cell (names: 1), staff runs:
-2 letters per Japanese glyph. Width numbers: docs/re/vwf.md §Width gate.
+2 letters per cell from the run's {pos} column to the screen edge. Width numbers: docs/re/vwf.md §Width gate.
 """
 import json
 import re
@@ -184,10 +184,14 @@ def staff_runs(text):
 def field_errors(name, e, en):
     if kind(name) == "staff":
         jr, er = staff_runs(e["jp"]), staff_runs(en)
-        if CODE.findall(e["jp"]) != CODE.findall(en):
-            return ["staff: copy every {pos:..}/{end..} code, same order"]
-        return [f"run {i}: {er[i]!r} is {len(pieces(er[i]))} cells, the JP run has {len(jr[i])}"
-                for i in range(len(jr)) if len(pieces(er[i])) > len(jr[i])]
+        def rows(t):
+            return re.sub(r"\{pos:([0-9A-F]{4})\}", lambda m: f"{{row {int(m[1], 16) >> 6}}}", "".join(CODE.findall(t)))
+        if rows(e["jp"]) != rows(en):
+            return ["staff: copy every {pos:..}/{end..} code, same order; a {pos} may change column, not row"]
+        # relocated by the build: a run may grow to the screen edge (32 tiles, 1 spare) from its {pos} column
+        cols = [int(p, 16) % 0x40 // 2 for p in re.findall(r"\{pos:([0-9A-F]{4})\}", en)]
+        return [f"run {i + 1}: {r!r} is {len(pieces(r))} cells, column {c} leaves {(31 - c) // 2}"
+                for i, (r, c) in enumerate(zip(er[1:], cols)) if c + 2 * len(pieces(r)) > 31]
     if CODE.search(en) or "\n" in en:
         return ["fields take plain text, no codes or breaks"]
     if kind(name) == "name":
@@ -272,7 +276,8 @@ def form_limit(name, e):
     if k == "msg":
         return ("choice" if "{choice" in e["jp"] else "dlg"), f"{LINE}px x{ROWS}rows"
     if k == "staff":
-        return "credit", ",".join(f"{2 * len(r)}ch" for r in staff_runs(e["jp"]) if r)
+        return "credit", ",".join(f"{31 - int(p, 16) % 0x40 // 2}ch"
+                                  for p in re.findall(r"\{pos:([0-9A-F]{4})\}", e["jp"]))
     if k == "name":
         return "name", f"{NAME}ch"
     return name, f"{2 * e['max']}ch"
