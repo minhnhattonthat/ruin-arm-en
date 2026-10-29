@@ -53,13 +53,16 @@ patch found (web search 2026-10-30: only an unlinked forum claim; nothing on rom
 ## Pointers (verified: every message decodes and the messages tile each text range with no gap)
 
 - Message id = `block << 8 | index` (`$0CA4`/`$0CA5`), events pass it as a word (e.g. event `ADAA11: 32 10` = `$1032`).
-- Block table `$838642` (file `018642`): 0x14 entries of 24-bit pointers; unused blocks = `$83867E` (just past it).
+- Block table `$838642` (file `018642`): 0x14 entries of 24-bit pointers. Blocks `$01` and `$03-$0F` all point at
+  `$83867E`, which is a **real block** (found phase 4; phase 1 had it as a dummy): ids `$01xx` and `$03xx-$0Fxx`
+  show the same messages. Its slots `$00-$20` share one message, `$E2-$FF` point at block `$11`'s table.
 - Each block starts with 16-bit pointers (same bank); count = (first pointer - block start) / 2. Unused slots point at
   the next block's table.
 
 | Block | Table | Msgs | Text (file) | Content |
 |---|---|---|---|---|
 | `$00` | `$988000` (0C0000) | 256 | 0C0200-0C3CBE | towns/NPCs |
+| `$01` (= `$03-$0F`) | `$83867E` (01867E) | 256 (193 unique) | 01887E-01B54A | princess/court, rebels, towns |
 | `$13` | `$98BCBE` (0C3CBE) | 256 (110 unique) | 0C3EBE-0C5764 | NPCs, shops (124 slots share the empty message `FFFF` at 0C5762) |
 | `$11` | `$83B54A` (01B54A) | 256 | 01B74A-01EEA4 | story |
 | `$02` | `$BB8000` (1D8000) | 10 | 1D8020-1D846A | ending + staff credits |
@@ -73,31 +76,57 @@ patch found (web search 2026-10-30: only an unlinked forum claim; nothing on rom
 - Free after the script: 01EEA4-020000 (4.4 KB, bank `$83`), 0C5764-0C8000 (10 KB, bank `$98`), see `freespace.md`.
 - Unused slots point at the next block's table (`$00` → `$13`'s, `$02` → `$10`'s): no message, keep them pointing
   just past their block.
-- **Repack (verified, phase 3):** `tools/pack.py` unpacks dictionary, the six blocks and the staff roll into word
+- **Repack (verified, phase 3):** `tools/pack.py` unpacks dictionary, the seven blocks and the staff roll into word
   lists (shared slots, unused slots and orphans kept) and packs them back; `tools/build.py` wipes each range to `FF`
   and repacks it, and the ROM comes out byte-identical (`tests/test_identity.py`). Exact ranges are pinned in
   `test_blocks_cover_known_ranges`.
 
-## Other text (format known, all strings not yet listed)
+## Fixed text (phase 4: `tools/fixed.py`, written back in place, English space-padded to the field)
 
-- **Menu records** (bank `$84`, file ~024D00-026400; guess on the extent, format verified by structure on the
-  name-confirm screen `これでよろしいですか？ / はい　いいえ` at 02580C): records `pos16, count8, count x glyph16`,
-  list ends `FFFF`. `pos` = tilemap word offset. Pause-menu tabs `道具 能力 振分 ジョイ 環境` and the title menu
-  `開始 続き` are font glyphs too. Phase 4: find the readers and their pointer tables instead of the byte scan.
-- **Item names**: `$84B2A1`: id < `$DF` → `$8AB96C + offset[$8AB76E + 2*id]`, 8 glyph words, `0000`-padded;
-  ids >= `$DF` come from WRAM `$7E5800` (renamable items?).
-- Character names (hero `カーマイン`, sister `ボニー`) live in WRAM `$146A` (7 glyphs each); defaults and the name
-  entry grid not yet located.
+- **Menu lists** (bank `$84`, file 020A27-026390, 308 records): drawn by `$849B38` (verified: read-hook probe
+  `tools/lua/textreads.lua` on every menu/shop/name scene, `work/qa/reads/`). List = records `pos16, count8,
+  count x glyph16`, `FFFF` ends it; `pos` = tilemap word offset. Callers pass the list in `[$10]` (JSLs at 020A72,
+  021478, 021648, 02199B, 021A37, 021E68), mostly from 16-bit pointer tables sitting beside the lists. Found by a
+  structural sweep (`fixed.menu_lists`); the probe's list starts all fall on sweep hits. Includes pause tabs, shop,
+  options, status, character profile (race/skill/hobby/likes/dislikes/personality), alchemist (錬金術師) dialogs,
+  crafting, name prompts, title `開始 続き`, file menu. Two records look like data (glyph palettes): 84:8A27
+  (`〔/〕○×〔01〕..∞`) and 84:967B / 84:96A4 (two-glyph command cells `右装左装..`, `ｾｰﾌﾞﾌﾟﾛﾃｸﾄ..`): each
+  2-glyph cell is one command, the code picks cells by index. Check in the phase 5 marker build.
+- `$849B38`-format lists with `7Fxx` words (024C1E, digit cells) are tile data, not text (the sweep rejects them).
+- **Item names**: `$84B2A1`: id < `$DF` → `$8AB96C + offset[$8AB76E + 2*id]`; record stride `$34`, name = 8 glyph
+  words at record + 1 (odd file offset 05396D), `0000`-padded; 110 non-blank. Ids >= `$DF` come from WRAM `$7E5800`
+  (crafted items: names typed by the player or taken from `ingot`).
+- **Other tables** (`fixed.TABLES`/`PTRS`, each reached by a 16-bit pointer list beside it): places `$85F9CD`
+  (72 x 8), default hero/sister names `$85C3DC`/`$85C4FC` (16 x 8 each, read by `$85C616`/`$85C6D9`), ingots
+  `$85E492`, equip labels `$85E7D4`, AI tactics `$84D5A5`, pad labels `$84D648`, use/act `$84D52C`/`$84D540`,
+  alchemy elements `$81FD33` and heat/cool `$81FD5F`, status words `$85DEFE` (FFFF-terminated, 11).
+- Character names (hero `カーマイン`, sister `ボニー`) live in WRAM `$146A` (7 glyphs each).
+- **Name entry grid** (phase 5, not translation): kana + Latin cells 026446-0266xx, kanji grid (reading-grouped)
+  026698-026F0A behind a 39-pointer table at 026698. English needs an alphabet grid instead.
 - **Staff roll** (found in phase 2, `docs/re/debug.md`): `$B1D3E2` (file 18D3E2), 13 pointers (bank `$B1`) to
   strings of glyph words + `$8000|pos` tilemap-position words, `FFFF`-terminated and followed by one more word
   (`$00B4` on every string: frames the page stays up - guess) (18D3FC-18D7D2, verified by the identity repack), drawn by
   `$B1D210` onto BG3. Not part of the six message blocks; includes a special-thanks page not in block `$02`.
   `tests/test_debug.py` decodes page 0.
-- Still to find in phase 4: enemy names, place names on maps, shop/status labels, save screen, name-entry grid,
-  any text built in code (`LDA #glyph / STA` chains). Every screen `tools/debug/warp.py` reaches is a check.
+- **Not extracted yet (leads for phase 5):** weapon-type records near 026F80 (`片手剣(突き)`, `斧`, `弓`; irregular
+  stride), debug strings `type000..type6xx` at 027025-027FF0 (7 pointer lists of 32; likely unused), `インゴット`
+  names are extracted but may be debug too. Glyph-run scans (both alignments, `>= 4` glyphs, kana-heavy) outside all
+  extracted ranges found nothing else that reads as text; enemy names were not found (likely never shown). Text
+  built in code (`LDA #glyph / STA` chains) shows up as Japanese that stays in the phase 5 marker build.
+
+## Script files (phase 4)
+
+`tools/extract.py` writes `script/<source>.json` (only missing files). Message format = `Script.text`: glyphs, newline
+for `F600`, `{d:XX|word}` dictionary refs, `{end}`/`{wait}`/`{name:04}`/`{goto:00:1103}`..., `{pos:XXXX}` (staff),
+`[XXXX]` unknown glyph; `Script.encode` inverts it. `tools/build.py` applies every non-empty `en`
+(`extract.apply`): message strings repack in their block (error if a block grows: relocation is phase 5), fixed fields
+in place. Tests: `tests/test_extract.py` (roundtrip of every string and field, no overlap, script/ matches the ROM,
+en reaches the ROM).
 
 ## Tools
 - `tools/textdump.py [--expand]`: whole script, one line per message id → `work/re/script_jp.txt`.
 - `tools/font_sheet.py`: labelled glyph sheets; `--codes` for a zoomed subset.
+- `tools/lua/textreads.lua`: logs each (reading PC, run start) of ROM reads in a CPU range: finds the readers of a
+  text table and every string they read (`--var LO=0x848000 --var HI=0x85FFFF`), run beside `scenes.lua` + `warp.lua`.
 - `tools/lua/romreads_all.lua`, `readers.lua`, `lzlog.lua`: trace probes used above; `lzcall.lua` (both LZ
   entries with JSL return chain), `wlog.lua` (every byte change in a WRAM range with PC).

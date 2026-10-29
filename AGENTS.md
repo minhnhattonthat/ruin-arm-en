@@ -13,7 +13,7 @@ Skill: translate-retro-game; `python tools/skill.py` prints its folder (`$SKILL`
 ## Paths
 - Original ROM: `rom/Ruin Arm (Japan).sfc` (gitignored; 2,621,440 bytes, no copier header; SHA-1 in `rom.sha1`, checked by `tools/check_rom.py`).
 - Emulator: this repo's own MesenCE in `tools/mesen/` (release 2.2.1, https://github.com/nesdev-org/MesenCE/releases/download/2.2.1/Mesen_2.2.1_Windows.zip; gitignored; settings copy in `tools/emu-config/`). Savestates: `work/states/`.
-- Text: `script/` (format TBD in phase 4). Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md`. Fonts and their licences: `docs/fonts.md`.
+- Text: `script/*.json` (`id`/`jp`/`en`; format in `tools/extract.py` docstring; `extract.py` writes only missing files). Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md`. Fonts and their licences: `docs/fonts.md`.
 - Build-time copies of skill code: `tools/tbl.py`, `tools/bps.py`, `tools/romdiff.py` (so a clone builds without the skill).
 
 ## Rulings

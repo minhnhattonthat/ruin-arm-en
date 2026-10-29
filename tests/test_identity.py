@@ -25,6 +25,7 @@ def test_blocks_cover_known_ranges():
     from pack import off, unpack_all
     spans = {b.name: (off(b.addr), off(b.addr) + b.size()) for b in unpack_all(ROM.read_bytes())}
     assert spans == {"dict": (0x018000, 0x018642), "msg00": (0x0C0000, 0x0C3CBE), "msg13": (0x0C3CBE, 0x0C5764),
+                     "msg01": (0x01867E, 0x01B54A),  # 018642-01867E between dict and msg01: the block table
                      "msg11": (0x01B54A, 0x01EEA4), "msg02": (0x1D8000, 0x1D846A), "msg10": (0x1D846A, 0x1DBF0A),
                      "msg12": (0x1DBF0A, 0x1DFEDC), "staff": (0x18D3E2, 0x18D7D2)}
 

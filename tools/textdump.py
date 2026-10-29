@@ -2,9 +2,10 @@
 
     python -X utf8 tools/textdump.py [--out work/re/script_jp.txt] [--expand]
 
---expand inlines dictionary words ({d:28} -> its text). Recon helper; the phase-4 extractor builds on the same layout.
+--expand inlines dictionary words ({d:28|お父さん} -> お父さん). Script.text/encode are the codec of script/*.json.
 """
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -14,13 +15,14 @@ from tbl import Table  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 ROM = ROOT / "rom" / "Ruin Arm (Japan).sfc"
 BLOCKS = 0x838642   # 24-bit pointer per block, 0x14 blocks; block = msg id >> 8
-DUMMY = 0x83867E    # unused blocks point here (just past the block table)
 DICT = 0x838000     # 16-bit pointers (bank $83) to $FFFF-terminated words; F8xx inserts entry xx
 DICT_N = 0x90
 # control word = cmd<<8 | arg. extra = argument words that follow in the stream.
 CTRL = {0xFF: "end", 0xFE: "fe", 0xFD: "fd", 0xFC: "col", 0xFB: "spd", 0xFA: "fa", 0xF9: "choice", 0xF8: "d",
         0xF7: "wait", 0xF6: "nl", 0xF5: "f5", 0xF4: "f4", 0xF3: "f3", 0xF2: "name", 0xF1: "sfx", 0xF0: "goto",
         0xEF: "item_v", 0xEE: "num", 0xED: "item", 0xEC: "set"}
+CTRL_ENC = {v: k for k, v in CTRL.items()}
+TOKEN = re.compile(r"\{(\w+)(?::([0-9A-F]{2,4}))?((?::[0-9A-F]{4})*)(?:\|[^{}]*)?\}|\[([0-9A-F]{4})\]|\n")
 
 
 def off(a):
@@ -53,26 +55,64 @@ class Script:
                 return out, o
 
     def text(self, ws, expand=False):
+        """Words -> text. Glyphs via the table ([XXXX] if unknown), F600 = newline, {d:XX|word} = dictionary entry
+        (--expand: the word alone), {pos:XXXX} = staff-roll tilemap position ($8000|pos), other control words
+        {name} / {name:LO} / {name:LO:ARG..}. encode() inverts it exactly."""
         s, i = [], 0
         while i < len(ws):
             x = ws[i]
             i += 1
             if x < 0x8000:
-                key = bytes([x & 0xFF, x >> 8])
-                s.append(self.t.dec.get(key, f"[{x:04X}]"))
+                s.append(self.t.dec.get(bytes([x & 0xFF, x >> 8]), f"[{x:04X}]"))
                 continue
             hi, lo = x >> 8, x & 0xFF
-            if hi == 0xF8 and expand:
-                s.append(self.text(self.dict_entry(lo)))
-                continue
-            name = CTRL.get(hi, f"c{hi:02X}")
-            n = self.extra(x)
-            args = "".join(f":{a:04X}" for a in ws[i:i + n])
-            i += n
-            s.append(f"{{{name}:{lo:02X}{args}}}")
-            if hi == 0xF6:
+            if x == 0xF600:
                 s.append("\n")
+            elif hi == 0xF8:
+                word = self.text(self.dict_entry(lo))
+                s.append(word if expand else f"{{d:{lo:02X}|{word}}}")
+            elif hi not in CTRL:
+                s.append(f"{{pos:{x & 0x7FFF:04X}}}")
+            else:
+                n = self.extra(x)
+                args = "".join(f":{a:04X}" for a in ws[i:i + n])
+                i += n
+                s.append(f"{{{CTRL[hi]}{f':{lo:02X}' if lo or args else ''}{args}}}")
         return "".join(s)
+
+    def encode(self, text):
+        """Text in text()'s format -> words. Raises ValueError on an unknown character or control."""
+        out, i = [], 0
+        while i < len(text):
+            m = TOKEN.match(text, i)
+            if m and m[0] == "\n":
+                out.append(0xF600)
+            elif m and m[4]:
+                out.append(int(m[4], 16))
+            elif m:
+                name, lo, args = m[1], int(m[2] or "0", 16), [int(a, 16) for a in m[3].split(":")[1:]]
+                if name == "pos":
+                    out.append(0x8000 | lo)
+                    i = m.end()
+                    continue
+                if name not in CTRL_ENC or lo > 0xFF:
+                    raise ValueError(f"unknown control {m[0]} at {i} in {text!r}")
+                x = CTRL_ENC[name] << 8 | lo
+                if len(args) != self.extra(x):
+                    raise ValueError(f"{m[0]} needs {self.extra(x)} argument words at {i} in {text!r}")
+                out += [x] + args
+            else:
+                for k in range(min(self.t.vallen, len(text) - i), 0, -1):
+                    key = self.t.enc.get(text[i:i + k])
+                    if key:
+                        out.append(key[0] | key[1] << 8)
+                        i += k
+                        break
+                else:
+                    raise ValueError(f"unencodable {text[i]!r} at {i} in {text!r}")
+                continue
+            i = m.end()
+        return out
 
     def dict_entry(self, k):
         o, ws = off(0x830000 | self.w(off(DICT) + 2 * k)), []
@@ -82,10 +122,12 @@ class Script:
         return ws
 
     def blocks(self):
-        o = off(BLOCKS)
+        """(block, table address) per distinct table; blocks $03-$0F share block $01's table and are not repeated."""
+        o, seen = off(BLOCKS), set()
         for b in range(0x14):
             p = self.d[o + 3 * b] | self.d[o + 3 * b + 1] << 8 | self.d[o + 3 * b + 2] << 16
-            if p != DUMMY:
+            if p not in seen:
+                seen.add(p)
                 yield b, p
 
     def messages(self):

@@ -16,3 +16,4 @@ All of D1-D8 came from the owner's standing answers injected into the one-shot r
 | D6 | 2026-10-30 | Specs and plans | need approval, pre-approved | Pre-approved: keep going through checkpoints, report at the end. |
 | D7 | 2026-10-30 | Existing saves / savestates | user's saves, none | None provided; build the debug tool as usual. |
 | D8 | 2026-10-30 | Git identity | ask, existing | Already set (minhnhattonthat); do not change it. |
+| D9 | 2026-10-30 | Dictionary (`F8xx`) in English text | translate the dictionary and keep `{d:XX}` refs; write English in full | Agent default under D6: English written in full, no `{d:}` refs; the JP dictionary stays JP-only (its entries mix names with grammar endings that have no English equivalent). `jp` shows refs as `{d:XX|word}` so the source reads whole. If space runs short, an English dictionary/DTE is engine work for phase 5/7, applied by the build, not by translators. |

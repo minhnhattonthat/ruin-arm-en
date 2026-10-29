@@ -1,0 +1,68 @@
+[
+ {
+  "id": "status_00",
+  "max": 2,
+  "jp": "最強",
+  "en": ""
+ },
+ {
+  "id": "status_01",
+  "max": 6,
+  "jp": "Mpower",
+  "en": ""
+ },
+ {
+  "id": "status_02",
+  "max": 8,
+  "jp": "Mdefense",
+  "en": ""
+ },
+ {
+  "id": "status_03",
+  "max": 6,
+  "jp": "Mspeed",
+  "en": ""
+ },
+ {
+  "id": "status_04",
+  "max": 6,
+  "jp": "Mskill",
+  "en": ""
+ },
+ {
+  "id": "status_05",
+  "max": 1,
+  "jp": "毒",
+  "en": ""
+ },
+ {
+  "id": "status_06",
+  "max": 2,
+  "jp": "気絶",
+  "en": ""
+ },
+ {
+  "id": "status_07",
+  "max": 1,
+  "jp": "力",
+  "en": ""
+ },
+ {
+  "id": "status_08",
+  "max": 1,
+  "jp": "守",
+  "en": ""
+ },
+ {
+  "id": "status_09",
+  "max": 1,
+  "jp": "早",
+  "en": ""
+ },
+ {
+  "id": "status_0A",
+  "max": 1,
+  "jp": "技",
+  "en": ""
+ }
+]
