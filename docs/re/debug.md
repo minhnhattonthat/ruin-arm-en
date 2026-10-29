@@ -27,7 +27,8 @@ No ROM patch: everything is RAM pokes plus one CPU redirect, so it works on any 
 Start at 1500 (logo; does not skip it), 2408 (title), 2536 (title menu `開始/続き`), A (name prompt). warp.lua then
 mashes A every 20 frames whenever `$0380` is not `$08`, which takes the default names through the opening to first
 control in the village at ~f7700 (`field_start`). Stop-at-frame scenes (title, name screens) are frame counts from
-power-on with no mashing; everything else waits on `$0380`.
+power-on with no mashing; everything else waits on `$0380`. The default hero name differs between boots (ファング,
+グレコ, ... seen), so a shot with names in it is not byte-stable; poke `$146A` if a test needs a fixed name.
 
 ## Text found while building it (for phase 4)
 
