@@ -98,7 +98,7 @@ def main():
         if p.exists():
             print(f"skip  {p.relative_to(ROOT).as_posix()} (exists)")
             continue
-        p.write_text(json.dumps(entries, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        p.write_text(json.dumps(entries, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
         print(f"wrote {p.relative_to(ROOT).as_posix()}: {len(entries)} entries")
 
 
