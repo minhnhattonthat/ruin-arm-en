@@ -270,8 +270,8 @@ def existing():
 
 
 def split():
-    script, gl = load_script(), glossary()
-    done = {r[0] for p in existing() for r in read_tsv(p, 5)}
+    script = load_script()
+    done ={r[0] for p in existing() for r in read_tsv(p, 5)}
     num = int(existing()[-1].stem[1:]) + 1 if existing() else 1
     TL.mkdir(parents=True, exist_ok=True)
     TERMS.mkdir(exist_ok=True)
@@ -291,16 +291,24 @@ def split():
                     lines.append("\t".join([x["id"], speaker(name, x["jp"]), form, limit,
                                             plain_jp(x["jp"]).replace("\n", "\\n")]))
                 p.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
-                text = "".join(plain_jp(x["jp"]) for x in cur)
-                rows = [f"{t} -> {' / '.join(f)}" + (f" (avoid: {', '.join(a)})" if a else "") for t, f, a in gl
-                        if term_in(t, text)]
-                (TERMS / f"terms_b{num:03d}.txt").write_text("\n".join(rows) + "\n", encoding="utf-8", newline="\n")
                 made.append(f"b{num:03d} {name} {len(cur)} entries {chars} chars")
                 num, cur, chars = num + 1, [], 0
             if e:
                 cur.append(e)
                 chars += size
     print("\n".join(made) or "nothing left to split")
+    terms()
+
+
+def terms():
+    """build/terms_bNNN.txt for every batch: the glossary rows whose JP occurs in it (rerun after glossary edits)."""
+    gl = glossary()
+    TERMS.mkdir(exist_ok=True)
+    for p in existing():
+        text = "".join(r[4] for r in read_tsv(p, 5))
+        rows = [f"{t} -> {' / '.join(f)}" + (f" (avoid: {', '.join(a)})" if a else "") for t, f, a in gl
+                if term_in(t, text)]
+        (TERMS / f"terms_{p.stem}.txt").write_text("\n".join(rows) + "\n", encoding="utf-8", newline="\n")
 
 
 def check(batch, script=None, quiet=False):
@@ -403,6 +411,8 @@ def main():
         print(__doc__)
     elif a[0] == "split":
         split()
+    elif a[0] == "terms":
+        terms()
     elif a[0] == "check":
         sys.exit(0 if all([check(b) is not None for b in a[1:]]) else 1)
     elif a[0] == "merge":
