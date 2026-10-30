@@ -6,8 +6,8 @@ The ROM grows to 4 MB (the header already says 4 MB); asm/vwf.asm (tools/asm.py)
 English font bank and a 24-bit pointer per message id (MSGTAB, read by the hook at $81E8B7). en of script/*.json:
 - messages: encoded in singles (tools/en.py), written to the expansion (TEXT on), MSGTAB points there; an untranslated
   message keeps pointing at its original bytes, which stay in place.
-- fixed fields: in place, digraphs (names: singles), space-padded (tools/fixed.py).
-- staff roll: digraphs; pointers in place, strings moved to STAFF_TEXT. The dictionary stays Japanese (D9).
+- fixed fields: in place, slices (names: singles), blank-padded (tools/fixed.py).
+- staff roll: slices; pointers in place, strings moved to STAFF_TEXT. The dictionary stays Japanese (D9).
 The phase-3 identity (unpack + pack = original bytes) is tests/test_identity.py.
 """
 import argparse
@@ -29,9 +29,9 @@ from textdump import BLOCKS, ROM, Script  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "build" / "ruinarm_en.sfc"
 SIZE = 0x400000
-FONT2 = 0xD08000            # 32 KB: English cells (tools/font.py), same layout as $9F8000
+FONT = 0xFC8000             # 4 banks x 32 KB to the end of the ROM: English cells (tools/font.py)
 MSGTAB = 0xD28000           # 0x14 blocks x 256 ids x 3 bytes
-TEXT = 0xD2C000             # relocated messages from here to the end of the ROM, never across a bank
+TEXT = 0xD2C000             # relocated messages from here up to FONT, never across a bank
 SINGLE_FIELDS = {"name_hero", "name_sister", "name_party"}  # names are edited per letter in the name entry: one letter a code
 IDS = 0x1400
 STAFF_TEXT = 0xB1EC00       # staff strings: $FF tail of bank $B1 (from $B1:EB54); its pointers are 16-bit, bank $B1
@@ -115,8 +115,8 @@ def build(orig):
     ents = {b.name: extract.load(b.name, extract.block_entries(s, b)) for b in blocks}
     flds = fixed.fields(s)
     fents = {n: extract.load(n, extract.field_entries(s, fs)) for n, fs in flds.items()}
-    codec = Codec(Codec.pairs_in([e["en"] for n, es in fents.items() if n not in SINGLE_FIELDS for e in es]
-                                 + [e["en"] for e in ents["staff"]]))
+    codec = Codec([e["en"] for n, es in fents.items() if n not in SINGLE_FIELDS for e in es]
+                  + [e["en"] for e in ents["staff"]])
     for n, fs in flds.items():
         for f, e in zip(fs, fents[n]):
             if e["en"]:
@@ -145,8 +145,8 @@ def build(orig):
             data = words_bytes(codec.msg(e["en"]))
             if (cur & 0xFFFF) + len(data) > 0x10000:
                 cur = (cur & 0xFF0000) + 0x18000
-            if cur >= 0x1000000:
-                raise SystemExit("relocated messages overflow the 4 MB ROM")
+            if cur + len(data) > FONT:
+                raise SystemExit("relocated messages run into the English font banks")
             put(rom, off(cur), data, f"{b.name}:{i}", orig)
             new[b.addr, i] = cur
             cur += len(data)
@@ -159,9 +159,9 @@ def build(orig):
                 tab[blk << 8 | k] = new[p, i]
     put(rom, off(MSGTAB), b"".join(a.to_bytes(3, "little") for a in tab), "msgtab", orig)
 
-    cells, widths = font.build(codec.pairs)
-    put(rom, off(FONT2), cells, "font2", orig)
-    patched = asm.patch(bytes(rom), {"FONT2": FONT2, "MSGTAB": MSGTAB}, widths)
+    cells, widths = font.build(codec.codes)
+    put(rom, off(FONT), cells, "font", orig)
+    patched = asm.patch(bytes(rom), {"FONT": FONT, "MSGTAB": MSGTAB}, widths)
     log_diff(rom, patched, "asm", orig)
     done = snes_checksum(bytearray(patched))[0]
     log_diff(patched, done, "checksum", orig)

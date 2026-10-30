@@ -5,11 +5,11 @@
 ; frame's cells go to VRAM by DMA at $81E227. Here a glyph is rendered into SCRATCH (by the game's own cell drawer,
 ; so every code kind works) and ORed into the line at a pixel pen: $0CB1 keeps the cell base in bits 6+ and the pen
 ; px inside that cell in bits 0-3 (every writer of $0CB1 stores a line base, so px resets to 0 with it). A cell is
-; cleared and given its tilemap entries when the pen first enters it. Advance = widths table (codes $0400-$07FF),
+; cleared and given its tilemap entries when the pen first enters it. Advance = widths table (codes $0400-$0FFF),
 ; else 16 px.
 lorom
 
-incsrc "../build/vwf/defs.asm"     ; !FONT2 !MSGTAB (tools/asm.py)
+incsrc "../build/vwf/defs.asm"     ; !FONT !MSGTAB (tools/asm.py)
 
 !SCRATCH  = $9F00          ; $7E:9F00: one rendered cell (64 bytes); $7E:9F40 dummy cell for clipped columns
 !SCROFS   = $1F00          ; SCRATCH - $8000: the drawer's buffer offset ($02)
@@ -52,7 +52,8 @@ org $8296F0                ; ruin password: name-entry buffer $140C vs the 8 wor
 ; ---------------------------------------------------------------- code
 org $D18000
 
-; code >= $0400 (not $07FF) -> draw from FONT2, else back to the original path. Entry: A 16-bit, X = code.
+; code $0400-$0FFF (not $07FF) -> draw from the English font banks, else back to the original path. Code c is cell
+; i & $3FF of bank FONT + (i >> 10), i = c - $400 (tools/font.py). Entry: A 16-bit, X = code, $02 = buffer offset.
 macro font_hook(orig, wram, done)
 	txa
 	cmp #$7F00
@@ -62,47 +63,51 @@ macro font_hook(orig, wram, done)
 	cmp #$0400
 	bcc ?jp
 	cmp #$07FF
-	bne ?f2
+	beq ?jp
+	cmp #$1000
+	bcc ?f2
 ?jp:
 	jml <orig>
 ?f2:
 	sec
 	sbc #$0400
-	pha
+	sta $00
 	and #$0007
 	asl #4
-	sta $00
-	pla
-	and #$FFF8
+	sta $04
+	lda $00
+	and #$03F8
 	asl #5
-	ora $00
-	sta $00
+	ora $04
+	tay                        ; Y = cell offset in its bank
+	lda $00
+	lsr #10
+	clc
+	adc.w #!FONT>>16
+	ldx $02                    ; X = buffer offset
+	phb
+	sep #$20
+	pha
+	plb                        ; DB = the code's font bank
+	rep #$20
 	lda #$0007
 	sta $04
-	ldx $00
-	ldy $02
-	sep #$20
-	phb
-	lda #$7E
-	pha
-	plb
-	rep #$20
 ?row:
-	lda.l !FONT2,x
+	lda $8000,y
 	and #$00FF
-	sta $8000,y
-	lda.l !FONT2+8,x
+	sta.l $7E8000,x
+	lda $8008,y
 	and #$00FF
-	sta $8010,y
-	lda.l !FONT2+$80,x
+	sta.l $7E8010,x
+	lda $8080,y
 	and #$00FF
-	sta $8020,y
-	lda.l !FONT2+$88,x
+	sta.l $7E8020,x
+	lda $8088,y
 	and #$00FF
-	sta $8030,y
-	iny
-	iny
+	sta.l $7E8030,x
 	inx
+	inx
+	iny
 	dec $04
 	bpl ?row
 	jml <done>                 ; PLB, $02 += $40, PLY PLX PLP RTL
@@ -173,7 +178,7 @@ vwf_char:                      ; A = code
 	lda !CODE
 	cmp #$0400
 	bcc .w16
-	cmp #$0800
+	cmp #$1000
 	bcs .w16
 	tax
 	lda.l WIDTHS-$0400,x

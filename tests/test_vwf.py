@@ -15,10 +15,9 @@ def test_font_and_codec():
     import font
     from en import Codec
     font.selftest()
-    assert all(a <= 8 for _, a in font.GLYPHS.values())  # digraphs fit a 16 px cell
-    c = Codec(Codec.pairs_in(["Items"]))
+    c = Codec(["Items"])
     assert c.msg("Hi\n") == [0x448, 0x469, 0xF600]
-    assert c.field("Items") == [c.pairs["It"], c.pairs["em"], 0x473]
+    assert c.field("Items") == [font.SLICE, font.SLICE + 1] or c.field("Items") == [font.SLICE + 1, font.SLICE]
 
 
 def test_marker_marks_every_text_string():

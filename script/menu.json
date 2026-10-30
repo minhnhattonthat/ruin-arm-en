@@ -11,14 +11,14 @@
   "max": 18,
   "pos": "0300",
   "jp": "右装左装体装使う入替並び捨〔てる〕〔つよ〕〔める〕合分",
-  "en": "RghtLeftBodyUse SwapSortDropHoneJoin"
+  "en": "Right|Left|Body|Use|Swap|Sort|Drop|Hone|Join"
  },
  {
   "id": "8496A4",
   "max": 12,
   "pos": "0300",
   "jp": "〔ｾｰ〕〔ﾌﾞ〕〔ﾌﾟﾛ〕〔ﾃｸﾄ〕〔ｺ〕〔ﾋﾟｰ〕〔ﾁｪ〕〔ﾝｼﾞ〕〔ﾃﾞﾘ〕〔ｰﾄ〕〔ﾛｰ〕〔ﾄﾞ〕",
-  "en": "SaveLockCopySwapWipeLoad"
+  "en": "Save|Lock|Copy|Swap|Delete|Load"
  },
  {
   "id": "84CB92",

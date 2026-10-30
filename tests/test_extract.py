@@ -96,4 +96,4 @@ def test_en_reaches_rom(s, tmp_path, monkeypatch):
         a = int.from_bytes(rom[o:o + 3], "little")
         assert a >= build.TEXT and r.words(off(a))[0] == Codec().msg("AB{end}"), mid
     f = fixed.fields(s)["item"][1]
-    assert fixed.words(r, f) == [Codec.pairs_in(["AB"])["AB"]] + [0] * 7
+    assert fixed.words(r, f)[1:] == [0] * 7 and fixed.words(r, f)[0] >= 0x480

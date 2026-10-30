@@ -15,8 +15,7 @@ SCENES = {
   title_menu     = { stop_at = 2800 },
   name_prompt    = { boot = "300 -;8 a", stop_at = 3000 },
   name_entry     = { boot = "300 -;8 a;160 -;8 right;30 -;8 a", stop_at = 3300 },
-  name_confirm   = { boot = "300 -;8 a;160 -;8 a", stop_at = 3300 },
-  first_dialogue = { until_mode = 0x33, wait = 150 },
+  name_confirm   = { boot = "300 -;8 a;160 -;8 a", stop_at = 3300 },  first_dialogue = { until_mode = 0x33, wait = 150 },
   field_start    = {},
   -- pause menu (Start; takes ~250 frames to take input); tabs 道具 能力 振分 ジョイ 環境, cursor at 道具 after a
   -- cold boot, left wraps to 環境. 道具/能力/振分 first pick a character (A), then open that character's page (A).
@@ -36,6 +35,7 @@ SCENES = {
   -- events and messages
   ev_village_hint = { ev = 0x0010, wait = 150 },
   msg_bonnie     = { msg = 0x1032, wait = 150 },
+  msg_item       = { msg = 0x0123, wait = 200 },     -- {item:16} insert: an item name's slices in the dialogue VWF
   -- width gate: the marker build's msg 1032 is the stress message (tools/marker.py GATE); pages 2 and 3
   gate_p2        = { msg = 0x1032, wait = 150, route = "6 a;150 -" },
   gate_p3        = { msg = 0x1032, wait = 150, route = "6 a;150 -;6 a;200 -" },

@@ -9,8 +9,10 @@
 Batch TSV: id, speaker, form, limit, jp. jp has dictionary refs written out ({d:XX|word} -> word, D9) and newlines as
 the two characters \\n. Output TSV: id, en; \\n in en = a forced line break.
 Messages: en is wrapped here (greedy, LINE px per row, ROWS rows per page, pages split at {wait..}/{fe..}); a page
-that starts with a speaker ({col:01}Name\\n) keeps that row. Fixed fields: 2 letters per cell (names: 1), staff runs:
-2 letters per cell from the run's {pos} column to the screen edge. Width numbers: docs/re/vwf.md §Width gate.
+that starts with a speaker ({col:01}Name\\n) keeps that row. Fixed fields: set proportionally, 16 px per cell (names:
+1 letter a cell); 2+ spaces keep the next run's 2-letters-a-cell column (font.runs); command cells: "|" between
+commands, 32 px each. Staff runs: 16 px per cell from the run's {pos} column to the screen edge. Width numbers:
+docs/re/vwf.md §Width gate.
 """
 import json
 import re
@@ -20,9 +22,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build import SINGLE_FIELDS  # noqa: E402
-from en import pieces  # noqa: E402
 from extract import SCRIPT  # noqa: E402
-from font import SINGLES, adv  # noqa: E402
+from font import SINGLES, adv, ink, slices  # noqa: E402
 from marker import DATA  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,7 +51,7 @@ LONG = {"place_1B": "Maria to Beast Village", "84D3E3": "Combo Special", "84CF94
         "place_0E": "Beast Village Ruins", "place_34": "Beast Village to Ruins",
         "element_00": "Earth Element", "element_01": "Fire Element", "element_02": "Water Element",
         "element_03": "Air Element"}
-COMMAND_CELLS = {"84967B", "8496A4"}   # two-glyph command cells picked by index (docs/re/text.md): 4 letters each
+COMMAND_CELLS = {"84967B", "8496A4"}   # two-cell commands picked by index (docs/re/text.md): "A|B|..", 32 px each
 
 
 # ---- the script
@@ -190,17 +191,20 @@ def field_errors(name, e, en):
             return ["staff: copy every {pos:..}/{end..} code, same order; a {pos} may change column, not row"]
         # relocated by the build: a run may grow to the screen edge (32 tiles, 1 spare) from its {pos} column
         cols = [int(p, 16) % 0x40 // 2 for p in re.findall(r"\{pos:([0-9A-F]{4})\}", en)]
-        return [f"run {i + 1}: {r!r} is {len(pieces(r))} cells, column {c} leaves {(31 - c) // 2}"
-                for i, (r, c) in enumerate(zip(er[1:], cols)) if c + 2 * len(pieces(r)) > 31]
+        return [f"run {i + 1}: {r!r} is {len(slices(r))} cells, column {c} leaves {(31 - c) // 2}"
+                for i, (r, c) in enumerate(zip(er[1:], cols)) if c + 2 * len(slices(r)) > 31]
     if CODE.search(en) or "\n" in en:
         return ["fields take plain text, no codes or breaks"]
     if kind(name) == "name":
         return [f"{len(en)} letters, max {NAME}"] if len(en) > NAME else []
-    n = len(pieces(en))
-    errs = [f"{n} cells, max {e['max']} (2 letters a cell)"] if n > e["max"] else []
-    if e["id"] in COMMAND_CELLS and len(en) != 2 * e["max"]:
-        errs.append(f"command palette: exactly {2 * e['max']} characters, each command 4 (space-padded)")
-    return errs + [f"pair {p!r} is {adv(p)} px, a cell holds 16: shift a space" for p in pieces(en) if adv(p) > 16]
+    n = len(slices(en))
+    errs = [f"{n} cells, max {e['max']} (16 px a cell)"] if n > e["max"] else []
+    if e["id"] in COMMAND_CELLS:
+        units = en.split("|")
+        if len(units) != e["max"] // 2:
+            errs.append(f"command cells: {e['max'] // 2} commands joined by '|', got {len(units)}")
+        errs += [f"command {u!r} is {ink(u)} px, max 32" for u in units if ink(u) > 32]
+    return errs
 
 
 def glossary():
@@ -235,7 +239,7 @@ def gloss_errors(jp, en, gl):
 
 
 def entry_errors(name, e, en, gl, merged=False):
-    errs = char_errors(en) + (["empty"] if not en.strip() else [])
+    errs = char_errors(en.replace("|", "") if e["id"] in COMMAND_CELLS else en) + (["empty"] if not en.strip() else [])
     if "\\u" in en or "\t" in en:
         errs.append("escape or tab in the text")
     errs += msg_errors(e["jp"], en, merged) if kind(name) == "msg" else field_errors(name, e, en)
@@ -419,9 +423,12 @@ def selftest():
     assert msg_errors("{d:79|・・・}{end}", "...{end}") == []
     assert term_in("ワース", "ワースの村") and not term_in("ミン", "タイミング")
     assert field_errors("item", {"id": "item_00", "jp": "薬 草", "max": 8}, "Healing Herb") == []
-    assert field_errors("item", {"id": "item_00", "jp": "x", "max": 2}, "Herbs") != []
-    assert field_errors("menu", {"id": "8496A4", "jp": "x", "max": 2}, "Save") == []
-    assert field_errors("menu", {"id": "8496A4", "jp": "x", "max": 2}, "Sav") != []
+    assert field_errors("item", {"id": "item_00", "jp": "x", "max": 2}, "Healing Herbs") != []
+    assert field_errors("menu", {"id": "8496A4", "jp": "x", "max": 4}, "Save|Load") == []
+    assert field_errors("menu", {"id": "8496A4", "jp": "x", "max": 4}, "SaveLoad") != []
+    assert field_errors("menu", {"id": "8496A4", "jp": "x", "max": 4}, "Save|Withdraw") != []
+    assert field_errors("menu", {"id": "x", "jp": "x", "max": 2}, "Items") == []
+    assert field_errors("menu", {"id": "x", "jp": "x", "max": 2}, "Status") != []  # 35 px
     print("selftest ok")
 
 
