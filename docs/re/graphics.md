@@ -5,7 +5,7 @@ Japanese drawn as tiles rather than through the font. Rows are added as screens 
 
 | # | Screen | Element | Layer | Source (first guess) | State |
 |---|---|---|---|---|---|
-| G1 | Title | small katakana `ルインアーム` above the English `RUIN ARM` logo | OBJ (logo tiles sit in the OBJ area, VRAM `$C000+`, `work/qa/title/ppu_002300.*`) | WRAM upload, unpacker not yet traced | found; D5: keep or remove, decide in phase 5 |
+| G1 | Title | small katakana `ルインアーム` above the English `RUIN ARM` logo | logo tiles at VRAM byte `$A000` (word `$5000`), katakana tiles 24-31 / 40-47 of that run (`tiles.py render --at 0xA000`) | DMA f1527 (`$8086F5`) from `$7F0000`, `$2000` bytes; `$7F` filled by the `$808F01` unpacker (`compression.md`), last call src `$AFB1CD` (file 17B1CD) at f1509/f1518. `$7F0300` at f1526 = the VRAM tile, but `lz.decompress`-style decoding of 17B1CD gives the plane-0 bytes without the interleave: one more step (bitplane expand?) between unpack and DMA is untraced | D10: remove; open (phase 8) |
 | G2 | Title | `©PLEX 1995 / ©BANDAI 1995` | - | - | English already |
 
 Not graphics (font-drawn, handled as text): title menu `開始 続き`, name prompt `主人公の名前を自分で付けますか？ 付ける 付けない`,

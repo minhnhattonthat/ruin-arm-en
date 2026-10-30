@@ -14,6 +14,12 @@
   `$8BE72A` (table near `$90E395`), `$ACB131`/`$ACB192` (table `$94DC1A`, 3-byte entries).
   Tour logs (`tools/lua/lzlog.lua`) also saw `$CCA1D5` and `$CC86D6` (boot/title).
 
+## `$808F01`: same format into `$7F:0000`
+
+Source `$95-$97`, output always `$7F0000`; back references read `$7F` as it stands, so a block may pull in bytes a
+previous call left there. Title (f1500-1518): `$AF851C`, `$AFCBB7`, `$AFC8E5`, `$AFD217`, `$AFCE87`, `$AFB1CD` (x2),
+each followed by its own upload; `tools/lua/lzlog.lua` logs every call (`lz7f`). The logo (G1) is the `$AFB1CD` run.
+
 ## Other loaders (open)
 
 - Every VRAM upload in a boot→title→attract tour came from WRAM (`$7E/$7F`), never straight from ROM

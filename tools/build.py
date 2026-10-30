@@ -35,6 +35,9 @@ TEXT = 0xD2C000             # relocated messages from here up to FONT, never acr
 SINGLE_FIELDS = {"name_hero", "name_sister", "name_party"}  # names are edited per letter in the name entry: one letter a code
 IDS = 0x1400
 STAFF_TEXT = 0xB1EC00       # staff strings: $FF tail of bank $B1 (from $B1:EB54); its pointers are 16-bit, bank $B1
+# Glyph palette record (script en stays empty: marker.DATA): code draws single cells of it by index. Cell: (English,
+# cells it fills). 23 = the red 個 after the shop's count, 21-22 = 全部.
+PALETTE = ("848A27", {21: ("All", 2), 23: ("pc", 1)})
 PASSWORD = (0x011711, "RAIDROID")  # $829711: the 8 words the typed ruin password must match (asm/vwf.asm `password`)
 # Name-entry grids かな/漢1/漢2 -> ABC/abc/Sym (docs/re/text.md §Name entry): (row pointer table, original row count,
 # offsets of that count's immediate in both entry routines $85B1C8/$85BDA0, English rows of 5 + blank + 5 cells).
@@ -116,7 +119,7 @@ def build(orig):
     flds = fixed.fields(s)
     fents = {n: extract.load(n, extract.field_entries(s, fs)) for n, fs in flds.items()}
     codec = Codec([e["en"] for n, es in fents.items() if n not in SINGLE_FIELDS for e in es]
-                  + [e["en"] for e in ents["staff"]])
+                  + [e["en"] for e in ents["staff"]] + [t for t, _ in PALETTE[1].values()])
     menu_en = {e["id"]: e["en"] for e in fents["menu"]}
     for n, fs in flds.items():
         moved = n == "menu" and all(menu_en[i] for i in fixed.CELLS)  # all or none: a JP record keeps its cells
@@ -125,6 +128,10 @@ def build(orig):
             if "head" in f:
                 put(rom, f["off"] - 3, f["pos"].to_bytes(2, "little") + bytes([f["n"]]) + fixed.pad(f, ws), f["id"], orig)
             elif e["en"]:
+                put(rom, f["off"], fixed.pad(f, ws), f["id"], orig)
+            elif f["id"] == PALETTE[0] and any(menu_en.values()):
+                for i, (t, k) in PALETTE[1].items():
+                    ws[i:i + k] = (codec.field(t) + [0] * k)[:k]
                 put(rom, f["off"], fixed.pad(f, ws), f["id"], orig)
     staff = next(b for b in blocks if b.name == "staff")
     for i, e in enumerate(ents["staff"]):

@@ -31,16 +31,19 @@ rewrite). Critical/Important were fixed before merge. `id - suggestion`.
 - 018F "PLEASE ENTER THE PASSWORD."; 0195 drop stutter; 01C0/01D4 "you two" -> "you"; 01C2; 01C8; 01E0; 01AE
 
 ## Credits
-- 0204 "Story Concept"?; 0207 "Programming"; 0208 "SWITCH-E" (the staff roll S00-S0C has these since phase 7, D17;
-  block `$02` 0200-020A still has the short forms: make the two lists agree).
-- Staff name readings are best guesses (Zumoto/Machida, handles, Jun Katsumata, Benben Den, Kurodaya Rokusaku,
+- 0204/S04 "Story Concept"? (block `$02` and the staff roll agree since b040: Programming, SWITCH-E, Rokusaku
+  Kurodaya, Gakugaku Misaki, Maruko Papa).
+- Staff name readings are best guesses (Zumoto/Machida, handles, Jun Katsumata, Benben Den, Rokusaku Kurodaya,
   Yasunobu Okubo, Soji Machida): unverified.
 
 ## Fields (b016-b031)
 - place_31/32 Manor vs place_09/40 Mansion; place_19 "Ravenna Road"; place_3F "Rutea Passage"; place_37 "Fefus Back Way"
 - item_C0 "Everyday Clothes"; item_C7 "Fire God Zenon"?; item_16 Breath vs Bless Ring (verify in game); item_27 "Sleep Sword"
-- equip_08 "Lite" -> "Ray"?; use_01 "Don't" -> "Skip"; tactic_01 "Wary" -> "Timid"; status_00 "Best"; status_06 "Down"
-- 84CBEA Make vs "order" message 84CDFE; 84CF65 "Feat"; 84D051/84D0C4 発明 Tech vs gadgets; 84D07E "Fights, wins";
-  84D117 "Passionate"; 84D17B "Driven"; 84CD98 "Spend your stat points."; Pts/pt vs Stars (★) terminology;
-  84CC8D "Bits" and 84967B "Join" unverified (check the screens); 84D6D8 "Parts" not "Mats"; 84CEAF/84D686 Gold vs Funds;
-  OK vs all right prompts; 84CDB5 "Change which part?" verify; 84D3E3 "Combo Move"
+- equip_08 "Light" (b038) -> "Ray"?; use_01 "Don't" -> "Skip"; tactic_01 "Wary" -> "Timid"; status_00 "Best";
+  status_06 "Down"
+- 84CF65 "Skill" (b038) vs "Feat"; 84D051/84D0C4 発明 Tech vs gadgets; 84D07E "Fights, wins";
+  84D117 "Passionate"; 84D17B "Driven"; 84CD98 "Spend your stat points."; Allot/pt vs Stars (★) terminology;
+  84CC8D "Bits" and 84967B "Join" unverified (check the screens); 84CEAF/84D686 Gold vs Funds;
+  OK vs all right prompts; 84CDB5 "Change which part?" verify; 84D3E3 "Combo Special" vs "Combo Move"
+- Fields now fit by px (D18): two-record lines with slack can be reflowed (84E1AD/84E1C6 "Start again from the" /
+  "top?", 84E205/84E220, 84D7D1/84D7E8...).

@@ -56,13 +56,13 @@
  {
   "id": "S09",
   "jp": "{pos:00C4}プログラム{pos:01C8}ハッピィはせい{pos:0248}Q{pos:02C8}C{pos:0420}S{pos:04A0}ゼン{pos:0520} M{pos:05A0}まるこぱぱ{pos:0620}RYU{end:FF}",
-  "en": "{pos:00C4}Programming{pos:01C8}Happy Hasei{pos:0248}Q{pos:02C8}C{pos:0420}S{pos:04A0}Zen{pos:0520} M{pos:05A0}MarukoPapa{pos:0620}RYU{end:FF}",
+  "en": "{pos:00C4}Programming{pos:01C8}Happy Hasei{pos:0248}Q{pos:02C8}C{pos:0420}S{pos:04A0}Zen{pos:0520} M{pos:05A0}Maruko Papa{pos:0620}RYU{end:FF}",
   "hold": 180
  },
  {
   "id": "S0A",
   "jp": "{pos:00E0}グラフィック{pos:0164}デザイン{pos:0264}黒田屋6作{pos:02E4}織田君{pos:0364}たこちう？{pos:0488}J DESIGNS{pos:0508}ポチっと犬じろう{pos:0588}ぬーぴー{pos:0608}わや{end:FF}",
-  "en": "{pos:00D8}Graphic{pos:0164}Design{pos:0258}Kurodaya Rokusaku{pos:02D8}Oda-kun{pos:0358}Takochu?{pos:0488}J DESIGNS{pos:0508}Pochitto Inujiro{pos:0588}Nupi{pos:0608}Waya{end:FF}",
+  "en": "{pos:00D8}Graphic{pos:0164}Design{pos:0258}Rokusaku Kurodaya{pos:02D8}Oda-kun{pos:0358}Takochu?{pos:0488}J DESIGNS{pos:0508}Pochitto Inujiro{pos:0588}Nupi{pos:0608}Waya{end:FF}",
   "hold": 180
  },
  {
@@ -74,7 +74,7 @@
  {
   "id": "S0C",
   "jp": "{pos:00E0}スーパー{pos:016C}バイザー{pos:0260}岬 額々{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}チーミン{end:FF}",
-  "en": "{pos:00E0}Super-{pos:016C}visors{pos:0260}G. Misaki{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}Chimin{end:FF}",
+  "en": "{pos:00E0}Super-{pos:016C}visors{pos:0260}Gakugaku Misaki{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}Chimin{end:FF}",
   "hold": 180
  }
 ]

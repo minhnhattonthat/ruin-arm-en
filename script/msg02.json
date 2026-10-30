@@ -37,12 +37,12 @@
  {
   "id": "0207",
   "jp": "プログラム{spd:01}\n\nハッピィはせい\n{wait:10}Q\n{wait:10}C\n{wait:10}S\n{wait:10}ゼン\n{wait:10} M\n{wait:10}まるこぱぱ\n{wait:10}RYU\n{fe:11}グラフィック\nデ{d:02|ザイン}{spd:01}\n\n黒田屋6作\n{wait:10}織田君\n{wait:10}たこちう？\n{wait:10}J DESIGNS\n{wait:10}ポチっと犬じろう\n{wait:10}ぬーぴー\n{wait:10}わや\n{end:10}",
-  "en": "Program{spd:01}\n\nHappy Hasei\n{wait:10}Q\n{wait:10}C\n{wait:10}S\n{wait:10}Zen\n{wait:10} M\n{wait:10}Maruko Papa\n{wait:10}RYU\n{fe:11}Graphic Design{spd:01}\n\nRokusaku Kurodaya\n{wait:10}Oda-kun\n{wait:10}Takochu?\n{wait:10}J DESIGNS\n{wait:10}Pochitto Inujiro\n{wait:10}Nupi\n{wait:10}Waya\n{end:10}"
+  "en": "Programming{spd:01}\n\nHappy Hasei\n{wait:10}Q\n{wait:10}C\n{wait:10}S\n{wait:10}Zen\n{wait:10} M\n{wait:10}Maruko Papa\n{wait:10}RYU\n{fe:11}Graphic Design{spd:01}\n\nRokusaku Kurodaya\n{wait:10}Oda-kun\n{wait:10}Takochu?\n{wait:10}J DESIGNS\n{wait:10}Pochitto Inujiro\n{wait:10}Nupi\n{wait:10}Waya\n{end:10}"
  },
  {
   "id": "0208",
   "jp": "サウンド\nエンジニア{spd:01}\n\nSWITCH・E\n{wait:10}STUDIO M2\n{wait:10}ST・TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU\n{end:10}",
-  "en": "Sound Engineers{spd:01}\n\nSWITCH.E\n{wait:10}STUDIO M2\n{wait:10}ST.TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU\n{end:10}"
+  "en": "Sound Engineers{spd:01}\n\nSWITCH-E\n{wait:10}STUDIO M2\n{wait:10}ST.TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU\n{end:10}"
  },
  {
   "id": "0209",
