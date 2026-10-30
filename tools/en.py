@@ -19,6 +19,29 @@ TOKEN = re.compile(r"(\{[^{}]*\}|\[[0-9A-F]{4}\]|\n)")
 TABLE = Table([f"{c & 0xFF:02X}{c >> 8:02X}={'\\s' if ch == ' ' else ch}" for ch, c in SINGLES.items()])
 
 
+BREAK = re.compile(r"(\n|\{wait(?::[0-9A-F]+)?\})")
+CHOICE = re.compile(r"(^|\n)  ([1-3])")
+
+
+def carry_col(text):
+    """A line break resets the colour (the JP re-opens {col:01} on each row): re-open it after a break when the
+    next row closes the span with {col}, so "{col:01}Stelm\\nDuchy{col}" stays yellow. A speaker row
+    ("{col:01}Gilm\\n...") is never closed, so the body stays white."""
+    out, on = [], False
+    segs = BREAK.split(text)
+    for i, s in enumerate(segs):
+        if i % 2 == 0:
+            close, reopen = s.find("{col}"), s.find("{col:01}")
+            if on and close >= 0 and (reopen < 0 or close < reopen):
+                s = "{col:01}" + s
+            out.append(s)
+            last = max(s.rfind("{col:01}"), s.rfind("{col}"))
+            on = last >= 0 and s.startswith("{col:01}", last)
+        else:
+            out.append(s)
+    return "".join(out)
+
+
 def parts(text):
     """Tokens kept whole, plain runs between them."""
     return [p for p in TOKEN.split(text) if p]
@@ -30,7 +53,9 @@ class Codec:
         self.s = Script(rom=b"", tbl=TABLE)
 
     def msg(self, text):
-        return self.s.encode(text)
+        if "{choice" in text:  # options "  1Yes": the JP's 16 px blank, blank, digit cells, so the cursor (cell 1) and
+            text = CHOICE.sub(lambda m: f"{m[1]}[0000][0000][{0xA1 + int(m[2]):04X}]", text)  # highlight (cell 3+) fit
+        return self.s.encode(carry_col(text))
 
     def field(self, text):
         """Slice words; a blank cell is 0000 (the game's blank cell)."""
@@ -41,8 +66,11 @@ class Codec:
 
 
 if __name__ == "__main__":
+    assert carry_col("To {col:01}Stelm\nDuchy{col}.") == "To {col:01}Stelm\n{col:01}Duchy{col}."
+    assert carry_col("{col:01}Gilm\nHi {col:01}you{col}.\nNo{col}") == "{col:01}Gilm\nHi {col:01}you{col}.\nNo{col}"
     c = Codec(["Items", "Use", "A   B"])
     assert c.msg("Hi{end}") == [0x448, 0x469, 0xFF00]
+    assert c.msg("\n  1Hi\n  2No{choice:00:0001:0002}")[1:4] == [0, 0, 0xA2]
     assert len(c.field("Items")) == 2 and c.field("{pos:0012}Use") == [0x8012] + c.field("Use")
     a, blank, b = c.field("A   B")
     assert blank == 0 and a != b

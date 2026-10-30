@@ -27,6 +27,7 @@ incsrc "../build/vwf/defs.asm"     ; !FONT !MSGTAB (tools/asm.py)
 !BASE     = $9F94
 !MAP      = $9F96
 !START    = $9F98
+!PAL      = $9F9A          ; $0CBD at the last glyph
 
 ; ---------------------------------------------------------------- hooks
 org $81E1CC                ; printer: glyph code in A (TAX / LDA $0CB1 / STA $02 / JSL $81E929 / tilemap / advance)
@@ -194,6 +195,7 @@ vwf_char:                      ; A = code
 	lda $0CB1
 	and #$000F
 	sta !PX
+	jsr colour
 	lda $0CB1
 	and #$FFC0
 	sta !BASE
@@ -344,6 +346,53 @@ vwf_char:                      ; A = code
 	bcc +
 	jml $81E217                ; line full: the game's own wrap
 +	jml $81E21F
+
+colour:                        ; {col} ($0CBD palette bits) changed mid-cell: palettes are per 8x8 tile, so give the
+	lda $0CBD                  ; still-empty right column the new one, and start a coloured run at a tile edge
+	cmp !PAL                   ; (else the colour began at the next 16 px cell, mid-word). DB = $7E.
+	beq .same
+	sta !PAL
+	lda !PX
+	beq .same                  ; pen at a cell's left edge: open_cell gives it the new palette
+	cmp #$0009
+	bcs .late
+	ldx $0CB3                  ; px 1-8: the right column is empty
+	lda $C846,x
+	and #$E3FF
+	ora $0CBD
+	sta $C846,x
+	lda $C886,x
+	and #$E3FF
+	ora $0CBD
+	sta $C886,x
+	lda $0CBD
+	beq .same                  ; colour off: the rest of the left column keeps the colour
+	lda #$0008                 ; colour on: the run starts at the right column
+	sta !PX
+	lda $0CB1
+	and #$FFF0
+	ora #$0008
+	sta $0CB1
+.same:
+	rts
+.late:                         ; px 9-15: colour on starts the next cell (unless this is the line's last)
+	lda $0CBD
+	beq .same
+	lda $0CB3
+	and #$003F
+	cmp #$0034
+	bcs .same
+	lda $0CB1
+	and #$FFC0
+	clc
+	adc #$0040
+	sta $0CB1
+	lda $0CB3
+	clc
+	adc #$0004
+	sta $0CB3
+	stz !PX
+	rts
 
 open_cell:                     ; clear the cell at BASE, tilemap entries at MAP (DB = $7E)
 	ldx !BASE

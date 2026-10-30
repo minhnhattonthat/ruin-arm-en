@@ -46,7 +46,7 @@
    "130A"
   ],
   "jp": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:56}{fa:A1}\n{d:79|・・・}ばくはつさせても\nえいきょうので{d:6C|ない}高さに\nまで{d:3E|バルドア}をもって行き{fd:13}\nそこでじばくさせるしか\n{d:6C|ない}のう{d:79|・・・}{fd:13}{fe:10}{goto:00:1324}",
-  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:56}{fa:A1}\n...We'll have to take Baldoa up so high that\nits explosion can't harm anything,{fd:13}and make it self-destruct up there.\nThere's no other way...{fd:13}{fe:10}{goto:00:1324}"
+  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:56}{fa:A1}\n...We'll have to take Baldoa up so high that\nits explosion can't harm anything,{fd:13}\nand make it self-destruct up there.\nThere's no other way...{fd:13}{fe:10}{goto:00:1324}"
  },
  {
   "id": "130B",
@@ -55,7 +55,7 @@
    "130C"
   ],
   "jp": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:A1}\nうむ。{fd:13}\nそこなん{d:60|じゃ}が、昔{d:11|ワシ}が\n{d:3E|バルドア}をけんきゅう\n{d:7F|して}{d:56|いた}時に、{fd:13}\n{d:76|この}{d:3E|バルドア}には、\n空にとび上がれる性能が\n{d:61|ある}事を知{d:7B|った}{d:0E|のじゃ。}{fd:13}\n少しだけなら、{d:3E|バルドア}を\n操れるオペレーションルーム\nが頭部に{d:61|ある}から、そこで{fd:13}\n動かすしか{d:6C|ない}{d:0E|のじゃ。}{fd:13}{fe:10}{goto:00:1325}",
-  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:A1}\nMm.{fd:13}\nNow, here's the thing. Long ago, back when\nI was studying Baldoa,{fd:13}I learned that it has the power to fly up\ninto the sky.{fd:13}There's a control room in the head that\nlets you steer Baldoa, if only a little,{fd:13}\nso we'll have to fly it from there.{fd:13}{fe:10}{goto:00:1325}"
+  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:A1}\nMm.{fd:13}\nNow, here's the thing. Long ago, back when\nI was studying Baldoa,{fd:13}\nI learned that it has the power to fly up\ninto the sky.{fd:13}\nThere's a control room in the head that\nlets you steer Baldoa, if only a little,{fd:13}\nso we'll have to fly it from there.{fd:13}{fe:10}{goto:00:1325}"
  },
  {
   "id": "130D",
@@ -66,7 +66,7 @@
    "1310"
   ],
   "jp": "{fe:10}{fa:01}{col:01}{name:01}{f4:46}{fa:C1}\n{name:02}さんだけを\n危険な目に、\nあわせら{d:6B|れない}わ。{fd:13}{fe:10}{goto:00:1311}",
-  "en": "{fe:10}{fa:01}{col:01}{name:01}{f4:46}{fa:C1}\nWe can't let you face that danger all alone,\n{name:02}-san.{fd:13}{fe:10}{goto:00:1311}"
+  "en": "{fe:10}{fa:01}{col:01}{name:01}{f4:46}{fa:C1}\nWe can't let you face that danger all\nalone, {name:02}-san.{fd:13}{fe:10}{goto:00:1311}"
  },
  {
   "id": "1311",
@@ -195,7 +195,7 @@
  {
   "id": "132C",
   "jp": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:58}{fa:A1}\nそう{d:5F|じゃ。}{fd:13}\nさあ、み{d:6C|ない}そいで\n下におり{d:0C|てくれ}。{fd:13}\nもう{d:44|ここは}かなり\n危険な状態だ。{fd:13}{fe:10}{goto:00:132D}",
-  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:58}{fa:A1}\nThat's right.{fd:13}\nNow, everyone, hurry and get down below.{fd:13}It's already gotten very dangerous up\nhere.{fd:13}{fe:10}{goto:00:132D}"
+  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:58}{fa:A1}\nThat's right.{fd:13}\nNow, everyone, hurry and get down below.{fd:13}\nIt's already gotten very dangerous\nup here.{fd:13}{fe:10}{goto:00:132D}"
  },
  {
   "id": "132D",
@@ -220,12 +220,12 @@
  {
   "id": "1331",
   "jp": "{col:01}{name:05}{spd:01}{f4}{f5:B1}{f4:4B}{fa:E1}\nやつは死ぬ気だ。{fd:13}\nあの城にだっしゅつ装置\nなど無い。{fd:13}\n奴は奴なりのけじめの付け方\nを考えて{d:55|いたの}{d:65|だろう}。{fd:13}{fe:10}{goto:00:1332}",
-  "en": "{col:01}{name:05}{spd:01}{f4}{f5:B1}{f4:4B}{fa:E1}\nHe means to die.{fd:13}\nThere's no escape pod in that castle.{fd:13}He must have had his own way of settling\nthings in mind.{fd:13}{fe:10}{goto:00:1332}"
+  "en": "{col:01}{name:05}{spd:01}{f4}{f5:B1}{f4:4B}{fa:E1}\nHe means to die.{fd:13}\nThere's no escape pod in that castle.{fd:13}\nHe must have had his own way of settling\nthings in mind.{fd:13}{fe:10}{goto:00:1332}"
  },
  {
   "id": "1332",
   "jp": "{fe:10}{fa:01}{col:01}{name:04}{f4:5B}{fa:C1}\n{d:68|なんで}それを知っていて\n{name:02}を、止めて\nくれなか{d:7B|った}の！？{fd:13}{fe:10}{goto:00:1333}",
-  "en": "{fe:10}{fa:01}{col:01}{name:04}{f4:5B}{fa:C1}\nYou knew that, so why didn't you stop\n{name:02}!?{fd:13}{fe:10}{goto:00:1333}"
+  "en": "{fe:10}{fa:01}{col:01}{name:04}{f4:5B}{fa:C1}\nYou knew that, so why didn't you\nstop {name:02}!?{fd:13}{fe:10}{goto:00:1333}"
  },
  {
   "id": "1333",
@@ -293,7 +293,7 @@
  {
   "id": "1341",
   "jp": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:C1}\n{d:11|ワシ}にまかせておけ。{fd:13}\n{d:3E|バルドア}の事は、多少なり\nとも知っておるからのう。{fd:13}\n{d:11|ワシ}にまかせてみなは、\nすぐに、下におりる{d:0E|のじゃ。}{fd:13}{fe:10}{goto:00:1342}",
-  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:C1}\nLeave it to me.{fd:13}\nI know a thing or two about Baldoa, after\nall.{fd:13}Leave this to me, and all of you get down\nbelow right away.{fd:13}{fe:10}{goto:00:1342}"
+  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:C1}\nLeave it to me.{fd:13}\nI know a thing or two about Baldoa, after\nall.{fd:13}\nLeave this to me, and all of you get down\nbelow right away.{fd:13}{fe:10}{goto:00:1342}"
  },
  {
   "id": "1342",
@@ -313,7 +313,7 @@
  {
   "id": "1345",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:58}{fa:81}\nふははははは！{fd:13}\nや{d:7B|った}ぞ！{fd:13}\nついに{d:3E|バルドア}を\n{d:07|手に入れた}{d:1B|！！}{fd:13}\n{d:52|これ}でうちゅうは、\n{d:11|ワシ}のも{d:5D|のじゃ}{d:1B|！！}{end:13}",
-  "en": "{col:01}{name:02}{spd:01}{f4}{f4:58}{fa:81}\nFuhahahahaha!{fd:13}\nI did it!{fd:13}\nBaldoa is mine at last!!{fd:13}Now the universe belongs to me!!{end:13}"
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:58}{fa:81}\nFuhahahahaha!{fd:13}\nI did it!{fd:13}\nBaldoa is mine at last!!{fd:13}\nNow the universe belongs to me!!{end:13}"
  },
  {
   "id": "1346",
@@ -328,12 +328,12 @@
  {
   "id": "1348",
   "jp": "{col:01}{name:02}\nば、ばかな、{d:17|ボルボーザ}め\n{d:52|これ}をっ{d:79|・・・}{end:13}",
-  "en": "{col:01}{name:02}\nIm-impossible... Curse you, Bolboza, this\nis...!{end:13}"
+  "en": "{col:01}{name:02}\nIm-impossible... Curse you, Bolboza,\nthis is...!{end:13}"
  },
  {
   "id": "1349",
   "jp": "{col:01}＊剣の力が少し回復{d:62|した}。{fe}{col:01}ギルム{spd:01}\nむうう{d:79|・・・}{wait}まだ{d:76|この}剣は力を秘めて\n{d:4F|いる}が、今の{d:11|ワシ}に出来る\nのは{d:75|ここ}までのようだ。{wait}すまんのう。{wait}また今度来{d:0C|てくれ}。{end}",
-  "en": "{col:01}* The sword's power recovered a little.{fe}{col:01}Gilm{spd:01}\nMmm...{wait}This sword still hides more power, but it\nseems this is as far as I can take it for\nnow.{wait}Sorry about that.{wait}Come back again some other time.{end}"
+  "en": "{col:01}* The sword's power recovered a little.{fe}{col:01}Gilm{spd:01}\nMmm...{wait}This sword still hides more power, but it\nseems this is as far as I can take it\nfor now.{wait}Sorry about that.{wait}Come back again some other time.{end}"
  },
  {
   "id": "134A",
@@ -343,7 +343,7 @@
  {
   "id": "134B",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:62}{fa:A1}\nさあーっ！{d:77|こんな所}は\nさっさと出ま{d:5A|しょう}。{fd}{fe:10}{goto:00:10A6}",
-  "en": "{col:01}Lucia{f4}{f4:62}{fa:A1}\nOkay! Let's hurry up and get out of this\nplace.{fd}{fe:10}{goto:00:10A6}"
+  "en": "{col:01}Lucia{f4}{f4:62}{fa:A1}\nOkay! Let's hurry up and get out of\nthis place.{fd}{fe:10}{goto:00:10A6}"
  },
  {
   "id": "134C",
@@ -353,17 +353,17 @@
  {
   "id": "134D",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:5F}{fa:B1}\n{d:44|ここは}、強力な攻撃で、\nあの{col:01}もん{col}を壊せ{d:6C|ない}かしら。{end}",
-  "en": "{col:01}Lucia{f4}{f4:5F}{fa:B1}\nCouldn't we smash that {col:01}gate{col} with a strong\nattack?{end}"
+  "en": "{col:01}Lucia{f4}{f4:5F}{fa:B1}\nCouldn't we smash that {col:01}gate{col} with a\nstrong attack?{end}"
  },
  {
   "id": "134E",
   "jp": "うわあ、にげろぉー\n{d:1F|帝国}特殊部隊だぁー{end}",
-  "en": "Waaah, run for it! It's the Imperial Special\nForces!{end}"
+  "en": "Waaah, run for it! It's the Imperial\nSpecial Forces!{end}"
  },
  {
   "id": "134F",
   "jp": "むっ、{d:20|きさま}は\n手配中の{name}\nでは{d:6C|ない}のか？{wait}おとなしくしろ！{end}",
-  "en": "Hm! Aren't you {name}, the one we're\nhunting?{wait}Come quietly!{end}"
+  "en": "Hm! Aren't you {name}, the one\nwe're hunting?{wait}Come quietly!{end}"
  },
  {
   "id": "1350",
@@ -377,7 +377,7 @@
    "1352"
   ],
   "jp": "{col:01}{name:03}{spd:01}{f4}{f4:93}{fa:A2}\n{d:40|だいじょうぶ}だ{d:7B|った}か！？{wait}{name}に\n小さいおじょうちゃん。{wait}{name:02}に聞{d:56|いた}が\n{d:01|ボーガン}は{d:41|どうし}た！？{wait}ん？それに\n妹の{name:01}は？{end}",
-  "en": "{col:01}{name:03}{spd:01}{f4}{f4:93}{fa:A2}\nYou're all right!?{wait}{name}, and the little missy too.{wait}I heard from {name:02}, but what\nhappened to Bogan!?{wait}Hm? And where's your little sister,\n{name:01}?{end}"
+  "en": "{col:01}{name:03}{spd:01}{f4}{f4:93}{fa:A2}\nYou're all right!?{wait}{name}, and the little missy too.{wait}I heard from {name:02}, but what\nhappened to Bogan!?{wait}Hm? And where's your little\nsister, {name:01}?{end}"
  },
  {
   "id": "1353",
@@ -387,7 +387,7 @@
  {
   "id": "1354",
   "jp": "{fe:10}{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\n{d:7C|そうか}{d:79|・・・}{wait}{name:01}は、\n{name}、{wait}{d:74|おまえ}が{d:7D|助け}て\nあげ{d:6C|ない}と{d:79|・・・}な。{wait}{d:79|・・・}どうだ{d:0B|おまえ達}、\n俺も連れて行か{d:6C|ない}か？{wait}奴らには俺もカリが{d:61|ある}、\nきっと力になれると思うぜ？{fe}{fa:01}{spd}{col:01}{name}{f4:81}{fa:82}\n\n  1{d:8F|おねがい}します\n  2いえ、けっこう{d:5C|です}{choice:00:114A:114B}",
-  "en": "{fe:10}{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\nI see...{wait}{name:01}... {name},{wait}you've got to be the one to save her...\nyeah?{wait}...So how about it, you two? Why not take\nme along?{wait}I've got a score to settle with those guys\nmyself. I'm sure I can be a help, eh?{fe}{fa:01}{spd}{col:01}{name}{f4:81}{fa:82}\n\n  1Yes, please.\n  2No, thanks.{choice:00:114A:114B}"
+  "en": "{fe:10}{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\nI see...{wait}{name:01}... {name},{wait}you've got to be the one to save\nher... yeah?{wait}...So how about it, you two? Why not take\nme along?{wait}I've got a score to settle with those guys\nmyself. I'm sure I can be a help, eh?{fe}{fa:01}{spd}{col:01}{name}{f4:81}{fa:82}\n\n  1Yes, please.\n  2No, thanks.{choice:00:114A:114B}"
  },
  {
   "id": "1355",
@@ -436,7 +436,7 @@
  {
   "id": "135E",
   "jp": "{col:01}{name:01}{f4}{f4:48}{fa:A1}\n私が行かなくて\n{d:8C|本当}に{d:40|だいじょうぶ}？{end}",
-  "en": "{col:01}{name:01}{f4}{f4:48}{fa:A1}\nAre you really sure you'll be okay without\nme?{end}"
+  "en": "{col:01}{name:01}{f4}{f4:48}{fa:A1}\nAre you really sure you'll be okay\nwithout me?{end}"
  },
  {
   "id": "135F",
@@ -451,7 +451,7 @@
  {
   "id": "1361",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:E1}\nおおそう{d:5F|じゃ。}{wait}{d:52|これ}を渡すのをわすれて\nお{d:7B|った}わい。{wait}{d:52|これ}は{col:01}「{item:D3}」{col}{d:09|という}\n魔法{d:5F|じゃ。}{wait}タメて使うと、さらに強力な\n攻撃魔法になる{d:0E|のじゃ。}{end}",
-  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:E1}\nOh, that's right.{wait}I almost forgot to give you this.{wait}This is a spell called\n{col:01}\"{item:D3}\"{col}.{wait}Charge it up before you use it, and it\nbecomes an even stronger attack spell.{end}"
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:E1}\nOh, that's right.{wait}I almost forgot to give you this.{wait}This is a spell\ncalled {col:01}\"{item:D3}\"{col}.{wait}Charge it up before you use it, and it\nbecomes an even stronger attack spell.{end}"
  },
  {
   "id": "1362",
@@ -536,7 +536,7 @@
  {
   "id": "1374",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:A1}\nおいおい、{wait}すまんが\n{name:01}{d:09|という}\n娘をしらんかの？{fd}{fe:10}{goto:00:1375}",
-  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:A1}\nNow, now,{wait}sorry, but would you know a girl named\n{name:01}?{fd}{fe:10}{goto:00:1375}"
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:A1}\nNow, now,{wait}sorry, but would you know a girl\nnamed {name:01}?{fd}{fe:10}{goto:00:1375}"
  },
  {
   "id": "1375",
@@ -605,7 +605,7 @@
  {
   "id": "1382",
   "jp": "{fe:10}{fa:01}{col:01}{name:01}{spd:01}{f4:46}{fa:C1}\n{d:27|お兄ちゃん}。{wait}私達は、\n{name:03}さんの所に\n行ってるわね。{end}",
-  "en": "{fe:10}{fa:01}{col:01}{name:01}{spd:01}{f4:46}{fa:C1}\nBig brother.{wait}We'll go on ahead to {name:03}-san's\nplace.{end}"
+  "en": "{fe:10}{fa:01}{col:01}{name:01}{spd:01}{f4:46}{fa:C1}\nBig brother.{wait}We'll go on ahead to\n{name:03}-san's place.{end}"
  },
  {
   "id": "1383",

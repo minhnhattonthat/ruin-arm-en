@@ -16,6 +16,8 @@ No ROM patch: everything is RAM pokes plus one CPU redirect, so it works on any 
 | Start event | `JSL $AC86FE` with A = event id | ids < `$8000`: high byte 0-7 → word table `$AD8B8A` (256), 8-15 → `$AD8D8A` (2); ids >= `$8000`: script pointer in bank `$AD`. Script ptr `[$DB]`, offset `$10C2`, sets `$0380`=`$38`. warp.lua redirects the CPU from `$86821A` to `$AC86FE` (that frame's dispatch is skipped) |
 | Event opcodes | table `$AC8AD6` (3-byte ptrs, `$00-$7D`) | `00` = message (word id → `$0CA4`, `$0380`=`$30`); `1D addr.w bank val` = write byte (`$ACA769`); `23`/`24`/`25` = set/clear/toggle flag bits. Other lengths unknown |
 | Open a message directly | `$0CA4` = id, `$0380` = `$30` | what opcode `00` does; works in the field (`msg_bonnie`) |
+| Message page state | `$0CA0` (byte) | `3` = page waits for a key (the ▼), `1` typing, `4` timed/portrait wait, `12`/`13` choices (RAM diff over a message; `msgs_XX` tour waits on `3`, else shoots after 400 frames) |
+| Other game modes (poked from the field, `work/qa/modes`) | `$0380` | `$0A`-`$12` fade out and return to the title (mode `$00`); `$13`-`$16` a sky/clouds scene; `$17` another field map; `$1B`-`$28` the world map (scene `world_map`); `$09` (set by `$868C45` when `$041B,x` bit `$2000`) stalls in the field |
 | Story flags | `$7E1C00-$1CFF` (bit array, 2048 flags) | in the save image; opcodes `23-25` write it (`$1C0D`, `$1C17` bit 7 toggled during the opening). **Which flag = which story point is still open** |
 | Save image | table `$85D220` (5-byte {dst24, len16}) | 19 blocks, `$F8C` bytes: `$146A` party (0x300), `$5800` (0x680), `$5E80` (0x140), `$0110`, `$0387`, `$0400`/`$0B80`/`$04A0` objects, `$DD00` (0x100), `$038D`, `$1020`, `$0540`, `$179A`, `$17D6`, `$1C00` flags (0x100), `$141C`, `$1982`, `$0389`, `$1090`. Load `$85D3F8`. SRAM: 2 slots at `$70:0010`/`$70:1000` (0xFF0 each), checksums `$70:1FF0/2` (`$85D3A6`, XOR of words), title check `$85D2FE` |
 | Party records | `$146A + 0x80*n` | +0 name (7 glyphs), +0x10 HP, +0x12 max HP; in the field the live HP is the object copy `$041D` (hero, object `$0400`) / `$046D` (sister, `$0450`), copied at `$8790D4` |
@@ -45,7 +47,9 @@ power-on with no mashing; everything else waits on `$0380`. The default hero nam
   block `$02` messages need that screen setup (they open an empty box in the field).
 - **Game over**: HP 0 alone does nothing; damage goes through `$7EA820,x` (pending flag) / `$A822,x` (amount) into
   `$86EC91` (HP − damage; `<= 0` → `$86ECAE`). Poking those in the village did nothing (no damage processing
-  there?). Try on a map with enemies.
+  there?). Try on a map with enemies. Phase 8: jumping into `$86ECAE` (X = `$00`/`$50`) from the dispatcher in the
+  village and the forest sets the object's `$0414` bit 15 but nothing follows; no script string says "game over";
+  modes `$0A`-`$12` (fade to title) may be all the game does. Next: `watch.lua` on `$0414` bit 15 readers.
 - **Story flags → chapters**: dump `$1C00` at known story points, or read the event scripts' opcode `23` args.
 - Shops, bosses, save screen: need their event ids or maps (shop text is in block `$13`). The `maps` tour reaches
   every room; NPC events need the right position or an `ev` id.

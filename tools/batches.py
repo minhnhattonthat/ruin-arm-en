@@ -4,6 +4,7 @@
     python -X utf8 tools/batches.py check b001 ..    # validate work/tl/bNNN.out.tsv; prints OK or one line per error
     python -X utf8 tools/batches.py merge b001 ..    # check, then write the English into script/*.json
     python -X utf8 tools/batches.py fit "text"       # how a message wraps: rows per page with their px
+    python -X utf8 tools/batches.py balance [--write] # one-word last rows take a word from the row above
     python -X utf8 tools/batches.py pairs b001 ..    # work/tl/bNNN.pairs.txt for the reviewer (docs/reviewer-brief.md)
 
 Batch TSV: id, speaker, form, limit, jp. jp has dictionary refs written out ({d:XX|word} -> word, D9) and newlines as
@@ -40,8 +41,8 @@ ORDER = ["msg10", "msg11", "msg12", "msg13", "msg00", "msg01", "msg02", "staff",
 MSG_CHARS, MAX_ENTRIES = 3500, 150
 CODE = re.compile(r"\{[^{}]*\}")
 DREF = re.compile(r"\{d:[0-9A-F]+\|([^{}]*)\}")
-# {fd..} counts as a page end too: with it, every JP page but the credits' fits 4 rows (the ending relies on it)
-PAGE = re.compile(r"(\{(?:wait|fe|fd)(?::[0-9A-F]+)?\})")
+# {fd..} is an inline pause, not a break (phase 8 shots: "sky.{fd:13}There's" ran on and the game cut a word)
+PAGE = re.compile(r"(\{(?:wait|fe)(?::[0-9A-F]+)?\})")
 JAPANESE = re.compile(r"[぀-ヿ㐀-鿿＀-￯〔〕＊]")
 HONORIFIC = re.compile(r"(\{name[^{}]*\}|[ァ-ヴ][ァ-ヴー]*)(さん|くん|君|ちゃん|様|さま|殿)")
 HONOR_EN = {"さん": "-san", "くん": "-kun", "君": "-kun", "ちゃん": "-chan", "様": "-sama", "さま": "-sama",
@@ -80,10 +81,17 @@ def translatable(name, e):
 
 
 def width(s):
-    """px of s: text by font advance, inserts at their reserve, other codes 0."""
-    px = 0
+    """px of s: text by font advance, inserts at their reserve, other codes 0. Colour on mid-cell moves the pen to
+    the next 8 px tile edge (asm/vwf.asm `colour`: palettes are per tile)."""
+    px, on = 0, False
     for part in re.split(r"(\{[^{}]*\})", s):
-        if CODE.fullmatch(part):
+        if part == "{col:01}":
+            if not on and px % 16:
+                px += 8 - px % 16 if px % 16 <= 8 else 16 - px % 16
+            on = True
+        elif part == "{col}":
+            on = False
+        elif CODE.fullmatch(part):
             px += INSERT.get(part[1:-1].split(":")[0], 0)
         else:
             px += sum(adv(c) if c in SINGLES else 16 for c in part)  # Japanese cells are 16 px
@@ -126,6 +134,40 @@ def wrap(en):
     return "".join(out)
 
 
+def balance(en):
+    """en with each one-word last row (before {wait}/{fe}/the end) given the last word of the row above, when that
+    row keeps 2+ words and the pair fits LINE. Speaker rows have one word, so they never give one."""
+    out = []
+    for part in PAGE.split(en):
+        rows = part.split("\n")
+        if not PAGE.fullmatch(part) and len(rows) > 1:
+            last, prev = rows[-1], rows[-2].split(" ")
+            if CODE.sub("", last).strip() and " " not in last.strip() and len(prev) > 2 \
+                    and not last.startswith(" ") and not rows[-2].startswith(" ") \
+                    and width(f"{prev[-1]} {last}") <= LINE:
+                rows[-2:] = [" ".join(prev[:-1]), f"{prev[-1]} {last}"]
+        out.append("\n".join(rows))
+    return "".join(out)
+
+
+def rebalance(write=False):
+    """balance() over every message; prints the changed rows, writes script/*.json with write=True."""
+    n = 0
+    for name, entries in load_script().items():
+        if kind(name) != "msg":
+            continue
+        changed = False
+        for e in entries:
+            b = balance(e["en"])
+            if b != e["en"] and not msg_errors(e["jp"], b, merged=True):
+                n += 1
+                print(f"{e['id']}: {e['en'][-60:]!r} -> {b[-60:]!r}" if not write else e["id"], end="\n")
+                e["en"], changed = b, True
+        if write and changed:
+            save(name, entries)
+    print(f"{n} messages {'rebalanced' if write else 'to rebalance'}")
+
+
 def headers(text):
     """Pages that open with a speaker row ({col:01}Name then a newline)."""
     n = 0
@@ -161,12 +203,16 @@ def msg_errors(jp, en, merged=False):
         errs.append(f"must end with {last[0]}")
     if not merged and headers(jp) != headers(en):  # merged text has wrap breaks: a coloured first row looks like one
         errs.append(f"{headers(jp)} speaker rows in the JP, {headers(en)} in the EN: keep '\\n' right after a speaker")
+    rows = max([ROWS] + [len(p) for p in layout(jp)])  # a JP page past 4 rows scrolls the box: as many are fine
     for i, page in enumerate(layout(en), 1):
         for r in page:
             if width(r) > LINE:
                 errs.append(f"page {i}: a word is wider than a row ({width(r)} px): {r!r}")
-        if len(page) > ROWS:
-            errs.append(f"page {i}: {len(page)} rows, max {ROWS} (speaker row included): split it with {{wait}}")
+        if len(page) > rows:
+            errs.append(f"page {i}: {len(page)} rows, max {rows} (speaker row included): split it with {{wait}}")
+    if merged:  # stored text: the game cuts a row past LINE mid-word, so every row must already fit
+        errs += [f"row wider than {LINE} px ({width(r)}): {r!r}" for part in PAGE.split(en)
+                 for r in part.split("\n") if width(r) > LINE]
     if re.search(r"\{(?:name|item|item_v|num)[^{}]*\}(?:st|nd|rd|th)\b", en):
         errs.append("ordinal suffix glued to a variable: rephrase")
     if re.search(r"\b(?:a|an|A|An) \{(?:name|item)", en):
@@ -371,7 +417,7 @@ def merge(batches):
     for b, res in good.items():
         for i, en in res.items():
             name, k = idx[i]
-            script[name][k]["en"] = wrap(en) if kind(name) == "msg" else en
+            script[name][k]["en"] = balance(wrap(en)) if kind(name) == "msg" else en
             touched.add(name)
         print(f"{b}: merged {len(res)}")
     for name in touched:
@@ -445,6 +491,8 @@ def main():
             pairs(b)
     elif a[0] == "fit":
         fit(a[1])
+    elif a[0] == "balance":
+        rebalance("--write" in a)
     elif a[0] == "selftest":
         selftest()
     else:

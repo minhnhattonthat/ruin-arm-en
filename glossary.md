@@ -70,7 +70,7 @@ Default names offered at the name entry (name_hero / name_sister, 7 letters max)
 ## Places
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
-| アーフ | Aaf | 16 | home village (アーフ村 = Aaf Village) | Arf |
+| アーフ | Arff | 16 | home village (アーフ村 = Arff Village); the game's own world-map label reads ARFF (D19) | Aaf, Arf |
 | ワイアル | Wyall | 16 | ワイアルの村 = Wyall Village | |
 | ラベンナ | Ravenna | 16 | village and ruins | |
 | マリア | Maria | 16 | マリアの村 = Maria Village (also a sister default name) | |

@@ -57,4 +57,6 @@ SCENES = {
   credits_12     = { credits = 12, wait = 100 },
   -- a few places by map id (the full list is the "maps" tour)
   forest         = { map = 0x1C05 },
+  -- world map: game mode $1B (found by poking modes; its BG labels the home village ARFF in Latin letters, D19)
+  world_map      = { writes = { { 0x7E0380, 0x1B } }, wait = 120 },
 }

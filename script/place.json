@@ -3,7 +3,7 @@
   "id": "place_00",
   "max": 8,
   "jp": "アーフ村",
-  "en": "Aaf Village"
+  "en": "Arff Village"
  },
  {
   "id": "place_01",
@@ -171,7 +171,7 @@
   "id": "place_1C",
   "max": 8,
   "jp": "アーフ洞窟への道",
-  "en": "Road to Aaf Cave"
+  "en": "Road to Arff Cave"
  },
  {
   "id": "place_1D",
@@ -243,7 +243,7 @@
   "id": "place_28",
   "max": 8,
   "jp": "アーフ近くのがけ",
-  "en": "Cliff near Aaf"
+  "en": "Cliff near Arff"
  },
  {
   "id": "place_29",
@@ -291,7 +291,7 @@
   "id": "place_30",
   "max": 8,
   "jp": "アーフ近くの道",
-  "en": "Road near Aaf"
+  "en": "Road near Arff"
  },
  {
   "id": "place_31",
@@ -363,7 +363,7 @@
   "id": "place_3C",
   "max": 8,
   "jp": "アーフ洞窟",
-  "en": "Aaf Cave"
+  "en": "Arff Cave"
  },
  {
   "id": "place_3D",
