@@ -366,7 +366,7 @@
  {
   "id": "1149",
   "jp": "{fe:10}{col:01}{name:04}{spd:01}{f4}{f4:5A}{fa:C1}\n分かり{d:4C|ました。}{wait}直ちに参り{d:59|ます。}{wait}少し待っていてください。{wait}{name}、\n{d:8E|あなた}が{d:75|ここ}でいきを\n{d:51|する}事が出来るのは、{wait}その{col:01}「{item:16}」{col}の\nおかげなの、けっ{d:7F|して}\n手ばなさ{d:6C|ない}でね。{end}",
-  "en": "{fe:10}{col:01}{name:04}{spd:01}{f4}{f4:5A}{fa:C1}\nUnderstood.{wait}I'll be there at once.{wait}Please wait here a moment.{wait}{name}, the only reason you can\nbreathe here is that\n{col:01}\"{item:16}\"{col}, so never let go\nof it.{end}"
+  "en": "{fe:10}{col:01}{name:04}{spd:01}{f4}{f4:5A}{fa:C1}\nUnderstood.{wait}I'll be there at once.{wait}Please wait here a moment.{wait}{name}, the only reason you can\nbreathe here is...{wait}that {col:01}\"{item:16}\"{col}.\nNever let go of it, okay?{end}"
  },
  {
   "id": "114A",

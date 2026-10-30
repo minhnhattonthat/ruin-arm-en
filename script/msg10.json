@@ -1122,7 +1122,7 @@
  {
   "id": "10E7",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nバカなっ{d:1B|！！}\nええぃ、{fd:11}かぁぁあー{d:1B|！！}{end:11}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain\nImpossible!! Grr,{fd:11}HAAAAAH!!{end:11}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nImpossible!! Grr,{fd:11} HAAAAAH!!{end:11}"
  },
  {
   "id": "10E8",

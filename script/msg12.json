@@ -971,7 +971,7 @@
  {
   "id": "12D3",
   "jp": "{fe:10}{col:01}{name:01}{f4:86}\n{d:17|ボルボーザ}！？{fd}運命！？{wait}何をいって{d:4E|いるの}か\nさっぱりわから{d:6C|ない}！{fd}{fe:10}{goto:00:12D4}",
-  "en": "{fe:10}{col:01}{name:01}{f4:86}\nBolboza!?{fd}Fate!?{wait}I have no idea what you're talking about!{fd}{fe:10}{goto:00:12D4}"
+  "en": "{fe:10}{col:01}{name:01}{f4:86}\nBolboza!?{fd} Fate!?{wait}I have no idea what you're talking about!{fd}{fe:10}{goto:00:12D4}"
  },
  {
   "id": "12D4",
