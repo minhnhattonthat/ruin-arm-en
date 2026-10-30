@@ -29,8 +29,10 @@ No ROM patch: everything is RAM pokes plus one CPU redirect, so it works on any 
 Start at 1500 (logo; does not skip it), 2408 (title), 2536 (title menu `開始/続き`), A (name prompt). warp.lua then
 mashes A every 20 frames whenever `$0380` is not `$08`, which takes the default names through the opening to first
 control in the village at ~f7700 (`field_start`). Stop-at-frame scenes (title, name screens) are frame counts from
-power-on with no mashing; everything else waits on `$0380`. The default hero name differs between boots (ファング,
-グレコ, ... seen), so a shot with names in it is not byte-stable; poke `$146A` if a test needs a fixed name.
+power-on with no mashing; everything else waits on `$0380`. The default hero name is picked from
+power-on RAM (ファング, グレコ, ... seen with Mesen's random RAM), so `tools/emu-config/settings.json` sets
+`Snes.RamPowerOnState` = `AllZeros` (copy it into `tools/mesen/`): names then repeat between boots. Tour shots still
+differ in about 6% of tiles by the blink phase of the page-wait ▼, so re-tour only the blocks that changed.
 
 ## Text found while building it (for phase 4)
 
