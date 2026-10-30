@@ -62,7 +62,9 @@ what the next record of its list gives up, so the list keeps its bytes and VRAM 
 | Fixed fields (menus, items, places, ingots, status...) | **16 px per cell** of the field (`max` in script/*.json, or `fixed.CELLS`), text proportional; the screen may leave less room than the record (status page: label to `:` = 32 px) | menus, status, shop, name confirm shots (`work/qa/sheet3.png`) |
 | Names (`name_hero`, `name_sister`) | **7 letters** (one per cell) | status / name confirm shots |
 | Staff roll | 16 px per cell from the run's `{pos}` column to tile 31 (strings relocated; a `{pos}` may move column, not row) | `credits_0..12` shots (heading row only: the field HUD hides the rest) |
-| Dialogue choices (`{choice}`) | guess: same 223 px lines; not seen in a shot yet | - |
+| Dialogue choices (`{choice}`) | the cursor sits in cell 1 and the selected option's colour starts at cell 3, so each option row is the JP's blank, blank, digit cells (`0000 0000 00A2+n`, written `  1` in the script; `en.py` swaps them in) then text from px 48 | phase 8 `msgs_XX` tour (m_1080_04) |
+| Colour (`{col:01}` / `{col}`, `$0CBD` palette bits) | palettes are per 8x8 tile: a colour turned on mid-cell moves the pen to the next tile edge (px 1-8 -> 8, 9-15 -> next cell; `vwf.asm colour`, modelled in `batches.width`); turned off, the rest of that tile keeps the colour. A line break resets the colour (the JP re-opens it each row): `en.carry_col` re-opens a span its next row closes | phase 8 tour |
+| `{fd:xx}` / `{fd}` | an inline pause, no line break (the JP writes `{fd:13}\n` where it wants one) | 130B "sky.{fd:13}There's" ran on |
 | Ending messages (block `$02`) | not measured: the ending screen setup is a debug-tool gap (`debug.md`) | - |
 
 ## Known gaps (phase 7 engine work)

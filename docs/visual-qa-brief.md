@@ -35,6 +35,14 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
 - The hero's default name differs between boots (Fang, Greco, ...); any name in the hero's slot is fine.
 - Short menu labels Atk/Def/Pad/BWH/Tech are a recorded decision (D18), not abbreviation bugs.
 - Lower-case and proportional text is the English font (VWF); the Japanese used full-width 16x16 cells.
+- Choice options start with the original's large full-width digits `1`/`2`/`3`, the cursor left of the digit and
+  the selected option yellow: that is the original layout.
+- A coloured (yellow) word can sit a few pixels further from the word before it than a normal space: colour
+  starts at an 8 px tile edge. An issue only if the text runs off the box.
+- The signposts `"To Rute-"` / `"To -ede-m"` (msgs 109A/109B) are worn signs with letters missing, as in the
+  original (ルテ・へ).
+- A short last line of a sentence is fine when the row above could not give it a word (rows are filled to the
+  box width); flag it only when a word sits alone on a row whose row above has room for it, or mid-sentence.
 
 ## Verdicts
 Write your verdict file once you have read every sheet, one line per id in the chunk:
