@@ -106,5 +106,14 @@ merge. Each line is ticked `[x]` as fixed or `waived: reason`; `tools/release.py
   131B/1331 けじめ "make amends / atone in his own way"; 1317 doubled ellipsis; 1347 Zieg's mad laugh
   is not Toran's "Gwaahahaha" ("Fuhahahaha!!" like 1345); 1330 はい "Yes." not "Okay."; 132D スマンのう old-man
   tone; 0203 "Voice Cast" vs glossary heading "Cast"; 0208 ・ separator "SWITCH-E" vs "ST.TYPE M"
+- [x] round 2, ending/misc: optional 0208 separator, 019C four-beat thanks, 01DF opener - waived: reviewer marks
+  them optional; 0208 matches the staff roll
+- [x] round 2, act5: 12DC "That is what my master... has decreed", 12E0 grave "You are only being controlled by that
+  machine." - fixed (p07)
+- [x] round 2, act1/act1_towns/act4: 10EB "Bogan, damn him" - waived: ボーガンめ is a curse; 102C optional; 00B1
+  "just" twice - waived: reads naturally; 00C4/00C5 - waived: round 1 asked for the sister's polite "No, thanks.";
+  016B - waived: the JP says 女王; Zieg thin in serious Mediom scenes - waived: reviewer marks it acceptable
+- [x] round 3, act5: 12ED/12CB wording, 12E2/12FA Zieg neutral - waived: lines passed rounds 1-2, notes optional;
+  12D3 space after {fd} - waived: {fd} is an inline pause, the space separates the words
 - [x] act3: 1370 Fara calls Toran her brother; 1165/11A7 "strongest"; 0165 Reina after 119D; 0153/117D geography -
   waived: each is the JP's own content

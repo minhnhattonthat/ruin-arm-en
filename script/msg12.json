@@ -1016,7 +1016,7 @@
  {
   "id": "12DC",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n君達{d:34|マースナル}国の人々も、\n{d:19|人間}達も、滅びる運命の種族\nな{d:67|のだ。}{wait}それは我が主{d:17|ボルボーザ}様が\n決められた事{d:79|・・・}{fd}{fe:10}{goto:00:12DD}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYou people of Marthnal, like the humans,\nare a race fated to perish.{wait}So my master, Bolboza-sama,\nhas decreed...{fd}{fe:10}{goto:00:12DD}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYou people of Marthnal, like the humans,\nare a race fated to perish.{wait}That is what my master, Bolboza-sama,\nhas decreed...{fd}{fe:10}{goto:00:12DD}"
  },
  {
   "id": "12DD",
@@ -1036,7 +1036,7 @@
  {
   "id": "12E0",
   "jp": "{fe:10}{col:01}{name:02}{spd:01}{f5:B2}{f4:99}{fa:C2}\n{d:02|ザイン}{d:79|・・・}{d:11|ワシ}の事を\n思い出{d:62|した}のか。{wait}{d:26|おぬし}は、あのキカイに\n操られて{d:4F|いる}だけ{d:5F|じゃ。}{fd}{fe:10}{goto:00:12E1}",
-  "en": "{fe:10}{col:01}{name:02}{spd:01}{f5:B2}{f4:99}{fa:C2}\nZain... so you remember me, eh.{wait}You're only being controlled by that\nmachine, you know.{fd}{fe:10}{goto:00:12E1}"
+  "en": "{fe:10}{col:01}{name:02}{spd:01}{f5:B2}{f4:99}{fa:C2}\nZain... so you remember me, eh.{wait}You are only being controlled by\nthat machine.{fd}{fe:10}{goto:00:12E1}"
  },
  {
   "id": "12E1",

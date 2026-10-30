@@ -39,9 +39,10 @@ save made with the Japanese game.
 
 Known issues
 ------------
-- In some menus the hero's and sister's names are drawn one letter per wide cell, so they look spaced out.
-- The shop's Use/Hold comparison label is partly covered by the item icon.
+- The shop's Use/Hold comparison label is partly covered by the item icon, as in the Japanese game.
 - A few menu labels are abbreviated to fit the original cells (Atk, Def, Pad, BWH, Tech).
+- Place names follow the game's own Latin world-map labels (Arff, Londium, Whaial, Mary, Raw, Warse,
+  Marthnal, Lutea, Mediom), not a fresh romanisation.
 Report anything else at https://github.com/minhnhattonthat/ruin-arm-en/issues
 (a savestate or screenshot helps most).
 
