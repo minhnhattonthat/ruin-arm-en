@@ -24,7 +24,8 @@ place-banner check.
 ## Still to survey
 
 - Screens the debug tool can't reach yet (`docs/re/debug.md` §Open leads): save/load screen, boss/area banners,
-  chapter cards if any, game over, the ending scene.
+  chapter cards if any, the ending scene's own screen (its text is font-drawn block `$02` + staff roll, both toured).
+  Game over (phase 8, scene `game_over`): font-drawn msg `$0187`, then the title menu; no graphic.
 - Static sweep: every unpacked graphics block. Needs the remaining loaders (`compression.md` §Other loaders) and the
   LZ pointer tables (`$80B00F`, `$94FF04`, `$94DC1A`, `$90E395`) enumerated, then `tiles.py render` sheets read by
   reviewer agents.

@@ -36,6 +36,8 @@ if not sc and name:match("^exit_%d+$") then sc = { exit = tonumber(name:sub(6)) 
 if not sc and name == "maps" then sc = { tour = true } end
 -- msgs_XX: open every message id in MSGS (a list file warp.py writes) and shoot each page: <out>/m_IIII_PP.png
 if not sc and name:match("^msgs_") then sc = { tour = true, msgs = assert(MSGS, "MSGS list missing") } end
+-- block $02 (ending credits) pages never wait for a key ({wait:10}/{end:10} are timed): shoot every 40 frames instead
+if name == "msgs_02" then sc.every = 40 end
 assert(sc, "unknown scene " .. name .. " (tools/debug/scenes.lua)")
 if sc.map then sc.exit = exit_for(sc.map) end
 
@@ -55,6 +57,14 @@ L.on_exec(0x86821A, 0x86821A, function()
   s["cpu.k"], s["cpu.pc"], s["cpu.a"] = 0xAC, 0x86FE, pending_ev
   emu.setState(s)
   pending_ev = nil
+end)
+
+-- game over: HP 0 plus the dead bit $86ECAE sets ($0414/$0464 bit 15) on hero and sister, held while `kill` frames run
+local kill_until = 0
+L.on_frame(function(n)
+  if n >= kill_until or mode() ~= FIELD then return end
+  wr16(0x7E041D, 0); wr16(0x7E046D, 0)
+  wr(0x7E0415, rd(0x7E0415) | 0x80); wr(0x7E0465, rd(0x7E0465) | 0x80)
 end)
 
 local function finish(shot)
@@ -118,6 +128,11 @@ L.on_frame(function(n)
     local id = tour[ti]
     if m == FIELD and n - t0 > 20 then
       L.log(string.format("msg %04X pages %d f%d", id, page, n)); go("tour")
+    elseif sc.every then
+      if n - t0 >= sc.every then
+        page = page + 1; L.shot(string.format("m_%04X_%02d.png", id, page))
+        if page >= 30 then L.log(string.format("msg %04X stopped at %d pages", id, page)); go("tour") else go("reading") end
+      end
     elseif (waiting and n - t0 >= 12 and n - since >= 8) or n - t0 > 400 then
       if not waiting then L.log(string.format("STUCK msg %04X page %d mode=%02X ca0=%d", id, page + 1, m, rd(0x7E0CA0))) end
       page = page + 1
@@ -133,6 +148,7 @@ L.on_frame(function(n)
     end
   elseif step == "arrived" then
     if sc.ev then pending_ev = sc.ev end
+    if sc.kill then kill_until = n + sc.kill end
     if sc.msg then wr16(0x7E0CA4, sc.msg); wr(0x7E0380, 0x30) end
     if sc.credits then wr(0x7E03F4, sc.credits); wr(0x7E03F3, 0x80) end
     if sc.route then

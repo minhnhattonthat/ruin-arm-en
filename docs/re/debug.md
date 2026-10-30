@@ -43,13 +43,15 @@ power-on with no mashing; everything else waits on `$0380`. The default hero nam
 ## Open leads (not reachable yet)
 
 - **Ending scene**: the script around `$ADF2F4` (and a second copy `$ADFBC6`) sets up the screen and runs the staff
-  roll; its entry point and the map it runs on are not found. Injecting mid-script pointers did not reproduce it. The
-  block `$02` messages need that screen setup (they open an empty box in the field).
-- **Game over**: HP 0 alone does nothing; damage goes through `$7EA820,x` (pending flag) / `$A822,x` (amount) into
-  `$86EC91` (HP − damage; `<= 0` → `$86ECAE`). Poking those in the village did nothing (no damage processing
-  there?). Try on a map with enemies. Phase 8: jumping into `$86ECAE` (X = `$00`/`$50`) from the dispatcher in the
-  village and the forest sets the object's `$0414` bit 15 but nothing follows; no script string says "game over";
-  modes `$0A`-`$12` (fade to title) may be all the game does. Next: `watch.lua` on `$0414` bit 15 readers.
+  roll; its entry point and the map it runs on are not found. Injecting `ev = $F12C` / `$F16D` (script starts after
+  the object records `$ADF0A0-$ADF12B`) does nothing in the village. Its text is covered anyway: the block `$02`
+  messages draw in an ordinary box in the field (pages are timed, so `msgs_02` shoots every 40 frames), the staff
+  roll is the `credits_N` scenes, and `0200` "A YEAR LATER" is the original's English (empty box in the field on both
+  ROMs: drawn by the ending's own setup).
+- **Game over** (reached, phase 8): both party objects at HP 0 with the dead bit `$86ECAE` sets (`$0414`/`$0464` bit
+  15), held for a few frames in the forest, gives msg `$0187` "{name} and the others have fallen.", then A returns to
+  the title menu; no game-over graphic. Scenes `game_over`, `game_over_next` (`kill = frames` in `scenes.lua`). HP 0
+  on one member alone, or in the village, does nothing.
 - **Story flags → chapters**: dump `$1C00` at known story points, or read the event scripts' opcode `23` args.
 - Shops, bosses, save screen: need their event ids or maps (shop text is in block `$13`). The `maps` tour reaches
   every room; NPC events need the right position or an `ev` id.

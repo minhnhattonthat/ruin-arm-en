@@ -7,6 +7,7 @@
 --   ev = id         start event script id (< $8000: table $AD8B57; >= $8000: pointer in bank $AD)
 --   msg = id        open message id (block << 8 | index) directly
 --   credits = page  staff-roll overlay page 0-10 ($B1D3E2 strings, $03F4 / $03F3)
+--   kill = frames   hold hero and sister at HP 0 + dead bit for that many frames (game over, msg $0187)
 --   route = "..."   emu.py route steps pressed after arrival
 --   wait = frames   frames between "ready" and the shot (default 90)
 -- Every map also has an implicit scene "map_AARR" (hex map id), and "maps" tours them all in one cold boot.
@@ -57,6 +58,9 @@ SCENES = {
   credits_12     = { credits = 12, wait = 100 },
   -- a few places by map id (the full list is the "maps" tour)
   forest         = { map = 0x1C05 },
+  -- game over: both party members down -> msg $0187 "{name} and the others have fallen.", then A
+  game_over      = { map = 0x1C05, kill = 300, wait = 300 },
+  game_over_next = { map = 0x1C05, kill = 300, route = "300 -;6 a;300 -", wait = 300 },
   -- world map: game mode $1B (found by poking modes; its BG labels the home village ARFF in Latin letters, D19)
   world_map      = { writes = { { 0x7E0380, 0x1B } }, wait = 120 },
 }
