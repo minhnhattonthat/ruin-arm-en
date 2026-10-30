@@ -58,9 +58,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
   findings: `docs/polish.md`.
 - **Inputs:** cold boot: Start at 1500, 2408 title, 2536 title menu, A -> name prompt; mash A -> first control ~f7700.
 - **Open bugs:** none known beyond the phase-8 queue above.
-- **Orchestration blocker:** this worker's reviewer launch was rejected with `nested_worker_depth_exceeded`
-  (max 1; no helper started). The coordinator must dispatch the visual-qa roles; question `msg_44cbabbabd42`
-  remains pending. This is a worker-placement limit, not an owner translation decision; do not waive the gate.
+- **Orchestration:** Orca worker depth limit is now 2 (2026-10-30); the earlier `nested_worker_depth_exceeded`
+  blocker is gone. Start the visual-qa reviewers yourself as Orca workers; do not escalate for them.
 - **Waiting on the user:** nothing blocking. Not verified: GUI keyboard input in `tools/mesen/Mesen.exe` (needs a
   person). Non-blocking: name spellings picked by agents (D12; alternatives in `glossary.md` Avoid column; D19 took
   the game's own ARFF), the D15 password word, and the D18 labels kept short (Atk/Def/Pad/BWH/Tech).
