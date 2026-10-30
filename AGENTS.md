@@ -8,7 +8,7 @@ Skill: translate-retro-game; `python tools/skill.py` prints its folder (`$SKILL`
 - JP left:  `python -X utf8 tools/jp_reach.py BUILD.sfc --known script/keep_jp.txt` (Japanese any pointer still reaches; the skill's jp_left.py can't walk 16-bit codes)
 - Check:    `python -X utf8 tools/check.py`  (tests + lint; the pre-commit hook runs this)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/ruinarm_en.sfc --out work/qa/smoke --route tools/routes/boot.txt --smoke`
-- Warp:     `python -X utf8 tools/debug/warp.py <scene>.. [--rom build/ruinarm_en.sfc] [--save]` (cold boot → `work/qa/warp/<scene>/scene.png`; `--list`, `--all` regenerates every state in `work/states/`, `maps` tours all 187 maps, `map_AARR`/`exit_N` any map; scenes: `tools/debug/scenes.lua`, RAM map: `docs/re/debug.md`; never ask the user to play to a scene)
+- Warp:     `python -X utf8 tools/debug/warp.py <scene>.. [--rom build/ruinarm_en.sfc] [--save]` (cold boot → `work/qa/warp/<scene>/scene.png`; `--list`, `--all` regenerates every state in `work/states/`, `maps` tours all 640 mapped rooms, `map_AARR`/`exit_N` any map; scenes: `tools/debug/scenes.lua`, RAM map: `docs/re/debug.md`; never ask the user to play to a scene)
 - Release:  `python -X utf8 tools/release.py --version 1.0` (build, check, smoke, JP left, QA gate, patch + re-apply, `release/<v>/` zip; never publish without the user; README template `docs/release-readme.txt`)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 

@@ -16,7 +16,8 @@ SCENES = {
   title_menu     = { stop_at = 2800 },
   name_prompt    = { boot = "300 -;8 a", stop_at = 3000 },
   name_entry     = { boot = "300 -;8 a;160 -;8 right;30 -;8 a", stop_at = 3300 },
-  name_confirm   = { boot = "300 -;8 a;160 -;8 a", stop_at = 3300 },  first_dialogue = { until_mode = 0x33, wait = 150 },
+  name_confirm   = { boot = "300 -;8 a;160 -;8 a", stop_at = 3300 },
+  first_dialogue = { until_mode = 0x33, wait = 150 },
   field_start    = {},
   -- pause menu (Start; takes ~250 frames to take input); tabs 道具 能力 振分 ジョイ 環境, cursor at 道具 after a
   -- cold boot, left wraps to 環境. 道具/能力/振分 first pick a character (A), then open that character's page (A).
@@ -27,6 +28,11 @@ SCENES = {
   menu_joy       = { route = "6 start;300 -;6 left;30 -;6 left;30 -;6 a;120 -" },
   menu_joy_ctrl  = { route = "6 start;300 -;6 left;30 -;6 left;30 -;6 a;60 -;6 a;120 -" },
   menu_config    = { route = "6 start;300 -;6 left;30 -;6 a;120 -" },
+  -- Down switches to the second tab row (Auto / People / File); File holds save/load management.
+  menu_auto      = { route = "6 start;300 -;6 down;30 -;6 a;240 -" },
+  menu_people    = { route = "6 start;300 -;6 down;30 -;6 right;30 -;6 a;240 -" },
+  menu_file      = { route = "6 start;300 -;6 down;30 -;6 right;30 -;6 right;30 -;6 a;240 -" },
+  menu_file_load = { route = "6 start;300 -;6 down;30 -;6 right;30 -;6 right;30 -;6 a;240 -;6 left;120 -" },
   -- shop: event $22 (script $AD9222: msg $0057, opcode $57 shop 8, msg $00CA); shop UI is game mode $10-$12
   -- (300-frame gaps: English pages print slower than the 150 the Japanese needed)
   shop           = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -" },
@@ -40,22 +46,22 @@ SCENES = {
   -- width gate: the marker build's msg 1032 is the stress message (tools/marker.py GATE); pages 2 and 3
   gate_p2        = { msg = 0x1032, wait = 150, route = "6 a;150 -" },
   gate_p3        = { msg = 0x1032, wait = 150, route = "6 a;150 -;6 a;200 -" },
-  -- staff roll overlay ($B1D3E2 strings) drawn over the field: the HUD panels cover part of it; the ending scene's
-  -- own screen setup (script near $ADF2F4) is not reached yet. Same for the block $02 ending messages (0x0200
-  -- "A YEAR LATER", 0x0201-0209): they open but draw nothing outside that setup (docs/re/debug.md, open leads).
-  credits_0      = { credits = 0, wait = 100 },
-  credits_1      = { credits = 1, wait = 100 },
-  credits_2      = { credits = 2, wait = 100 },
-  credits_3      = { credits = 3, wait = 100 },
-  credits_4      = { credits = 4, wait = 100 },
-  credits_5      = { credits = 5, wait = 100 },
-  credits_6      = { credits = 6, wait = 100 },
-  credits_7      = { credits = 7, wait = 100 },
-  credits_8      = { credits = 8, wait = 100 },
-  credits_9      = { credits = 9, wait = 100 },
-  credits_10     = { credits = 10, wait = 100 },
-  credits_11     = { credits = 11, wait = 100 },
-  credits_12     = { credits = 12, wait = 100 },
+  -- Staff roll on its actual ending map. Starting the ending script hides the HUD; credits selects a page
+  -- after the script has initialized the roll, so the event cannot overwrite the requested page with zero.
+  credits_0      = { exit = 0x5BB, ev = 0xF2F3, credits = 0, wait = 100 },
+  credits_1      = { exit = 0x5BB, ev = 0xF2F3, credits = 1, wait = 100 },
+  credits_2      = { exit = 0x5BB, ev = 0xF2F3, credits = 2, wait = 100 },
+  credits_3      = { exit = 0x5BB, ev = 0xF2F3, credits = 3, wait = 100 },
+  credits_4      = { exit = 0x5BB, ev = 0xF2F3, credits = 4, wait = 100 },
+  credits_5      = { exit = 0x5BB, ev = 0xF2F3, credits = 5, wait = 100 },
+  credits_6      = { exit = 0x5BB, ev = 0xF2F3, credits = 6, wait = 100 },
+  credits_7      = { exit = 0x5BB, ev = 0xF2F3, credits = 7, wait = 100 },
+  credits_8      = { exit = 0x5BB, ev = 0xF2F3, credits = 8, wait = 100 },
+  credits_9      = { exit = 0x5BB, ev = 0xF2F3, credits = 9, wait = 100 },
+  credits_10     = { exit = 0x5BB, ev = 0xF2F3, credits = 10, wait = 100 },
+  credits_11     = { exit = 0x5BB, ev = 0xF2F3, credits = 11, wait = 100 },
+  credits_12     = { exit = 0x5BB, ev = 0xF2F3, credits = 12, wait = 100 },
+  ending_credits = { exit = 0x5BB, ev = 0xF2F3, wait = 500 },
   -- a few places by map id (the full list is the "maps" tour)
   forest         = { map = 0x1C05 },
   -- game over: both party members down -> msg $0187 "{name} and the others have fallen.", then A

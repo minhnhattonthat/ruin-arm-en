@@ -26,17 +26,30 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Emulator power-on RAM zeroed (`tools/emu-config/settings.json`, copy into `tools/mesen/`): the default hero
     name came from random RAM, so every re-tour changed every sheet with a name in it.
   - `tools/release.py` + `docs/release-readme.txt` written (phase 9 ready to run once the gate passes).
+  - Current session: build SHA-1 `5331160d42478f6ed0f370d291feb7045983a14a` reproduced; smoke and 28 tests pass;
+    `jp_reach.py` reports 0 reachable Japanese strings. No production ROM/text changes this session.
+  - Fixed QA-tool gaps: stale screenshots/logs can no longer pass a failed run; `first_dialogue` was accidentally
+    omitted by the scene-list parser and is now included. Exit-table holes no longer terminate enumeration:
+    1872 slots expose 640 mapped rooms, not 187. Direct script pointers now survive `$AC870C` masking bit 15.
+  - Ending credits reached on map `$1D02` with the HUD hidden, cold-boot verified (`work/qa/ending_cold/`);
+    `credits_0` through `credits_12` now use that setup. Added `ending_credits`, Auto/People/File/load menu routes.
+    File-menu tab numbers and empty-slot graphics were compared against the original and are not patch bugs.
+  - `tools/gfx_survey.py --raw`: 2008 unreviewed sheets, all 80 raw ROM banks plus 216 decoded known sources,
+    with offsets and every skip/error in `work/qa/graphics/index.tsv`; `$AF851C` candidate decoding remains open.
+    `$808F95`/`$809097` bitplane interleave documented in `docs/re/compression.md`.
 - **Next (phase 8):**
-  1. Re-tour on build `5331160d` with zeroed RAM, one or two emulators (`--jobs 1`/`2`; Claude Code killed two
-     runs for low system memory, other projects share the machine):
-     `warp.py msgs_00 msgs_01 msgs_02 msgs_10 msgs_11 msgs_12 msgs_13 --rom build/ruinarm_en.sfc --out
-     work/qa/tour_en --jobs 1`, then `warp.py --all --rom build/ruinarm_en.sfc --out work/qa/tour_en --jobs 1`.
-  2. `qa_gate.py init work/qa/manifest.tsv work/qa/tour_en --glob "*sheet*.png"`, again with `--glob
-     "scenes*.png"`, `todo --size 30 --out-dir work/qa/chunks`, visual-qa agents (4 at a time).
-  3. Fix issues, re-tour only the changed blocks (about 6% of tiles differ between runs by the ▼ blink), recheck,
-     `qa_gate.py check` exits 0. Then phase 9: `tools/release.py --version 1.0`.
-- **Open (debug tool):** the ending scene's own screen (script near `$ADF2F4`, entry not found; its text is covered
-  by `msgs_02` + `credits_N`). Save screen, bosses, story-flag presets not in the scene list.
+  1. Fresh zero-RAM captures are complete in `work/qa/tour_en/`: all seven message blocks, all 45 named scenes,
+     all 640 map entries. Canonical manifest: `work/qa/manifest.tsv` (319 sheets); `qa_gate.py check` exits 1:
+     **319 missing current verdicts, 0 changed since init**. Ready review chunks: `work/qa/chunks/chunk_000.txt`
+     through `chunk_010.txt`; use read-only visual-qa roles and write unique `work/qa/verdicts/*.tsv` files.
+  2. Earlier per-block review requests named `work/qa/round3/chunksXX` and `work/qa/round3/verdicts/`; none arrived.
+     If any arrive later, preserve their file timestamps when copying them to the canonical verdict directory.
+     Inspect eight map stalls: exits 481, 509, 612, 618, 622, 643, 654, 981 (map ids in the session report).
+  3. Finish the graphics survey and ending/epilogue coverage, fix findings, re-tour changed blocks and get a
+     passing `qa_gate.py check`. Phase 9 also needs the story-review/polish gate from the skill before release.
+  Session evidence and exact remaining work: `docs/phase8-qa-report.md`. No emulator tours remain running.
+- **Open (debug tool):** complete ending/epilogue, bosses, story-flag presets. `$ADF158` enters the fortress ending
+  but stalls at `$ADF241` for a missing party member; the staff-roll segment is now reached independently.
 - **Open (engine/graphics):** hero/sister names one letter a cell in menus; shop compare `Use`/`Hold` label
   half-hidden by the code's icon; short labels left by D18 (Atk/Def/Pad/BWH/Tech).
 - **Open RE items:** `$849B38` per-caller pointer tables; weapon-type records ~026F80; control words FE/FA/F5/F4/F3;
@@ -45,6 +58,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   findings: `docs/polish.md`.
 - **Inputs:** cold boot: Start at 1500, 2408 title, 2536 title menu, A -> name prompt; mash A -> first control ~f7700.
 - **Open bugs:** none known beyond the phase-8 queue above.
+- **Orchestration blocker:** this worker's reviewer launch was rejected with `nested_worker_depth_exceeded`
+  (max 1; no helper started). The coordinator must dispatch the visual-qa roles; question `msg_44cbabbabd42`
+  remains pending. This is a worker-placement limit, not an owner translation decision; do not waive the gate.
 - **Waiting on the user:** nothing blocking. Not verified: GUI keyboard input in `tools/mesen/Mesen.exe` (needs a
   person). Non-blocking: name spellings picked by agents (D12; alternatives in `glossary.md` Avoid column; D19 took
   the game's own ARFF), the D15 password word, and the D18 labels kept short (Atk/Def/Pad/BWH/Tech).

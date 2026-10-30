@@ -14,8 +14,8 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 |---|---|---|
 | text.md | encoding (16-bit glyph words, `tbl/jp.tbl`), control words, message/dictionary pointers, text ranges, fixed text (menu lists `$849B38`, items, places, names), script/ format | encoding + pointers + ranges + extraction verified (roundtrip tests); some control-word meanings guessed; weapon types and name grid open |
 | font.md | 16x16 1bpp font at `$9F8000`, cell layout, VWF notes | verified |
-| compression.md | LZSS `$80900E` (+ `tools/lz.py`), call sites, other loaders | LZ verified; other loaders open |
+| compression.md | LZSS `$80900E` (+ `tools/lz.py`), bitplane interleave, call sites | LZ and interleave verified; remaining sources open |
 | freespace.md | `$FF` runs, 4 MB expansion | candidates only |
-| graphics.md | graphics-text survey | reachable screens done; mid-game + static sweep open |
+| graphics.md | graphics-text survey, `tools/gfx_survey.py` | expanded maps/ending/save screens reached; static sheets generated but unreviewed |
 | vwf.md | English engine: codes, hooks, FONT2, MSGTAB relocation, free WRAM, width gate | verified by the marker build tour + tests |
-| debug.md | debug tool: game mode, map/exit warp, event injection, message ids, flags, save image, staff roll | warps/events/messages/menus verified by scene shots; ending scene, game over, flag meanings open |
+| debug.md | debug tool: game mode, 640-map exit table, event injection, message ids, flags, save image, staff roll | ending staff roll, game over and save menus reached; full ending/epilogue and story flags open |

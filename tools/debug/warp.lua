@@ -11,8 +11,8 @@ local function wr16(a, v) emu.write16(a, v, mem) end
 local function mode() return rd(0x7E0380) end
 local FIELD = 0x08
 
--- exit table $9AA093: 447 entries of {map id u16, x, y, flags u16}
-local EXITS = 447
+-- Exit table $9AA093-$9ACC72: 1872 slots, including zero-filled holes (not a terminator).
+local EXITS = 1872
 local function exit_map(i) return rd16(0x9AA093 + i * 6) end
 local function exit_for(map)
   for i = 0, EXITS - 1 do
@@ -49,14 +49,32 @@ end)
 
 -- event injection: on entry of the per-frame mode dispatcher $86821A (JSL'd, ends PLP/RTL), jump to the
 -- "start event A" routine $AC86FE instead; it returns to the dispatcher's caller, so one field frame is skipped.
-local pending_ev
+local pending_ev, direct_script
+local pending_credits
+L.on_frame(function()
+  if pending_credits ~= nil and rd(0x7E03F3) & 0x80 ~= 0 then
+    wr(0x7E03F4, pending_credits)
+    wr(0x7E03F3, 0x80)
+    pending_credits = nil
+  end
+end)
 L.on_exec(0x86821A, 0x86821A, function()
   if not pending_ev or mode() ~= FIELD then return end
-  if pending_ev >= 0x8000 then wr(0x7E00DD, 0xAD) end  -- pointer ids keep the script bank byte $DD as it was
+  if pending_ev >= 0x8000 then direct_script = pending_ev end
   local s = emu.getState()
   s["cpu.k"], s["cpu.pc"], s["cpu.a"] = 0xAC, 0x86FE, pending_ev
   emu.setState(s)
   pending_ev = nil
+end)
+-- $AC870C clears bit 15 before the resolver. Restore a requested direct pointer at the resolver entry;
+-- setting only the bank before $AC86FE accidentally interpreted the pointer as a table event id.
+L.on_exec(0xACA6CE, 0xACA6CE, function()
+  if not direct_script then return end
+  wr(0x7E00DD, 0xAD)
+  local s = emu.getState()
+  s["cpu.a"] = direct_script
+  emu.setState(s)
+  direct_script = nil
 end)
 
 -- game over: HP 0 plus the dead bit $86ECAE sets ($0414/$0464 bit 15) on hero and sister, held while `kill` frames run
@@ -150,7 +168,10 @@ L.on_frame(function(n)
     if sc.ev then pending_ev = sc.ev end
     if sc.kill then kill_until = n + sc.kill end
     if sc.msg then wr16(0x7E0CA4, sc.msg); wr(0x7E0380, 0x30) end
-    if sc.credits then wr(0x7E03F4, sc.credits); wr(0x7E03F3, 0x80) end
+    if sc.credits then
+      if sc.ev then pending_credits = sc.credits
+      else wr(0x7E03F4, sc.credits); wr(0x7E03F3, 0x80) end
+    end
     if sc.route then
       for st in sc.route:gmatch("[^;]+") do
         local f, b = st:match("^%s*(%d+)%s+(%S+)%s*$")

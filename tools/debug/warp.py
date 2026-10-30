@@ -12,6 +12,7 @@ work/states/<scene>.mss. Exit 1 if any scene did not report READY.
 import argparse
 import json
 import re
+import shutil
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -32,8 +33,15 @@ def scene_names():
 
 
 def run(scene, rom, out_root, save):
+    if not re.fullmatch(r"[A-Za-z0-9_]+", scene):
+        raise ValueError(f"invalid scene name: {scene!r}")
     out = out_root / scene
     tour = scene == "maps" or scene.startswith("msgs_")
+    # A shorter new run must not inherit pages or READY from a previous build.
+    out.mkdir(parents=True, exist_ok=True)
+    for pattern in ("log.txt", "scene.png", "sheet*.png", "sheet.txt", "m_*.png", "map_*.png"):
+        for old in out.glob(pattern):
+            old.unlink()
     cmd = [sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "emu.py"), str(rom), "--out", str(out),
            "--script", str(DEBUG / "scenes.lua")]
     if scene.startswith("msgs_"):
@@ -46,9 +54,11 @@ def run(scene, rom, out_root, save):
             "--frames", "300000" if tour else "20000", "--timeout", "3000" if tour else "300"]
     if save and not tour:
         cmd += ["--var", f"SAVE=[[{(ROOT / 'work' / 'states' / (scene + '.mss')).as_posix()}]]"]
-    subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
+    result = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
     log = (out / "log.txt").read_text(encoding="utf-8", errors="replace") if (out / "log.txt").exists() else ""
-    ok = "READY" in log
+    ok = result.returncode == 0 and f"READY {scene} " in log
+    if not ok:
+        print(result.stdout[-2000:] + result.stderr[-2000:])
     stuck = [l for l in log.splitlines() if l.startswith("STUCK")]
     if tour and ok:  # 16 full-size shots a sheet for the visual-QA gate; sheet.txt names each sheet's tiles
         res = subprocess.run([sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "sheet.py"),
@@ -56,8 +66,36 @@ def run(scene, rom, out_root, save):
                               "--div", "1", "--cols", "4", "--max", "16", "--out", str(out / "sheet.png")],
                              capture_output=True, text=True, encoding="utf-8")
         (out / "sheet.txt").write_text(res.stdout, encoding="utf-8")
+        if res.returncode:
+            print(res.stderr[-2000:])
+            ok = False
     print(f"{'ok  ' if ok else 'FAIL'} {scene:16} {out.relative_to(ROOT).as_posix()}" + (f"  {len(stuck)} stuck" if stuck else ""))
     return ok
+
+
+def scene_sheets(scenes, out_root):
+    """Keep scene names in sheet.txt instead of 16 indistinguishable 'scene' labels."""
+    tiles = out_root / "scene_tiles"
+    tiles.mkdir(parents=True, exist_ok=True)
+    shots = []
+    for scene in scenes:
+        if not re.fullmatch(r"[A-Za-z0-9_]+", scene):
+            raise ValueError(f"invalid scene name: {scene!r}")
+        source = out_root / scene / "scene.png"
+        if not source.exists():
+            print(f"missing scene screenshot: {source}")
+            return False
+        target = tiles / f"{scene}.png"
+        shutil.copyfile(source, target)
+        shots.append(str(target))
+    for old in out_root.glob("scenes*.png"):
+        old.unlink()
+    result = subprocess.run([sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "sheet.py"), *shots,
+                             "--div", "1", "--cols", "4", "--max", "16", "--out", str(out_root / "scenes.png")],
+                            capture_output=True, text=True, encoding="utf-8")
+    (out_root / "scenes.txt").write_text(result.stdout, encoding="utf-8")
+    print(result.stdout + result.stderr)
+    return result.returncode == 0
 
 
 def main():
@@ -69,6 +107,7 @@ def main():
     ap.add_argument("--save", action="store_true", help="save work/states/<scene>.mss at each scene")
     ap.add_argument("--jobs", type=int, default=4)
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--sheets-only", action="store_true", help="regenerate named full-size scene sheets without emulating")
     a = ap.parse_args()
     a.out = a.out.resolve()
     names = scene_names()
@@ -78,12 +117,14 @@ def main():
     scenes = names + ["maps"] if a.all else a.scenes
     if not scenes:
         ap.error("name a scene, or --all / --list")
+    if a.sheets_only:
+        return 0 if scene_sheets([s for s in scenes if s != "maps" and not s.startswith("msgs_")], a.out) else 1
     with ThreadPoolExecutor(a.jobs) as ex:
         oks = list(ex.map(lambda s: run(s, a.rom, a.out, a.save or a.all), scenes))
     if len(scenes) > 1:
-        shots = [str(a.out / s / "scene.png") for s, ok in zip(scenes, oks) if ok and (a.out / s / "scene.png").exists()]
-        if shots:
-            subprocess.run([sys.executable, str(Path(SCRIPTS) / "sheet.py"), *shots, "--out", str(a.out / "scenes.png")])
+        shot_scenes = [s for s, ok in zip(scenes, oks) if ok and (a.out / s / "scene.png").exists()]
+        if shot_scenes and not scene_sheets(shot_scenes, a.out):
+            return 1
     return 0 if all(oks) else 1
 
 

@@ -16,13 +16,23 @@
 
 ## `$808F01`: same format into `$7F:0000`
 
-Source `$95-$97`, output always `$7F0000`; back references read `$7F` as it stands, so a block may pull in bytes a
-previous call left there. Title (f1500-1518): `$AF851C`, `$AFCBB7`, `$AFC8E5`, `$AFD217`, `$AFCE87`, `$AFB1CD` (x2),
+Source `$95-$97`, output always `$7F0000`; negative back-reference positions are explicitly zero-filled
+(`$808F5B-$808F75`), as in `tools/lz.py`. Title (f1500-1518): `$AF851C`, `$AFCBB7`, `$AFC8E5`, `$AFD217`, `$AFCE87`, `$AFB1CD` (x2),
 each followed by its own upload; `tools/lua/lzlog.lua` logs every call (`lz7f`). The logo (G1) is the `$AFB1CD` run.
+
+## Bitplane conversion (verified by disassembly)
+
+- `$808F95-$80900D` is not another unpacker. It interleaves the two eight-byte halves of each 16-byte group:
+  output `[input[0], input[8], input[1], input[9], ..., input[7], input[15]]`. It processes `$9B` bytes from
+  `$98-$9A`; the title loader calls it immediately after `$808F01`.
+- `$809097` performs the same interleave in place, using the stack rather than the direct-page temporary buffer.
+  The party sprite loader `$8BE6FB` decompresses through `$80900E` and then calls it.
+- That sprite loader's six three-byte source pointers start at `$90E383`, not `$90E395`; the latter starts the
+  four-byte animation-record table (`$8BE742`). The sources are `$918384`, `$91BEF2`, `$A99CF2`, `$A88000`,
+  `$A78000`, `$A8C29C`.
 
 ## Other loaders (open)
 
 - Every VRAM upload in a boot→title→attract tour came from WRAM (`$7E/$7F`), never straight from ROM
   (`snes_dmalog.lua`, 28k DMAs): all graphics are unpacked or copied into WRAM first. The intro/attract uses a second
-  path (VRAM DMA from `$B9:DB35`, data in `$7F`); `$808FA8-$80900D` is another unpacker (`MVN` loop). Find which ROM
-  ranges feed them with `tools/lua/readers.lua` before the graphics-text work in phase 5.
+  path (VRAM DMA from `$B9:DB35`, data in `$7F`). Find which ROM ranges feed them with `tools/lua/readers.lua`.

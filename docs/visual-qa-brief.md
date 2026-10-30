@@ -29,6 +29,7 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
 - anything identical in the original's sheet.
 - Tiles carry no labels: `sheet.txt` beside each sheet lists the tile names per sheet in row-major order
   (`m_IIII_PP` = message id IIII, page PP; `map_AARR` = map id). Name tiles that way in an issue.
+  For the root `scenes*.png` sheets, `scenes.txt` gives the actual scene names in the same order.
 - The message tour (`msgs_XX`) opens every message out of context, always over the starting village with the same
   party: a portrait or speaker that doesn't fit the village, a box that opens and closes with nothing in it, or the
   same page shot twice in a row (a choice or timed page the tour waited out) is the tour, not a bug.
@@ -44,6 +45,10 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
 - Scenes `game_over` (msg 0187 "... and the others have fallen.") and `game_over_next` (title menu) end the run.
 - Short menu labels Atk/Def/Pad/BWH/Tech are a recorded decision (D18), not abbreviation bugs.
 - Lower-case and proportional text is the English font (VWF); the Japanese used full-width 16x16 cells.
+- File management (`menu_file`, `menu_file_load`): small numbers 1-6 alongside the tabs, blank file names,
+  `HP: 0/0`, the file icons and right-edge `F` on empty slots match the original-ROM shots in `tour_jp`.
+- Round 3 credits now use the ending castle map and its script to hide the HUD; HUD-covered text is no longer
+  an acceptable limitation for `credits_N`. The background itself remains visible behind the white lettering.
 - Choice options start with the original's large full-width digits `1`/`2`/`3`, the cursor left of the digit and
   the selected option yellow: that is the original layout.
 - A coloured (yellow) word can sit a few pixels further from the word before it than a normal space: colour

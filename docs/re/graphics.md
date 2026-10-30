@@ -18,14 +18,23 @@ Seen without Japanese: intro/attract demo (fortress, city fire), village map, HU
 Reached in phase 2 (`tools/debug/warp.py`, shots in `work/qa/warp/`), all look font-drawn (same 16x16 glyphs as the
 dialogue; confirm in the phase 5 marker build): name entry grid, name confirm, pause-menu pages (items, status,
 `振分` allocation, `ジョイ` + controls list, `環境` options), shop (`買う 売る 道具 修理` tabs, buy list, sell list,
-repair), staff roll overlay. The `maps` tour (`work/qa/warp/maps/map_AARR.png`, 187 rooms) is the base for the
-place-banner check.
+repair), staff roll overlay. The original `maps` tour covered only 187 rooms: it mistook an empty exit-table slot
+for the end. The corrected tour covers 640 mapped rooms (`docs/re/debug.md`); its new sheets need review.
+
+Phase-8 additions (2026-10-30): the ending staff roll is now shown on its actual map `$1D02`, with the HUD hidden
+by the ending script (`ending_credits`, `credits_0` through `credits_12`). The second pause-menu row reaches
+Auto/People/File, including save/load management. `work/qa/tour_en/menu_file` and `menu_file_load` have matching
+original-ROM shots in `tour_jp`; the small tab numbers and empty-file icons are original behavior.
 
 ## Still to survey
 
-- Screens the debug tool can't reach yet (`docs/re/debug.md` §Open leads): save/load screen, boss/area banners,
-  chapter cards if any, the ending scene's own screen (its text is font-drawn block `$02` + staff roll, both toured).
+- Screens the debug tool can't reach yet (`docs/re/debug.md` §Ending coverage): boss/area banners,
+  chapter cards if any, the complete ending/epilogue (the staff roll now has its own screen setup).
   Game over (phase 8, scene `game_over`): font-drawn msg `$0187`, then the title menu; no graphic.
-- Static sweep: every unpacked graphics block. Needs the remaining loaders (`compression.md` §Other loaders) and the
-  LZ pointer tables (`$80B00F`, `$94FF04`, `$94DC1A`, `$90E395`) enumerated, then `tiles.py render` sheets read by
-  reviewer agents.
+- Static sweep: `python -X utf8 tools/gfx_survey.py --raw` renders all 80 raw ROM banks and known compressed
+  sources in planar and linear formats, including the `$808F95` bitplane interleave. It enumerates the menu
+  `$80B00F` (40), portrait `$94FF04` (52), object `$94DC1A` (448 including empty slots), and party `$90E383` (6)
+  tables, plus direct-call candidates. Output: `work/qa/graphics/index.tsv`, `.bin` blocks and 2008 PNG sheets.
+  The index records duplicates, empty slots, short-format skips and decode errors. These are **not reviewed**;
+  `$AF851C` currently fails decoding (its bytes resemble a raw palette), and unenumerated compressed loaders
+  remain a coverage gap. Generation alone does not complete the survey.
