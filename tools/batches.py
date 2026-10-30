@@ -6,6 +6,8 @@
     python -X utf8 tools/batches.py fit "text"       # how a message wraps: rows per page with their px
     python -X utf8 tools/batches.py balance [--write] # one-word last rows take a word from the row above
     python -X utf8 tools/batches.py pairs b001 ..    # work/tl/bNNN.pairs.txt for the reviewer (docs/reviewer-brief.md)
+    python -X utf8 tools/batches.py redo p01 1003 .. # re-batch translated ids (+ p01.cur.tsv, current English)
+    python -X utf8 tools/batches.py chapters         # work/qa/story/chapters/*.txt for the story pass
 
 Batch TSV: id, speaker, form, limit, jp. jp has dictionary refs written out ({d:XX|word} -> word, D9) and newlines as
 the two characters \\n. Output TSV: id, en; \\n in en = a forced line break.
@@ -140,7 +142,8 @@ def balance(en):
     out = []
     for part in PAGE.split(en):
         rows = part.split("\n")
-        if not PAGE.fullmatch(part) and len(rows) > 1:
+        # a page's speaker row never gives a word ("Wind General Hude" has three)
+        if not PAGE.fullmatch(part) and len(rows) > 1 and not (len(rows) == 2 and speaker_rows(part)):
             last, prev = rows[-1], rows[-2].split(" ")
             if CODE.sub("", last).strip() and " " not in last.strip() and len(prev) > 2 \
                     and not last.startswith(" ") and not rows[-2].startswith(" ") \
@@ -375,11 +378,77 @@ def split():
     terms()
 
 
+def flatten(en):
+    """Merged message text -> running text: wrap breaks become spaces; breaks after a speaker row, before an indented or
+    '*' row and around blank rows stay."""
+    out = []
+    for part in PAGE.split(en):
+        rows = part.split("\n")
+        if PAGE.fullmatch(part) or len(rows) == 1:
+            out.append(part)
+            continue
+        s, hdr = rows[0], bool(speaker_rows(part))
+        for i, r in enumerate(rows[1:], 1):
+            keep = (i == 1 and hdr) or r.startswith((" ", "*")) or not r or not rows[i - 1]
+            s += ("\n" if keep else " ") + r
+        out.append(s)
+    return "".join(out)
+
+
+def redo(batch, ids):
+    """work/tl/<batch>.tsv for already-translated ids (polish/review fixes) + <batch>.cur.tsv with their current
+    English as running text; the translator edits the .cur rows into <batch>.out.tsv."""
+    script = load_script()
+    idx = index(script)
+    p = TL / f"{batch}.tsv"
+    if p.exists():
+        raise SystemExit(f"{p} exists")
+    rows, cur = [], []
+    for i in ids:
+        name, k = idx[i]
+        e = script[name][k]
+        form, limit = form_limit(name, e)
+        rows.append("\t".join([i, speaker(name, e["jp"]), form, limit, plain_jp(e["jp"]).replace("\n", "\\n")]))
+        cur.append(f"{i}\t" + (flatten(e["en"]) if kind(name) == "msg" else e["en"]).replace("\n", "\\n"))
+    p.write_text("\n".join(rows) + "\n", encoding="utf-8", newline="\n")
+    (TL / f"{batch}.cur.tsv").write_text("\n".join(cur) + "\n", encoding="utf-8", newline="\n")
+    print(f"{batch}: {len(ids)} entries")
+
+
+# story-pass chapters (docs/synopsis.md): id ranges in reading order, story first, then that act's town NPCs
+CHAPTERS = {
+    "act1": [("1000", "10EC")],
+    "act1_towns": [("0000", "00CF"), ("0100", "0120"), ("01A5", "01B1")],
+    "act2": [("10ED", "1149"), ("0121", "0138"), ("01C9", "01C9"), ("01E0", "01E0")],
+    "act3": [("114A", "11C4"), ("1351", "1383"), ("0139", "0165")],
+    "act4": [("11C5", "12B8"), ("0166", "0191")],
+    "act5": [("12B9", "12FD")],
+    "ending": [("1300", "1350"), ("0200", "0209")],
+}
+
+
+def chapters(folder):
+    """One '>> id | speaker | JP' / EN file per chapter for the story reviewer; ids no chapter names go to misc."""
+    script = load_script()
+    rows = [(name, e) for name in ORDER if kind(name) == "msg" for e in script[name] if e["en"]]
+    folder.mkdir(parents=True, exist_ok=True)
+    left = {e["id"] for _, e in rows}
+    for ch, ranges in [*CHAPTERS.items(), ("misc", [("0000", "FFFF")])]:
+        out = []
+        for lo, hi in ranges:
+            for name, e in rows:
+                if lo <= e["id"] <= hi and e["id"] in left:
+                    left.discard(e["id"])
+                    out.append(f">> {e['id']} | {speaker(name, e['jp'])} | {plain_jp(e['jp'])}\n{e['en']}\n")
+        (folder / f"{ch}.txt").write_text("\n".join(out), encoding="utf-8", newline="\n")
+        print(f"{ch}: {len(out)} lines")
+
+
 def terms():
     """build/terms_bNNN.txt for every batch: the glossary rows whose JP occurs in it (rerun after glossary edits)."""
     gl = glossary()
     TERMS.mkdir(exist_ok=True)
-    for p in existing():
+    for p in existing() + sorted(TL.glob("p[0-9][0-9].tsv")):
         text = "".join(r[4] for r in read_tsv(p, 5))
         rows = [f"{t} -> {' / '.join(f)}" + (f" (avoid: {', '.join(a)})" if a else "") for t, f, a in gl
                 if term_in(t, text)]
@@ -474,6 +543,9 @@ def selftest():
     assert msg_errors("{col:01}{name:01}\nあ{end}", "{col:01}{name:01}\nOh.{end}") == []
     assert msg_errors("{col:01}{name:01}\nあ{end}", "{col:01}{name:01} Oh.{end}")  # speaker row lost
     assert msg_errors("{d:79|・・・}{end}", "...{end}") == []
+    assert balance("{col:01}Wind General Hude{f4}\nHa!{end}") == "{col:01}Wind General Hude{f4}\nHa!{end}"
+    assert flatten("{col:01}Bob{f4}\nHi there\nfriend.{wait}* Got\nit.\n\n  1Yes") == \
+        "{col:01}Bob{f4}\nHi there friend.{wait}* Got it.\n\n  1Yes"
     assert term_in("ワース", "ワースの村") and not term_in("ミン", "タイミング")
     assert field_errors("item", {"id": "item_00", "jp": "薬 草", "max": 8}, "Healing Herb") == []
     assert field_errors("item", {"id": "item_00", "jp": "x", "max": 2}, "Healing Herbs") != []
@@ -497,6 +569,10 @@ def main():
         sys.exit(0 if all([check(b) is not None for b in a[1:]]) else 1)
     elif a[0] == "merge":
         merge(a[1:])
+    elif a[0] == "chapters":
+        chapters(ROOT / "work" / "qa" / "story" / "chapters")
+    elif a[0] == "redo":
+        redo(a[1], a[2:])
     elif a[0] == "pairs":
         for b in a[1:]:
             pairs(b)

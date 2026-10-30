@@ -1,5 +1,5 @@
 """release.py: build, gate and package the English patch. Stops at the first failure:
-build -> check (tests + lint) -> smoke -> JP left (jp_reach.py) -> visual-QA gate -> debug tool off -> BPS patch
+polish list ticked -> build -> check (tests + lint) -> smoke -> JP left (jp_reach.py) -> visual-QA gate -> debug tool off -> BPS patch
 (re-applied to a clean original and compared) -> release/<version>/ zip of patch + README.txt.
 
     python -X utf8 tools/release.py --version 1.0 [--force]
@@ -45,6 +45,10 @@ def main():
     if out.exists() and not a.force:
         sys.exit(f"{out} exists (--force to overwrite)")
     scripts = Path(SCRIPTS)
+    open_items = [line for line in (ROOT / "docs" / "polish.md").read_text(encoding="utf-8").splitlines()
+                  if line.startswith("- [ ]")]
+    if open_items:
+        sys.exit("release stopped: docs/polish.md has unticked items:\n" + "\n".join(open_items))
     step("build", [ROOT / "tools" / "build.py"])
     step("check", [ROOT / "tools" / "check.py"])
     step("smoke", [scripts / "emu.py", BUILT, "--out", ROOT / "work" / "qa" / "smoke", "--route",

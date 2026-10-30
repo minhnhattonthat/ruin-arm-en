@@ -25,11 +25,11 @@ fails the check. Story context: `docs/synopsis.md`.
 ## Characters
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
-| ボーガン | Bogan | | the hero's father, ex-captain of the Rondium Knights | Borgan, Vaughan |
+| ボーガン | Bogan | | the hero's father, ex-captain of the Londium Knights | Borgan, Vaughan |
 | ルシア | Lucia | 7 | small winged girl, party member (name_party_04) | Rucia |
 | ジーク | Zieg | 7 | `{name:02}` default; old inventor, secretly king of Kadam | Sieg, Zeke |
-| トーラン | Toran | 7 | `{name:03}` default; tiger-masked giant, elder prince of Medeom | |
-| ポセナ | Posena | 7 | `{name:04}` default; mermaid princess of Marsnal | |
+| トーラン | Toran | 7 | `{name:03}` default; tiger-masked giant, elder prince of Mediom | |
+| ポセナ | Posena | 7 | `{name:04}` default; mermaid princess of Marthnal | |
 | ネイル | Neil | 7 | `{name:05}` default; Imperial commander, really prince Neiran | Nail |
 | ネーラン | Neiran | | Neil's real name | |
 | ザイン | Zain | | Imperial Guard General, founder of the Empire | Sein |
@@ -40,20 +40,20 @@ fails the check. Story context: `docs/synopsis.md`.
 | フリード | Freed | | Flame General | Fried |
 | ミリア | Milia | | Dark Princess Knight | Miria |
 | ラミアウォリアー | Lamia Warrior | | Deene's lieutenant | |
-| ファーラ | Fara | | princess of Medeom | |
-| サーラ | Saara | | queen of Marsnal, Posena's mother | Sarah |
+| ファーラ | Fara | | princess of Mediom | |
+| サーラ | Saara | | queen of Marthnal, Posena's mother | Sarah |
 | サラ | Sara | | village girl, Roa's daughter | |
 | ロア | Roa | | Sara's mother | |
 | エイソッド | Aysod | | Lord Aysod, Resistance leader (ロバート・エイソッド = Robert Aysod) | |
 | レイナ | Reina | | Aysod's daughter | |
-| ガルザック | Garzack | | Rondium knight | |
-| シーザー | Caesar | | King Caesar of Rondium (シーザー王) | |
-| メファウス | Mephaus | | Rondium court magician | |
-| ギルム | Gilm | | Rondium blacksmith | |
-| ハヌトゥ | Hanutu | | Marsnal blacksmith | |
+| ガルザック | Garzack | | Londium knight | |
+| シーザー | Caesar | | King Caesar of Londium (シーザー王) | |
+| メファウス | Mephaus | | Londium court magician | |
+| ギルム | Gilm | | Londium blacksmith | |
+| ハヌトゥ | Hanutu | | Marthnal blacksmith | |
 | オギリン | Ogilin | | beastfolk fortune-teller | |
 | メイヤ | Meiya | | beastfolk girl (メイア at 0077 = same girl) | |
-| エディア | Edia | | Wyall girl | |
+| エディア | Edia | | Whaial girl | |
 | ロイ | Roy | | Edia's brother | |
 | ヴォルサムリー | Volsamry | | Duke of Stelm | |
 | マルガリータ | Margarita | | lady ruler of Tifnu | |
@@ -71,22 +71,22 @@ Default names offered at the name entry (name_hero / name_sister, 7 letters max)
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | アーフ | Arff | 16 | home village (アーフ村 = Arff Village); the game's own world-map label reads ARFF (D19) | Aaf, Arf |
-| ワイアル | Wyall | 16 | ワイアルの村 = Wyall Village | |
-| ラベンナ | Ravenna | 16 | village and ruins | |
-| マリア | Maria | 16 | マリアの村 = Maria Village (also a sister default name) | |
-| ワース | Worth | 16 | ワースの村 = Worth Village | |
-| ロンディウム | Rondium | 16 | Kingdom of Rondium | Londium |
+| ワイアル | Whaial | 16 | ワイアルの村 = Whaial Village; map label WHAIAL (D19) | Wyall |
+| ラベンナ | Ravenna | 16 | village and ruins; map label RAVENNA | |
+| マリア | Mary / Maria | 16 | the village is Mary (マリアの村 = Mary Village, map label MARY, D19); the sister default name stays Maria | |
+| ワース | Warse | 16 | ワースの村 = Warse Village; map label WARSE (D19) | Worth |
+| ロンディウム | Londium | 16 | Kingdom of Londium; map label LONDIUM (D19) | Rondium |
 | ステルム | Stelm | 16 | Stelm Duchy; ステルムの町 = Stelm Town | |
 | フェフス | Fefus | 16 | フェフス城 = Fefus Castle | |
 | ゴッドホープ | Godhope | 16 | ゴッドホープ岬 = Cape Godhope | |
 | ヴェルダー | Velder | | ヴェルダーの大森林 = the Great Velder Forest | Welder |
 | ヴェルダの大森林 | Velder Forest | 16 | place.json form | |
 | 獣人村 | Beastfolk Village / Beast Village | 16 | place.json: Beast Village (16 max) | |
-| ラウ | Rau | | beastfolk village named on the world-map card; original map RAN needs D19 story-pass reconciliation | Ran |
-| ルテア | Rutea | 16 | ルテア自治領 = Rutea Region; ルテア屋敷 = Rutea Mansion | Lutea |
-| ティフヌ | Tifnu | 16 | ティフヌ領 = Tifnu Region | |
-| メディオム | Medeom | 16 | Kingdom of Medeom | Mediom |
-| マースナル | Marsnal | 16 | merfolk Kingdom of Marsnal | |
+| ラウ | Raw | | beastfolk village (獣人村ラウ = Beastfolk Village Raw); map label RAW (D19) | Rau |
+| ルテア | Lutea | 16 | ルテア自治領 = Lutea Region; ルテア屋敷 = Lutea Mansion; map label LUTEA (D19) | Rutea |
+| ティフヌ | Tifnu | 16 | ティフヌ領 = Tifnu Region; map label TIFNU | |
+| メディオム | Mediom | 16 | Kingdom of Mediom; map label MEDIOM (D19) | Medeom |
+| マースナル | Marthnal | 16 | merfolk Kingdom of Marthnal; map label MARTHNAL (D19) | Marsnal |
 | サライ | Sarai | 16 | サライ城 = Sarai Castle | |
 | フーベル | Fubel | 16 | フーベルの大地 = the Land of Fubel (undersea) | |
 | ケムル海底基地 | Kemul Sea Base | 16 | place.json | |

@@ -851,7 +851,7 @@
   "max": 5,
   "pos": "0410",
   "jp": "戦い、勝利",
-  "en": "Wars, wins"
+  "en": "Fights, wins"
  },
  {
   "id": "84D08D",
@@ -879,7 +879,7 @@
   "max": 7,
   "pos": "0410",
   "jp": "発明のしっぱい",
-  "en": "Failed gadgets"
+  "en": "Failed inventions"
  },
  {
   "id": "84D0D7",
@@ -956,7 +956,7 @@
   "max": 5,
   "pos": "0410",
   "jp": "まけず嫌い",
-  "en": "Sore loser"
+  "en": "Competitive"
  },
  {
   "id": "84D18A",

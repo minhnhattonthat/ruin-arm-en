@@ -75,4 +75,8 @@ SCENES = {
   world_map_all  = { writes = {
     {0x7E1CB1, 0xFF}, {0x7E1CB2, 0xFF}, {0x7E1CB3, 0xFF}, {0x7E1CB4, 0xFF},
     {0x7E03E8, 1}, {0x7E0380, 0x1B}}, wait = 4000 },
+  -- every location flag set, no card open: all original Latin map labels visible (D19 spellings)
+  world_map_labels = { writes = {
+    {0x7E1CB1, 0xFF}, {0x7E1CB2, 0xFF}, {0x7E1CB3, 0xFF}, {0x7E1CB4, 0xFF},
+    {0x7E03E8, 1}, {0x7E0380, 0x1B}}, wait = 200 },
 }

@@ -67,7 +67,7 @@
    "120F"
   ],
   "jp": "{fe:10}{col:01}{name:03}{spd:01}\n{d:79|・・・}俺の事はうらんで\nくれて{d:72|いい。}{wait}うっ{d:79|・・・}ごほっ。{wait}だが、{name}の、{wait}{name}の手{d:7D|助け}を{wait}{d:89|出来な}くなる事だけが\n心残りだ。{wait}ネーラン、いや\n{name:05}よ、{wait}{d:76|この}{col:01}「{item:1A}」{col}を\nうけ取り、俺のかわりに{wait}{name}の手{d:7D|助け}を\n{d:7F|して}やっ{d:0C|てくれ}。{fd}{fe:10}{goto:00:1210}",
-  "en": "{fe:10}{col:01}{name:03}{spd:01}\n...You can hate me all you like.{wait}Ugh... cough!{wait}But {name}...{wait}not being able to help\n{name} anymore...{wait}that's my only regret.{wait}Neiran... no, {name:05},{wait}take this {col:01}\"{item:1A}\"{col}, and in\nmy place,{wait}help {name} for me.{fd}{fe:10}{goto:00:1210}"
+  "en": "{fe:10}{col:01}{name:03}{spd:01}\n...You can hate me all you like.{wait}Ugh... cough!{wait}But {name}...{wait}not being able to help\n{name} anymore...{wait}that's my only regret.{wait}Neiran... no, {name:05},{wait}take this {col:01}\"{item:1A}\"{col}, and{wait}help {name} in my place.{fd}{fe:10}{goto:00:1210}"
  },
  {
   "id": "1210",
@@ -127,7 +127,7 @@
    "121C"
   ],
   "jp": "{col:01}{name:05}{spd:01}\n{d:50|なんだ}と！？{wait}俺と戦う勇気も{d:6C|ない}のか。\nだめだ！{wait}いくら手をかそうが目的は、\nはたせまい！{fd}{fe:10}{goto:00:12A0}",
-  "en": "{col:01}{name:05}{spd:01}\nWhat!?{wait}You don't even have the guts to fight\nme? Hopeless!{wait}No matter how much help I give, you'll\nnever reach your goal!{fd}{fe:10}{goto:00:12A0}"
+  "en": "{col:01}{name:05}{spd:01}\nWhat!?{wait}You don't even have the guts to fight me?\nForget it!{wait}No matter how much I helped you, you'd\nnever reach your goal!{fd}{fe:10}{goto:00:12A0}"
  },
  {
   "id": "121D",
@@ -182,7 +182,7 @@
  {
   "id": "1227",
   "jp": "{fe:10}{fa:02}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{f4}{f4:72}{fa:E1}\nではそろそろ\n{d:38|メディオム}王女{d:05|ファーラ}を、\n{d:8B|しょぶん}{d:51|する}か{d:79|・・・}{end}",
-  "en": "{fe:10}{fa:02}{col:01}Imperial Guard General Zain{f4}{f4:72}{fa:E1}\nNow then, perhaps it is time to dispose of\nMedeom's princess, Fara...{end}"
+  "en": "{fe:10}{fa:02}{col:01}Imperial Guard General Zain{f4}{f4:72}{fa:E1}\nNow then, perhaps it is time to dispose of\nMediom's princess, Fara...{end}"
  },
  {
   "id": "1228",
@@ -315,7 +315,7 @@
  {
   "id": "1243",
   "jp": "{fe:10}{col:01}{name:05}{spd:01}\nばかなっ{d:1B|！！}{wait}{d:10|ならば}{d:76|この}俺は{d:20|きさま}に\nだまされ、兄を{d:76|この}手に\nかけた{d:09|という}のか！{fd}{fe:10}{goto:00:1244}",
-  "en": "{fe:10}{col:01}{name:05}{spd:01}\nNo!!{wait}Then you deceived me, and I struck down\nmy own brother with these hands!?{fd}{fe:10}{goto:00:1244}"
+  "en": "{fe:10}{col:01}{name:05}{spd:01}\nImpossible!!{wait}Then you deceived me, and I struck down\nmy own brother with these hands!?{fd}{fe:10}{goto:00:1244}"
  },
  {
   "id": "1244",
@@ -340,12 +340,12 @@
  {
   "id": "1248",
   "jp": "{fe:10}{col:01}{name:02}\nいかんっ！{fd}{fe:10}{goto:00:1249}",
-  "en": "{fe:10}{col:01}{name:02}\nOh no!{fd}{fe:10}{goto:00:1249}"
+  "en": "{fe:10}{col:01}{name:02}\nNo!{fd}{fe:10}{goto:00:1249}"
  },
  {
   "id": "1249",
   "jp": "{fe:10}{col:01}{d:00|ルシア}\nだめっー{d:1B|！！}{fd}{fe:10}{goto:00:124A}",
-  "en": "{fe:10}{col:01}Lucia\nNooo!!{fd}{fe:10}{goto:00:124A}"
+  "en": "{fe:10}{col:01}Lucia\nDon't!!{fd}{fe:10}{goto:00:124A}"
  },
  {
   "id": "124A",
@@ -395,7 +395,7 @@
  {
   "id": "1253",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nくだらん。{wait}やっと死んだか、\n{d:76|この}くたばりぞこ{d:6C|ない}がっ！{end}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain\nPathetic.{wait}So he's finally dead, the half-dead wretch!{end}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nHow tiresome.{wait}So the walking corpse is finally dead!{end}"
  },
  {
   "id": "1254",
@@ -603,12 +603,12 @@
  {
   "id": "127E",
   "jp": "{fe:10}{col:01}{name:02}\n{d:01|ボーガン}{d:5F|じゃ。}{wait}彼の力なく{d:7F|して}は、{d:11|ワシ}らの\n目的ははたせ{d:50|なんだ}ろう。{end}",
-  "en": "{fe:10}{col:01}{name:02}\nWas Bogan.{wait}Without his strength, we could never have\nachieved our goal.{end}"
+  "en": "{fe:10}{col:01}{name:02}\nIt was Bogan.{wait}Without his strength, we could never have\nachieved our goal.{end}"
  },
  {
   "id": "127F",
   "jp": "{col:01}{name:04}\n{d:5E|じゃあ}{d:34|マースナル}国の、\n女戦士って誰なの？{end}",
-  "en": "{col:01}{name:04}\nThen who was the woman warrior\nfrom Marsnal?{end}"
+  "en": "{col:01}{name:04}\nThen who was the woman warrior\nfrom Marthnal?{end}"
  },
  {
   "id": "1280",
@@ -618,7 +618,7 @@
  {
   "id": "1281",
   "jp": "{fe:10}{col:01}{name:02}{spd:01}\n{d:34|マースナル}国の\n女王{d:13|サーラ}{d:60|じゃ}{d:6D|よ。}{wait}{d:52|これ}も運命なのかのう。{fd}{fe:10}{goto:00:1282}",
-  "en": "{fe:10}{col:01}{name:02}{spd:01}\nQueen Saara of Marsnal.{wait}Perhaps this, too, is fate.{fd}{fe:10}{goto:00:1282}"
+  "en": "{fe:10}{col:01}{name:02}{spd:01}\nQueen Saara of Marthnal.{wait}Perhaps this, too, is fate.{fd}{fe:10}{goto:00:1282}"
  },
  {
   "id": "1282",
@@ -688,7 +688,7 @@
  {
   "id": "128F",
   "jp": "{col:01}{d:00|ルシア}{f4}{f5:41}{f4:5F}{fa:A1}\nその人型キカイが発{d:62|した}\n一言ってい{d:7B|った}い\n何だ{d:7B|った}の{d:79|・・・}？{fd}{fe:10}{goto:00:1290}",
-  "en": "{col:01}Lucia{f4}{f5:41}{f4:5F}{fa:A1}\nWhat were the words that humanoid\nmachine spoke...?{fd}{fe:10}{goto:00:1290}"
+  "en": "{col:01}Lucia{f4}{f5:41}{f4:5F}{fa:A1}\nWhat on earth was that one line the\nhumanoid machine said...?{fd}{fe:10}{goto:00:1290}"
  },
  {
   "id": "1290",
@@ -728,7 +728,7 @@
  {
   "id": "1297",
   "jp": "{fe:10}{col:01}{name:05}{spd:01}\n俺はいつか俺をうら切{d:7B|った}\n{d:19|人間}ども、特に\n{name:03}、{d:20|きさま}を{wait}殺す事をちか{d:7B|った}{d:67|のだ。}{end}",
-  "en": "{fe:10}{col:01}{name:05}{spd:01}\nI swore that one day I'd kill everyone who\nbetrayed me,{wait}and you most of all, {name:03}!{end}"
+  "en": "{fe:10}{col:01}{name:05}{spd:01}\nI swore that one day I'd kill the humans\nwho betrayed me,{wait}and you most of all, {name:03}!{end}"
  },
  {
   "id": "1298",
@@ -857,7 +857,7 @@
  {
   "id": "12B5",
   "jp": "そののち{d:2E|ロンディウム}に\n聖剣をたくされるほどの\n勇者が{d:4F|いる}事を聞き、\nその者をたずね、{wait}{d:3F|仲間}に{d:69|なって}もら{d:7B|った}。{fe}{col:01}勇者{f4}{f4:70}{fa:B1}\n{d:79|・・・}{d:79|・・・}{end}",
-  "en": "Later, he heard that there was a hero in\nRondium great enough to be entrusted\nwith a holy sword. He sought him out{wait}and asked him to join him.{fe}{col:01}Hero{f4}{f4:70}{fa:B1}\n...{end}"
+  "en": "Later, he heard that there was a hero in\nLondium great enough to be entrusted\nwith a holy sword. He sought him out{wait}and asked him to join him.{fe}{col:01}Hero{f4}{f4:70}{fa:B1}\n...{end}"
  },
  {
   "id": "12B6",
@@ -900,7 +900,7 @@
  {
   "id": "12C1",
   "jp": "{fe:10}{col:01}炎{d:1E|魔将}フリード{spd:01}\nはかなき命の滅ぶ、美{d:71|しい}\nかがやきを{d:0B|おまえ達}は\n見せ{d:0C|てくれ}る{d:65|だろう}か？{wait}炎{d:1E|魔将}フリード\nいざ、ま{d:4F|いる}{d:1B|！！}{end}",
-  "en": "{fe:10}{col:01}Flame General Freed{spd:01}\nWill you show me the beautiful radiance of\nfleeting lives as they perish?{wait}I am Flame General Freed. Have at you!!{end}"
+  "en": "{fe:10}{col:01}Flame General Freed{spd:01}\nWill you show me the beautiful radiance of\nfleeting lives as they perish?{wait}Flame General Freed... here I come!!{end}"
  },
  {
   "id": "12C2",
@@ -1006,7 +1006,7 @@
  {
   "id": "12DA",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{f5:B1}{f4:72}{fa:E1}\n君は見た所、あのにっくき\n{d:34|マースナル}国の者の様だが。{fd}{fe:10}{goto:00:12DB}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain{f5:B1}{f4:72}{fa:E1}\nFrom the look of you, you seem to be one\nof those hateful Marsnal folk.{fd}{fe:10}{goto:00:12DB}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{f5:B1}{f4:72}{fa:E1}\nFrom the look of you, you seem to be one\nof those hateful Marthnal folk.{fd}{fe:10}{goto:00:12DB}"
  },
  {
   "id": "12DB",
@@ -1016,7 +1016,7 @@
  {
   "id": "12DC",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n君達{d:34|マースナル}国の人々も、\n{d:19|人間}達も、滅びる運命の種族\nな{d:67|のだ。}{wait}それは我が主{d:17|ボルボーザ}様が\n決められた事{d:79|・・・}{fd}{fe:10}{goto:00:12DD}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYou people of Marsnal, like the humans, are\na race fated to perish.{wait}So my master, Bolboza-sama,\nhas decreed...{fd}{fe:10}{goto:00:12DD}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYou people of Marthnal, like the humans,\nare\na race fated to perish.{wait}So my master, Bolboza-sama,\nhas decreed...{fd}{fe:10}{goto:00:12DD}"
  },
  {
   "id": "12DD",
@@ -1041,7 +1041,7 @@
  {
   "id": "12E1",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n私は生まれ変わ{d:7B|った}{d:67|のだ。}{wait}{d:74|おまえ}に裏切られ\n絶ぼうの内に、ガケから身を\n投げた時にな。{wait}おかげで滅ぶべき\nおろかな{d:19|人間}{d:09|という}じゅばく\nから私は解き放たれた{d:67|のだ。}{fd}{fe:10}{goto:00:12E2}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nI was reborn.{wait}When you betrayed me and I threw myself\nfrom a cliff in despair.{wait}Thanks to that, I was freed from the\ncurse of being a foolish human doomed\nto perish.{fd}{fe:10}{goto:00:12E2}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nI have been reborn.{wait}On the day you betrayed me, and I threw\nmyself from a cliff in despair.{wait}Thanks to that, I was freed from the\nshackles of being a foolish human who\ndeserves to perish.{fd}{fe:10}{goto:00:12E2}"
  },
  {
   "id": "12E2",
@@ -1103,7 +1103,7 @@
    "12EE"
   ],
   "jp": "{col:01}{d:17|ボルボーザ}{spd:01}{f4}{f4:6B}{fa:E1}\n逃げずによく来たな\nおろかな{d:19|人間}ども{d:6D|よ。}{wait}{d:0B|おまえ達}{d:19|人間}は、おのれの事\nのみ考える生き物だ。{wait}それゆえ我が造られた。{wait}我が{d:19|人間}達のために\n下{d:62|した}公正なしんぱんは、\nお前達{d:19|人間}を滅す事。{wait}我の下{d:62|した}しんぱんは、\nあやまる事は{d:6C|ない}{d:67|のだ。}{end}",
-  "en": "{col:01}Bolboza{spd:01}{f4}{f4:6B}{fa:E1}\nSo you came, and did not run,\nfoolish humans.{wait}You humans are creatures who think only\nof yourselves.{wait}That is why I was made.{wait}The fair judgment I have passed for\nhumanity's sake is to destroy you humans.{wait}A judgment I have passed can never\nbe wrong.{end}"
+  "en": "{col:01}Bolboza{spd:01}{f4}{f4:6B}{fa:E1}\nSo you came, and did not run,\nfoolish humans.{wait}You humans are creatures who think only\nof yourselves.{wait}That is why I was made.{wait}The fair judgment I have passed upon\nhumanity is the destruction of you humans.{wait}A judgment I have passed can never\nbe wrong.{end}"
  },
  {
   "id": "12EF",
@@ -1133,7 +1133,7 @@
  {
   "id": "12F4",
   "jp": "{col:01}{d:17|ボルボーザ}\n{d:79|・・・}サラニ、パワーヲ\nアゲテイクゾ{d:79|・・・}{end}",
-  "en": "{col:01}Bolboza\n...INCREASING POWER FURTHER...{end}"
+  "en": "{col:01}Bolboza\n...I SHALL KEEP RAISING MY POWER...{end}"
  },
  {
   "id": "12F5",
@@ -1163,7 +1163,7 @@
  {
   "id": "12FA",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:57}{fa:A1}\n{d:11|ワシ}は、{d:74|おまえ}{d:09|という}\nキカイをよみがえらせて{wait}{d:42|しまった}事をくやんでおる。{wait}{d:74|おまえ}は、{d:11|ワシ}の自らの手で\nもう一度封印{d:51|する}！{end}",
-  "en": "{col:01}{name:02}{spd:01}{f4}{f4:57}{fa:A1}\nI regret ever reviving a machine like you.{wait}I'll seal you away again with my own hands!{end}"
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:57}{fa:A1}\nI regret ever bringing a machine like you\nback to life.{wait}With my own hands, I'll seal you away\nonce more!{end}"
  },
  {
   "id": "12FB",

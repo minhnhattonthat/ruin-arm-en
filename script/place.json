@@ -9,7 +9,7 @@
   "id": "place_01",
   "max": 8,
   "jp": "ワイアルの村",
-  "en": "Wyall Village"
+  "en": "Whaial Village"
  },
  {
   "id": "place_02",
@@ -27,13 +27,13 @@
   "id": "place_04",
   "max": 8,
   "jp": "マリアの村",
-  "en": "Maria Village"
+  "en": "Mary Village"
  },
  {
   "id": "place_05",
   "max": 8,
   "jp": "ルテア自治領",
-  "en": "Rutea Region"
+  "en": "Lutea Region"
  },
  {
   "id": "place_06",
@@ -57,13 +57,13 @@
   "id": "place_09",
   "max": 8,
   "jp": "ルテア屋敷",
-  "en": "Rutea Mansion"
+  "en": "Lutea Mansion"
  },
  {
   "id": "place_0A",
   "max": 8,
   "jp": "メディオム城",
-  "en": "Medeom Castle"
+  "en": "Mediom Castle"
  },
  {
   "id": "place_0B",
@@ -93,7 +93,7 @@
   "id": "place_0F",
   "max": 8,
   "jp": "ルテア近くの道",
-  "en": "Road near Rutea"
+  "en": "Road near Lutea"
  },
  {
   "id": "place_10",
@@ -123,7 +123,7 @@
   "id": "place_14",
   "max": 8,
   "jp": "マリアへと続く道",
-  "en": "Road to Maria"
+  "en": "Road to Mary"
  },
  {
   "id": "place_15",
@@ -135,7 +135,7 @@
   "id": "place_16",
   "max": 8,
   "jp": "マリア近くの道",
-  "en": "Road near Maria"
+  "en": "Road near Mary"
  },
  {
   "id": "place_17",
@@ -153,7 +153,7 @@
   "id": "place_19",
   "max": 8,
   "jp": "ラベンナ近くの道",
-  "en": "Near Ravenna"
+  "en": "Ravenna Road"
  },
  {
   "id": "place_1A",
@@ -165,7 +165,7 @@
   "id": "place_1B",
   "max": 8,
   "jp": "マリアから獣人村",
-  "en": "Maria to Beast Village"
+  "en": "Mary to Beast Village"
  },
  {
   "id": "place_1C",
@@ -177,25 +177,25 @@
   "id": "place_1D",
   "max": 8,
   "jp": "ワースの村",
-  "en": "Worth Village"
+  "en": "Warse Village"
  },
  {
   "id": "place_1E",
   "max": 8,
   "jp": "ワース近くの道",
-  "en": "Road near Worth"
+  "en": "Road near Warse"
  },
  {
   "id": "place_1F",
   "max": 8,
   "jp": "マースナルの町",
-  "en": "Marsnal Town"
+  "en": "Marthnal Town"
  },
  {
   "id": "place_20",
   "max": 8,
   "jp": "マースナル町近く",
-  "en": "Near Marsnal"
+  "en": "Near Marthnal"
  },
  {
   "id": "place_21",
@@ -207,25 +207,25 @@
   "id": "place_22",
   "max": 8,
   "jp": "ロンディウムの町",
-  "en": "Rondium Town"
+  "en": "Londium Town"
  },
  {
   "id": "place_23",
   "max": 8,
   "jp": "マリアの村",
-  "en": "Maria Village"
+  "en": "Mary Village"
  },
  {
   "id": "place_24",
   "max": 8,
   "jp": "メディオムの町",
-  "en": "Medeom Town"
+  "en": "Mediom Town"
  },
  {
   "id": "place_25",
   "max": 8,
   "jp": "ロンディウム近く",
-  "en": "Near Rondium"
+  "en": "Near Londium"
  },
  {
   "id": "place_26",
@@ -237,7 +237,7 @@
   "id": "place_27",
   "max": 8,
   "jp": "メディオム遺跡",
-  "en": "Medeom Ruins"
+  "en": "Mediom Ruins"
  },
  {
   "id": "place_28",
@@ -255,7 +255,7 @@
   "id": "place_2A",
   "max": 8,
   "jp": "ロンディウム城前",
-  "en": "Outside Rondium"
+  "en": "Outside Londium"
  },
  {
   "id": "place_2B",
@@ -267,7 +267,7 @@
   "id": "place_2C",
   "max": 8,
   "jp": "メディオム城前",
-  "en": "Outside Medeom"
+  "en": "Outside Mediom"
  },
  {
   "id": "place_2D",
@@ -297,19 +297,19 @@
   "id": "place_31",
   "max": 8,
   "jp": "ルテア屋敷前",
-  "en": "Rutea Manor Gate"
+  "en": "Lutea Mansion Gate"
  },
  {
   "id": "place_32",
   "max": 8,
   "jp": "ティフヌ屋敷前",
-  "en": "Tifnu Manor Gate"
+  "en": "Tifnu Mansion Gate"
  },
  {
   "id": "place_33",
   "max": 8,
   "jp": "ロンディウム城",
-  "en": "Rondium Castle"
+  "en": "Londium Castle"
  },
  {
   "id": "place_34",
@@ -369,7 +369,7 @@
   "id": "place_3D",
   "max": 8,
   "jp": "ロンディウム洞窟",
-  "en": "Rondium Cave"
+  "en": "Londium Cave"
  },
  {
   "id": "place_3E",
@@ -381,7 +381,7 @@
   "id": "place_3F",
   "max": 8,
   "jp": "ルテア屋敷地下道",
-  "en": "Rutea Underpass"
+  "en": "Lutea Passage"
  },
  {
   "id": "place_40",
@@ -393,13 +393,13 @@
   "id": "place_41",
   "max": 8,
   "jp": "メディオム城地下",
-  "en": "Medeom Basement"
+  "en": "Mediom Basement"
  },
  {
   "id": "place_42",
   "max": 8,
   "jp": "マリア近くの洞窟",
-  "en": "Cave near Maria"
+  "en": "Cave near Mary"
  },
  {
   "id": "place_43",

@@ -10,9 +10,9 @@ from font import GLYPHS
 from lz import decompress
 
 NAMES = (
-    "Arff", "Kingdom of Rondium", "Wyall", "Maria", "Beastfolk Village Rau",
-    "Stelm Duchy", "Worth", "Kingdom of Marsnal", "Ravenna", "Rutea Region",
-    "Tifnu Region", "Kingdom of Medeom", "Raidroid Empire",
+    "Arff", "Kingdom of Londium", "Whaial", "Mary", "Beastfolk Village Raw",
+    "Stelm Duchy", "Warse", "Kingdom of Marthnal", "Ravenna", "Lutea Region",
+    "Tifnu Region", "Kingdom of Mediom", "Raidroid Empire",
 )
 POINTERS = (0xCAF1, 0xCB09, 0xCB39, 0xCB55, 0xCB6D, 0xCB99, 0xCBC1,
             0xCBD9, 0xCC05, 0xCC21, 0xCC4D, 0xCC71, 0xCC9D)

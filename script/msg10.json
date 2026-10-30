@@ -17,7 +17,7 @@
  {
   "id": "1003",
   "jp": "{col:01}{d:01|ボーガン}{f4}{f4:64}{fa:A1}\nよし、全員そろっ{d:79|・・・}！？{end}",
-  "en": "{col:01}Bogan{f4}{f4:64}{fa:A1}\nRight, everyone's he--...!?{end}"
+  "en": "{col:01}Bogan{f4}{f4:64}{fa:A1}\nRight, everyone's he...!?{end}"
  },
  {
   "id": "1004",
@@ -52,12 +52,12 @@
  {
   "id": "100A",
   "jp": "{col:01}{name:03}\n{col:01}{d:38|メディオム}{col}の方から\n軍隊が{d:79|・・・}{wait:11}{d:76|この}大陸の全土に{d:79|・・・}{fd}{fe:10}{goto:00:100B}",
-  "en": "{col:01}{name:03}\nFrom the direction of {col:01}Medeom{col}, an army...{wait:11}across this whole continent...{fd}{fe:10}{goto:00:100B}"
+  "en": "{col:01}{name:03}\nFrom the direction of {col:01}Mediom{col}, an army...{wait:11}across this whole continent...{fd}{fe:10}{goto:00:100B}"
  },
  {
   "id": "100B",
   "jp": "{fe:10}{col:01}{d:01|ボーガン}\n{d:2E|ロンディウム}は？{fd}{fe:10}{goto:00:100C}",
-  "en": "{fe:10}{col:01}Bogan\nAnd Rondium?{fd}{fe:10}{goto:00:100C}"
+  "en": "{fe:10}{col:01}Bogan\nAnd Londium?{fd}{fe:10}{goto:00:100C}"
  },
  {
   "id": "100C",
@@ -82,7 +82,7 @@
  {
   "id": "1010",
   "jp": "「ワイアル」{end}",
-  "en": "Wyall{end}"
+  "en": "Whaial{end}"
  },
  {
   "id": "1011",
@@ -97,7 +97,7 @@
  {
   "id": "1013",
   "jp": "「{d:2E|ロンディウム}洞窟へ」{end}",
-  "en": "To Rondium Cave{end}"
+  "en": "To Londium Cave{end}"
  },
  {
   "id": "1014",
@@ -117,7 +117,7 @@
  {
   "id": "1017",
   "jp": "{fe:10}{fa:01}手紙には、\nこう書かれて{d:56|いた}。{fe}{col:01}手紙{spd:01}\n「もし私に何があっても\n{d:0B|おまえ達}で{d:7D|助け}合って\n生きる{d:66|んだ。}{wait}こま{d:7B|った}事があれば\n{col:01}{d:2E|ロンディウム}{col}にすんで{d:4F|いる}{wait}{col:01}{name:02}{col}{d:09|という}\n人をたずね{d:45|なさい}。{wait}少し変わり者だが、\n気のよいご老人だ。」{fd}{fe:10}{goto:00:1018}",
-  "en": "{fe:10}{fa:01}The letter read as follows.{fe}{col:01}Letter{spd:01}\n\"If anything should happen to me, you two\nmust help each other and live on.{wait}If you're ever in trouble, go and see a man\nin {col:01}Rondium{col}{wait}by the name of {col:01}{name:02}{col}.{wait}He's a bit eccentric, but a kind old man.\"{fd}{fe:10}{goto:00:1018}"
+  "en": "{fe:10}{fa:01}The letter read as follows.{fe}{col:01}Letter{spd:01}\n\"If anything should happen to me, you two\nmust help each other and live on.{wait}If you're ever in trouble, go and see a man\nin {col:01}Londium{col}{wait}by the name of {col:01}{name:02}{col}.{wait}He's a bit eccentric, but a kind old man.\"{fd}{fe:10}{goto:00:1018}"
  },
  {
   "id": "1018",
@@ -176,12 +176,12 @@
  {
   "id": "1023",
   "jp": "「{d:30|マリア}村」{end}",
-  "en": "Maria Village{end}"
+  "en": "Mary Village{end}"
  },
  {
   "id": "1024",
   "jp": "「ワイアルへ」{end}",
-  "en": "To Wyall{end}"
+  "en": "To Whaial{end}"
  },
  {
   "id": "1025",
@@ -216,7 +216,7 @@
  {
   "id": "102B",
   "jp": "「{d:30|マリア}洞窟へ」{end}",
-  "en": "To Maria Cave{end}"
+  "en": "To Mary Cave{end}"
  },
  {
   "id": "102C",
@@ -371,12 +371,12 @@
  {
   "id": "104A",
   "jp": "{col:01}{name:05}{f5:A0}{f4}{f5:B1}{f4:4F}{fa:E1}\n{d:50|なんだ}！？{d:20|きさま}達は{d:79|・・・}{wait}おい、お前達はさきにいけ！{f4:4B}{fd}{fe:10}{goto:00:104D}",
-  "en": "{col:01}{name:05}{f5:A0}{f4}{f5:B1}{f4:4F}{fa:E1}\nWhat!? Who are you lot...{wait}You men, go on ahead!{f4:4B}{fd}{fe:10}{goto:00:104D}"
+  "en": "{col:01}{name:05}{f5:A0}{f4}{f5:B1}{f4:4F}{fa:E1}\nWhat!? Who the hell are you...{wait}You men, go on ahead!{f4:4B}{fd}{fe:10}{goto:00:104D}"
  },
  {
   "id": "104B",
   "jp": "{col:01}ロイ\nかえれ！かえれ！{end}",
-  "en": "{col:01}Roy\nGo home! Go home!{end}"
+  "en": "{col:01}Roy\nGo away! Go away!{end}"
  },
  {
   "id": "104C",
@@ -491,7 +491,7 @@
  {
   "id": "1062",
   "jp": "「{d:30|マリア}へ」{end}",
-  "en": "To Maria{end}"
+  "en": "To Mary{end}"
  },
  {
   "id": "1063",
@@ -501,7 +501,7 @@
  {
   "id": "1064",
   "jp": "{col:01}{d:81|ガルザック}\nその剣を、なぜ君のような\nわか者が持って{d:4E|いるの}かを{wait}おしえてほ{d:71|しい}。{fd}{fe:10}{goto:00:1065}",
-  "en": "{col:01}Garzack\nI'd like you to tell me why a youngster like\nyou is carrying that sword.{wait}Would you?{fd}{fe:10}{goto:00:1065}"
+  "en": "{col:01}Garzack\nWhy would a youngster like you be carrying\nthat sword?{wait}I'd like you to tell me.{fd}{fe:10}{goto:00:1065}"
  },
  {
   "id": "1065",
@@ -536,7 +536,7 @@
  {
   "id": "106B",
   "jp": "{col:01}ギルム{spd:01}\n{d:76|この}剣は{d:2E|ロンディウム}王家に\n伝わる伝説の聖剣、\n{col:01}「{item:30}」{col}！{wait}だが、剣に宿る精霊が\n力をよわめて{d:4F|いる}。{wait}たのむ、{d:11|ワシ}に剣を\n鍛えさせ{d:0C|てくれ}{d:6C|ない}か。{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1{d:8F|おねがい}します\n  2だめだ{choice:00:106C:10ED}",
-  "en": "{col:01}Gilm{spd:01}\nThis is the legendary holy sword handed\ndown in Rondium's royal\nfamily, {col:01}\"{item:30}\"{col}!{wait}But the spirit that dwells in it has\ngrown weak.{wait}Please, let me temper this sword.{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Please do\n  2No{choice:00:106C:10ED}"
+  "en": "{col:01}Gilm{spd:01}\nThis is the legendary holy sword handed\ndown in Londium's royal\nfamily, {col:01}\"{item:30}\"{col}!{wait}But the spirit that dwells in it has\ngrown weak.{wait}Please, let me temper this sword.{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Please do\n  2No{choice:00:106C:10ED}"
  },
  {
   "id": "106C",
@@ -595,12 +595,12 @@
  {
   "id": "1077",
   "jp": "「{d:2E|ロンディウム}{d:8D|王国}へ」{end}",
-  "en": "To the Kingdom of Rondium{end}"
+  "en": "To the Kingdom of Londium{end}"
  },
  {
   "id": "1078",
   "jp": "「{d:2E|ロンディウム}{d:8D|王国}」{end}",
-  "en": "Kingdom of Rondium{end}"
+  "en": "Kingdom of Londium{end}"
  },
  {
   "id": "1079",
@@ -628,12 +628,12 @@
  {
   "id": "107E",
   "jp": "「{d:34|マースナル}{d:8D|王国}」{end}",
-  "en": "Kingdom of Marsnal{end}"
+  "en": "Kingdom of Marthnal{end}"
  },
  {
   "id": "107F",
   "jp": "「{d:33|ワース}ヘ」{end}",
-  "en": "To Worth{end}"
+  "en": "To Warse{end}"
  },
  {
   "id": "1080",
@@ -653,7 +653,7 @@
  {
   "id": "1083",
   "jp": "あや{d:71|しい}奴！\n{d:88|こっち}へ来い！{end}",
-  "en": "Suspicious! Get over here!{end}"
+  "en": "You look suspicious! Get over here!{end}"
  },
  {
   "id": "1084",
@@ -703,7 +703,7 @@
  {
   "id": "108D",
   "jp": "「{d:2C|ルテア}へ」{end}",
-  "en": "To Rutea{end}"
+  "en": "To Lutea{end}"
  },
  {
   "id": "108E",
@@ -763,7 +763,7 @@
  {
   "id": "1099",
   "jp": "「{d:2C|ルテア}」{end}",
-  "en": "Rutea{end}"
+  "en": "Lutea{end}"
  },
  {
   "id": "109A",
@@ -778,7 +778,7 @@
  {
   "id": "109C",
   "jp": "「{d:38|メディオム}{d:8D|王国}」{end}",
-  "en": "Kingdom of Medeom{end}"
+  "en": "Kingdom of Mediom{end}"
  },
  {
   "id": "109D",
@@ -808,12 +808,12 @@
  {
   "id": "10A2",
   "jp": "{d:0A|きさまら}はっ！{wait}一体、どうやって、\nもう一度来いっ{d:1B|！！}{end}",
-  "en": "You lot!{wait}How in the world did you-- You're coming\nwith me again!!{end}"
+  "en": "It's you!{wait}How in the world did you-- You're coming\nwith me again!!{end}"
  },
  {
   "id": "10A3",
   "jp": "あや{d:71|しい}奴らめ！\n{d:18|ちょっと}来い{d:1B|！！}{end}",
-  "en": "Suspicious lot!\nCome here!!{end}"
+  "en": "Suspicious characters! Come with me!!{end}"
  },
  {
   "id": "10A4",
@@ -848,7 +848,7 @@
  {
   "id": "10AA",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:D5}{fa:E3}\nそれはありがたい。{wait}{d:60|じゃ}が、三人だと\nちと、目立ちすぎる。{wait}それに女の子には\n危険すぎる、{wait}{name:01}は、{d:75|ここ}で\nまっておく{d:0E|のじゃ。}{fd}{fe:10}{goto:00:10AB}",
-  "en": "{col:01}{name:02}{spd:01}{f4}{f4:D5}{fa:E3}\nMuch obliged.{wait}But three of you would stand out a bit\ntoo much.{wait}Besides, it's too dangerous for a girl.{wait}{name:01}, you wait here, young'un.{fd}{fe:10}{goto:00:10AB}"
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:D5}{fa:E3}\nMuch obliged.{wait}But a group this size would stand out a bit\ntoo much.{wait}Besides, it's too dangerous for a girl.{wait}{name:01}, you wait here, young'un.{fd}{fe:10}{goto:00:10AB}"
  },
  {
   "id": "10AB",
@@ -907,7 +907,7 @@
  {
   "id": "10B6",
   "jp": "{col:01}地{d:1E|魔将}ゴルドー{spd:01}{f5:A0}{f4}{f5:B1}{f4:67}{fa:E1}\nだ{d:56|いた}んにも、\n{d:76|この}フェフス城にのり込んで\nきた者達とは{wait}{d:74|おまえ}らの事か{d:79|・・・}{end}",
-  "en": "{col:01}Earth General Goldo{spd:01}{f5:A0}{f4}{f5:B1}{f4:67}{fa:E1}\nSo the ones bold enough to storm\nFefus Castle...{wait}are you lot, are they...{end}"
+  "en": "{col:01}Earth General Goldo{spd:01}{f5:A0}{f4}{f5:B1}{f4:67}{fa:E1}\nSo the ones who had the nerve to storm\nFefus Castle...{wait}It's you, is it...{end}"
  },
  {
   "id": "10B7",
@@ -917,7 +917,7 @@
  {
   "id": "10B8",
   "jp": "{fe:10}{col:01}地{d:1E|魔将}ゴルドー{spd:01}{f5:B1}{f4:67}{fa:E1}\nそうもいかん。\n{d:76|この}黄玉がオレの目的。{wait}戦って、えなければ\nなら{d:6C|ない}物{d:10|ならば}、{wait}戦ってうばう。{wait}それが俺のやり方！{wait}{d:0B|おまえ達}も黄玉が\nほしければ{wait}{d:76|この}{d:35|ライドロイド}{d:1F|帝国}\n四天王が一人、{wait}地{d:1E|魔将}ゴルドーから\n見事うばいとってみせよ！{end}",
-  "en": "{fe:10}{col:01}Earth General Goldo{spd:01}{f5:B1}{f4:67}{fa:E1}\nI can't do that. This Topaz is\nmy objective.{wait}If a thing must be won by fighting,{wait}then I fight and seize it.{wait}That is my way!{wait}If you want the Topaz as well,{wait}I am one of the Four Heavenly Kings of the\nRaidroid Empire,{wait}Earth General Goldo! Take it from me, if\nyou can!{end}"
+  "en": "{fe:10}{col:01}Earth General Goldo{spd:01}{f5:B1}{f4:67}{fa:E1}\nI can't do that. This Topaz is\nmy objective.{wait}If a thing can only be won by fighting,{wait}then I fight and seize it.{wait}That is my way!{wait}If you want the Topaz as well,{wait}then come and take it, if you can, from one\nof the Raidroid Empire's Four\nHeavenly Kings:{wait}me, Earth General Goldo!{end}"
  },
  {
   "id": "10B9",
@@ -979,7 +979,7 @@
    "10C5"
   ],
   "jp": "あーあ、あんなかたぶつの\n言う事なんか、いちいち\n聞いていられるか{d:6D|よ。}{end}",
-  "en": "Ah, geez. Who can be bothered listening to\nevery little thing that stiff says?{end}"
+  "en": "Ah, geez. Who can be bothered listening to\nevery little thing that\nstick-in-the-mud says?{end}"
  },
  {
   "id": "10C6",
@@ -994,7 +994,7 @@
    "10CD"
   ],
   "jp": "{fe:10}{col:01}{name:02}\n{d:79|・・・}ま・さか！？{fd}{fe:10}{goto:00:10DA}",
-  "en": "{fe:10}{col:01}{name:02}\n...It... can't be!?{fd}{fe:10}{goto:00:10DA}"
+  "en": "{fe:10}{col:01}{name:02}\n...No... way!?{fd}{fe:10}{goto:00:10DA}"
  },
  {
   "id": "10CE",
@@ -1202,7 +1202,7 @@
  {
   "id": "10F7",
   "jp": "{fe:10}{col:01}{name:04}{f4:5C}\n・{fd:11}・{fd:11}・{fd:11}ふぅ。{wait}{d:79|・・・}わかり{d:4C|ました。}{wait}もう閉会し{d:59|ます。}{end}",
-  "en": "{fe:10}{col:01}{name:04}{f4:5C}\n.{fd:11}.{fd:11}.{fd:11}Sigh.{wait}...Very well.{wait}This council is adjourned.{end}"
+  "en": "{fe:10}{col:01}{name:04}{f4:5C}\n.{fd:11}.{fd:11}.{fd:11}Haah.{wait}...Very well.{wait}This council is adjourned.{end}"
  },
  {
   "id": "10F8",
@@ -1222,7 +1222,7 @@
  {
   "id": "10FB",
   "jp": "お待ち{d:48|下さい}ませ{d:1B|！！}{wait}姫様お一人でなど\n行かせませぬ。{fd}{fe:10}{goto:00:10FC}",
-  "en": "Please wait!!{wait}I will not let the Princess go alone.{fd}{fe:10}{goto:00:10FC}"
+  "en": "Please wait!!{wait}I won't let you go alone, Princess.{fd}{fe:10}{goto:00:10FC}"
  },
  {
   "id": "10FC",
