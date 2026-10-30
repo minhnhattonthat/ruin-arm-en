@@ -18,20 +18,25 @@ Updated at the end of every session. Keep it to what the next session needs; his
     px), 207 one-word last rows rebalanced (`batches.py balance`, also run by `merge`). Details: `docs/re/vwf.md`.
   - D19: home village Aaf -> Arff (the original's world map is lettered ARFF).
   - Worn signposts 109A/109B kept as worn (the JP shows the dots too), now `"To Rute-"` / `"To -ede-m"`.
+  - Round 2 visual QA (249 sheets, 8 reviewers, verdicts `work/qa/verdicts/`) fixed: speaker headers on one row
+    (msg10-12, lint `header_codes`), 1149 page held at the JP's pause, spaces after inline pauses (12D3, 10E7),
+    110B, 0190, 01AA, 00CF rows.
+  - Game over reached (scene `game_over`: `kill = frames` holds both at HP 0 + dead bit -> msg 0187, then title);
+    ending credits block `$02` toured (`msgs_02`, timed pages shot every 40 frames). `docs/re/debug.md`.
+  - Emulator power-on RAM zeroed (`tools/emu-config/settings.json`, copy into `tools/mesen/`): the default hero
+    name came from random RAM, so every re-tour changed every sheet with a name in it.
+  - `tools/release.py` + `docs/release-readme.txt` written (phase 9 ready to run once the gate passes).
 - **Next (phase 8):**
-  1. Rebuild (109A/109B changed after the round-2 tour started), smoke.
-  2. Finish the round-2 tour: `msgs_13`, then `warp.py --all --rom build/ruinarm_en.sfc --out work/qa/tour_en`
-     (scenes + maps; scenes sheet is `scenes.png`, maps get `sheet*.png`). Round-2 sheets for blocks 00-12 are in
-     `work/qa/tour_en/msgs_*` but predate the 109A/B edit: re-run `msgs_10` or recheck those two by hand.
-     The round-2 run was stopped by Claude Code for low system memory: run blocks one or two at a time
-     (`--jobs 2`), not six emulators at once.
-  3. `qa_gate.py init work/qa/manifest.tsv work/qa/tour_en --glob "*sheet*.png"` (add `scenes.png`), `todo
-     --size 30 --out-dir work/qa/chunks`, visual-qa agents (4 at a time) with `docs/visual-qa-brief.md`; JP shots
-     for comparison: `work/qa/tour_jp/msgs_XX/` (done).
-  4. Fix issues, recheck, `qa_gate.py check` exits 0.
-- **Open (debug-tool gaps, phase 8 done-when):** ending scene (script near `$ADF2F4`; block `$02` messages draw only
-  there) and game over (no game-over text in the script; jumping to `$86ECAE` does nothing; modes `$0A-$12` fade to
-  the title): `docs/re/debug.md` §Open leads. Save screen, bosses, story-flag presets not in the scene list.
+  1. Re-tour on build `5331160d` with zeroed RAM, one or two emulators (`--jobs 1`/`2`; Claude Code killed two
+     runs for low system memory, other projects share the machine):
+     `warp.py msgs_00 msgs_01 msgs_02 msgs_10 msgs_11 msgs_12 msgs_13 --rom build/ruinarm_en.sfc --out
+     work/qa/tour_en --jobs 1`, then `warp.py --all --rom build/ruinarm_en.sfc --out work/qa/tour_en --jobs 1`.
+  2. `qa_gate.py init work/qa/manifest.tsv work/qa/tour_en --glob "*sheet*.png"`, again with `--glob
+     "scenes*.png"`, `todo --size 30 --out-dir work/qa/chunks`, visual-qa agents (4 at a time).
+  3. Fix issues, re-tour only the changed blocks (about 6% of tiles differ between runs by the ▼ blink), recheck,
+     `qa_gate.py check` exits 0. Then phase 9: `tools/release.py --version 1.0`.
+- **Open (debug tool):** the ending scene's own screen (script near `$ADF2F4`, entry not found; its text is covered
+  by `msgs_02` + `credits_N`). Save screen, bosses, story-flag presets not in the scene list.
 - **Open (engine/graphics):** hero/sister names one letter a cell in menus; shop compare `Use`/`Hold` label
   half-hidden by the code's icon; short labels left by D18 (Atk/Def/Pad/BWH/Tech).
 - **Open RE items:** `$849B38` per-caller pointer tables; weapon-type records ~026F80; control words FE/FA/F5/F4/F3;

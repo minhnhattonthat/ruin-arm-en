@@ -33,6 +33,15 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
   party: a portrait or speaker that doesn't fit the village, a box that opens and closes with nothing in it, or the
   same page shot twice in a row (a choice or timed page the tour waited out) is the tour, not a bug.
 - The hero's default name differs between boots (Fang, Greco, ...); any name in the hero's slot is fine.
+- `msgs_02` is the ending's staff credits: its pages are timed, so the tour shoots every 40 frames and catches
+  names mid-typing or mid-scroll; `0200` "A YEAR LATER" shows an empty box in the field on both ROMs.
+- Msg `1384` (msgs_13) is a block of unused slots that never closes; 30 identical shots, same in the original.
+- Speaker headers (`Imperial Guard General Zain`, `Wind General Hude`, ...) sit on one row since round 2; a header
+  split over two rows is now an issue.
+- Short rows before a mid-sentence pause (`{wait}` / timed pause) are fine where the original pauses in the same
+  place; compare with the JP shot before flagging.
+- Garbled pink portrait of Freed (msg 12CB): the original shows the same.
+- Scenes `game_over` (msg 0187 "... and the others have fallen.") and `game_over_next` (title menu) end the run.
 - Short menu labels Atk/Def/Pad/BWH/Tech are a recorded decision (D18), not abbreviation bugs.
 - Lower-case and proportional text is the English font (VWF); the Japanese used full-width 16x16 cells.
 - Choice options start with the original's large full-width digits `1`/`2`/`3`, the cursor left of the digit and
