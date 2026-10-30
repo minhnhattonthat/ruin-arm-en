@@ -942,12 +942,12 @@
  {
   "id": "10BD",
   "jp": "{fe:10}{col:01}地{d:1E|魔将}ゴルドー{spd:01}{f5:B1}{f4:67}{fa:E1}{f4:95}\nフム。{wait}ただのネズミ{d:09|という}わけでは\n{d:6C|ない}な。{wait}おもしろい、{wait}{d:76|この}{d:35|ライドロイド}{d:1F|帝国}\n四天王が一人、{wait}地{d:1E|魔将}ゴルドーが直々に\n相手をしよう、{wait}かかってくるが{d:73|いい}{d:1B|！！}{end}",
-  "en": "{fe:10}{col:01}Earth General\nGoldo{spd:01}{f5:B1}{f4:67}{fa:E1}{f4:95} Hmm.{wait}So you're no mere rats.{wait}Interesting.{wait}I, one of the Four Heavenly Kings of the\nRaidroid Empire,{wait}Earth General Goldo, will face you myself.{wait}Come at me!!{end}"
+  "en": "{fe:10}{col:01}Earth General Goldo{spd:01}{f5:B1}{f4:67}{fa:E1}{f4:95}\nHmm.{wait}So you're no mere rats.{wait}Interesting.{wait}I, one of the Four Heavenly Kings of the\nRaidroid Empire,{wait}Earth General Goldo, will face you myself.{wait}Come at me!!{end}"
  },
  {
   "id": "10BE",
   "jp": "{col:01}地{d:1E|魔将}ゴルドー\nぐぅ！{wait}まさか{d:76|この}俺が{d:78|こんな}\nやつらに倒されるとは{d:79|・・・}{fd}{fe:10}{goto:00:10BF}",
-  "en": "{col:01}Earth General\nGoldo Ngh!{wait}To think I'd be beaten by the likes of you...{fd}{fe:10}{goto:00:10BF}"
+  "en": "{col:01}Earth General Goldo\nNgh!{wait}To think I'd be beaten by the likes of you...{fd}{fe:10}{goto:00:10BF}"
  },
  {
   "id": "10BF",
@@ -1029,7 +1029,7 @@
  {
   "id": "10D4",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\nおろかな{d:79|・・・}{wait}{d:74|おまえ}の大切なものを\n失{d:56|いた}く無ければ{wait}その下ら{d:6C|ない}、おしばいを\nやめる事だ、{d:01|ボーガン}。{fd}{fe:10}{goto:00:10D5}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain{spd:01} Fool...{wait}If you don't want to lose what is precious\nto you,{wait}you will stop this worthless act, Bogan.{fd}{fe:10}{goto:00:10D5}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nFool...{wait}If you don't want to lose what is precious\nto you,{wait}you will stop this worthless act, Bogan.{fd}{fe:10}{goto:00:10D5}"
  },
  {
   "id": "10D5",

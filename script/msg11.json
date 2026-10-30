@@ -62,7 +62,7 @@
  {
   "id": "110B",
   "jp": "{col:01}{d:12|ハヌトゥ}{spd:01}\nおわ{d:7B|った}。{wait}{d:0D|しかし}、{d:76|この}剣は{wait}まだ、かくされた力を\n秘めて{d:4F|いる}、{wait}{d:0D|しかし}、私に出来るのは\n{d:75|ここ}までのようだ。{fe}{col:01}＊剣の力が少し回復{d:62|した}。{end}",
-  "en": "{col:01}Hanutu{spd:01}\nIt is done.{wait}However, this sword{wait}still holds a hidden power.{wait}But it seems this is as far as I can take it.{fe}{col:01}* The sword's power has been\npartly restored.{end}"
+  "en": "{col:01}Hanutu{spd:01}\nIt is done.{wait}However, this sword{wait}still holds a hidden power.{wait}But it seems this is as far as I can take it.{fe}{col:01}* The sword's power recovered a little.{end}"
  },
  {
   "id": "110C",
@@ -619,7 +619,7 @@
  {
   "id": "117D",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}{f4}{f4:69}{fa:E1}\nヒャアハハハハ！{wait}また会いま{d:62|した}ね。{wait}{d:23|あなた達}の作戦など、\nお見通し{d:5C|です}。{wait}{d:2C|ルテア}では一度、{d:23|あなた達}に\nおくれを取りま{d:62|した}が今度は{wait}万が一にもそんな事は、\nありえ{d:6C|ない}。なぜなら、{wait}{d:23|あなた達}の中に{d:4F|いる}\n協力者が{d:22|じょうほう}を{wait}くれま{d:62|した}からねー。{wait}{d:5A|しょう}かいしま{d:5A|しょう}。{end}",
-  "en": "{col:01}Wind General\nHude{spd:01}{f4}{f4:69}{fa:E1} Hyaahahahaha!{wait}We meet again.{wait}I see right through your little plan.{wait}You got the better of me once in Rutea,\nbut this time{wait}that will never happen, not in a million\nyears. Because, you see,{wait}someone among you has been so kind as to\ngive me{wait}information, hmm?{wait}Allow me to make the introduction.{end}"
+  "en": "{col:01}Wind General Hude{spd:01}{f4}{f4:69}{fa:E1}\nHyaahahahaha!{wait}We meet again.{wait}I see right through your little plan.{wait}You got the better of me once in Rutea,\nbut this time{wait}that will never happen, not in a million\nyears. Because, you see,{wait}someone among you has been so kind as to\ngive me{wait}information, hmm?{wait}Allow me to make the introduction.{end}"
  },
  {
   "id": "117E",
@@ -654,7 +654,7 @@
  {
   "id": "1184",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{spd:01}\nバッ、バカな！{wait}あのわなをすべて\nかわ{d:62|した}の{d:5B|ですか}！？{wait}{d:1D|レイナ}{d:88|こっち}へ来{d:45|なさい}。{fd}{fe:10}{goto:00:1185}",
-  "en": "{col:01}Wind General\nHude{spd:01} Im-impossible!{wait}You got past every one of those traps!?{wait}Reina, come here.{fd}{fe:10}{goto:00:1185}"
+  "en": "{col:01}Wind General Hude{spd:01}\nIm-impossible!{wait}You got past every one of those traps!?{wait}Reina, come here.{fd}{fe:10}{goto:00:1185}"
  },
  {
   "id": "1185",
@@ -891,12 +891,12 @@
    "11BA"
   ],
   "jp": "{col:01}闇姫騎士{d:8A|ミリア}{f4}{f4:6A}{fa:A1}\nうら切り者め！{end}",
-  "en": "{col:01}Dark Princess Knight\nMilia{f4}{f4:6A}{fa:A1} Traitor!{end}"
+  "en": "{col:01}Dark Princess Knight Milia{f4}{f4:6A}{fa:A1}\nTraitor!{end}"
  },
  {
   "id": "11BB",
   "jp": "{col:01}風{d:1E|魔将}{d:03|ヒュード}{f4}{f4:69}{fa:E1}\nぐわっ！{end}",
-  "en": "{col:01}Wind General\nHude{f4}{f4:69}{fa:E1} Gwaagh!{end}"
+  "en": "{col:01}Wind General Hude{f4}{f4:69}{fa:E1}\nGwaagh!{end}"
  },
  {
   "id": "11BC",
@@ -1089,7 +1089,7 @@
  {
   "id": "11E8",
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\nばかなっ！{wait}王女にかけた\nじゅばくが{wait}とけてしまうとは！？{fd}{fe:10}{goto:00:11EA}",
-  "en": "{col:01}Imperial Guard General\nZain{spd:01} Impossible!{wait}The curse I laid on the princess{wait}has been broken!?{fd}{fe:10}{goto:00:11EA}"
+  "en": "{col:01}Imperial Guard General Zain{spd:01}\nImpossible!{wait}The curse I laid on the princess{wait}has been broken!?{fd}{fe:10}{goto:00:11EA}"
  },
  {
   "id": "11E9",

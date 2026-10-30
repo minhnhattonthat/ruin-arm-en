@@ -168,17 +168,26 @@ def rebalance(write=False):
     print(f"{n} messages {'rebalanced' if write else 'to rebalance'}")
 
 
-def headers(text):
-    """Pages that open with a speaker row ({col:01}Name then a newline)."""
-    n = 0
+def speaker_rows(text):
+    """Speaker rows ({col:01}Name then a newline) that open a page, without the {col:01}."""
+    out = []
     for part in PAGE.split(plain_jp(text)):
         m = re.match(r"(?:\{(?!col)[^{}]*\})*\{col:01\}([^\n]*)\n", part)
         row = CODE.sub("", m.group(1)) if m else ""
         # not a coloured phrase ({col} ends one; a JP row longer than a name; quotes)
         if m and (len(row) <= 10 if JAPANESE.search(row) else width(m.group(1)) <= LINE) and "{col}" not in m.group(1) \
                 and not set(row) & set("「、,"):
-            n += 1
-    return n
+            out.append(m.group(1))
+    return out
+
+
+def headers(text):
+    return len(speaker_rows(text))
+
+
+def header_codes(text):
+    """The codes on each speaker row: the portrait codes after the name stay on that row."""
+    return [CODE.findall(r) for r in speaker_rows(text)]
 
 
 def codes(text):
@@ -203,6 +212,8 @@ def msg_errors(jp, en, merged=False):
         errs.append(f"must end with {last[0]}")
     if not merged and headers(jp) != headers(en):  # merged text has wrap breaks: a coloured first row looks like one
         errs.append(f"{headers(jp)} speaker rows in the JP, {headers(en)} in the EN: keep '\\n' right after a speaker")
+    if header_codes(jp) != header_codes(en):
+        errs.append(f"speaker-row codes {header_codes(jp)} in the JP, {header_codes(en)} in the EN: keep the row whole")
     rows = max([ROWS] + [len(p) for p in layout(jp)])  # a JP page past 4 rows scrolls the box: as many are fine
     for i, page in enumerate(layout(en), 1):
         for r in page:

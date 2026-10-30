@@ -1036,6 +1036,6 @@
  {
   "id": "00CF",
   "jp": "＊{col:01}{item_v}{col}を\n {d:07|手に入れた}！{wait:11}{d:0D|しかし}持ち物がいっぱいで\n持てなか{d:7B|った}ので宝ばこに{wait:11}かえ{d:7F|して}置{d:56|いた}。{end}",
-  "en": "* Got the {col:01}{item_v}{col}!{wait:11}But you couldn't carry any more, so you\nput it back{wait:11}in the treasure chest.{end}"
+  "en": "* Got the {col:01}{item_v}{col}!{wait:11}But you couldn't carry any more,{wait:11}so you put it back in the treasure chest.{end}"
  }
 ]

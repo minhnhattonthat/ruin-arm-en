@@ -597,7 +597,7 @@
  {
   "id": "0190",
   "jp": "{col:01}「{d:35|ライドロイド}{d:1F|帝国}」\n{col:01}パスワード{col}ヲ\nカクニンシマシタ。{end}",
-  "en": "{col:01}\"RAIDROID\" {col:01}PASSWORD{col}\nCONFIRMED.{end}"
+  "en": "{col:01}\"RAIDROID\" {col:01}PASSWORD{col} CONFIRMED.{end}"
  },
  {
   "id": "0191",
@@ -727,7 +727,7 @@
  {
   "id": "01AA",
   "jp": "{name:04}様、\nこおりのゆかは、\n{item:0E}で{wait}あなが開けられるん\n{d:5C|です}って。{end}",
-  "en": "{name:04}-sama, they say that with the\n{item:0E}{wait}you can open holes in icy floors.{end}"
+  "en": "{name:04}-sama, they say that\nwith the {item:0E},{wait}you can open holes in icy floors.{end}"
  },
  {
   "id": "01AB",

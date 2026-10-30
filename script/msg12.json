@@ -192,7 +192,7 @@
  {
   "id": "1229",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}{f4}{f4:72}{fa:E1}\n{d:50|なんだ}と？{wait}{d:76|この}私のやることが、\n気に入ら{d:6C|ない}{d:09|という}のか！？{fd}{fe:10}{goto:00:122A}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain{spd:01}{f4}{f4:72}{fa:E1} What?{wait}Are you saying you object to what I do!?{fd}{fe:10}{goto:00:122A}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}{f4}{f4:72}{fa:E1}\nWhat?{wait}Are you saying you object to what I do!?{fd}{fe:10}{goto:00:122A}"
  },
  {
   "id": "122A",
@@ -202,7 +202,7 @@
  {
   "id": "122B",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nん！？{fd}{fe:10}{goto:00:122C}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain Hm!?{fd}{fe:10}{goto:00:122C}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nHm!?{fd}{fe:10}{goto:00:122C}"
  },
  {
   "id": "122C",
@@ -310,7 +310,7 @@
  {
   "id": "1242",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n{d:53|そうだ}。{wait}そいつは、{d:74|おまえ}が\n{d:3C|アーノゥン地方}に{wait}見捨てられたと、\nうらんで{d:56|いた}兄な{d:67|のだ。}{wait}{d:0D|しかし}、{d:74|おまえ}は\n見捨てられたのでは{d:6C|ない}。{wait}こいつは{d:74|おまえ}の身がわりに\n{d:69|なって}死にかけた所を\nぐう然助か{d:7B|った}だけな{d:67|のだ。}{wait}{d:74|おまえ}はそんな事も\n知らずに、私のうそに{wait}だまされ続けてきたのだ{d:1B|！！}{fd}{fe:10}{goto:00:1243}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain{spd:01} Yes.{wait}He is the brother you hated{wait}for abandoning you in the Arnoun region.{wait}But you were not abandoned.{wait}He took your place, nearly died, and\nsurvived only by sheer chance.{wait}Knowing none of this, you went on{wait}being fooled by my lies!!{fd}{fe:10}{goto:00:1243}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYes.{wait}He is the brother you hated{wait}for abandoning you in the Arnoun region.{wait}But you were not abandoned.{wait}He took your place, nearly died, and\nsurvived only by sheer chance.{wait}Knowing none of this, you went on{wait}being fooled by my lies!!{fd}{fe:10}{goto:00:1243}"
  },
  {
   "id": "1243",
@@ -320,7 +320,7 @@
  {
   "id": "1244",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\nくっくっくっくっ{d:79|・・・}{wait}おろかなり、\n{name:05}よ！{wait}そ{d:7F|して}、{d:74|おまえ}の役目も\n終わ{d:7B|った}{d:1B|！！}{end}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain{spd:01} Kukukuku...{wait}How foolish, {name:05}!{wait}And now your part is over!!{end}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nKukukuku...{wait}How foolish, {name:05}!{wait}And now your part is over!!{end}"
  },
  {
   "id": "1245",
@@ -360,7 +360,7 @@
  {
   "id": "124C",
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nなにっ{d:1B|！！}{fd}{fe:10}{goto:00:124D}",
-  "en": "{col:01}Imperial Guard General\nZain What!!{fd}{fe:10}{goto:00:124D}"
+  "en": "{col:01}Imperial Guard General Zain\nWhat!!{fd}{fe:10}{goto:00:124D}"
  },
  {
   "id": "124D",
@@ -395,7 +395,7 @@
  {
   "id": "1253",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nくだらん。{wait}やっと死んだか、\n{d:76|この}くたばりぞこ{d:6C|ない}がっ！{end}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain Pathetic.{wait}So he's finally dead, the half-dead wretch!{end}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nPathetic.{wait}So he's finally dead, the half-dead wretch!{end}"
  },
  {
   "id": "1254",
@@ -940,7 +940,7 @@
  {
   "id": "12CB",
   "jp": "{fe:10}{col:01}炎{d:1E|魔将}フリード{f5:D0}{f4}{f5:C1}{f4:66}{fa:E1}\n{name:05}っ！{wait}{d:74|おまえ}とはいつか戦って\nみたいと{d:49|思って}{d:56|いた}。{fd}{fe:10}{goto:00:12CC}",
-  "en": "{fe:10}{col:01}Flame General\nFreed{f5:D0}{f4}{f5:C1}{f4:66}{fa:E1} {name:05}!{wait}I have long wished to cross blades with\nyou someday.{fd}{fe:10}{goto:00:12CC}"
+  "en": "{fe:10}{col:01}Flame General Freed{f5:D0}{f4}{f5:C1}{f4:66}{fa:E1}\n{name:05}!{wait}I have long wished to cross blades with\nyou someday.{fd}{fe:10}{goto:00:12CC}"
  },
  {
   "id": "12CC",
@@ -976,7 +976,7 @@
  {
   "id": "12D4",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\nおろかな。{wait}やはり{d:19|人間}は\n滅ぶべき種な{d:67|のだ。}{wait}さあ、はやく{d:3E|バルドア}を\n完全復活させるための{wait}エネルギーで{d:61|ある}、\n{col:01}「{item:19}」{wait}{col:01}「{item:1A}」{wait}の残り二つを\n渡{d:7F|して}もらおうか。{end}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain{spd:01} Fools.{wait}Humans truly are a species that\nmust perish.{wait}Now, quickly. The energy to fully\nrevive Baldoa:{wait}the {col:01}\"{item:19}\"{wait}and the {col:01}\"{item:1A}\"{wait}--hand over those last two.{end}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nFools.{wait}Humans truly are a species that\nmust perish.{wait}Now, quickly. The energy to fully\nrevive Baldoa:{wait}the {col:01}\"{item:19}\"{wait}and the {col:01}\"{item:1A}\"{wait}--hand over those last two.{end}"
  },
  {
   "id": "12D5",
@@ -986,7 +986,7 @@
    "12D7"
   ],
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}\n{d:17|ボルボーザ}様ぁぁぁ{end}",
-  "en": "{col:01}Imperial Guard General\nZain Bolboza-samaaaa!{end}"
+  "en": "{col:01}Imperial Guard General Zain\nBolboza-samaaaa!{end}"
  },
  {
   "id": "orphan_BBF416",
@@ -1079,7 +1079,7 @@
  {
   "id": "12E9",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nおろかな。{wait}{d:76|この}私に勝てると\n{d:49|思って}{d:4E|いるの}か。{fd}{fe:10}{goto:00:12EA}",
-  "en": "{fe:10}{col:01}Imperial Guard General\nZain Fool.{wait}You think you can beat me?{fd}{fe:10}{goto:00:12EA}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nFool.{wait}You think you can beat me?{fd}{fe:10}{goto:00:12EA}"
  },
  {
   "id": "12EA",
