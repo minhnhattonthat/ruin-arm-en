@@ -37,6 +37,10 @@ rewrite). Critical/Important were fixed before merge. `id - suggestion`.
   Yasunobu Okubo, Soji Machida): unverified.
 
 ## Fields (b016-b031)
+- Reconcile the original Latin world-map spellings under D19 against the glossary and every script occurrence;
+  all thirteen labels are now visible in `work/qa/worldmap_flags/scene.png`. Include `tools/worldmap.py` and the
+  newly found ラウ / RAN. Examples: LONDIUM versus Rondium, WHAIAL versus Wyall, WARSE versus Worth, MEDIOM versus
+  Medeom; verify the remaining labels from the original pixels rather than guessing their spelling.
 - place_31/32 Manor vs place_09/40 Mansion; place_19 "Ravenna Road"; place_3F "Rutea Passage"; place_37 "Fefus Back Way"
 - item_C0 "Everyday Clothes"; item_C7 "Fire God Zenon"?; item_16 Breath vs Bless Ring (verify in game); item_27 "Sleep Sword"
 - equip_08 "Light" (b038) -> "Ray"?; use_01 "Don't" -> "Skip"; tactic_01 "Wary" -> "Timid"; status_00 "Best";

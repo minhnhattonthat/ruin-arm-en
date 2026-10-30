@@ -43,8 +43,16 @@ if sc.map then sc.exit = exit_for(sc.map) end
 
 -- mash A while the game is not in the field (title, name prompt, dialogue); never in the field itself
 local mashing = not sc.stop_at
+local activated = false
 L.on_frame(function(n)
   if mashing and mode() ~= FIELD and n % 20 == 0 and L.route_done() then L.press("a", 6) end
+  if sc.advance and mode() >= 0x30 and mode() <= 0x36 and n % 20 == 0 and L.route_done() then L.press("a", 6) end
+  if sc.activate and not activated and rd16(0x7E0387) == sc.activate.map then
+    local obj = 0x7E0400 + sc.activate.slot * 0x50
+    wr16(obj, rd16(obj) & 0x7FFF)
+    activated = true
+    L.log(string.format("ACTIVATE object %d map %04X", sc.activate.slot, sc.activate.map))
+  end
 end)
 
 -- event injection: on entry of the per-frame mode dispatcher $86821A (JSL'd, ends PLP/RTL), jump to the
@@ -60,6 +68,7 @@ L.on_frame(function()
 end)
 L.on_exec(0x86821A, 0x86821A, function()
   if not pending_ev or mode() ~= FIELD then return end
+  L.log(string.format("INJECT %04X f%d", pending_ev, L.frame))
   if pending_ev >= 0x8000 then direct_script = pending_ev end
   local s = emu.getState()
   s["cpu.k"], s["cpu.pc"], s["cpu.a"] = 0xAC, 0x86FE, pending_ev

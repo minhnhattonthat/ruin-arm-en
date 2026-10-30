@@ -19,7 +19,8 @@ staff roll are drawn one code per 16 px cell, so the build sets each field's tex
 not letters. A slice's advance is 16, the last one's runs to the text's end, so an `{item}` insert in dialogue reads
 the same. Runs split at 2+ spaces keep the column a 2-letters-a-cell layout gave them (numbers and cursors the code
 draws at fixed cells still line up); `|` starts the next 2-cell unit (command cells picked by index, `84967B`,
-`8496A4`). Names (`name_hero`/`name_sister`) use singles (the name entry edits them letter by letter): max 7 letters.
+`8496A4`). Names (`name_hero`/`name_sister`) stay as singles for letter-by-letter name entry (max 7 letters),
+but the menu renderer composes those singles proportionally at runtime.
 The glyph palette record `84:8A27` is patched per cell (`build.PALETTE`: 21-22 `全部` "All", 23 the shop's red `個`
 "pc").
 
@@ -33,13 +34,16 @@ The glyph palette record `84:8A27` is patched per cell (`build.PALETTE`: 21-22 `
 | `$81E4B9` | `{num}` digit + `$A1` (full-width) | + `$0430` (English digits) |
 | `$81E92E`, `$85EC2D` | cell drawer (and its copy for the name entry): `TXA / CMP #$7F00` | `font_a`/`font_b`: codes `$0400-$0FFF` (not `$07FF`) read their FONT bank (DB = bank, Y = cell), others go back to the original path |
 | `$8296F0` | ruin password: `$140C` 8 words == `$829711` | `password`: same compare, a-z singles folded to A-Z (`build.py` writes `RAIDROID` at `$829711`) |
+| `$849B63` | eight-cell dynamic field: `JSL $81E929` once per code | `menu_name`: when the first code is an ASCII single, render the eight codes proportionally into the same eight cleared cells. Later calls in the loop are skipped. Fixed slice fields keep the original drawer; name storage and editing are unchanged |
+| `$80C62A`, `$80C8CF` | world-map glyph loader and tile-list copier | upload an English bitmap alphabet and redirect location-card, frame and Yes/No lists; `worldmap.md` |
+| `$8C8300` | city tileset pointer `$B5A9A8` | relocated compressed art with eleven unused-slot marker tiles translated; all other art and tile indices unchanged |
 
 Every byte the build changes goes through `build.put` (or, for asar and the checksum, a logged diff) into
 `build/ruinarm_en.writes.txt`; `tests/test_build.py` runs `romdiff.py` with it and holds writes inside the original
 ROM to fields, staff, grids/password, hook sites and the checksum.
 
 Free WRAM `$7E:9000-$9FFF`: no write in any `tools/lua/wramuse.lua` run (8 scenes + the 187-map tour;
-`tools/wramfree.py`). Used: `$9F00-$9F7F` scratch cells, `$9F80-$9F99` VWF vars.
+`tools/wramfree.py`). Used: `$9F00-$9F7F` scratch cells, `$9F80-$9F9B` VWF vars, `$9FA0-$9FA7` menu-name state.
 
 Expansion: `$D18000` code + widths (codes `$0400-$0FFF`), `$D28000` MSGTAB, `$D2C000` relocated messages up to FONT
 (one bank never crossed by a message; they end near `$D7`), `$FC8000-$FFFFFF` FONT (4 banks x 1024 cells). `$D08000`
@@ -60,20 +64,20 @@ what the next record of its list gives up, so the list keeps its bytes and VRAM 
 | `{item}` / `{item_v}` insert | item name: 8 slice cells, drawn at slice widths = the name's own px (≤ 112 px reserved) | code `$81E45D`; `msg_item` shot |
 | `{num}` | English digits, 6 px each | |
 | Fixed fields (menus, items, places, ingots, status...) | **16 px per cell** of the field (`max` in script/*.json, or `fixed.CELLS`), text proportional; the screen may leave less room than the record (status page: label to `:` = 32 px) | menus, status, shop, name confirm shots (`work/qa/sheet3.png`) |
-| Names (`name_hero`, `name_sister`) | **7 letters** (one per cell) | status / name confirm shots |
-| Staff roll | 16 px per cell from the run's `{pos}` column to tile 31 (strings relocated; a `{pos}` may move column, not row) | `credits_0..12` shots (heading row only: the field HUD hides the rest) |
+| Names (`name_hero`, `name_sister`) | **7 letters**, at most 56 px, composed into the existing eight-cell buffer | phase-8 cold boots: name confirm, status, People and shop; `tools/lua/name_trace.lua` identifies caller `$849B66` |
+| Staff roll | 16 px per cell from the run's `{pos}` column to tile 31 (strings relocated; a `{pos}` may move column, not row) | `credits_0..12` cold-boot shots with the ending HUD hidden; full `ending_full` sequence |
 | Dialogue choices (`{choice}`) | the cursor sits in cell 1 and the selected option's colour starts at cell 3, so each option row is the JP's blank, blank, digit cells (`0000 0000 00A2+n`, written `  1` in the script; `en.py` swaps them in) then text from px 48 | phase 8 `msgs_XX` tour (m_1080_04) |
 | Colour (`{col:01}` / `{col}`, `$0CBD` palette bits) | palettes are per 8x8 tile: a colour turned on mid-cell moves the pen to the next tile edge (px 1-8 -> 8, 9-15 -> next cell; `vwf.asm colour`, modelled in `batches.width`); turned off, the rest of that tile keeps the colour. A line break resets the colour (the JP re-opens it each row): `en.carry_col` re-opens a span its next row closes | phase 8 tour |
 | `{fd:xx}` / `{fd}` | an inline pause, no line break (the JP writes `{fd:13}\n` where it wants one) | 130B "sky.{fd:13}There's" ran on |
-| Ending messages (block `$02`) | not measured: the ending screen setup is a debug-tool gap (`debug.md`) | - |
+| Ending messages (block `$02`) | timed ending layout, reviewed through the entire sequence | `msgs_02` plus `ending_full` contact sheets (`debug.md`) |
 
-## Known gaps (phase 7 engine work)
+## Layout decisions and original behavior
 
-- Hero/sister names (WRAM, singles) show one letter per 16 px cell in menus (`S h i n e`): a runtime VWF for the
-  `$7Fxx`/single path in `$849B38` would close it.
+- Hero/sister menu-name spacing fixed in phase 8 by the `$849B63` hook above. The source is still editable singles;
+  the output keeps the old 512-byte allocation, clearing unused cells so shorter names cannot leave old letters.
 - Labels still short because 32 px of screen is all there is (D18): `Atk`/`Def` (status page, shop compare, allot
   page: the `:`/number column sits 32 px after the label), `Pad` (tab), `BWH`, `Tech`, 1-cell ailment icons. A narrow
   menu font (3-4 px lowercase) would fit `Attack`/`Defense`/`Joypad` in 32 px.
 - Shop compare `Use  (  )`/`Hold (  )` (84CE36/84CE43): the code draws an icon over cell 1, so only cell 0 (16 px)
-  shows the label (`Us`/`Hol` peek out; JP used one kanji).
-- Title: the small katakana ルインアーム above the logo (graphics, D10; lead in `graphics.md` G1).
+  shows the label (`Us`/`Hol` peek out; JP used one kanji). Original-ROM comparison confirms the icon overlap.
+- Title katakana removed by the title-loader hook (graphics, D10; `graphics.md` G1).

@@ -1,7 +1,8 @@
 """The game's LZSS codec (decompressor at $80900E, docs/re/compression.md).
 
 Block: u16 output size, then groups of one flag byte (read LSB first) + 8 items. Flag 1 = literal byte. Flag 0 = u16
-word w: copy (w & 0xF) + 3 bytes from output position pos - (w >> 4); positions before the start read as 0.
+word w: copy (w & 0xF) + 3 bytes from output position pos - (w >> 4). Negative positions use the hardware's
+eight-bit zero-fill counter; distance zero requires the prior destination RAM (initial=).
 
     python tools/lz.py selftest
     python tools/lz.py dump OFFSET OUT.bin      # decompress the block at a file offset
@@ -12,8 +13,8 @@ from pathlib import Path
 ROM = Path(__file__).resolve().parent.parent / "rom" / "Ruin Arm (Japan).sfc"
 
 
-def decompress(data, pos=0):
-    """-> (bytes, consumed)"""
+def decompress(data, pos=0, initial=None):
+    """-> (bytes, consumed); initial supplies prior destination RAM for distance-zero copies."""
     start = pos
     size = data[pos] | data[pos + 1] << 8
     pos += 2
@@ -31,9 +32,19 @@ def decompress(data, pos=0):
             continue
         w = data[pos] | data[pos + 1] << 8
         pos += 2
-        src = len(out) - (w >> 4)
-        for _ in range((w & 0xF) + 3):
-            out.append(out[src] if src >= 0 else 0)
+        src = ((len(out) - (w >> 4) + 0x8000) & 0xFFFF) - 0x8000
+        if src < 0:
+            # The 65816 routine keeps the zero-fill counter in eight bits, then
+            # tests DEC with BPL. Large negative distances therefore wrap.
+            counter = (~src) & 0xFF
+            src = -(counter + 1 if counter <= 0x80 else 1)
+        for _ in range(min((w & 0xF) + 3, size - len(out))):
+            if src >= len(out):
+                if initial is None or src >= len(initial):
+                    raise ValueError("distance-zero back-reference needs initial destination RAM")
+                out.append(initial[src])
+            else:
+                out.append(out[src] if src >= 0 else 0)
             src += 1
     return bytes(out[:size]) if len(out) > size else bytes(out), pos - start
 

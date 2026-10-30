@@ -82,6 +82,7 @@ Default names offered at the name entry (name_hero / name_sister, 7 letters max)
 | ヴェルダー | Velder | | ヴェルダーの大森林 = the Great Velder Forest | Welder |
 | ヴェルダの大森林 | Velder Forest | 16 | place.json form | |
 | 獣人村 | Beastfolk Village / Beast Village | 16 | place.json: Beast Village (16 max) | |
+| ラウ | Rau | | beastfolk village named on the world-map card; original map RAN needs D19 story-pass reconciliation | Ran |
 | ルテア | Rutea | 16 | ルテア自治領 = Rutea Region; ルテア屋敷 = Rutea Mansion | Lutea |
 | ティフヌ | Tifnu | 16 | ティフヌ領 = Tifnu Region | |
 | メディオム | Medeom | 16 | Kingdom of Medeom | Mediom |

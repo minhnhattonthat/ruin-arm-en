@@ -41,7 +41,8 @@ def sources(rom):
             pos = off(address) + stride * i
             yield f"table_{address:06X}_{i:03X}", int.from_bytes(rom[pos:pos + 3], "little")
     for address in (0x9FEBC0, 0xC08600, 0xC0A926, 0xB8903C, 0xCCA1D5, 0xCC86D6,
-                    0xAF851C, 0xAFCBB7, 0xAFC8E5, 0xAFD217, 0xAFCE87, 0xAFB1CD):
+                    0xAF851C, 0xAFCBB7, 0xAFC8E5, 0xAFD217, 0xAFCE87, 0xAFB1CD,
+                    0xCE8000, 0xB8C0BE, 0xAFA8E2, 0xBF8D00, 0xBF8F81, 0xBF922E, 0xBF8E66):
         yield f"direct_{address:06X}", address
 
 
@@ -49,6 +50,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", type=Path, default=ROOT / "work" / "qa" / "graphics")
     ap.add_argument("--raw", action="store_true")
+    ap.add_argument("--capture-dir", type=Path, action="append", default=[],
+                    help="gfx_capture.lua dumps: add observed sources, seed RAM and verify bytes; repeatable")
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     rom = ROM.read_bytes()
@@ -72,7 +75,12 @@ def main():
                 tiles.render(block, fmt, tiles.palette(None, 0, tiles.BPP[fmt]), 32, 2, str(path))
                 rendered += 1
 
-    for name, address in sources(rom):
+    captured = {}
+    for directory in a.capture_dir:
+        for path in sorted(directory.glob("lz_??????.bin")):
+            captured.setdefault(int(path.stem[3:], 16), path)
+    candidates = list(sources(rom)) + [("captured_" + f"{addr:06X}", addr) for addr in captured]
+    for name, address in candidates:
         if address == 0:
             rows.append(f"{name}\t000000\tempty-slot\t0\t-")
             continue
@@ -84,13 +92,18 @@ def main():
             rows.append(f"{name}\t{address:06X}\tskip-not-ROM-pointer\t0\t-")
             continue
         try:
-            data, used = decompress(rom, off(address))
+            capture = captured.get(address)
+            seed = capture.with_stem(capture.stem + "_before") if capture else None
+            data, used = decompress(rom, off(address), initial=seed.read_bytes() if seed and seed.exists() else None)
+            if capture and capture.exists() and capture.read_bytes() != data:
+                raise ValueError("decoded bytes differ from emulator capture")
         except (IndexError, ValueError) as exc:
             rows.append(f"{name}\t{address:06X}\tdecode-failed\t0\t{exc}")
             continue
         prefix = f"lz_{address:06X}"
         (a.out / f"{prefix}.bin").write_bytes(data)
-        rows.append(f"{name}\t{address:06X}\tdecoded\t{len(data)}\t{used} source bytes; {prefix}")
+        proof = f"; matched {capture.as_posix()}" if capture else ""
+        rows.append(f"{name}\t{address:06X}\tdecoded\t{len(data)}\t{used} source bytes; {prefix}{proof}")
         render(prefix, data, ("snes2", "snes4", "gba4", "gba8"))
         if data and len(data) % 16 == 0:
             render(prefix + "_planes", interleave(data), ("snes2", "snes4"))

@@ -16,6 +16,7 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 | font.md | 16x16 1bpp font at `$9F8000`, cell layout, VWF notes | verified |
 | compression.md | LZSS `$80900E` (+ `tools/lz.py`), bitplane interleave, call sites | LZ and interleave verified; remaining sources open |
 | freespace.md | `$FF` runs, 4 MB expansion | candidates only |
-| graphics.md | graphics-text survey, `tools/gfx_survey.py` | expanded maps/ending/save screens reached; static sheets generated but unreviewed |
+| graphics.md | graphics-text survey, `tools/gfx_survey.py` | static survey reviewed; decompressed map findings translated and under final recheck |
+| worldmap.md | bitmap location cards, travel prompt, city unused-slot markers | all thirteen cards translated; cold-boot capture tool and relocated assets |
 | vwf.md | English engine: codes, hooks, FONT2, MSGTAB relocation, free WRAM, width gate | verified by the marker build tour + tests |
-| debug.md | debug tool: game mode, 640-map exit table, event injection, message ids, flags, save image, staff roll | ending staff roll, game over and save menus reached; full ending/epilogue and story flags open |
+| debug.md | debug tool: game mode, 640-map exit table, event injection, message ids, flags, save image, staff roll | full ending, game over and save menus reached; further story-flag presets remain open |

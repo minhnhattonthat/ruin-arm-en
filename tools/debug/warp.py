@@ -23,7 +23,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from skill import SCRIPTS  # noqa: E402
 
 DEBUG = ROOT / "tools" / "debug"
-ROM = ROOT / "rom" / "Ruin Arm (Japan).sfc"
+ROM = ROOT / "build" / "ruinarm_en.sfc"
 
 
 def scene_names():
@@ -36,10 +36,10 @@ def run(scene, rom, out_root, save):
     if not re.fullmatch(r"[A-Za-z0-9_]+", scene):
         raise ValueError(f"invalid scene name: {scene!r}")
     out = out_root / scene
-    tour = scene == "maps" or scene.startswith("msgs_")
+    tour = scene in ("maps", "world_map_all") or scene.startswith("msgs_")
     # A shorter new run must not inherit pages or READY from a previous build.
     out.mkdir(parents=True, exist_ok=True)
-    for pattern in ("log.txt", "scene.png", "sheet*.png", "sheet.txt", "m_*.png", "map_*.png"):
+    for pattern in ("log.txt", "scene.png", "sheet*.png", "sheet.txt", "m_*.png", "map_*.png", "location_*.png"):
         for old in out.glob(pattern):
             old.unlink()
     cmd = [sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "emu.py"), str(rom), "--out", str(out),
@@ -50,8 +50,10 @@ def run(scene, rom, out_root, save):
         out.mkdir(parents=True, exist_ok=True)
         (out / "msgs.lua").write_text("MSGS = {" + ",".join(f"0x{i:04X}" for i in ids) + "}\n", encoding="utf-8")
         cmd += ["--script", str(out / "msgs.lua")]
+    if scene == "world_map_all":
+        cmd += ["--script", str(ROOT / "tools" / "lua" / "worldmap_tour.lua")]
     cmd += ["--script", str(DEBUG / "warp.lua"), "--var", f"SCENE='{scene}'",
-            "--frames", "300000" if tour else "20000", "--timeout", "3000" if tour else "300"]
+            "--frames", "300000" if tour else "60000", "--timeout", "3000" if tour else "600"]
     if save and not tour:
         cmd += ["--var", f"SAVE=[[{(ROOT / 'work' / 'states' / (scene + '.mss')).as_posix()}]]"]
     result = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
@@ -61,15 +63,16 @@ def run(scene, rom, out_root, save):
         print(result.stdout[-2000:] + result.stderr[-2000:])
     stuck = [l for l in log.splitlines() if l.startswith("STUCK")]
     if tour and ok:  # 16 full-size shots a sheet for the visual-QA gate; sheet.txt names each sheet's tiles
-        res = subprocess.run([sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "sheet.py"),
-                              str(out / ("map_*.png" if scene == "maps" else "m_*.png")),
+        pattern = "map_*.png" if scene == "maps" else "location_*.png" if scene == "world_map_all" else "m_*.png"
+        res = subprocess.run([sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "sheet.py"), str(out / pattern),
                               "--div", "1", "--cols", "4", "--max", "16", "--out", str(out / "sheet.png")],
                              capture_output=True, text=True, encoding="utf-8")
         (out / "sheet.txt").write_text(res.stdout, encoding="utf-8")
         if res.returncode:
             print(res.stderr[-2000:])
             ok = False
-    print(f"{'ok  ' if ok else 'FAIL'} {scene:16} {out.relative_to(ROOT).as_posix()}" + (f"  {len(stuck)} stuck" if stuck else ""))
+    shown = out.relative_to(ROOT) if out.is_relative_to(ROOT) else out
+    print(f"{'ok  ' if ok else 'FAIL'} {scene:16} {shown.as_posix()}" + (f"  {len(stuck)} stuck" if stuck else ""))
     return ok
 
 
@@ -118,7 +121,8 @@ def main():
     if not scenes:
         ap.error("name a scene, or --all / --list")
     if a.sheets_only:
-        return 0 if scene_sheets([s for s in scenes if s != "maps" and not s.startswith("msgs_")], a.out) else 1
+        return 0 if scene_sheets([s for s in scenes if s not in ("maps", "world_map_all")
+                                 and not s.startswith("msgs_")], a.out) else 1
     with ThreadPoolExecutor(a.jobs) as ex:
         oks = list(ex.map(lambda s: run(s, a.rom, a.out, a.save or a.all), scenes))
     if len(scenes) > 1:

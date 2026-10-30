@@ -8,6 +8,7 @@ No ROM patch: everything is RAM pokes plus one CPU redirect, so it works on any 
 `--all --sheets-only --out work/qa/tour_en` rebuilds full-size scene contact sheets from existing captures;
 `scenes.txt` names every tile. A failed emulator/sheet process or a missing screenshot fails the command.
 Fresh runs remove only their generated screenshots/sheets/log first, preventing old evidence from passing a failure.
+The default ROM is `build/ruinarm_en.sfc`; pass `--rom` explicitly for original-ROM comparisons.
 
 ## RAM and code it relies on (all verified by the scene shots unless marked)
 
@@ -48,17 +49,34 @@ differ in about 6% of tiles by the blink phase of the page-wait ▼, so re-tour 
 
 ## Ending coverage and open leads
 
+- **World-map location cards:** `warp.py world_map_all` opens all thirteen bitmap cards and captures both travel
+  choices with ordinary A/Right/B input. The idle `world_map` scene alone misses these boxes. Location flags and
+  the new English bitmap engine are documented in `worldmap.md`; `tools/lua/worldmap_tour.lua` drives the tour.
+
+- **Full normal ending reached from cold boot** (phase 8): `ending_full` starts `$ADF158`, activates object slot 1
+  when map `$2347` loads, and advances dialogue with ordinary A presses. That slot holds id 1 but starts inactive
+  (`$0450 = $8001`) in the opening-game fixture. Clearing bit 15 lets its movement script finish at `$ADF241`;
+  no script waits are skipped. The route runs the fortress collapse, escape, staff-roll vignettes, forest scene,
+  THANKS FOR PLAYING and RUIN ARM / Fin. Capture with `emu.py` plus `scenes.lua`, `warp.lua`,
+  `--var "SCENE='ending_full'" --frames 60000 --shot-every 300 --timeout 600`; evidence: `work/qa/ending_full/`.
+  `tools/lua/event_trace.lua` records main and per-actor script state when investigating a stall.
+- The shop fixture initially lands in character selection. Sell/Repair routes now cancel that selection with B
+  before moving the tab cursor; previously Right changed the character selection and both routes captured Buy.
+- `warp.py` now permits output folders outside the repository (previously reporting the result raised
+  `Path.relative_to` after a successful capture).
+
 - **Ending staff roll reached**: `ending_credits` warps to map `$1D02` through exit `$5BB` and starts `$ADF2F3` after
   the map-loader wait. `credits_0` through `credits_12` use that setup too, without the village HUD obscuring text.
   Earlier direct-pointer attempts failed because `$AC870C` masks bit 15; the debug hook now restores it at the
-  resolver. Starting `$ADF158` plays the fortress cinematic and enters map `$2347`, but stalls at `$ADF241` waiting
-  for an absent third party member (`work/qa/ending_long`). The full ending and epilogue remain to trace; the script
-  also uses exit `$742` → map `$1E02`. Block `$02` is still toured separately (40-frame timed shots); `0200`
-  "A YEAR LATER" is English in the original but needs its actual epilogue setup for a visible shot.
+  resolver. The former `$ADF241` stall in `work/qa/ending_long` is resolved by `ending_full` above; its actor-1
+  fixture was inactive. The complete route also visits exit `$742` → map `$1E02`. Block `$02` is toured separately
+  (40-frame timed shots); `0200` "A YEAR LATER" is already Latin in the original. Directly injecting `$ADF723`
+  passes that timed message and shows `$1348`; it is not a reliable standalone card route and was not added as one.
 - **Game over** (reached, phase 8): both party objects at HP 0 with the dead bit `$86ECAE` sets (`$0414`/`$0464` bit
   15), held for a few frames in the forest, gives msg `$0187` "{name} and the others have fallen.", then A returns to
   the title menu; no game-over graphic. Scenes `game_over`, `game_over_next` (`kill = frames` in `scenes.lua`). HP 0
   on one member alone, or in the village, does nothing.
 - **Story flags → chapters**: dump `$1C00` at known story points, or read the event scripts' opcode `23` args.
-- Bosses and chapter/area banners: need their event ids or story flags. The expanded `maps` tour visits 640 mapped
-  rooms; NPC events need the right position or an `ev` id. Save/load management now has ordinary-input routes.
+- Additional boss encounter presets need event ids or story flags. The expanded `maps` tour visits 640 mapped
+  rooms; no Japanese chapter/area banner was identified in the graphics survey or those captures. NPC events
+  need the right position or an `ev` id. Save/load management now has ordinary-input routes.

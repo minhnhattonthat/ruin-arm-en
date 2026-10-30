@@ -293,7 +293,7 @@
  {
   "id": "1341",
   "jp": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:C1}\n{d:11|ワシ}にまかせておけ。{fd:13}\n{d:3E|バルドア}の事は、多少なり\nとも知っておるからのう。{fd:13}\n{d:11|ワシ}にまかせてみなは、\nすぐに、下におりる{d:0E|のじゃ。}{fd:13}{fe:10}{goto:00:1342}",
-  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:C1}\nLeave it to me.{fd:13}\nI know a thing or two about Baldoa, after\nall.{fd:13}\nLeave this to me, and all of you get down\nbelow right away.{fd:13}{fe:10}{goto:00:1342}"
+  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:55}{fa:C1}\nLeave it to me.{fd:13}\nI know a thing or two about Baldoa,\nafter all.{fd:13}\nLeave this to me, and all of you get down\nbelow right away.{fd:13}{fe:10}{goto:00:1342}"
  },
  {
   "id": "1342",
@@ -451,7 +451,7 @@
  {
   "id": "1361",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:E1}\nおおそう{d:5F|じゃ。}{wait}{d:52|これ}を渡すのをわすれて\nお{d:7B|った}わい。{wait}{d:52|これ}は{col:01}「{item:D3}」{col}{d:09|という}\n魔法{d:5F|じゃ。}{wait}タメて使うと、さらに強力な\n攻撃魔法になる{d:0E|のじゃ。}{end}",
-  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:E1}\nOh, that's right.{wait}I almost forgot to give you this.{wait}This is a spell\ncalled {col:01}\"{item:D3}\"{col}.{wait}Charge it up before you use it, and it\nbecomes an even stronger attack spell.{end}"
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:E1}\nOh, that's right.{wait}I almost forgot to give you this.{wait}This spell is called {col:01}\"{item:D3}\"{col}.{wait}Charge it up before you use it, and it\nbecomes an even stronger attack spell.{end}"
  },
  {
   "id": "1362",

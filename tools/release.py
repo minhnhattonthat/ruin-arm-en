@@ -4,8 +4,8 @@ build -> check (tests + lint) -> smoke -> JP left (jp_reach.py) -> visual-QA gat
 
     python -X utf8 tools/release.py --version 1.0 [--force]
 
-The QA tour is not re-run here (`tools/debug/warp.py`, docs/status.md); the gate fails if the build changed a
-toured sheet since its verdict. Never publishes: that's the owner's call.
+The QA tour is not re-run here (`tools/debug/warp.py`, docs/status.md); callers must capture changed scenes on
+the current build. The gate rejects sheets changed since their verdict. Never publishes.
 """
 import argparse
 import hashlib
@@ -50,8 +50,16 @@ def main():
     step("smoke", [scripts / "emu.py", BUILT, "--out", ROOT / "work" / "qa" / "smoke", "--route",
                    ROOT / "tools" / "routes" / "boot.txt", "--smoke"])
     step("JP left", [ROOT / "tools" / "jp_reach.py", BUILT, "--known", ROOT / "script" / "keep_jp.txt"])
-    step("visual-QA gate", [scripts / "qa_gate.py", "check", ROOT / "work" / "qa" / "manifest.tsv",
-                            ROOT / "work" / "qa" / "verdicts"])
+    qa = ROOT / "work" / "qa"
+    for label, manifest, verdicts in (
+        ("gameplay", "manifest.tsv", "verdicts"),
+        ("ending", "ending-manifest.tsv", "ending-verdicts"),
+        ("static graphics", "graphics-manifest.tsv", "graphics-verdicts"),
+        ("map graphics", "graphics-maps-manifest.tsv", "graphics-maps-verdicts"),
+        ("graphics fixes", "graphics-fixes-manifest.tsv", "graphics-fixes-verdicts"),
+        ("story", "story/manifest.tsv", "story/verdicts"),
+    ):
+        step(f"{label} QA gate", [scripts / "qa_gate.py", "check", qa / manifest, qa / verdicts])
     # debug tool off: it is Lua run by the emulator (tools/debug/), so the ROM carries none of it; the build's own
     # writes are checked against the allowed ranges by tests/ (romdiff), which `check` just ran
     shutil.rmtree(out, ignore_errors=True)

@@ -74,7 +74,7 @@
  {
   "id": "S0C",
   "jp": "{pos:00E0}スーパー{pos:016C}バイザー{pos:0260}岬 額々{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}チーミン{end:FF}",
-  "en": "{pos:00E0}Super-{pos:016C}visors{pos:0260}Gakugaku Misaki{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}Chimin{end:FF}",
+  "en": "{pos:00D8}Supervisors{pos:016C}{pos:0260}Gakugaku Misaki{pos:02E0}XANTHUS{pos:0360}ADUSAY{pos:03E0}Chimin{end:FF}",
   "hold": 180
  }
 ]

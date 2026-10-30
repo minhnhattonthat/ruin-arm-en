@@ -10,6 +10,8 @@
 --   kill = frames   hold hero and sister at HP 0 + dead bit for that many frames (game over, msg $0187)
 --   route = "..."   emu.py route steps pressed after arrival
 --   wait = frames   frames between "ready" and the shot (default 90)
+--   advance = true auto-advance dialogue during a cinematic
+--   activate = {map=M, slot=N} clear an absent actor's inactive bit once that map loads
 -- Every map also has an implicit scene "map_AARR" (hex map id), and "maps" tours them all in one cold boot.
 SCENES = {
   title          = { stop_at = 2500 },
@@ -37,8 +39,8 @@ SCENES = {
   -- (300-frame gaps: English pages print slower than the 150 the Japanese needed)
   shop           = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -" },
   shop_buy       = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;120 -;6 a;120 -" },
-  shop_sell      = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 right;30 -;6 a;120 -;6 a;120 -" },
-  shop_repair    = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 right;30 -;6 right;30 -;6 right;30 -;6 a;120 -;6 a;120 -" },
+  shop_sell      = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 b;60 -;6 right;30 -;6 a;120 -;6 a;120 -" },
+  shop_repair    = { ev = 0x0022, route = "300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 a;300 -;6 b;60 -;6 right;30 -;6 right;30 -;6 right;30 -;6 a;120 -;6 a;120 -" },
   -- events and messages
   ev_village_hint = { ev = 0x0010, wait = 150 },
   msg_bonnie     = { msg = 0x1032, wait = 150 },
@@ -62,6 +64,7 @@ SCENES = {
   credits_11     = { exit = 0x5BB, ev = 0xF2F3, credits = 11, wait = 100 },
   credits_12     = { exit = 0x5BB, ev = 0xF2F3, credits = 12, wait = 100 },
   ending_credits = { exit = 0x5BB, ev = 0xF2F3, wait = 500 },
+  ending_full    = { ev = 0xF158, activate = { map = 0x2347, slot = 1 }, advance = true, wait = 45000 },
   -- a few places by map id (the full list is the "maps" tour)
   forest         = { map = 0x1C05 },
   -- game over: both party members down -> msg $0187 "{name} and the others have fallen.", then A
@@ -69,4 +72,7 @@ SCENES = {
   game_over_next = { map = 0x1C05, kill = 300, route = "300 -;6 a;300 -", wait = 300 },
   -- world map: game mode $1B (found by poking modes; its BG labels the home village ARFF in Latin letters, D19)
   world_map      = { writes = { { 0x7E0380, 0x1B } }, wait = 120 },
+  world_map_all  = { writes = {
+    {0x7E1CB1, 0xFF}, {0x7E1CB2, 0xFF}, {0x7E1CB3, 0xFF}, {0x7E1CB4, 0xFF},
+    {0x7E03E8, 1}, {0x7E0380, 0x1B}}, wait = 4000 },
 }

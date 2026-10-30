@@ -28,6 +28,10 @@ incsrc "../build/vwf/defs.asm"     ; !FONT !MSGTAB (tools/asm.py)
 !MAP      = $9F96
 !START    = $9F98
 !PAL      = $9F9A          ; $0CBD at the last glyph
+!NAMEPX   = $9FA0
+!NAMEBASE = $9FA2
+!NAMEIDX  = $9FA4
+!NAMEON   = $9FA6
 
 ; ---------------------------------------------------------------- hooks
 org $81E1CC                ; printer: glyph code in A (TAX / LDA $0CB1 / STA $02 / JSL $81E929 / tilemap / advance)
@@ -52,6 +56,16 @@ org $8296F0                ; ruin password: name-entry buffer $140C vs the 8 wor
 
 org $AFEF30                ; title loader: JSL $808F95 (expand the $808F01 unpack in $7F) before its VRAM upload
 	jsl title_logo
+
+org $849B63                ; eight-cell dynamic names: retain their buffer size, compose ASCII proportionally
+	jsl menu_name
+
+org $80C62A                ; replace only Japanese glyph slots inside the original decompressed font resource
+	jsl worldmap_font
+org $80C8CF                ; redirect only translated world-map tile lists to expansion data
+	jml worldmap_list
+org $8C8300                ; city tileset: translate unused-slot marker tiles, preserving all map art
+	dl unused_tiles_data
 
 ; ---------------------------------------------------------------- code
 org $D18000
@@ -452,6 +466,188 @@ title_logo:                    ; D10: blank the katakana ルインアーム abov
 	bpl -
 +	plp
 	rtl
+
+menu_name:
+	php
+	rep #$30
+	cpy #$0000
+	bne .later
+	lda #$0000
+	sta.l $7E0000+!NAMEON
+	txa
+	cmp #$0420
+	bcc .normal
+	cmp #$047F
+	bcs .normal
+	lda #$0001
+	sta.l $7E0000+!NAMEON
+	jsr compose_name
+	bra .done
+.later:
+	lda.l $7E0000+!NAMEON
+	bne .done
+.normal:
+	plp
+	jsl $81E929
+	rtl
+.done:
+	plp
+	rtl
+
+compose_name:                  ; [$10] = eight single codes; $02 = destination. Keep all eight cleared cells.
+	phb
+	phx
+	phy
+	sep #$20
+	lda #$7E
+	pha
+	plb
+	rep #$20
+	lda $02
+	sta !NAMEBASE
+	tax
+	ldy #$0100
+-	stz $8000,x
+	inx
+	inx
+	dey
+	bne -
+	stz !NAMEPX
+	stz !NAMEIDX
+.glyph:
+	ldy !NAMEIDX
+	lda [$10],y
+	cmp #$0420
+	bcs +
+	jmp .skip
++
+	cmp #$047F
+	bcc +
+	jmp .skip
++
+	sta !CODE
+	tax
+	lda #!SCROFS
+	sta $02
+	jsl $81E929
+	ldx !CODE
+	lda.l WIDTHS-$0400,x
+	and #$00FF
+	sta !WIDTH
+	lda !NAMEPX
+	and #$FFF0
+	asl #2
+	clc
+	adc !NAMEBASE
+	sta !COL0
+	clc
+	adc #$0010
+	sta !COL1
+	lda !NAMEPX
+	and #$0008
+	beq +
+	lda !COL1
+	sta !COL0
+	clc
+	adc #$0030
+	sta !COL1
++	lda !NAMEPX
+	and #$0007
+	sta !SH
+	ldy #$0000
+.row:
+	lda !SCRATCH,y
+	and #$00FF
+	xba
+	ldx !SH
+-	beq +
+	lsr
+	dex
+	bra -
++	sta !HI
+	tya
+	clc
+	adc !COL0
+	tax
+	sep #$20
+	lda !HI+1
+	ora $8000,x
+	sta $8000,x
+	rep #$20
+	tya
+	clc
+	adc !COL1
+	tax
+	sep #$20
+	lda !HI
+	ora $8000,x
+	sta $8000,x
+	rep #$20
+	iny
+	iny
+	cpy #$0010
+	bne +
+	ldy #$0020
++	cpy #$0030
+	bne .row
+	lda !NAMEPX
+	clc
+	adc !WIDTH
+	sta !NAMEPX
+.skip:
+	inc !NAMEIDX
+	inc !NAMEIDX
+	lda !NAMEIDX
+	cmp #$0010
+	beq +
+	jmp .glyph
++	lda !NAMEBASE
+	clc
+	adc #$0200
+	sta $02
+	ply
+	plx
+	plb
+	rts
+
+worldmap_font:
+	jsl $808F01
+	php
+	rep #$30
+	pha
+	phx
+	ldx #!WORLD_FONT_SIZE-2
+-	lda.l worldmap_font_data,x
+	sta.l $7F2400,x
+	dex #2
+	bpl -
+	plx
+	pla
+	plp
+	rtl
+
+worldmap_list:
+	stx $00
+	ldx #$0000
+.find:
+	lda.l worldmap_lists,x
+	beq .original
+	cmp $00
+	beq .found
+	inx #4
+	bra .find
+.found:
+	lda.l worldmap_lists+2,x
+	sta $00
+	lda #$00D1
+	jml $80C8D4
+.original:
+	lda #$0080
+	jml $80C8D4
+
+incsrc "../build/vwf/worldmap.asm"
+unused_tiles_data:
+	incbin "../build/vwf/unused_tiles.lz"
 
 WIDTHS:
 	incbin "../build/vwf/widths.bin"
