@@ -39,8 +39,8 @@ def reach(rom):
     for b in unpack_all(rom):
         if b.name == "staff":
             out += [(f"S{k:02X}", s.text(b.strings[i][:-1])) for k, i in enumerate(b.slots)]  # relocated: skip orphans
-    for fs in fixed.fields(orig).values():
-        out += [(f["id"], s.text(fixed.words(s, f))) for f in fs]
+    for name, fs in fixed.fields(orig).items():
+        out += [(f["id"], s.text(fixed.words(s, f))) for f in (fixed.built(s, fs) if name == "menu" else fs)]
     return out
 
 

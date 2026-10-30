@@ -23,6 +23,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build import SINGLE_FIELDS  # noqa: E402
 from extract import SCRIPT  # noqa: E402
+from fixed import CELLS  # noqa: E402
 from font import SINGLES, adv, ink, slices  # noqa: E402
 from marker import DATA  # noqa: E402
 
@@ -46,11 +47,6 @@ HONORIFIC = re.compile(r"(\{name[^{}]*\}|[ァ-ヴ][ァ-ヴー]*)(さん|くん|�
 HONOR_EN = {"さん": "-san", "くん": "-kun", "君": "-kun", "ちゃん": "-chan", "様": "-sama", "さま": "-sama",
             "殿": "-dono"}
 KATA = "ァ-ヴー"
-# shortcut: fields whose glossary form can't fit; glossary check skipped until phase 7 widens them (full form here)
-LONG = {"place_1B": "Maria to Beast Village", "84D3E3": "Combo Special", "84CF94": "Merfolk",
-        "place_0E": "Beast Village Ruins", "place_34": "Beast Village to Ruins",
-        "element_00": "Earth Element", "element_01": "Fire Element", "element_02": "Water Element",
-        "element_03": "Air Element"}
 COMMAND_CELLS = {"84967B", "8496A4"}   # two-cell commands picked by index (docs/re/text.md): "A|B|..", 32 px each
 
 
@@ -197,8 +193,8 @@ def field_errors(name, e, en):
         return ["fields take plain text, no codes or breaks"]
     if kind(name) == "name":
         return [f"{len(en)} letters, max {NAME}"] if len(en) > NAME else []
-    n = len(slices(en))
-    errs = [f"{n} cells, max {e['max']} (16 px a cell)"] if n > e["max"] else []
+    n, cells = len(slices(en)), CELLS.get(e["id"], e["max"])
+    errs = [f"{n} cells, max {cells} (16 px a cell)"] if n > cells else []
     if e["id"] in COMMAND_CELLS:
         units = en.split("|")
         if len(units) != e["max"] // 2:
@@ -243,7 +239,7 @@ def entry_errors(name, e, en, gl, merged=False):
     if "\\u" in en or "\t" in en:
         errs.append("escape or tab in the text")
     errs += msg_errors(e["jp"], en, merged) if kind(name) == "msg" else field_errors(name, e, en)
-    return errs + ([] if e["id"] in LONG else gloss_errors(e["jp"], en, gl))
+    return errs + gloss_errors(e["jp"], en, gl)
 
 
 # ---- batch files
@@ -280,11 +276,11 @@ def form_limit(name, e):
     if k == "msg":
         return ("choice" if "{choice" in e["jp"] else "dlg"), f"{LINE}px x{ROWS}rows"
     if k == "staff":
-        return "credit", ",".join(f"{31 - int(p, 16) % 0x40 // 2}ch"
+        return "credit", ",".join(f"{(31 - int(p, 16) % 0x40 // 2) // 2 * 16}px"
                                   for p in re.findall(r"\{pos:([0-9A-F]{4})\}", e["jp"]))
     if k == "name":
         return "name", f"{NAME}ch"
-    return name, f"{2 * e['max']}ch"
+    return name, f"{16 * CELLS.get(e['id'], e['max'])}px"
 
 
 def existing():

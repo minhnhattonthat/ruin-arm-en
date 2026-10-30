@@ -117,10 +117,15 @@ def build(orig):
     fents = {n: extract.load(n, extract.field_entries(s, fs)) for n, fs in flds.items()}
     codec = Codec([e["en"] for n, es in fents.items() if n not in SINGLE_FIELDS for e in es]
                   + [e["en"] for e in ents["staff"]])
+    menu_en = {e["id"]: e["en"] for e in fents["menu"]}
     for n, fs in flds.items():
-        for f, e in zip(fs, fents[n]):
-            if e["en"]:
-                put(rom, f["off"], fixed.pad(f, (codec.msg if n in SINGLE_FIELDS else codec.field)(e["en"])), f["id"], orig)
+        moved = n == "menu" and all(menu_en[i] for i in fixed.CELLS)  # all or none: a JP record keeps its cells
+        for f0, f, e in zip(fs, fixed.relayout(fs) if moved else fs, fents[n]):
+            ws = (codec.msg if n in SINGLE_FIELDS else codec.field)(e["en"]) if e["en"] else fixed.words(s, f0)
+            if "head" in f:
+                put(rom, f["off"] - 3, f["pos"].to_bytes(2, "little") + bytes([f["n"]]) + fixed.pad(f, ws), f["id"], orig)
+            elif e["en"]:
+                put(rom, f["off"], fixed.pad(f, ws), f["id"], orig)
     staff = next(b for b in blocks if b.name == "staff")
     for i, e in enumerate(ents["staff"]):
         if e["en"]:
@@ -181,7 +186,8 @@ def slots(rom):
     staff = next(b for b in unpack_all(rom) if b.name == "staff")
     out += [f"{off(staff.addr) + 2 * k:06X} {off(staff.addr & 0xFF0000 | s.w(off(staff.addr) + 2 * k)):06X}"
             for k in range(len(staff.slots))]
-    out += [f"{f['off']:06X} {f['off']:06X}" for fs in fixed.fields(Script(ROM.read_bytes())).values() for f in fs]
+    out += [f"{f['off']:06X} {f['off']:06X}" for n, fs in fixed.fields(Script(ROM.read_bytes())).items()
+            for f in (fixed.built(s, fs) if n == "menu" else fs)]
     return "\n".join(out) + "\n"
 
 

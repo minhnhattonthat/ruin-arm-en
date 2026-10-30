@@ -3,24 +3,24 @@
   "id": "element_00",
   "max": 5,
   "jp": "土の元素",
-  "en": "Earth"
+  "en": "Earth Element"
  },
  {
   "id": "element_01",
   "max": 5,
   "jp": "火の元素",
-  "en": "Fire"
+  "en": "Fire Element"
  },
  {
   "id": "element_02",
   "max": 5,
   "jp": "水の元素",
-  "en": "Water"
+  "en": "Water Element"
  },
  {
   "id": "element_03",
   "max": 5,
   "jp": "空気の元素",
-  "en": "Air"
+  "en": "Air Element"
  }
 ]

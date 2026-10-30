@@ -36,8 +36,9 @@ def test_writes_in_allowed_places(built):
     import build
     import fixed
     from textdump import Script
-    orig, _, writes = built
-    fields = {f["id"]: f["off"] for fs in fixed.fields(Script(orig)).values() for f in fs}
+    orig, rom, writes = built
+    fields = {f["id"]: f["off"] - 3 * ("head" in f) for n, fs in fixed.fields(Script(orig)).items()
+              for f in (fixed.built(Script(rom), fs) if n == "menu" else fs)}
     hooks = {asm.off(a) for a in asm.HOOKS}
     bad = []
     for w in writes:

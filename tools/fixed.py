@@ -32,6 +32,9 @@ TABLES = {
     "heat": (0x00FD5F, 8, 2, 4),               # $81FD5B pointer list: 加熱する / 冷却する
 }
 PTRS = {"status": (0x02DEE6, 11)}               # $85DEE6: 最強, Mpower.., ailments; the 12th entry is tile data
+# Menu records drawn with another cell count (id: cells), the next record of the same list giving up as many
+# (relayout()): 1-cell 体/妹 labels -> "Body"/"Sister". No pointer in bank $84 reaches a record after a list's first.
+CELLS = {"84D399": 2, "84D39E": 9, "84D89E": 2, "84D8A3": 10}
 
 
 def glyph_ok(s, w):
@@ -93,6 +96,32 @@ def fields(s):
             n = next(k for k in range(64) if s.w(a + 2 * k) == 0xFFFF)
             t[name].append({"id": f"{name}_{i:02X}", "off": a, "n": n})
     return t
+
+
+def relayout(fs):
+    """Menu fields as the build writes them: CELLS applied. A record whose cell count or offset changes gets "head":
+    its record header (pos, count) is rewritten too. Each list keeps its total cells, so its bytes and VRAM stay put."""
+    out, shift, end = [], 0, None
+    for f in fs:
+        if f["off"] - 3 != end and shift:
+            raise ValueError(f"CELLS change the cell total of the list before {f['id']}")
+        if f["off"] - 3 != end:
+            shift = 0
+        n = CELLS.get(f["id"], f["n"])
+        g = dict(f, off=f["off"] + 2 * shift, n=n)
+        if shift or n != f["n"]:
+            g["head"] = True
+        out.append(g)
+        end, shift = f["off"] + 2 * f["n"], shift + n - f["n"]
+    if shift:
+        raise ValueError("CELLS change the cell total of the last list")
+    return out
+
+
+def built(s, fs):
+    """Menu fields as laid out in the ROM in s: relayout(fs) when its rewritten headers are there, else fs."""
+    r = relayout(fs)
+    return r if all(s.w(f["off"] - 3) == f["pos"] and s.d[f["off"] - 1] == f["n"] for f in r if "head" in f) else fs
 
 
 def words(s, f):
