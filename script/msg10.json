@@ -12,7 +12,7 @@
  {
   "id": "1002",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:62}{fa:81}\nおそいぞ、{name:01}！{fe}＊{d:00|ルシア}が{d:06|仲間になった！}{end}",
-  "en": "{col:01}Lucia{f4}{f4:62}{fa:81}\nYou're late, {name:01}!{fe}* Lucia joined the party!{end}"
+  "en": "{col:01}Lucia{f4}{f4:62}{fa:81}\nToo slow, {name:01}!{fe}* Lucia joined the party!{end}"
  },
  {
   "id": "1003",
@@ -221,7 +221,7 @@
  {
   "id": "102C",
   "jp": "{col:01}ロア\n私達は{name}達を\n信じてるからね。{fd}{fe:10}{goto:00:102E}",
-  "en": "{col:01}Roa\nWe believe in you, {name}, all of you.{fd}{fe:10}{goto:00:102E}"
+  "en": "{col:01}Roa\nWe believe in you all, {name}.{fd}{fe:10}{goto:00:102E}"
  },
  {
   "id": "102D",
@@ -381,7 +381,7 @@
  {
   "id": "104C",
   "jp": "{fe:10}{fa:01}{col:01}{d:00|ルシア}{spd:01}{f4}{f4:62}{fa:A1}\n{d:53|そうだ}よね、{d:64|でも}ぎゃくに{wait}いっつも{name:01}に{wait}めんどうかけてるもんね\n{name}は。{wait}きゃははっ！{fd}{fe:10}{goto:00:106D}",
-  "en": "{fe:10}{fa:01}{col:01}Lucia{spd:01}{f4}{f4:62}{fa:A1}\nRight? But actually it's the other\nway round.{wait}It's always {name:01}{wait}who's looking after {name}.{wait}Kyahaha!{fd}{fe:10}{goto:00:106D}"
+  "en": "{fe:10}{fa:01}{col:01}Lucia{spd:01}{f4}{f4:62}{fa:A1}\nTrue! But actually it's the other\nway round.{wait}It's always {name:01}{wait}who's looking after {name}.{wait}Kyahaha!{fd}{fe:10}{goto:00:106D}"
  },
  {
   "id": "104D",
@@ -391,7 +391,7 @@
  {
   "id": "104E",
   "jp": "{col:01}{name:05}{f4}{f4:4E}{fa:E1}\nまて{d:1B|！！}{wait}{d:74|おまえ}らの相手は\n{d:76|この}俺が{d:7F|して}やろう！{end}",
-  "en": "{col:01}{name:05}{f4}{f4:4E}{fa:E1}\nHold it!!{wait}I'll take you on myself!{end}"
+  "en": "{col:01}{name:05}{f4}{f4:4E}{fa:E1}\nStop!!{wait}I'll take you on myself!{end}"
  },
  {
   "id": "104F",
@@ -536,7 +536,7 @@
  {
   "id": "106B",
   "jp": "{col:01}ギルム{spd:01}\n{d:76|この}剣は{d:2E|ロンディウム}王家に\n伝わる伝説の聖剣、\n{col:01}「{item:30}」{col}！{wait}だが、剣に宿る精霊が\n力をよわめて{d:4F|いる}。{wait}たのむ、{d:11|ワシ}に剣を\n鍛えさせ{d:0C|てくれ}{d:6C|ない}か。{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1{d:8F|おねがい}します\n  2だめだ{choice:00:106C:10ED}",
-  "en": "{col:01}Gilm{spd:01}\nThis is the legendary holy sword handed\ndown in Londium's royal\nfamily, {col:01}\"{item:30}\"{col}!{wait}But the spirit that dwells in it has\ngrown weak.{wait}Please, let me temper this sword.{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Please do\n  2No{choice:00:106C:10ED}"
+  "en": "{col:01}Gilm{spd:01}\nWhy, this is the legendary holy sword\nhanded down in Londium's royal\nfamily, {col:01}\"{item:30}\"{col}!{wait}But the spirit that dwells in it has\ngrown weak.{wait}I beg you, let me temper this sword,\nwon't you?{fe}{spd}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Please do\n  2No{choice:00:106C:10ED}"
  },
  {
   "id": "106C",
@@ -907,7 +907,7 @@
  {
   "id": "10B6",
   "jp": "{col:01}地{d:1E|魔将}ゴルドー{spd:01}{f5:A0}{f4}{f5:B1}{f4:67}{fa:E1}\nだ{d:56|いた}んにも、\n{d:76|この}フェフス城にのり込んで\nきた者達とは{wait}{d:74|おまえ}らの事か{d:79|・・・}{end}",
-  "en": "{col:01}Earth General Goldo{spd:01}{f5:A0}{f4}{f5:B1}{f4:67}{fa:E1}\nSo the ones who had the nerve to storm\nFefus Castle...{wait}It's you, is it...{end}"
+  "en": "{col:01}Earth General Goldo{spd:01}{f5:A0}{f4}{f5:B1}{f4:67}{fa:E1}\nSo you're the ones{wait}who had the nerve to storm Fefus Castle.{end}"
  },
  {
   "id": "10B7",
@@ -917,7 +917,7 @@
  {
   "id": "10B8",
   "jp": "{fe:10}{col:01}地{d:1E|魔将}ゴルドー{spd:01}{f5:B1}{f4:67}{fa:E1}\nそうもいかん。\n{d:76|この}黄玉がオレの目的。{wait}戦って、えなければ\nなら{d:6C|ない}物{d:10|ならば}、{wait}戦ってうばう。{wait}それが俺のやり方！{wait}{d:0B|おまえ達}も黄玉が\nほしければ{wait}{d:76|この}{d:35|ライドロイド}{d:1F|帝国}\n四天王が一人、{wait}地{d:1E|魔将}ゴルドーから\n見事うばいとってみせよ！{end}",
-  "en": "{fe:10}{col:01}Earth General Goldo{spd:01}{f5:B1}{f4:67}{fa:E1}\nI can't do that. This Topaz is\nmy objective.{wait}If a thing can only be won by fighting,{wait}then I fight and seize it.{wait}That is my way!{wait}If you want the Topaz as well,{wait}then come and take it, if you can, from one\nof the Raidroid Empire's Four\nHeavenly Kings:{wait}me, Earth General Goldo!{end}"
+  "en": "{fe:10}{col:01}Earth General Goldo{spd:01}{f5:B1}{f4:67}{fa:E1}\nI can't do that. This Topaz is\nmy objective.{wait}If something has to be won in battle,{wait}then I take it in battle.{wait}That is my way!{wait}If you want the Topaz as well,{wait}then come and take it, if you can, from one\nof the Raidroid Empire's Four\nHeavenly Kings:{wait}me, Earth General Goldo!{end}"
  },
  {
   "id": "10B9",
@@ -1019,7 +1019,7 @@
  {
   "id": "10D2",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\n何を{d:7F|して}おるか？\n{name:05}！{end}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain\nWhat are you doing, {name:05}!{end}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nWhat are you doing, {name:05}?{end}"
  },
  {
   "id": "10D3",
@@ -1142,7 +1142,7 @@
  {
   "id": "10EB",
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n{d:01|ボーガン}め、{wait}最後の力を使って{d:3F|仲間}を\nにが{d:62|した}か。{wait}{d:0D|しかし}、よく女をとらえたな\n{name:05}{d:6D|よ。}{wait}切りふだはこちらに{d:61|ある}。\nふっははははは{d:79|・・・}{fd}{fe:10}{goto:00:10EC}",
-  "en": "{col:01}Imperial Guard General Zain{spd:01}\nCurse that Bogan,{wait}he used the last of his strength to let his\ncomrades escape.{wait}But you did well to capture the\ngirl, {name:05}.{wait}The trump card is ours. Fuhahahaha...{fd}{fe:10}{goto:00:10EC}"
+  "en": "{col:01}Imperial Guard General Zain{spd:01}\nBogan, damn him...{wait}He used the last of his strength to let his\ncomrades escape.{wait}But you did well to capture the\ngirl, {name:05}.{wait}The trump card is ours. Fuhahahaha...{fd}{fe:10}{goto:00:10EC}"
  },
  {
   "id": "10EC",
@@ -1152,7 +1152,7 @@
  {
   "id": "10ED",
   "jp": "{col:01}ギルム\n{d:7C|そうか}、またいつ{d:64|でも}\nたずねてき{d:0C|てくれ}。{end}",
-  "en": "{col:01}Gilm\nI see. Well, come by again anytime.{end}"
+  "en": "{col:01}Gilm\nI see. Well, drop by whenever you like.{end}"
  },
  {
   "id": "10EE",
@@ -1187,7 +1187,7 @@
  {
   "id": "10F4",
   "jp": "{fe:10}ばあやの言う事が\nバカな事{d:10|ならば}、\n姫様の言う事は\nもっと大バカ{d:60|じゃ}！{fd}{fe:10}{goto:00:10F5}",
-  "en": "{fe:10}If what Nanny says is foolish, then what\nthe Princess says is even more foolish!{fd}{fe:10}{goto:00:10F5}"
+  "en": "{fe:10}If this old Nanny's words are foolish,\nPrincess, then yours are more foolish still!{fd}{fe:10}{goto:00:10F5}"
  },
  {
   "id": "10F5",

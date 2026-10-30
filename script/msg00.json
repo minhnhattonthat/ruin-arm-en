@@ -171,12 +171,12 @@
  {
   "id": "0022",
   "jp": "{col:01}{d:01|ボーガン}{f4}{f4:64}{fa:81}\nあの子は{col:01}ガケ{col}に、\n{d:56|いた}はずだが？{end}",
-  "en": "{col:01}Bogan{f4}{f4:64}{fa:81}\nThat girl should be out at the {col:01}cliff{col},\nshouldn't she?{end}"
+  "en": "{col:01}Bogan{f4}{f4:64}{fa:81}\nYour sister should be out at the {col:01}cliff{col},\nshouldn't she?{end}"
  },
  {
   "id": "0023",
   "jp": "{col:01}{d:00|ルシア}{f4}{f4:5F}{fa:C1}\n{name}、\n{name:01}なら{wait}裏の{col:01}ガケ{col}に行{d:7B|った}{d:0F|らしい}{d:6D|よ。}{end}",
-  "en": "{col:01}Lucia{f4}{f4:5F}{fa:C1}\n{name}, if you're looking\nfor {name:01},{wait}sounds like she went to the {col:01}cliff{col} out back.{end}"
+  "en": "{col:01}Lucia{f4}{f4:5F}{fa:C1}\n{name}! Looking for {name:01}?{wait}Sounds like she went to the {col:01}cliff{col} out back!{end}"
  },
  {
   "id": "0024",
@@ -186,7 +186,7 @@
  {
   "id": "0025",
   "jp": "{col:01}{name:03}{spd:01}{f4}{f4:53}{fa:C1}\n気を付けてな。{wait}帰ってきたら、俺が旅の\n途中でおそわ{d:7B|った}、{wait}うまい物{d:64|でも}\nつくってやるぞ。{wait}ああ、それから{d:52|これ}だけは\nおぼえておく{d:66|んだ。}{wait}俺達の使う武器は、\n徐々に壊れていく。{wait}壊れてなくなる前に武器屋で\n修理{d:51|する}か、または{wait}たくさんの武器を買い込んで\n行くとか、{d:51|する}と{d:72|いい。}{wait}まあ、{d:76|この}世には、\n壊{d:6B|れない}すごい武器も\nたくさん{d:61|ある}がな。{end}",
-  "en": "{col:01}{name:03}{spd:01}{f4}{f4:53}{fa:C1}\nTake care.{wait}When you get back, I'll whip you up\nsomething tasty{wait}I picked up on my travels.{wait}Oh, and here's one thing you'd\nbetter remember.{wait}The weapons we use wear out bit by bit.{wait}Before they break and are gone for good,\nget them repaired at a weapon shop, or{wait}stock up on plenty of weapons before you\nhead out, something like that.{wait}Mind you, this world's got plenty of\namazing weapons that never break.{end}"
+  "en": "{col:01}{name:03}{spd:01}{f4}{f4:53}{fa:C1}\nWatch yourselves out there!{wait}When you get back, I'll whip you up\nsomething tasty{wait}I picked up on my travels.{wait}Oh, and here's one thing you'd\nbetter remember.{wait}The weapons we use wear out bit by bit.{wait}Before they break and are gone for good,\nget them repaired at a weapon shop, or{wait}stock up on plenty of weapons before you\nhead out, something like that.{wait}Mind you, this world's got plenty of\namazing weapons that never break.{end}"
  },
  {
   "id": "0026",
@@ -421,7 +421,7 @@
  {
   "id": "0054",
   "jp": "城下で、おかしな格好を{d:62|した}\nおじいさんをよく見たのだが\n最近見{d:6C|ない}なぁ。{wait}{col:01}隊長{col}がくわ{d:71|しい}事を\n知って{d:56|いた}ようだが{d:79|・・・}{end}",
-  "en": "I used to see an oddly dressed old man\naround town a lot, but not lately.{wait}The {col:01}Captain{col} seemed to know more\nabout it...{end}"
+  "en": "I used to see an oddly dressed old man\naround town a lot, but not lately.{wait}Our {col:01}Captain{col} seemed to know more\nabout it...{end}"
  },
  {
   "id": "0055",
@@ -536,7 +536,7 @@
  {
   "id": "006B",
   "jp": "{col:01}{d:86|メイヤ}{spd:01}\n{d:8F|おねがい}し{d:59|ます。}{wait}どうか私の話を{d:79|・・・}\nねがいを聞いて{d:47|下さい。}{wait}実は、私の父が不治の\nやまいにかかって\nしまって{d:79|・・・}{wait}その父のやまいを治す事が\n出来るのが、南西に広がる{wait}{d:83|ヴェルダーの大森林}の奥に\nさいて{d:4F|いる}{col:01}「{item:1B}」{col}{d:09|という}\n花だけなの。{wait}だけどその場所には\n{d:84|クリーチャー}が多くいて\n私では取りに行け{d:6C|ない}の。{wait}{d:8F|おねがい}{d:5C|です}、私のかわりに\n{col:01}「{item:1B}」{col}を取りに行って\nもらえ{d:4B|ません}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2いやだ{choice:00:006C:006D}",
-  "en": "{col:01}Meiya{spd:01}\nPlease.{wait}Please, hear my story... my wish.{wait}You see, my father has fallen ill with an\nincurable disease...{wait}The only thing that can cure him{wait}is a flower called {col:01}\"{item:1B}\"{col},\nwhich blooms deep in the Great Velder\nForest to the southwest.{wait}But that place is full of creatures, and I\ncan't go get it myself.{wait}Please, would you go and get the\n{col:01}\"{item:1B}\"{col} for me?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No way.{choice:00:006C:006D}"
+  "en": "{col:01}Meiya{spd:01}\nPlease.{wait}Please, hear my story... my wish.{wait}You see, my father has fallen ill with an\nincurable disease...{wait}The only thing that can cure him{wait}is a flower called {col:01}\"{item:1B}\"{col},\nwhich blooms deep in the Great Velder\nForest to the southwest.{wait}But that place is full of creatures, and I\ncan't go get it myself.{wait}Please, would you go and get the\n{col:01}\"{item:1B}\"{col} for me?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Yeah.\n  2No way.{choice:00:006C:006D}"
  },
  {
   "id": "006C",
@@ -551,7 +551,7 @@
  {
   "id": "006E",
   "jp": "{col:01}{d:86|メイヤ}\n{d:8F|おねがい}し{d:59|ます。}\n私のかわりに{col:01}「{item:1B}」{col}を\n取って来てもらえ{d:4B|ません}か？{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1うん\n  2いやだ{choice:00:006C:006D}",
-  "en": "{col:01}Meiya\nPlease. Would you go and get the\n{col:01}\"{item:1B}\"{col} for me?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Sure.\n  2No way.{choice:00:006C:006D}"
+  "en": "{col:01}Meiya\nPlease. Would you go and get the\n{col:01}\"{item:1B}\"{col} for me?{fe}{col:01}{name}{f4}{f4:41}{fa:81}\n\n  1Yeah.\n  2No way.{choice:00:006C:006D}"
  },
  {
   "id": "006F",
@@ -601,12 +601,12 @@
  {
   "id": "0078",
   "jp": "{col:01}ギルム{spd:01}\nすまんのう。{wait}今の{d:11|ワシ}に出来るのは\n{d:75|ここ}までのよう{d:5F|じゃ。}{wait}また来{d:0C|てくれ}。{end}",
-  "en": "{col:01}Gilm{spd:01}\nSorry about this.{wait}It seems this is as far as I can take it\nfor now.{wait}Come back again.{end}"
+  "en": "{col:01}Gilm{spd:01}\nSorry, lad.{wait}Looks like this is as far as I can take it\nfor now.{wait}Come back again.{end}"
  },
  {
   "id": "0079",
   "jp": "{col:01}ギルム\nもうその剣は、\n最強のはず{d:5F|じゃ。}{end}",
-  "en": "{col:01}Gilm\nThat sword ought to be as strong as it\ngets now.{end}"
+  "en": "{col:01}Gilm\nThat sword ought to be as strong as they\ncome now, lad.{end}"
  },
  {
   "id": "007A",
@@ -631,7 +631,7 @@
  {
   "id": "007E",
   "jp": "{col:01}{d:85|オギリン}{spd:01}\n{d:74|おまえ}はやがて強大な\n敵に会い、恐ろ{d:71|しい}運命に\nまき込まれる{d:60|じゃ}ろう。{wait}{d:76|この}「ぶんけん」の内ようを\nおぼえておく{d:0E|のじゃ。}{wait}きっと{d:74|おまえ}の役に\n立つ{d:60|じゃ}ろう。{wait}「やがて、天にかぎりなく\n近く、まがまが{d:71|しい}部屋に{wait}あまたの勇者がたどりつく時\n大いなる{col:01}「きょうふ」{col}が{wait}勇者の前に\n立ちはだかる{d:65|だろう}。{wait}勇者が手にもちし、\n{col:01}あおき剣{col}は{col:01}「きょうふ」{col}を\nしばり、うち倒す。{wait}{d:0D|しかし}、しんなる\n{col:01}「きょうふ」{col}が{d:79|・・・}」{wait}そこから先は、\nよめぬがおぼえておくと\nよい{d:60|じゃ}ろう。{end}",
-  "en": "{col:01}Ogilin{spd:01}\nBefore long, you will meet a mighty foe and\nbe caught up in a terrible fate.{wait}Remember the words of this\n\"ancient text.\"{wait}They will surely be of use to you.{wait}\"In time, when many heroes reach an\nill-omened chamber{wait}that lies close beyond measure to the\nheavens, a great {col:01}'Terror'{col} shall{wait}bar the heroes' path.{wait}The {col:01}blue sword{col} in the hero's hand shall\nbind the {col:01}'Terror'{col} and strike it down.{wait}But the true {col:01}'Terror'{col}...\"{wait}What follows, I cannot read, but you would\ndo well to remember it.{end}"
+  "en": "{col:01}Ogilin{spd:01}\nBefore long, you will meet a mighty foe and\nbe caught up in a terrible fate.{wait}Remember the words of this\n\"ancient text.\"{wait}They will surely be of use to you.{wait}\"In time, in an ill-omened chamber\nboundlessly near the heavens,{wait}when many heroes arrive, a great\n{col:01}'Terror'{col} shall{wait}bar the heroes' path.{wait}The {col:01}blue sword{col} in the hero's hand shall\nbind the {col:01}'Terror'{col} and strike it down.{wait}But the true {col:01}'Terror'{col}...\"{wait}What follows, I cannot read, but you would\ndo well to remember it.{end}"
  },
  {
   "id": "007F",
@@ -816,7 +816,7 @@
  {
   "id": "00A3",
   "jp": "{col:01}{name:02}{f4}{f4:55}{fa:B1}\n体を休める{d:0E|のじゃ。}{end}",
-  "en": "{col:01}{name:02}{f4}{f4:55}{fa:B1}\nGet some rest now.{end}"
+  "en": "{col:01}{name:02}{f4}{f4:55}{fa:B1}\nRest up now, young'un.{end}"
  },
  {
   "id": "00A4",
@@ -886,7 +886,7 @@
  {
   "id": "00B1",
   "jp": "{d:73|いい}ところに来たわね。\n今できたところ{d:6D|よ。}{wait}はい、どうぞ。{end}",
-  "en": "You're just in time. It's only just ready.{wait}Here you go.{end}"
+  "en": "You're just in time. It's just finished.{wait}Here you go.{end}"
  },
  {
   "id": "00B2",
@@ -986,7 +986,7 @@
  {
   "id": "00C5",
   "jp": "{col:01}{d:82|メファウス}{spd:01}\nおお、ちょうどよい所に。{wait}あた{d:0F|らしい}{col:01}「{item:D5}」{col}と\nいう魔法を開発{d:62|した}。{wait}{d:52|これ}を使ってみ{d:6C|ない}かね？{fe}{spd}{col:01}{name:01}{f4}{f4:46}{fa:B1}\n\n  1うん\n  2いやだ{choice:00:00BB:00BC}",
-  "en": "{col:01}Mephaus{spd:01}\nAh, you've come at just the right time.{wait}I've developed a new spell\ncalled {col:01}\"{item:D5}\"{col}.{wait}Would you like to try it?{fe}{spd}{col:01}{name:01}{f4}{f4:46}{fa:B1}\n\n  1Sure!\n  2No way.{choice:00:00BB:00BC}"
+  "en": "{col:01}Mephaus{spd:01}\nAh, you've come at just the right time.{wait}I've developed a new spell\ncalled {col:01}\"{item:D5}\"{col}.{wait}Would you like to try it?{fe}{spd}{col:01}{name:01}{f4}{f4:46}{fa:B1}\n\n  1Sure!\n  2No, thanks.{choice:00:00BB:00BC}"
  },
  {
   "id": "00C6",

@@ -92,7 +92,7 @@
  {
   "id": "1317",
   "jp": "{col:01}{name:05}{f4}{f5:B1}{f4:4C}{fa:E1}\n{name:02}{d:79|・・・}\n{d:79|・・・}やつは死ぬ気だ。{fd:13}{fe:10}{goto:00:1318}",
-  "en": "{col:01}{name:05}{f4}{f5:B1}{f4:4C}{fa:E1}\n{name:02}... ...He means to die.{fd:13}{fe:10}{goto:00:1318}"
+  "en": "{col:01}{name:05}{f4}{f5:B1}{f4:4C}{fa:E1}\n{name:02}... He means to die.{fd:13}{fe:10}{goto:00:1318}"
  },
  {
   "id": "1318",
@@ -112,12 +112,12 @@
  {
   "id": "131B",
   "jp": "{fe:10}{fa:01}{col:01}{name:05}{f4:4B}{fa:E1}\n{d:79|・・・}奴は奴なりにけじめを\nつけたか{d:7B|った}の{d:65|だろう}{d:79|・・・}{fd:13}{fe:10}{goto:00:131C}",
-  "en": "{fe:10}{fa:01}{col:01}{name:05}{f4:4B}{fa:E1}\n...I suppose he wanted to settle things in\nhis own way...{fd:13}{fe:10}{goto:00:131C}"
+  "en": "{fe:10}{fa:01}{col:01}{name:05}{f4:4B}{fa:E1}\n...I suppose he wanted to atone in his\nown way...{fd:13}{fe:10}{goto:00:131C}"
  },
  {
   "id": "131C",
   "jp": "{fe:10}{fa:01}{col:01}{name:01}{f4:48}{fa:D1}\n{name:02}ー{d:1B|！！}{end:13}",
-  "en": "{fe:10}{fa:01}{col:01}{name:01}{f4:48}{fa:D1}\n{name:02}!!{end:13}"
+  "en": "{fe:10}{fa:01}{col:01}{name:01}{f4:48}{fa:D1}\n{name:02}---!!{end:13}"
  },
  {
   "id": "131D",
@@ -142,7 +142,7 @@
  {
   "id": "1321",
   "jp": "{col:01}{name}{f4}{f4:43}{fa:81}\n{name:01}ーーー{d:1B|！！}{end:12}",
-  "en": "{col:01}{name}{f4}{f4:43}{fa:81}\n{name:01}!!{end:12}"
+  "en": "{col:01}{name}{f4}{f4:43}{fa:81}\n{name:01}---------!!{end:12}"
  },
  {
   "id": "1322",
@@ -200,7 +200,7 @@
  {
   "id": "132D",
   "jp": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:57}\nスマンのう{d:79|・・・}{fd:13}\n{d:11|ワシ}が引き起こ{d:62|した}事に、\nみなをまき込んで\nしまって{d:79|・・・}{fd:13}{fe:10}{goto:00:132E}",
-  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:57}\nI'm sorry...{fd:13}\nfor dragging you all into a mess I started...{fd:13}{fe:10}{goto:00:132E}"
+  "en": "{fe:10}{fa:01}{col:01}{name:02}{spd:01}{f4:57}\nSorry about this, young'uns...{fd:13} for dragging\nyou all into a mess I started...{fd:13}{fe:10}{goto:00:132E}"
  },
  {
   "id": "132E",
@@ -215,12 +215,12 @@
  {
   "id": "1330",
   "jp": "{fe:10}{fa:01}{col:01}{name:01}{f4:46}{fa:C1}\nはい。{fd:12}\n{name:02}さん、\n気をつけて！{end:12}",
-  "en": "{fe:10}{fa:01}{col:01}{name:01}{f4:46}{fa:C1}\nOkay.{fd:12} {name:02}-san, please be careful!{end:12}"
+  "en": "{fe:10}{fa:01}{col:01}{name:01}{f4:46}{fa:C1}\nYes.{fd:12} {name:02}-san, please be careful!{end:12}"
  },
  {
   "id": "1331",
   "jp": "{col:01}{name:05}{spd:01}{f4}{f5:B1}{f4:4B}{fa:E1}\nやつは死ぬ気だ。{fd:13}\nあの城にだっしゅつ装置\nなど無い。{fd:13}\n奴は奴なりのけじめの付け方\nを考えて{d:55|いたの}{d:65|だろう}。{fd:13}{fe:10}{goto:00:1332}",
-  "en": "{col:01}{name:05}{spd:01}{f4}{f5:B1}{f4:4B}{fa:E1}\nHe means to die.{fd:13}\nThere's no escape pod in that castle.{fd:13}\nHe must have had his own way of settling\nthings in mind.{fd:13}{fe:10}{goto:00:1332}"
+  "en": "{col:01}{name:05}{spd:01}{f4}{f5:B1}{f4:4B}{fa:E1}\nHe means to die.{fd:13} There's no escape pod in\nthat castle.{fd:13} He must have had his own way\nof making amends in mind.{fd:13}{fe:10}{goto:00:1332}"
  },
  {
   "id": "1332",
@@ -323,7 +323,7 @@
  {
   "id": "1347",
   "jp": "{fe:10}{col:01}{name:02}\nしねぇいー。\nぐわあははははっ{d:1B|！！}{end:13}",
-  "en": "{fe:10}{col:01}{name:02}\nDiiie! Gwaahahahaha!!{end:13}"
+  "en": "{fe:10}{col:01}{name:02}\nDiiie! Bwaahahahaha!!{end:13}"
  },
  {
   "id": "1348",
@@ -387,7 +387,7 @@
  {
   "id": "1354",
   "jp": "{fe:10}{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\n{d:7C|そうか}{d:79|・・・}{wait}{name:01}は、\n{name}、{wait}{d:74|おまえ}が{d:7D|助け}て\nあげ{d:6C|ない}と{d:79|・・・}な。{wait}{d:79|・・・}どうだ{d:0B|おまえ達}、\n俺も連れて行か{d:6C|ない}か？{wait}奴らには俺もカリが{d:61|ある}、\nきっと力になれると思うぜ？{fe}{fa:01}{spd}{col:01}{name}{f4:81}{fa:82}\n\n  1{d:8F|おねがい}します\n  2いえ、けっこう{d:5C|です}{choice:00:114A:114B}",
-  "en": "{fe:10}{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\nI see...{wait}{name:01}... {name},{wait}you're the one who's gotta save\nher... yeah?{wait}...So how about it, you two? Why not take\nme along?{wait}I've got a score to settle with those guys\nmyself. I'm sure I can be a help, eh?{fe}{fa:01}{spd}{col:01}{name}{f4:81}{fa:82}\n\n  1Yes, please.\n  2No, thanks.{choice:00:114A:114B}"
+  "en": "{fe:10}{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\nI see...{wait}{name:01}... {name},{wait}you're the one who's gotta save\nher... yeah?{wait}...So how about it, you two? Why not take\nme along?{wait}I've got a score to settle with those guys\nmyself. I'm sure I can be of some use, eh?{fe}{fa:01}{spd}{col:01}{name}{f4:81}{fa:82}\n\n  1Yes, please.\n  2No, thanks.{choice:00:114A:114B}"
  },
  {
   "id": "1355",
@@ -536,7 +536,7 @@
  {
   "id": "1374",
   "jp": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:A1}\nおいおい、{wait}すまんが\n{name:01}{d:09|という}\n娘をしらんかの？{fd}{fe:10}{goto:00:1375}",
-  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:A1}\nNow, now,{wait}sorry, but would you know a girl\nnamed {name:01}?{fd}{fe:10}{goto:00:1375}"
+  "en": "{col:01}{name:02}{spd:01}{f4}{f4:55}{fa:A1}\nHey now,{wait}sorry, but would you know a girl\nnamed {name:01}?{fd}{fe:10}{goto:00:1375}"
  },
  {
   "id": "1375",

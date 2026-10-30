@@ -22,7 +22,7 @@
  {
   "id": "1104",
   "jp": "{d:24|ありがとう}ござい{d:59|ます。}{wait}姫様、{d:76|この}お方が\n手伝って下さるそう{d:5C|です}{d:6D|よ。}{end}",
-  "en": "Thank you kindly.{wait}Princess, this young man says he'll\nhelp you.{end}"
+  "en": "Thank you kindly.{wait}Princess, this young gentleman says he'll\nhelp you.{end}"
  },
  {
   "id": "orphan_83B834",
@@ -72,7 +72,7 @@
  {
   "id": "110D",
   "jp": "{col:01}{d:15|ラミアウォリアー}\n{d:0A|きさまら}何者だ！{end}",
-  "en": "{col:01}Lamia Warrior\nWho are you!{end}"
+  "en": "{col:01}Lamia Warrior\nWho are you wretches!?{end}"
  },
  {
   "id": "110E",
@@ -181,7 +181,7 @@
    "1124"
   ],
   "jp": "{fe:10}{col:01}水{d:1E|魔将}ディーネ{f4:68}{fa:C1}\nキィー、ゆるさ{d:6C|ない}！\nやつざきに{d:7F|して}あげるわ{d:1B|！！}{end}",
-  "en": "{fe:10}{col:01}Water General Deene{f4:68}{fa:C1}\nAaargh, unforgivable! I'll tear you\nto pieces!!{end}"
+  "en": "{fe:10}{col:01}Water General Deene{f4:68}{fa:C1}\nAaargh, unforgivable! I'll just have to tear\nyou to pieces!!{end}"
  },
  {
   "id": "1125",
@@ -426,7 +426,7 @@
  {
   "id": "1155",
   "jp": "{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\n{name}、{d:00|ルシア}\nまずは、やつらにつかまって\n{d:4F|いる}人々の中に{wait}{name:01}が、\n{d:4F|いる}かもしれん。{wait}そいつらを{d:7D|助け}に行こう！{fd}{fe:10}{goto:00:1156}",
-  "en": "{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\n{name}, Lucia, first off, among the\npeople those guys have caught...{wait}{name:01} might be there.{wait}Let's go rescue them!{fd}{fe:10}{goto:00:1156}"
+  "en": "{col:01}{name:03}{spd:01}{f4}{f4:51}{fa:A1}\n{name}, Lucia, first of all...{wait}{name:01} might be among the people\nthose guys have caught.{wait}Let's go rescue them!{fd}{fe:10}{goto:00:1156}"
  },
  {
   "id": "1156",
@@ -574,7 +574,7 @@
  {
   "id": "1174",
   "jp": "{fe:10}{fa:01}はい。{fe}私は、{d:76|この}国で{d:1F|帝国}の\n反乱軍を組織{d:7F|して}\n{d:4F|いる}者の一人{d:5C|です}。{wait}敵の{d:22|じょうほう}から\n{d:23|あなた達}の噂は、{wait}よく聞いてい{d:4C|ました。}{wait}我々に手をか{d:7F|して}\n{d:56|いた}だけ{d:4B|ません}か？{fe}{col:01}{name}{f4:41}{fa:81}\n\n  1わかりま{d:62|した}\n  2いや{d:5C|です}{choice:00:1175:1176}",
-  "en": "{fe:10}{fa:01}Yes.{fe}I am one of those organizing a rebel army\nagainst the Empire in this land.{wait}We have heard a great deal about you\nfrom the enemy's own reports.{wait}Would you lend us your aid?{fe}{col:01}{name}{f4:41}{fa:81}\n\n  1All right\n  2No way{choice:00:1175:1176}"
+  "en": "{fe:10}{fa:01}Yes.{fe}I am one of those organizing a rebel army\nagainst the Empire in this land.{wait}We have heard a great deal about you\nfrom the enemy's own reports.{wait}Would you lend us your aid?{fe}{col:01}{name}{f4:41}{fa:81}\n\n  1All right\n  2No, thanks{choice:00:1175:1176}"
  },
  {
   "id": "1175",
@@ -742,7 +742,7 @@
    "1196"
   ],
   "jp": "{col:01}{d:1C|エイソッド}{spd:01}\n{d:63|ゆるして}{d:47|下さい。}{wait}{d:8E|あなた}方がたよりだと\n{d:73|いい}ながら、内部に{wait}うら切り者をかかえて\n{d:56|いた}とは{d:79|・・・}{fd}{fe:10}{goto:00:1197}",
-  "en": "{col:01}Aysod{spd:01}\nPlease forgive me.{wait}I said we were relying on you, and all\nthe while{wait}I was harboring a traitor in our\nown ranks...{fd}{fe:10}{goto:00:1197}"
+  "en": "{col:01}Aysod{spd:01}\nForgive me, all of you.{wait}I said we were relying on you, and all\nthe while{wait}I was harboring a traitor in our\nown ranks...{fd}{fe:10}{goto:00:1197}"
  },
  {
   "id": "1197",
@@ -825,7 +825,7 @@
  {
   "id": "11A9",
   "jp": "{col:01}{d:00|ルシア}{spd:01}{f4}{f4:60}{fa:A1}\n{name}、\n{name:01}の{wait}{d:22|じょうほう}は無くな{d:7B|った}わ。{end}",
-  "en": "{col:01}Lucia{spd:01}{f4}{f4:60}{fa:A1}\n{name}, now we've got nothing{wait}on where {name:01} is.{end}"
+  "en": "{col:01}Lucia{spd:01}{f4}{f4:60}{fa:A1}\n{name}...{wait}we've lost our only lead on {name:01}.{end}"
  },
  {
   "id": "11AA",
@@ -1159,7 +1159,7 @@
    "11F7"
   ],
   "jp": "{fe:10}{col:01}闇姫騎士{d:8A|ミリア}{f4:6A}{fa:E1}\n{d:23|あなた達}の相手は\n私が{d:7F|して}あげるわ！{end}",
-  "en": "{fe:10}{col:01}Dark Princess Knight Milia{f4:6A}{fa:E1}\nI'll take you on myself!{end}"
+  "en": "{fe:10}{col:01}Dark Princess Knight Milia{f4:6A}{fa:E1}\nAllow me to play with you!{end}"
  },
  {
   "id": "11F8",

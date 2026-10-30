@@ -17,7 +17,7 @@
  {
   "id": "0203",
   "jp": "声優{spd:01}\n\n阪口 大助\n{wait:10}山本 恵美子\n{wait:10}霞 三十朗\n{wait:10}渡部 直美\n{wait:10}陶山 章夫\n{wait:10}乃村 健次\n{end:10}",
-  "en": "Voice Cast{spd:01}\n\nDaisuke Sakaguchi\n{wait:10}Emiko Yamamoto\n{wait:10}Sanjuro Kasumi\n{wait:10}Naomi Watanabe\n{wait:10}Akio Suyama\n{wait:10}Kenji Nomura\n{end:10}"
+  "en": "Voice Cast{spd:01}\n\nDaisuke Sakaguchi\n{wait:10}Emiko Yamamoto\n{wait:10}Sanjuro Kasumi\n{wait:10}Naomi Watanabe\n{wait:10}Akio Suyama\n{wait:10}Kenji Nomura {end:10}"
  },
  {
   "id": "0204",
@@ -42,7 +42,7 @@
  {
   "id": "0208",
   "jp": "サウンド\nエンジニア{spd:01}\n\nSWITCH・E\n{wait:10}STUDIO M2\n{wait:10}ST・TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU\n{end:10}",
-  "en": "Sound Engineers{spd:01}\n\nSWITCH-E\n{wait:10}STUDIO M2\n{wait:10}ST.TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU\n{end:10}"
+  "en": "Sound Engineers{spd:01}\n\nSWITCH-E\n{wait:10}STUDIO M2\n{wait:10}ST.TYPE M\n{wait:10}PRINCE E\n{wait:10}CHATRU {end:10}"
  },
  {
   "id": "0209",

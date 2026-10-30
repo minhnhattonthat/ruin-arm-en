@@ -31,9 +31,9 @@ off interval, while five show the No arrow. This is the original cursor behavior
 - Generated assets: `build/vwf/worldmap.asm` and `worldmap.bin`; assembler hooks and source-byte assertions are
   in `asm/vwf.asm` and `tools/asm.py`. The normal 4 MB build includes them; the debug Lua is not in the ROM.
 
-Names currently follow `glossary.md`. The newly visible original Latin map labels disagree with several earlier
-romanizations (for example LONDIUM versus Rondium). Phase 9 must reconcile those under D19 alongside the story
-pass, including the new ラウ / map RAN. This is a naming/polish question; the bitmap interface is fully English.
+Names follow `glossary.md`, which adopted all thirteen original Latin map labels in phase 9 (D22): ARFF, LONDIUM,
+WHAIAL, MARY, RAW, STELM, WARSE, MARTHNAL, RAVENNA, LUTEA, TIFNU, MEDIOM, RAIDROID. `warp.py world_map_labels`
+shows them all (every location flag set, no card open); the earlier "RAN" was a misreading of RAW.
 
 ## Unused city tiles
 

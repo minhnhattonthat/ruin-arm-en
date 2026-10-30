@@ -32,7 +32,7 @@
  {
   "id": "1207",
   "jp": "{col:01}{name:05}{spd:01}\n{d:3D|カダム}{d:8D|王国}へのちょうさ隊に\n潜り込んだ俺達が、{wait}あの地に上陸{d:62|した}直後、\nやつらに襲われた。{end}",
-  "en": "{col:01}{name:05}{spd:01}\nWe slipped into a survey party bound for\nthe Kingdom of Kadam,{wait}and right after we landed there, they\nattacked us.{end}"
+  "en": "{col:01}{name:05}{spd:01}\nWe slipped into a survey party bound for\nthe Kingdom of Kadam,{wait}and right after we landed there, the enemy\nattacked us.{end}"
  },
  {
   "id": "1208",
@@ -72,7 +72,7 @@
  {
   "id": "1210",
   "jp": "{fe:10}{col:01}{name:05}\n奴の父親をおいつめた事も\n{d:61|ある}{d:76|この}俺が、{wait}今さらどうやって{d:79|・・・}{fd}{fe:10}{goto:00:1211}",
-  "en": "{fe:10}{col:01}{name:05}\nI'm the one who hunted his father down.{wait}How could I, after all that...?{fd}{fe:10}{goto:00:1211}"
+  "en": "{fe:10}{col:01}{name:05}\nI'm the one who hunted that kid's\nfather down.{wait}How could I, after all that...?{fd}{fe:10}{goto:00:1211}"
  },
  {
   "id": "1211",
@@ -395,7 +395,7 @@
  {
   "id": "1253",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}\nくだらん。{wait}やっと死んだか、\n{d:76|この}くたばりぞこ{d:6C|ない}がっ！{end}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain\nHow tiresome.{wait}So the walking corpse is finally dead!{end}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain\nPathetic.{wait}So the walking corpse is finally dead!{end}"
  },
  {
   "id": "1254",
@@ -440,7 +440,7 @@
  {
   "id": "125C",
   "jp": "{col:01}{name:05}\n{d:60|じゃ}ま{d:51|する}なーっ！{end}",
-  "en": "{col:01}{name:05}\nOut of my waaay!{end}"
+  "en": "{col:01}{name:05}\nOut of my way!!{end}"
  },
  {
   "id": "125D",
@@ -548,7 +548,7 @@
  {
   "id": "1273",
   "jp": "{fe:10}{fa:01}{col:01}{d:00|ルシア}{f4:60}{fa:A1}\n一たい一で、\n戦いま{d:5A|しょう}！{wait}ね、{name}！{fd}{fe:10}{goto:00:1382}",
-  "en": "{fe:10}{fa:01}{col:01}Lucia{f4:60}{fa:A1}\nLet's fight, one-on-one!{wait}Right, {name}?{fd}{fe:10}{goto:00:1382}"
+  "en": "{fe:10}{fa:01}{col:01}Lucia{f4:60}{fa:A1}\nLet's make it one-on-one!{wait}Right, {name}?{fd}{fe:10}{goto:00:1382}"
  },
  {
   "id": "1274",
@@ -618,7 +618,7 @@
  {
   "id": "1281",
   "jp": "{fe:10}{col:01}{name:02}{spd:01}\n{d:34|マースナル}国の\n女王{d:13|サーラ}{d:60|じゃ}{d:6D|よ。}{wait}{d:52|これ}も運命なのかのう。{fd}{fe:10}{goto:00:1282}",
-  "en": "{fe:10}{col:01}{name:02}{spd:01}\nQueen Saara of Marthnal.{wait}Perhaps this, too, is fate.{fd}{fe:10}{goto:00:1282}"
+  "en": "{fe:10}{col:01}{name:02}{spd:01}\nWhy, it's Queen Saara of Marthnal.{wait}Perhaps this, too, is fate, hmm?{fd}{fe:10}{goto:00:1282}"
  },
  {
   "id": "1282",
@@ -925,7 +925,7 @@
    "12C8"
   ],
   "jp": "{col:01}{name:02}{f5:D0}{f4}{f5:B2}{f4:97}{fa:A2}\n{d:26|おぬし}と戦う気は{d:6C|ない}{d:5D|のじゃ}\n{d:11|ワシ}らを通{d:7F|して}くれい。{fd}{fe:10}{goto:00:12C9}",
-  "en": "{col:01}{name:02}{f5:D0}{f4}{f5:B2}{f4:97}{fa:A2}\nWe've no wish to fight you. Let us pass.{fd}{fe:10}{goto:00:12C9}"
+  "en": "{col:01}{name:02}{f5:D0}{f4}{f5:B2}{f4:97}{fa:A2}\nNow see here, we've no wish to fight you.\nLet us pass, eh?{fd}{fe:10}{goto:00:12C9}"
  },
  {
   "id": "12C9",
@@ -956,7 +956,7 @@
    "12D0"
   ],
   "jp": "{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}{f5:D0}{f4}{f5:C1}{f4:72}{fa:E1}\nようこそ巨神城{d:3E|バルドア}へ。{wait}君達が{d:75|ここ}へ、人類を滅ぼす\n{d:3E|バルドア}のエネルギーで{d:61|ある}{wait}四つの{d:16|宝玉}の残り二つを\n持ってき{d:0C|てくれ}る日を{wait}心待ちに{d:7F|して}{d:56|いた}{d:6D|よ。}{end}",
-  "en": "{col:01}Imperial Guard General Zain{spd:01}{f5:D0}{f4}{f5:C1}{f4:72}{fa:E1}\nWelcome to Titan Castle Baldoa.{wait}I have been eagerly awaiting the day you\nwould bring here{wait}the last two of the four gems, the energy\nof Baldoa{wait}that will destroy humanity.{end}"
+  "en": "{col:01}Imperial Guard General Zain{spd:01}{f5:D0}{f4}{f5:C1}{f4:72}{fa:E1}\nWelcome to Titan Castle Baldoa.{wait}I have been eagerly awaiting this day:{wait}the day you would bring me the last two of\nthe four gems,{wait}the energy with which Baldoa shall\ndestroy humanity.{end}"
  },
  {
   "id": "12D1",
@@ -976,7 +976,7 @@
  {
   "id": "12D4",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\nおろかな。{wait}やはり{d:19|人間}は\n滅ぶべき種な{d:67|のだ。}{wait}さあ、はやく{d:3E|バルドア}を\n完全復活させるための{wait}エネルギーで{d:61|ある}、\n{col:01}「{item:19}」{wait}{col:01}「{item:1A}」{wait}の残り二つを\n渡{d:7F|して}もらおうか。{end}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nFools.{wait}Humans truly are a species that\nmust perish.{wait}Now, quickly. The energy to fully\nrevive Baldoa:{wait}the {col:01}\"{item:19}\"{wait}and the {col:01}\"{item:1A}\"{wait}--hand over those last two.{end}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nFools.{wait}Humans truly are a species that\nmust perish.{wait}Now, be quick and give me the energy to\nfully revive Baldoa:{wait}the {col:01}\"{item:19}\"{wait}and the {col:01}\"{item:1A}\",{wait}the last two that remain.{end}"
  },
  {
   "id": "12D5",
@@ -1016,7 +1016,7 @@
  {
   "id": "12DC",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n君達{d:34|マースナル}国の人々も、\n{d:19|人間}達も、滅びる運命の種族\nな{d:67|のだ。}{wait}それは我が主{d:17|ボルボーザ}様が\n決められた事{d:79|・・・}{fd}{fe:10}{goto:00:12DD}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYou people of Marthnal, like the humans,\nare\na race fated to perish.{wait}So my master, Bolboza-sama,\nhas decreed...{fd}{fe:10}{goto:00:12DD}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nYou people of Marthnal, like the humans,\nare a race fated to perish.{wait}So my master, Bolboza-sama,\nhas decreed...{fd}{fe:10}{goto:00:12DD}"
  },
  {
   "id": "12DD",
@@ -1036,12 +1036,12 @@
  {
   "id": "12E0",
   "jp": "{fe:10}{col:01}{name:02}{spd:01}{f5:B2}{f4:99}{fa:C2}\n{d:02|ザイン}{d:79|・・・}{d:11|ワシ}の事を\n思い出{d:62|した}のか。{wait}{d:26|おぬし}は、あのキカイに\n操られて{d:4F|いる}だけ{d:5F|じゃ。}{fd}{fe:10}{goto:00:12E1}",
-  "en": "{fe:10}{col:01}{name:02}{spd:01}{f5:B2}{f4:99}{fa:C2}\nZain... so you remember me.{wait}You're only being controlled by\nthat machine.{fd}{fe:10}{goto:00:12E1}"
+  "en": "{fe:10}{col:01}{name:02}{spd:01}{f5:B2}{f4:99}{fa:C2}\nZain... so you remember me, eh.{wait}You're only being controlled by that\nmachine, you know.{fd}{fe:10}{goto:00:12E1}"
  },
  {
   "id": "12E1",
   "jp": "{fe:10}{col:01}近衛{d:1E|魔将}{d:02|ザイン}{spd:01}\n私は生まれ変わ{d:7B|った}{d:67|のだ。}{wait}{d:74|おまえ}に裏切られ\n絶ぼうの内に、ガケから身を\n投げた時にな。{wait}おかげで滅ぶべき\nおろかな{d:19|人間}{d:09|という}じゅばく\nから私は解き放たれた{d:67|のだ。}{fd}{fe:10}{goto:00:12E2}",
-  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nI have been reborn.{wait}On the day you betrayed me, and I threw\nmyself from a cliff in despair.{wait}Thanks to that, I was freed from the\nshackles of being a foolish human who\ndeserves to perish.{fd}{fe:10}{goto:00:12E2}"
+  "en": "{fe:10}{col:01}Imperial Guard General Zain{spd:01}\nI have been reborn.{wait}Reborn the day you betrayed me, when I\nthrew myself from a cliff in despair.{wait}Thanks to that, I was freed from the\nshackles of being a foolish human who\ndeserves to perish.{fd}{fe:10}{goto:00:12E2}"
  },
  {
   "id": "12E2",
@@ -1084,7 +1084,7 @@
  {
   "id": "12EA",
   "jp": "{fe:10}{col:01}{name:05}\nそんな事、やってみなくちゃ\n分から{d:6C|ない}ぜ。{fd}{fe:10}{goto:00:12EB}",
-  "en": "{fe:10}{col:01}{name:05}\nYou won't know that until we try.{fd}{fe:10}{goto:00:12EB}"
+  "en": "{fe:10}{col:01}{name:05}\nWon't know till we try.{fd}{fe:10}{goto:00:12EB}"
  },
  {
   "id": "12EB",
@@ -1178,7 +1178,7 @@
  {
   "id": "12FD",
   "jp": "{fe:10}{col:01}{d:17|ボルボーザ}\n{d:79|・・・}ナラバシネ！サラニ、\nパワーヲアゲテイクゾ{d:79|・・・}{end}",
-  "en": "{fe:10}{col:01}Bolboza\n...THEN DIE! INCREASING\nPOWER FURTHER...{end}"
+  "en": "{fe:10}{col:01}Bolboza\n...THEN DIE! I SHALL KEEP RAISING\nMY POWER...{end}"
  },
  {
   "id": "12FE",

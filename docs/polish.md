@@ -64,3 +64,47 @@ merge. Each line is ticked `[x]` as fixed or `waived: reason`; `tools/release.py
 
 ## Story review (phase 9)
 (Minor findings from the chapter story pass are added here.)
+- [x] act2 (p05) - fixed 10F4 1104 110D 1122 10ED: Nanny third person "If this old nanny's words are foolish, Princess, then yours are a hundred times
+  worse!"; 1104 このお方 "this gentleman"; 110D Lamia Warrior きさま "Who dares come here!?"; 1122 Deene optional
+  haughtier tail; 10ED Gilm old-man flavour "drop by whenever you like"
+- [x] act2: 0134 Toran speaking in Fubel - waived: the JP speaker code is `{name:03}` (original data)
+- [x] act3 (p05) - fixed 1195 11A9 1354 1155 1174 1374; waived: 1176 has no いやです, choice full stops stay
+  (the game's lists are mixed: every msg00 list and 109D keep them): Aysod "Forgive me, all of you..." (to the party, not Reina); 11A9 "{name}, we've lost our only lead
+  on {name:01}."; 1354 "I can be of some use, eh?"; choice entries 1354/135F drop the full stops; 1155 "first of
+  all, {name:01} might be among the people those guys have caught"; 1174/1176 いやです "No thanks"; 1374 おいおい
+  "Hey now"
+- [x] act1 (p05) - fixed 104C 102C 104E 10B6 10D2 10EB 1002 106B 10B8; waived: 10A6 the JP says 家 (the lab is
+  revealed at 10A7), 10EC ・・・・・・ -> "..." is the house rule: "True! But actually it's the other way round..."; 102C "We believe in all of you."; 104E Neil まて
+  differs from Lucia's 1048 ("Stop!! I'll take you on myself!"); 10B6 Goldo blunt "So you're the ones who had the
+  nerve to storm Fefus Castle."; 10D2 Zain "?" not "!"; 10EB "Bogan, damn him..."; 10EC keep the long pause;
+  10A6 "My laboratory is in the castle town."; 1002 cheekier おそいぞ; 106B Gilm old-man colour; 10B8 "If something
+  has to be won in battle, then I win it in battle."
+- [x] act1_towns (p05) - fixed all (0022 is the sister; 0054 "Our Captain" = Garzack, cf. 004B):
+  0022 あの子 may be the sister, not Lucia (check against 0023/1000); 006B/006E うん "Yeah." like
+  003C; 00C5 sister's いやだ "No, thanks."; 0025 Toran hearty "Watch yourselves out there!"; 0023 cheekier Lucia;
+  0078/0079 Gilm "Sorry, lad..."; 00A3 Zieg "Rest up now, young'un."; 0054 隊長 = which captain (Garzack?); 00B1
+  "It just finished."; 007E "boundlessly near the heavens"
+- [x] act5 (p06) - fixed 12DC 12CD 12E1 12C6 12E0 12FD 12EA 12D4; waived 12C0 (optional, reads fine):
+  12DC stray break leaves "are" alone on a row; 12CD Zain's welcome clumsy; 12E1 "I was reborn the day you
+  betrayed me, when I threw myself from a cliff in despair."; 12C6/12E0 Zieg neutral ("young'un", "Bah"); 12FD
+  unify with 12F4 "I SHALL KEEP RAISING MY POWER"; 12EA Neil "Won't know till we try."; 12C0 optional; 12D4 dash
+- [x] misc (p06) - fixed all, 01D2 now "(blush)":
+  019C Margarita's syllable-split thanks tidier; 01B2 "What's Hude-sama going to do with the women he
+  brought here?"; 01CA "they say" twice; 01CE cheekier Lucia "Don't let me down, you two!!"; 01A2 Toran hearty;
+  01B4/01BA/01DF old-man じゃ touch; 01C8 "What should I do?"; 01D2 "*blush*" vs "*" narration; 01B9 colour span
+  only on "L Button"
+- [x] act4 (p06) - fixed 11F6 1253 125C 1273 1207 1210 ("that kid's father") 1281 017C; waived: 016B 女王 is
+  "queen" in the JP, 016E has none, 1222 "Fine, do what you want!!" already carries もう知らない:
+  11F6 Milia taunting "Allow me to play with you!"; 1253 くだらん "Pathetic."; 125C Neil "Out of my way!!";
+  1273 Lucia "Fight him one-on-one! Right, {name}?"; 1222 もう知らない "That's it, I give up!!"; 1210 "{name}'s
+  father"; 1207 "the enemy attacked us"; 1281 Zieg voice; 016B/016E 女王 vs Fara "Princess"; 017C notice wording
+- [x] ending (Important, p06) - fixed: 1321 "{name:01}---------!!", 131C "{name:02}---!!":
+  1321 the hero's only line, drawn-out {name:01}ーーー！！, and 131C {name:02}ー！！ keep the
+  stretch
+- [x] ending (p06) - fixed 131B 1331 1317 1347 ("Bwaahahahaha!!", JP ぐわあ) 1330 132D; waived: 0203 "Voice Cast"
+  matches the staff roll (glossary heading updated to it), 0208 handles match staff.json S0B as written:
+  131B/1331 けじめ "make amends / atone in his own way"; 1317 doubled ellipsis; 1347 Zieg's mad laugh
+  is not Toran's "Gwaahahaha" ("Fuhahahaha!!" like 1345); 1330 はい "Yes." not "Okay."; 132D スマンのう old-man
+  tone; 0203 "Voice Cast" vs glossary heading "Cast"; 0208 ・ separator "SWITCH-E" vs "ST.TYPE M"
+- [x] act3: 1370 Fara calls Toran her brother; 1165/11A7 "strongest"; 0165 Reina after 119D; 0153/117D geography -
+  waived: each is the JP's own content
