@@ -3,12 +3,14 @@
     python -X utf8 tools/debug/warp.py menu_items [more scenes..] [--rom build/ruinarm_en.sfc] [--save]
     python -X utf8 tools/debug/warp.py --all [--jobs 4]   # every scene + the map tour; states -> work/states/
     python -X utf8 tools/debug/warp.py maps                # tour: one cold boot, a shot of every map
+    python -X utf8 tools/debug/warp.py msgs_10             # tour: every message of script/msg10.json, a shot per page
     python -X utf8 tools/debug/warp.py --list
 
 Each scene writes work/qa/warp/<scene>/scene.png (the tour: map_AARR.png each) and, with --save or --all,
 work/states/<scene>.mss. Exit 1 if any scene did not report READY.
 """
 import argparse
+import json
 import re
 import subprocess
 import sys
@@ -31,16 +33,29 @@ def scene_names():
 
 def run(scene, rom, out_root, save):
     out = out_root / scene
+    tour = scene == "maps" or scene.startswith("msgs_")
     cmd = [sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "emu.py"), str(rom), "--out", str(out),
-           "--script", str(DEBUG / "scenes.lua"), "--script", str(DEBUG / "warp.lua"),
-           "--var", f"SCENE='{scene}'", "--frames", "120000" if scene == "maps" else "20000",
-           "--timeout", "1500" if scene == "maps" else "300"]
-    if save and scene != "maps":
+           "--script", str(DEBUG / "scenes.lua")]
+    if scene.startswith("msgs_"):
+        strings = json.loads((ROOT / "script" / f"msg{scene[5:]}.json").read_text(encoding="utf-8"))
+        ids = [int(s["id"], 16) for s in strings if re.fullmatch(r"[0-9A-F]{4}", s["id"])]  # orphans have no id
+        out.mkdir(parents=True, exist_ok=True)
+        (out / "msgs.lua").write_text("MSGS = {" + ",".join(f"0x{i:04X}" for i in ids) + "}\n", encoding="utf-8")
+        cmd += ["--script", str(out / "msgs.lua")]
+    cmd += ["--script", str(DEBUG / "warp.lua"), "--var", f"SCENE='{scene}'",
+            "--frames", "300000" if tour else "20000", "--timeout", "3000" if tour else "300"]
+    if save and not tour:
         cmd += ["--var", f"SAVE=[[{(ROOT / 'work' / 'states' / (scene + '.mss')).as_posix()}]]"]
     subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
     log = (out / "log.txt").read_text(encoding="utf-8", errors="replace") if (out / "log.txt").exists() else ""
     ok = "READY" in log
     stuck = [l for l in log.splitlines() if l.startswith("STUCK")]
+    if tour and ok:  # 16 full-size shots a sheet for the visual-QA gate; sheet.txt names each sheet's tiles
+        res = subprocess.run([sys.executable, "-X", "utf8", str(Path(SCRIPTS) / "sheet.py"),
+                              str(out / ("map_*.png" if scene == "maps" else "m_*.png")),
+                              "--div", "1", "--cols", "4", "--max", "16", "--out", str(out / "sheet.png")],
+                             capture_output=True, text=True, encoding="utf-8")
+        (out / "sheet.txt").write_text(res.stdout, encoding="utf-8")
     print(f"{'ok  ' if ok else 'FAIL'} {scene:16} {out.relative_to(ROOT).as_posix()}" + (f"  {len(stuck)} stuck" if stuck else ""))
     return ok
 
@@ -66,7 +81,7 @@ def main():
     with ThreadPoolExecutor(a.jobs) as ex:
         oks = list(ex.map(lambda s: run(s, a.rom, a.out, a.save or a.all), scenes))
     if len(scenes) > 1:
-        shots = [str(a.out / s / "scene.png") for s, ok in zip(scenes, oks) if ok and s != "maps"]
+        shots = [str(a.out / s / "scene.png") for s, ok in zip(scenes, oks) if ok and (a.out / s / "scene.png").exists()]
         if shots:
             subprocess.run([sys.executable, str(Path(SCRIPTS) / "sheet.py"), *shots, "--out", str(a.out / "scenes.png")])
     return 0 if all(oks) else 1

@@ -1,4 +1,4 @@
-# Visual-QA reviewer brief - <Game title>
+# Visual-QA reviewer brief - Ruin Arm (SNES)
 
 You review contact sheets from a translated build's QA tour and give each one a verdict. Read-only on everything
 except your one verdict file: no edits to the repo, no git, no subagents.
@@ -27,7 +27,14 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
 - text still typing out, a box mid-fade or mid-scroll, a cursor caught mid-blink;
 - a map or scene still loading after a warp;
 - anything identical in the original's sheet.
-- <game-specific: e.g. "the double cursor in the shop is the original's">
+- Tiles carry no labels: `sheet.txt` beside each sheet lists the tile names per sheet in row-major order
+  (`m_IIII_PP` = message id IIII, page PP; `map_AARR` = map id). Name tiles that way in an issue.
+- The message tour (`msgs_XX`) opens every message out of context, always over the starting village with the same
+  party: a portrait or speaker that doesn't fit the village, a box that opens and closes with nothing in it, or the
+  same page shot twice in a row (a choice or timed page the tour waited out) is the tour, not a bug.
+- The hero's default name differs between boots (Fang, Greco, ...); any name in the hero's slot is fine.
+- Short menu labels Atk/Def/Pad/BWH/Tech are a recorded decision (D18), not abbreviation bugs.
+- Lower-case and proportional text is the English font (VWF); the Japanese used full-width 16x16 cells.
 
 ## Verdicts
 Write your verdict file once you have read every sheet, one line per id in the chunk:

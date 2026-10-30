@@ -49,6 +49,9 @@ org $85EC2D                ; its copy (name entry)
 org $8296F0                ; ruin password: name-entry buffer $140C vs the 8 words at $829711 (build.py: "RAIDROID")
 	jml password
 
+org $AFEF30                ; title loader: JSL $808F95 (expand the $808F01 unpack in $7F) before its VRAM upload
+	jsl title_logo
+
 ; ---------------------------------------------------------------- code
 org $D18000
 
@@ -383,6 +386,22 @@ password:                      ; the original compare, case-blind: a-z singles (
 	bra +
 ++	lda #$0008
 +	sta $1816
+	rtl
+
+title_logo:                    ; D10: blank the katakana ルインアーム above the RUIN ARM logo (docs/re/graphics.md G1)
+	jsl $808F95
+	php
+	rep #$30
+	lda $05,s                  ; the loader's pushed X: table $AFEED4 index, 4 = $AFB1CD -> VRAM $6000 (BG chr)
+	cmp #$0004
+	bne +
+	lda #$0000
+	ldx #$02FE
+-	sta $7F0100,x              ; tiles 8-31: only the katakana (found by zeroing ranges, title shot unchanged else)
+	dex
+	dex
+	bpl -
++	plp
 	rtl
 
 WIDTHS:

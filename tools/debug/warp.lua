@@ -34,6 +34,8 @@ local sc = SCENES[name]
 if not sc and name:match("^map_%x%x%x%x$") then sc = { map = tonumber(name:sub(5), 16) } end
 if not sc and name:match("^exit_%d+$") then sc = { exit = tonumber(name:sub(6)) } end
 if not sc and name == "maps" then sc = { tour = true } end
+-- msgs_XX: open every message id in MSGS (a list file warp.py writes) and shoot each page: <out>/m_IIII_PP.png
+if not sc and name:match("^msgs_") then sc = { tour = true, msgs = assert(MSGS, "MSGS list missing") } end
 assert(sc, "unknown scene " .. name .. " (tools/debug/scenes.lua)")
 if sc.map then sc.exit = exit_for(sc.map) end
 
@@ -63,6 +65,7 @@ end
 
 -- step machine
 local step, t0, left, tour, ti = "boot", 0, 0, nil, 0
+local page, since
 local function go(s) step, t0 = s, L.frame end
 local function warp(exit) wr16(0x7E038D, exit); wr(0x7E0380, 0x18); go("warping") end
 
@@ -87,7 +90,7 @@ L.on_frame(function(n)
     for _, w in ipairs(sc.writes or {}) do if w[3] == 2 then wr16(w[1], w[2]) else wr(w[1], w[2]) end end
     if sc.tour then
       -- each map starts from this first-control state, so an entry event left running can't break the next warp
-      tour = all_maps(); go("wait")
+      tour = sc.msgs or all_maps(); go("wait")
       L.save_state(OUT .. "tour_base.mss", function() go("tour") end)
     elseif sc.exit then warp(sc.exit)
     else go("arrived") end
@@ -101,11 +104,27 @@ L.on_frame(function(n)
     end
   elseif step == "tour" then
     ti = ti + 1
-    if ti > #tour then go("done"); L.log("READY maps " .. #tour); L.finish(0) return end
+    if ti > #tour then go("done"); L.log("READY " .. name .. " " .. #tour); L.finish(0) return end
     go("wait")
-    L.load_state(OUT .. "tour_base.mss", function() go("towarp") end)
+    L.load_state(OUT .. "tour_base.mss", function() go(sc.msgs and "toopen" or "towarp") end)
   elseif step == "towarp" then
     if n - t0 >= 2 then warp(tour[ti].exit) end
+  elseif step == "toopen" then
+    if n - t0 >= 2 then wr16(0x7E0CA4, tour[ti]); wr(0x7E0380, 0x30); page, since = 0, nil; go("reading") end
+  elseif step == "reading" then
+    -- $0CA0 = 3 while a page waits for a key (docs/re/debug.md); shoot once it has held 8 frames, then press A
+    local waiting = m >= 0x30 and m <= 0x36 and rd(0x7E0CA0) == 3
+    if waiting then since = since or n else since = nil end
+    local id = tour[ti]
+    if m == FIELD and n - t0 > 20 then
+      L.log(string.format("msg %04X pages %d f%d", id, page, n)); go("tour")
+    elseif (waiting and n - t0 >= 12 and n - since >= 8) or n - t0 > 400 then
+      if not waiting then L.log(string.format("STUCK msg %04X page %d mode=%02X ca0=%d", id, page + 1, m, rd(0x7E0CA0))) end
+      page = page + 1
+      L.shot(string.format("m_%04X_%02d.png", id, page))
+      if page >= 30 then L.log(string.format("msg %04X stopped at %d pages", id, page)); go("tour")
+      else L.press("a", 6); go("reading") end
+    end
   elseif step == "tourshot" then
     if n - t0 >= 60 then
       L.shot(string.format("map_%04X.png", tour[ti].map))
