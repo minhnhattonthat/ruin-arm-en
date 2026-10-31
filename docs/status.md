@@ -37,8 +37,10 @@ Updated 2026-10-31. History is in git; phase evidence is in `docs/phase8-qa-repo
     and several blank/timed messages are original behavior. See `docs/visual-qa-brief.md`.
   - Release script now requires all five visual manifests plus the story-review manifest.
 - **Verified build:** `build/ruinarm_en.sfc` = the v1.0 release above.
-- **Next:** owner decides on publishing (`references/pipeline.md` §Publish). Do not publish a GitHub release or
-  change repository visibility without the owner. After that: player bug reports via GitHub issues.
+- **Next:** repo made public 2026-10-31 at the owner's request (description fixed to the real title). The v1.0
+  GitHub release is for the owner to create (the plugin guard trips on the stale, superseded `work/qa/round1`
+  manifest; the current gameplay gate is 321/321 ok). Notes: `release/1.0/notes.md`. After that: player bug
+  reports via GitHub issues.
 - **Open bugs:** none identified after the final independent phase-8 reviews.
 - **Remaining RE leads (not release blockers by themselves):** story-flag presets for boss events, opcode lengths
   at $AC8AD6, weapon-type records near 026F80, controls FE/FA/F5/F4/F3, ruin-terminal map location.
