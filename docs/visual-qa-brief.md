@@ -42,7 +42,7 @@ Standing non-bugs, `ok` (the controller adds the game's own below):
 - Short rows before a mid-sentence pause (`{wait}` / timed pause) are fine where the original pauses in the same
   place; compare with the JP shot before flagging.
 - Garbled pink portrait of Freed (msg 12CB): the original shows the same.
-- Scenes `game_over` (msg 0187 "... and the others have fallen.") and `game_over_next` (title menu) end the run.
+- Scenes `game_over` (msg 0187 "... and the others have collapsed.") and `game_over_next` (title menu) end the run.
 - Short menu labels Atk/Def/Pad/BWH/Tech are a recorded decision (D18), not abbreviation bugs.
 - Lower-case and proportional text is the English font (VWF); the Japanese used full-width 16x16 cells.
 - File management (`menu_file`, `menu_file_load`): small numbers 1-6 alongside the tabs, blank file names,

@@ -2,7 +2,15 @@
 
 Updated 2026-10-31. History is in git; phase evidence is in `docs/phase8-qa-report.md`.
 
-- **Phase:** 9 (release), ready to start story review and polish. Phase 8 is complete.
+- **Phase:** 9 (release) complete. Release v1.0 built and verified, not published.
+- **Release v1.0:** `release/1.0/Ruin_Arm_EN_v1.0.zip` (patch + README only), built 2026-10-31 21:57
+  Australia/Sydney by `tools/release.py --version 1.0`: build, 34 tests, smoke, 0 reachable Japanese, all six
+  QA gates (321 gameplay, 11 ending, 2053 static gfx, 555 map gfx, 5 gfx fixes, 8 story chapters), patch
+  re-applied to a clean original and matched. Patched ROM SHA-1 `fa4f014a85e58feecef5ec4336626bb1960d23a0`,
+  CRC32 91D3D19B; patch SHA-1 `e22111db5127374c70de846be22b17981f3b4ea9`. Debug tool is Lua only, not in the ROM.
+- **Phase 9 done:** story pass (8 chapters ok/fixed), `docs/polish.md` fully ticked, gameplay tour re-captured
+  after the story fixes and all 321 sheets re-reviewed (149 in the final round; the 12D2 "has decided." row is a
+  forced break, 225 px > 223).
 - **Done (phases 1-7):** recon, debug warp, identity, extraction, VWF and marker width gate, full English script
   (37 reviewed batches), insertion/fit checks, menu slices (D18), staff roll, name entry and password.
 - **Done this phase:**
@@ -28,17 +36,14 @@ Updated 2026-10-31. History is in git; phase evidence is in `docs/phase8-qa-repo
   - Original-ROM comparisons confirmed the eight debug map stalls, shop icon overlap, file-menu icons/numbers
     and several blank/timed messages are original behavior. See `docs/visual-qa-brief.md`.
   - Release script now requires all five visual manifests plus the story-review manifest.
-- **Verified build:** `build/ruinarm_en.sfc`, 4,194,304 bytes, 2026-10-31 00:25:34 Australia/Sydney,
-  SHA-1 `1ae1af8d69579754474a86a38409e5c5e98ee368`; 34 tests pass, smoke passes, 0 reachable Japanese strings.
-- **Next:** complete chapter story review, resolve every unticked item in `docs/polish.md`,
-  re-capture/review anything changed, and build,
-  re-apply and verify the release zip. Do not publish a GitHub release or change repository visibility.
+- **Verified build:** `build/ruinarm_en.sfc` = the v1.0 release above.
+- **Next:** owner decides on publishing (`references/pipeline.md` §Publish). Do not publish a GitHub release or
+  change repository visibility without the owner. After that: player bug reports via GitHub issues.
 - **Open bugs:** none identified after the final independent phase-8 reviews.
 - **Remaining RE leads (not release blockers by themselves):** story-flag presets for boss events, opcode lengths
   at $AC8AD6, weapon-type records near 026F80, controls FE/FA/F5/F4/F3, ruin-terminal map location.
 - **Translation notes:** msg 10A9 follows the Japanese branch wording; `docs/polish.md` holds story questions.
-  D19 uses the world map's ARFF spelling. Newly revealed Latin map labels need a glossary/script reconciliation
-  under D19 during phase 9; include `tools/worldmap.py` and the new ラウ/RAN. D20 joins the Supervisors heading.
+  D19/D22 world-map place names reconciled in phase 9. D20 joins the Supervisors heading.
 - **Inputs:** cold boot Start at 1500, 2408 title, 2536 title menu, A to name prompt; first control around f7700.
   `warp.py` defaults to the English build. Tools use the repo's MesenCE with zero-filled power-on RAM.
 - **Waiting on the user:** nothing blocking. GUI keyboard input has not been tested by a person. Name choices
