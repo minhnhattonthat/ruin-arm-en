@@ -2,7 +2,7 @@
 
 Updated 2026-10-31. History is in git; phase evidence is in `docs/phase8-qa-report.md`.
 
-- **Phase:** 9 (release) complete. Release v1.0 built and verified, not published.
+- **Phase:** 9 (release) complete. Release v1.0 published 2026-10-31.
 - **Release v1.0:** `release/1.0/Ruin_Arm_EN_v1.0.zip` (patch + README only), built 2026-10-31 21:57
   Australia/Sydney by `tools/release.py --version 1.0`: build, 34 tests, smoke, 0 reachable Japanese, all six
   QA gates (321 gameplay, 11 ending, 2053 static gfx, 555 map gfx, 5 gfx fixes, 8 story chapters), patch
@@ -37,10 +37,9 @@ Updated 2026-10-31. History is in git; phase evidence is in `docs/phase8-qa-repo
     and several blank/timed messages are original behavior. See `docs/visual-qa-brief.md`.
   - Release script now requires all five visual manifests plus the story-review manifest.
 - **Verified build:** `build/ruinarm_en.sfc` = the v1.0 release above.
-- **Next:** repo made public 2026-10-31 at the owner's request (description fixed to the real title). The v1.0
-  GitHub release is for the owner to create (the plugin guard trips on the stale, superseded `work/qa/round1`
-  manifest; the current gameplay gate is 321/321 ok). Notes: `release/1.0/notes.md`. After that: player bug
-  reports via GitHub issues.
+- **Published 2026-10-31:** repo public; owner created release v1.0
+  (https://github.com/minhnhattonthat/ruin-arm-en/releases/tag/v1.0, notes `release/1.0/notes.md`).
+- **Next:** player bug reports via GitHub issues.
 - **Open bugs:** none identified after the final independent phase-8 reviews.
 - **Remaining RE leads (not release blockers by themselves):** story-flag presets for boss events, opcode lengths
   at $AC8AD6, weapon-type records near 026F80, controls FE/FA/F5/F4/F3, ruin-terminal map location.
